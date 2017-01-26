@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>SocialNetwork</title>
+	<%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Squadfree - Free bootstrap 3 one page template</title>
+
+	<!-- Bootstrap Core CSS -->
+	<%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+	
+	<!-- Fonts -->
+	<%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track': 'reload' %>
+	
+	<!-- Squad theme CSS -->
+	<%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag 'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+	
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<!-- =======================================================
+	    Theme Name: Squadfree
+	    Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+	    Author: BootstrapMade
+	    Author URL: https://bootstrapmade.com
+	======================================================= -->
+	</head>
+
+	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+    <%= yield %>
+
+
+    <!-- Core JavaScript Files -->
+    <%= javascript_include_tag 'jquery-1.10.2', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.easing.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.scrollTo', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'wow.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'custom', 'data-turbolinks-track': 'reload' %>
+    
+  </body>
+</html>

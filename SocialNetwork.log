@@ -1,0 +1,2183 @@
+# Logfile created on 2017-01-26 12:49:57 +0100 by logger.rb/56438
+[0;37m2017-01-26 12:49:58.512[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 12:49:58 +0100 (pid:20397)
+[0;37m2017-01-26 12:49:58.626[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20397)
+[0;37m2017-01-26 12:49:58.639[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20397)
+[0;37m2017-01-26 12:49:58.641[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.8ms) (pid:20397)
+[0;37m2017-01-26 12:49:58.881[0m [[32mfyi[0m] Completed 200 OK in 255ms (Views: 246.8ms | ActiveRecord: 0.0ms) (pid:20397)
+[0;37m2017-01-26 12:49:59.564[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:49:59.564[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20397)
+[0;37m2017-01-26 12:49:59.564[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:49:59.564[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20397)
+[0;37m2017-01-26 12:49:59.728[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:49:59.728[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20397)
+[0;37m2017-01-26 12:49:59.728[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:49:59.728[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20397)
+[0;37m2017-01-26 12:50:00.212[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:50:00.212[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20397)
+[0;37m2017-01-26 12:50:00.212[0m [[31momg[0m]  (pid:20397)
+[0;37m2017-01-26 12:50:00.212[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20397)
+[0;37m2017-01-26 12:54:29.838[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 12:54:29 +0100 (pid:20531)
+[0;37m2017-01-26 12:54:29.200[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20531)
+[0;37m2017-01-26 12:54:29.213[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20531)
+[0;37m2017-01-26 12:54:29.214[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.5ms) (pid:20531)
+[0;37m2017-01-26 12:54:29.669[0m [[32mfyi[0m] Completed 500 Internal Server Error in 469ms (ActiveRecord: 0.0ms) (pid:20531)
+[0;37m2017-01-26 12:54:29.670[0m [[31momg[0m]  (pid:20531)
+[0;37m2017-01-26 12:54:29.670[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( bootstrap.css )` to `config/initializers/assets.rb` and restart your server): (pid:20531)
+[0;37m2017-01-26 12:54:29.671[0m [[31momg[0m] 11: 	<title>Squadfree - Free bootstrap 3 one page template</title>
+    12: 
+    13: 	<!-- Bootstrap Core CSS -->
+    14: 	<%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15: 	
+    16: 	<!-- Fonts -->
+    17: 	<%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %> (pid:20531)
+[0;37m2017-01-26 12:54:29.671[0m [[31momg[0m]  (pid:20531)
+[0;37m2017-01-26 12:54:29.671[0m [[31momg[0m] app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2979408683880126594_34660300' (pid:20531)
+[0;37m2017-01-26 12:54:29.820[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:20531)
+[0;37m2017-01-26 12:54:29.825[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:20531)
+[0;37m2017-01-26 12:54:29.829[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms) (pid:20531)
+[0;37m2017-01-26 12:54:29.833[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20531)
+[0;37m2017-01-26 12:54:29.835[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms) (pid:20531)
+[0;37m2017-01-26 12:54:29.840[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20531)
+[0;37m2017-01-26 12:54:29.841[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms) (pid:20531)
+[0;37m2017-01-26 12:54:29.841[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms) (pid:20531)
+[0;37m2017-01-26 12:54:49.871[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 12:54:49 +0100 (pid:20569)
+[0;37m2017-01-26 12:54:49.973[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20569)
+[0;37m2017-01-26 12:54:49.985[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20569)
+[0;37m2017-01-26 12:54:49.986[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.4ms) (pid:20569)
+[0;37m2017-01-26 12:54:50.479[0m [[32mfyi[0m] Completed 200 OK in 505ms (Views: 497.3ms | ActiveRecord: 0.0ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.273[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 12:54:51 +0100 (pid:20569)
+[0;37m2017-01-26 12:54:51.274[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.274[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20569)
+[0;37m2017-01-26 12:54:51.274[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.275[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:54:51.295[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20569)
+[0;37m2017-01-26 12:54:51.302[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20569)
+[0;37m2017-01-26 12:54:51.306[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.315[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.4ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.331[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.5ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.338[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20569)
+[0;37m2017-01-26 12:54:51.340[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.340[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.7ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.413[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 12:54:51 +0100 (pid:20569)
+[0;37m2017-01-26 12:54:51.414[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.414[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20569)
+[0;37m2017-01-26 12:54:51.414[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.414[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:54:51.431[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20569)
+[0;37m2017-01-26 12:54:51.438[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20569)
+[0;37m2017-01-26 12:54:51.440[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.447[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.0ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.452[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.457[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20569)
+[0;37m2017-01-26 12:54:51.459[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.459[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.8ms) (pid:20569)
+[0;37m2017-01-26 12:54:51.531[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.531[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20569)
+[0;37m2017-01-26 12:54:51.531[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.532[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:54:51.631[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.631[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20569)
+[0;37m2017-01-26 12:54:51.631[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:51.632[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:54:52.317[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:52.339[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20569)
+[0;37m2017-01-26 12:54:52.357[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:52.374[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:54:52.553[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:52.553[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20569)
+[0;37m2017-01-26 12:54:52.554[0m [[31momg[0m]  (pid:20569)
+[0;37m2017-01-26 12:54:52.554[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20569)
+[0;37m2017-01-26 12:56:56.742[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 12:56:56 +0100 (pid:20636)
+[0;37m2017-01-26 12:56:56.195[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20636)
+[0;37m2017-01-26 12:56:56.206[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20636)
+[0;37m2017-01-26 12:56:56.209[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (2.4ms) (pid:20636)
+[0;37m2017-01-26 12:56:56.570[0m [[32mfyi[0m] Completed 200 OK in 375ms (Views: 367.4ms | ActiveRecord: 0.0ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.320[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 12:56:57 +0100 (pid:20636)
+[0;37m2017-01-26 12:56:57.321[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.321[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20636)
+[0;37m2017-01-26 12:56:57.321[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.322[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 12:56:57.343[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20636)
+[0;37m2017-01-26 12:56:57.354[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20636)
+[0;37m2017-01-26 12:56:57.356[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.365[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (3.3ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.382[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.4ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.389[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20636)
+[0;37m2017-01-26 12:56:57.390[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.391[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.5ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.482[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 12:56:57 +0100 (pid:20636)
+[0;37m2017-01-26 12:56:57.483[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.483[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20636)
+[0;37m2017-01-26 12:56:57.483[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.483[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 12:56:57.507[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20636)
+[0;37m2017-01-26 12:56:57.513[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20636)
+[0;37m2017-01-26 12:56:57.514[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.519[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.1ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.524[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.529[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20636)
+[0;37m2017-01-26 12:56:57.531[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.531[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.1ms) (pid:20636)
+[0;37m2017-01-26 12:56:57.607[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.607[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 12:56:57.607[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.607[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 12:56:57.728[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.728[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 12:56:57.728[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:57.729[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 12:56:58.101[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:58.101[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20636)
+[0;37m2017-01-26 12:56:58.101[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:58.101[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 12:56:59.282[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:59.282[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20636)
+[0;37m2017-01-26 12:56:59.282[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 12:56:59.282[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:03.279[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:00:03 +0100 (pid:20636)
+[0;37m2017-01-26 13:00:03.281[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20636)
+[0;37m2017-01-26 13:00:03.283[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20636)
+[0;37m2017-01-26 13:00:03.284[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.8ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.382[0m [[32mfyi[0m] Completed 200 OK in 101ms (Views: 99.4ms | ActiveRecord: 0.0ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.790[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:00:03 +0100 (pid:20636)
+[0;37m2017-01-26 13:00:03.792[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.792[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20636)
+[0;37m2017-01-26 13:00:03.792[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.792[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:03.809[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20636)
+[0;37m2017-01-26 13:00:03.816[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20636)
+[0;37m2017-01-26 13:00:03.818[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.825[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.6ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.832[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.838[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20636)
+[0;37m2017-01-26 13:00:03.840[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.840[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.3ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.896[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:00:03 +0100 (pid:20636)
+[0;37m2017-01-26 13:00:03.897[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.897[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20636)
+[0;37m2017-01-26 13:00:03.897[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.898[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:03.917[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20636)
+[0;37m2017-01-26 13:00:03.922[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20636)
+[0;37m2017-01-26 13:00:03.924[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.930[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.7ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.937[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.943[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20636)
+[0;37m2017-01-26 13:00:03.944[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.944[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms) (pid:20636)
+[0;37m2017-01-26 13:00:03.987[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.987[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 13:00:03.987[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:03.987[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:04.805[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:04.808[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 13:00:04.808[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:04.809[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:14.606[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:14.606[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 13:00:14.606[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:14.607[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:14.736[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:14.736[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20636)
+[0;37m2017-01-26 13:00:14.736[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:14.737[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:15.247[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:15.248[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20636)
+[0;37m2017-01-26 13:00:15.248[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:15.250[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:00:15.251[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:15.256[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20636)
+[0;37m2017-01-26 13:00:15.257[0m [[31momg[0m]  (pid:20636)
+[0;37m2017-01-26 13:00:15.257[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20636)
+[0;37m2017-01-26 13:01:26.527[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:01:26 +0100 (pid:20746)
+[0;37m2017-01-26 13:01:26.653[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20746)
+[0;37m2017-01-26 13:01:26.665[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20746)
+[0;37m2017-01-26 13:01:26.666[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:26.987[0m [[32mfyi[0m] Completed 200 OK in 333ms (Views: 325.1ms | ActiveRecord: 0.0ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.591[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:01:27 +0100 (pid:20746)
+[0;37m2017-01-26 13:01:27.593[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.593[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20746)
+[0;37m2017-01-26 13:01:27.593[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.593[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:27.615[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20746)
+[0;37m2017-01-26 13:01:27.622[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20746)
+[0;37m2017-01-26 13:01:27.625[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.632[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.5ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.646[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.652[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20746)
+[0;37m2017-01-26 13:01:27.654[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.654[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.7ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.846[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:01:27 +0100 (pid:20746)
+[0;37m2017-01-26 13:01:27.847[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.847[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20746)
+[0;37m2017-01-26 13:01:27.847[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.847[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:27.862[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20746)
+[0;37m2017-01-26 13:01:27.868[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20746)
+[0;37m2017-01-26 13:01:27.869[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.876[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.8ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.882[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.887[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20746)
+[0;37m2017-01-26 13:01:27.888[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.888[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.3ms) (pid:20746)
+[0;37m2017-01-26 13:01:27.975[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.975[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20746)
+[0;37m2017-01-26 13:01:27.976[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:27.976[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:28.959[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.960[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20746)
+[0;37m2017-01-26 13:01:28.961[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.963[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:28.572[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.572[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20746)
+[0;37m2017-01-26 13:01:28.572[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.572[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:28.745[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.745[0m [[31momg[0m] TypeError (no implicit conversion of nil into String): (pid:20746)
+[0;37m2017-01-26 13:01:28.746[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:28.746[0m [[31momg[0m] sprockets (3.7.1) lib/sprockets/server.rb:98:in `extname'
+sprockets (3.7.1) lib/sprockets/server.rb:98:in `rescue in call'
+sprockets (3.7.1) lib/sprockets/server.rb:23:in `call'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:29.400[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:29.400[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20746)
+[0;37m2017-01-26 13:01:29.401[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:29.401[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:01:29.675[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:29.676[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20746)
+[0;37m2017-01-26 13:01:29.676[0m [[31momg[0m]  (pid:20746)
+[0;37m2017-01-26 13:01:29.676[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20746)
+[0;37m2017-01-26 13:02:56.627[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:02:56 +0100 (pid:20793)
+[0;37m2017-01-26 13:02:56.758[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20793)
+[0;37m2017-01-26 13:02:56.770[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20793)
+[0;37m2017-01-26 13:02:56.772[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.8ms) (pid:20793)
+[0;37m2017-01-26 13:02:57.854[0m [[32mfyi[0m] Completed 200 OK in 1096ms (Views: 1087.7ms | ActiveRecord: 0.0ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.491[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:02:58 +0100 (pid:20793)
+[0;37m2017-01-26 13:02:58.492[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:02:58.492[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20793)
+[0;37m2017-01-26 13:02:58.492[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:02:58.493[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:02:58.504[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20793)
+[0;37m2017-01-26 13:02:58.510[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20793)
+[0;37m2017-01-26 13:02:58.511[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.517[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.4ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.528[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.533[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20793)
+[0;37m2017-01-26 13:02:58.535[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.535[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.793[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:02:58 +0100 (pid:20793)
+[0;37m2017-01-26 13:02:58.794[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:02:58.794[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20793)
+[0;37m2017-01-26 13:02:58.794[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:02:58.794[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:02:58.809[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20793)
+[0;37m2017-01-26 13:02:58.816[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20793)
+[0;37m2017-01-26 13:02:58.817[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.822[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.1ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.827[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.833[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20793)
+[0;37m2017-01-26 13:02:58.834[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms) (pid:20793)
+[0;37m2017-01-26 13:02:58.835[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.1ms) (pid:20793)
+[0;37m2017-01-26 13:03:00.569[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:03:00.570[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20793)
+[0;37m2017-01-26 13:03:00.570[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:03:00.570[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:03:00.647[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:03:00.648[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20793)
+[0;37m2017-01-26 13:03:00.649[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:03:00.649[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:07:22.496[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:07:22 +0100 (pid:20793)
+[0;37m2017-01-26 13:07:22.497[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20793)
+[0;37m2017-01-26 13:07:22.499[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20793)
+[0;37m2017-01-26 13:07:22.500[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.7ms) (pid:20793)
+[0;37m2017-01-26 13:07:22.553[0m [[32mfyi[0m] Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.705[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:07:23 +0100 (pid:20793)
+[0;37m2017-01-26 13:07:23.706[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:23.706[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20793)
+[0;37m2017-01-26 13:07:23.706[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:23.706[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:07:23.719[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20793)
+[0;37m2017-01-26 13:07:23.724[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20793)
+[0;37m2017-01-26 13:07:23.725[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.731[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.3ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.737[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.742[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20793)
+[0;37m2017-01-26 13:07:23.744[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.744[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.7ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.942[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:07:23 +0100 (pid:20793)
+[0;37m2017-01-26 13:07:23.942[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:23.943[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20793)
+[0;37m2017-01-26 13:07:23.943[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:23.943[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:07:23.958[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20793)
+[0;37m2017-01-26 13:07:23.964[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20793)
+[0;37m2017-01-26 13:07:23.965[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.973[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.0ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.978[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.983[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20793)
+[0;37m2017-01-26 13:07:23.985[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms) (pid:20793)
+[0;37m2017-01-26 13:07:23.986[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms) (pid:20793)
+[0;37m2017-01-26 13:07:26.202[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:26.202[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20793)
+[0;37m2017-01-26 13:07:26.202[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:26.202[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:07:26.289[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:26.289[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20793)
+[0;37m2017-01-26 13:07:26.289[0m [[31momg[0m]  (pid:20793)
+[0;37m2017-01-26 13:07:26.289[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20793)
+[0;37m2017-01-26 13:09:27.759[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:09:27 +0100 (pid:20927)
+[0;37m2017-01-26 13:09:27.196[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20927)
+[0;37m2017-01-26 13:09:27.208[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20927)
+[0;37m2017-01-26 13:09:27.210[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:20927)
+[0;37m2017-01-26 13:09:27.457[0m [[32mfyi[0m] Completed 500 Internal Server Error in 261ms (ActiveRecord: 0.0ms) (pid:20927)
+[0;37m2017-01-26 13:09:27.458[0m [[31momg[0m]  (pid:20927)
+[0;37m2017-01-26 13:09:27.458[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( font-awesome.css )` to `config/initializers/assets.rb` and restart your server): (pid:20927)
+[0;37m2017-01-26 13:09:27.458[0m [[31momg[0m] 14: 	<%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15: 	
+    16: 	<!-- Fonts -->
+    17: 	<%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18: 	<%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track': 'reload' %>
+    19: 	
+    20: 	<!-- Squad theme CSS --> (pid:20927)
+[0;37m2017-01-26 13:09:27.458[0m [[31momg[0m]  (pid:20927)
+[0;37m2017-01-26 13:09:27.458[0m [[31momg[0m] app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3578277114390751701_35547200' (pid:20927)
+[0;37m2017-01-26 13:09:27.578[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:20927)
+[0;37m2017-01-26 13:09:27.583[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:27.590[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms) (pid:20927)
+[0;37m2017-01-26 13:09:27.594[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:27.596[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms) (pid:20927)
+[0;37m2017-01-26 13:09:27.602[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:27.604[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms) (pid:20927)
+[0;37m2017-01-26 13:09:27.604[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.9ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.376[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:09:36 +0100 (pid:20927)
+[0;37m2017-01-26 13:09:36.377[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20927)
+[0;37m2017-01-26 13:09:36.379[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20927)
+[0;37m2017-01-26 13:09:36.380[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.6ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.428[0m [[32mfyi[0m] Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.430[0m [[31momg[0m]  (pid:20927)
+[0;37m2017-01-26 13:09:36.430[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( font-awesome.css )` to `config/initializers/assets.rb` and restart your server): (pid:20927)
+[0;37m2017-01-26 13:09:36.430[0m [[31momg[0m] 14: 	<%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15: 	
+    16: 	<!-- Fonts -->
+    17: 	<%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18: 	<%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track': 'reload' %>
+    19: 	
+    20: 	<!-- Squad theme CSS --> (pid:20927)
+[0;37m2017-01-26 13:09:36.430[0m [[31momg[0m]  (pid:20927)
+[0;37m2017-01-26 13:09:36.430[0m [[31momg[0m] app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3578277114390751701_70235687982140' (pid:20927)
+[0;37m2017-01-26 13:09:36.563[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:20927)
+[0;37m2017-01-26 13:09:36.568[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:36.574[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.578[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:36.582[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.588[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20927)
+[0;37m2017-01-26 13:09:36.590[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms) (pid:20927)
+[0;37m2017-01-26 13:09:36.590[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms) (pid:20927)
+[0;37m2017-01-26 13:09:41.993[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:09:41 +0100 (pid:20979)
+[0;37m2017-01-26 13:09:42.112[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:20979)
+[0;37m2017-01-26 13:09:42.124[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:20979)
+[0;37m2017-01-26 13:09:42.126[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.6ms) (pid:20979)
+[0;37m2017-01-26 13:09:42.412[0m [[32mfyi[0m] Completed 200 OK in 299ms (Views: 291.4ms | ActiveRecord: 0.0ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.197[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:09:43 +0100 (pid:20979)
+[0;37m2017-01-26 13:09:43.199[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:43.199[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:20979)
+[0;37m2017-01-26 13:09:43.199[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:43.199[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20979)
+[0;37m2017-01-26 13:09:43.219[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20979)
+[0;37m2017-01-26 13:09:43.225[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20979)
+[0;37m2017-01-26 13:09:43.228[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.237[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (3.1ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.255[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.260[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20979)
+[0;37m2017-01-26 13:09:43.263[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.263[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.9ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.532[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:09:43 +0100 (pid:20979)
+[0;37m2017-01-26 13:09:43.533[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:43.534[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:20979)
+[0;37m2017-01-26 13:09:43.534[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:43.534[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20979)
+[0;37m2017-01-26 13:09:43.555[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:20979)
+[0;37m2017-01-26 13:09:43.561[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:20979)
+[0;37m2017-01-26 13:09:43.564[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.572[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.4ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.580[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.585[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:20979)
+[0;37m2017-01-26 13:09:43.587[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms) (pid:20979)
+[0;37m2017-01-26 13:09:43.587[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms) (pid:20979)
+[0;37m2017-01-26 13:09:46.338[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:46.338[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20979)
+[0;37m2017-01-26 13:09:46.339[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:46.339[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20979)
+[0;37m2017-01-26 13:09:46.347[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:46.347[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:20979)
+[0;37m2017-01-26 13:09:46.347[0m [[31momg[0m]  (pid:20979)
+[0;37m2017-01-26 13:09:46.348[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:20979)
+[0;37m2017-01-26 13:12:24.199[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:12:24 +0100 (pid:21210)
+[0;37m2017-01-26 13:12:24.321[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21210)
+[0;37m2017-01-26 13:12:24.334[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21210)
+[0;37m2017-01-26 13:12:24.335[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.5ms) (pid:21210)
+[0;37m2017-01-26 13:12:25.281[0m [[32mfyi[0m] Completed 200 OK in 960ms (Views: 951.3ms | ActiveRecord: 0.0ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.113[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:12:26 +0100 (pid:21210)
+[0;37m2017-01-26 13:12:26.114[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:12:26.114[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:21210)
+[0;37m2017-01-26 13:12:26.114[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:12:26.114[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:12:26.125[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:12:26.131[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:12:26.133[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.139[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.8ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.151[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.156[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:12:26.158[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.158[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.509[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:12:26 +0100 (pid:21210)
+[0;37m2017-01-26 13:12:26.511[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:12:26.511[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:21210)
+[0;37m2017-01-26 13:12:26.511[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:12:26.511[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:12:26.526[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:12:26.533[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:12:26.534[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.541[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.7ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.548[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.554[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:12:26.556[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:21210)
+[0;37m2017-01-26 13:12:26.556[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.4ms) (pid:21210)
+[0;37m2017-01-26 13:13:58.541[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:13:58.544[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:13:58.544[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:21210)
+[0;37m2017-01-26 13:13:58.544[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:13:58.544[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:13:58.544[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:21210)
+[0;37m2017-01-26 13:13:58.551[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:13:58.551[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:14:50.816[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:14:50 +0100 (pid:21210)
+[0;37m2017-01-26 13:14:50.824[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21210)
+[0;37m2017-01-26 13:14:50.825[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21210)
+[0;37m2017-01-26 13:14:50.826[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.6ms) (pid:21210)
+[0;37m2017-01-26 13:14:50.879[0m [[32mfyi[0m] Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.321[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:14:51 +0100 (pid:21210)
+[0;37m2017-01-26 13:14:51.322[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:14:51.323[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:21210)
+[0;37m2017-01-26 13:14:51.323[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:14:51.323[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:14:51.338[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:14:51.344[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:14:51.346[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.352[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.1ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.358[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.363[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:14:51.365[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.366[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.1ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.425[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:14:51 +0100 (pid:21210)
+[0;37m2017-01-26 13:14:51.426[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:14:51.426[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:21210)
+[0;37m2017-01-26 13:14:51.426[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:14:51.426[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:14:51.444[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:14:51.455[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:14:51.458[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.466[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.3ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.472[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.479[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:14:51.480[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:21210)
+[0;37m2017-01-26 13:14:51.481[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.2ms) (pid:21210)
+[0;37m2017-01-26 13:15:14.659[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:15:14 +0100 (pid:21210)
+[0;37m2017-01-26 13:15:14.660[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21210)
+[0;37m2017-01-26 13:15:14.662[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21210)
+[0;37m2017-01-26 13:15:14.663[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.7ms) (pid:21210)
+[0;37m2017-01-26 13:15:14.707[0m [[32mfyi[0m] Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.985[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:15:15 +0100 (pid:21210)
+[0;37m2017-01-26 13:15:15.992[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:15:15.993[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"): (pid:21210)
+[0;37m2017-01-26 13:15:15.994[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:15:15.995[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:15:15.109[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:15:15.114[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:15:15.116[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.121[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.3ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.126[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.131[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:15:15.132[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.133[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.0ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.186[0m [[32mfyi[0m] Started GET "/fonts/fontawesome-webfont.ttf?v=4.0.3" for 127.0.0.1 at 2017-01-26 13:15:15 +0100 (pid:21210)
+[0;37m2017-01-26 13:15:15.187[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:15:15.187[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"): (pid:21210)
+[0;37m2017-01-26 13:15:15.187[0m [[31momg[0m]  (pid:21210)
+[0;37m2017-01-26 13:15:15.188[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21210)
+[0;37m2017-01-26 13:15:15.211[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:21210)
+[0;37m2017-01-26 13:15:15.217[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21210)
+[0;37m2017-01-26 13:15:15.218[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.223[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.5ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.230[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.237[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21210)
+[0;37m2017-01-26 13:15:15.239[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms) (pid:21210)
+[0;37m2017-01-26 13:15:15.239[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.0ms) (pid:21210)
+[0;37m2017-01-26 13:16:56.693[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:16:56 +0100 (pid:21397)
+[0;37m2017-01-26 13:16:56.799[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21397)
+[0;37m2017-01-26 13:16:56.810[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21397)
+[0;37m2017-01-26 13:16:56.811[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:21397)
+[0;37m2017-01-26 13:16:57.472[0m [[32mfyi[0m] Completed 500 Internal Server Error in 673ms (ActiveRecord: 0.0ms) (pid:21397)
+[0;37m2017-01-26 13:16:57.473[0m [[31momg[0m]  (pid:21397)
+[0;37m2017-01-26 13:16:57.473[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( font-awesome.css )` to `config/initializers/assets.rb` and restart your server): (pid:21397)
+[0;37m2017-01-26 13:16:57.473[0m [[31momg[0m] 14: 	<%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15: 	
+    16: 	<!-- Fonts -->
+    17: 	<%= stylesheet_link_tag 'font-awesome', media: 'all', 'data-turbolinks-track': 'reload' %>
+    18: 	<%= stylesheet_link_tag 'animate', media: 'all', 'data-turbolinks-track': 'reload' %>
+    19: 	
+    20: 	<!-- Squad theme CSS --> (pid:21397)
+[0;37m2017-01-26 13:16:57.473[0m [[31momg[0m]  (pid:21397)
+[0;37m2017-01-26 13:16:57.473[0m [[31momg[0m] app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__1689031760749107082_36237660' (pid:21397)
+[0;37m2017-01-26 13:16:57.557[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:21397)
+[0;37m2017-01-26 13:16:57.561[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:21397)
+[0;37m2017-01-26 13:16:57.565[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms) (pid:21397)
+[0;37m2017-01-26 13:16:57.570[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:21397)
+[0;37m2017-01-26 13:16:57.572[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms) (pid:21397)
+[0;37m2017-01-26 13:16:57.576[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:21397)
+[0;37m2017-01-26 13:16:57.577[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms) (pid:21397)
+[0;37m2017-01-26 13:16:57.577[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms) (pid:21397)
+[0;37m2017-01-26 13:17:31.218[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:17:31 +0100 (pid:21452)
+[0;37m2017-01-26 13:17:31.330[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21452)
+[0;37m2017-01-26 13:17:31.341[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21452)
+[0;37m2017-01-26 13:17:31.342[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:21452)
+[0;37m2017-01-26 13:17:31.706[0m [[32mfyi[0m] Completed 200 OK in 376ms (Views: 368.3ms | ActiveRecord: 0.0ms) (pid:21452)
+[0;37m2017-01-26 13:17:32.714[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:17:32 +0100 (pid:21452)
+[0;37m2017-01-26 13:17:32.715[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21452)
+[0;37m2017-01-26 13:17:32.719[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21452)
+[0;37m2017-01-26 13:17:32.721[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.0ms) (pid:21452)
+[0;37m2017-01-26 13:17:32.805[0m [[32mfyi[0m] Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.0ms) (pid:21452)
+[0;37m2017-01-26 13:18:15.994[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:18:15 +0100 (pid:21452)
+[0;37m2017-01-26 13:18:15.995[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21452)
+[0;37m2017-01-26 13:18:15.996[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21452)
+[0;37m2017-01-26 13:18:15.997[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.9ms) (pid:21452)
+[0;37m2017-01-26 13:18:16.444[0m [[32mfyi[0m] Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms) (pid:21452)
+[0;37m2017-01-26 13:18:51.532[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:18:51 +0100 (pid:21507)
+[0;37m2017-01-26 13:18:51.640[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21507)
+[0;37m2017-01-26 13:18:51.651[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21507)
+[0;37m2017-01-26 13:18:51.653[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.7ms) (pid:21507)
+[0;37m2017-01-26 13:18:51.886[0m [[32mfyi[0m] Completed 200 OK in 246ms (Views: 238.7ms | ActiveRecord: 0.0ms) (pid:21507)
+[0;37m2017-01-26 13:18:59.307[0m [[31momg[0m]  (pid:21507)
+[0;37m2017-01-26 13:18:59.311[0m [[31momg[0m]  (pid:21507)
+[0;37m2017-01-26 13:18:59.312[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:21507)
+[0;37m2017-01-26 13:18:59.312[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:21507)
+[0;37m2017-01-26 13:18:59.312[0m [[31momg[0m]  (pid:21507)
+[0;37m2017-01-26 13:18:59.312[0m [[31momg[0m]  (pid:21507)
+[0;37m2017-01-26 13:18:59.313[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21507)
+[0;37m2017-01-26 13:18:59.313[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.0.1) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.0.1) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21507)
+[0;37m2017-01-26 13:19:36.377[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:19:36 +0100 (pid:21558)
+[0;37m2017-01-26 13:19:36.507[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21558)
+[0;37m2017-01-26 13:19:36.519[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21558)
+[0;37m2017-01-26 13:19:36.523[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (3.2ms) (pid:21558)
+[0;37m2017-01-26 13:19:36.839[0m [[32mfyi[0m] Completed 200 OK in 332ms (Views: 323.7ms | ActiveRecord: 0.0ms) (pid:21558)
+[0;37m2017-01-26 13:19:51.877[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 13:19:51 +0100 (pid:21597)
+[0;37m2017-01-26 13:19:51.990[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21597)
+[0;37m2017-01-26 13:19:52.261[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21597)
+[0;37m2017-01-26 13:19:52.433[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.4ms) (pid:21597)
+[0;37m2017-01-26 13:19:52.276[0m [[32mfyi[0m] Completed 200 OK in 285ms (Views: 276.9ms | ActiveRecord: 0.0ms) (pid:21597)
+[0;37m2017-01-26 14:51:04.497[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-26 14:51:04 +0100 (pid:21597)
+[0;37m2017-01-26 14:51:04.498[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21597)
+[0;37m2017-01-26 14:51:04.499[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:21597)
+[0;37m2017-01-26 14:51:04.500[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.8ms) (pid:21597)
+[0;37m2017-01-26 14:51:04.593[0m [[32mfyi[0m] Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.0ms) (pid:21597)
