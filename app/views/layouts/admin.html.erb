@@ -8,7 +8,7 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <!--<link rel="shortcut icon" href="img/favicon.png">-->
 	<!-- Bootstrap Core CSS -->
 	<%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<!-- bootstrap theme -->
@@ -19,15 +19,14 @@
 	
 	<!-- Squad theme CSS -->
 	
-	<%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag 'style-2', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= stylesheet_link_tag 'style-responsive', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= stylesheet_link_tag 'jquery-ui-1.10.4.min', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-
- 
+	<!-- font icon -->
+	<%= stylesheet_link_tag 'elegant-icons-style', media: 'all', 'data-turbolinks-track': 'reload' %>	
 
     <!-- font icon 
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />    -->
     <!-- full calendar css
     <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
@@ -1052,7 +1051,7 @@
 	<!-- container section start -->
     <%= yield %>
     <!-- javascripts -->
-    <%= javascript_include_tag 'jquery', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-2', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'jquery-ui-1.10.4.min', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'jquery-1.8.3.min', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'jquery-ui-1.9.2.custom.min', 'data-turbolinks-track': 'reload' %>
@@ -1094,7 +1093,7 @@
 	<script src="js/morris.min.js"></script>
 	<script src="js/sparklines.js"></script>	
 	<script src="js/charts.js"></script>
-	<script src="js/jquery.slimscroll.min.js"></script>-->
+	<script src="js/jquery.slimscroll.min.js"></script>  -->
   	<script>
 
       //knob
@@ -1141,9 +1140,9 @@
 	  });
 	});
 
-	</script>    
+	</script>  
     <!-- Core JavaScript Files -->
-    <%= javascript_include_tag "admin"%>
+    <%= javascript_include_tag "admin", 'data-turbolinks-track': 'reload'%>
 
   </body>
 </html>
