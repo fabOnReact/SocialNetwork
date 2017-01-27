@@ -189,7 +189,7 @@
 	                        </li>
 	                        <li>
 	                            <a href="#">
-	                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
 	                                <span class="subject">
 	                                <span class="from">Bob   Mckenzie</span>
 	                                <span class="time">5 mins</span>
@@ -201,9 +201,9 @@
 	                        </li>
 	                        <li>
 	                            <a href="#">
-	                                <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+	                                <span class="photo"><%= image_tag "avatar-mini3.jpg", alt:"avatar" %></span>
 	                                <span class="subject">
-	                                <span class="from">Phillip   Park</span>
+	                                <span  class="from">Phillip   Park</span>
 	                                <span class="time">2 hrs</span>
 	                                </span>
 	                                <span class="message">
@@ -213,7 +213,7 @@
 	                        </li>
 	                        <li>
 	                            <a href="#">
-	                                <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+	                                <span class="photo"><%= image_tag "avatar-mini4.jpg", alt:"avatar" %></span>
 	                                <span class="subject">
 	                                <span class="from">Ray   Munoz</span>
 	                                <span class="time">1 day</span>
@@ -279,7 +279,7 @@
 	                <li class="dropdown">
 	                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 	                        <span class="profile-ava">
-	                            <img alt="" src="img/avatar1_small.jpg">
+	                            <%= image_tag "avatar1_small.jpg" %>
 	                        </span>
 	                        <span class="username">Jenifer Smith</span>
 	                        <b class="caret"></b>
@@ -526,7 +526,7 @@
 								</thead>   
 								<tbody>
 									<tr>
-										<td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Germany.png", height: '18' %></td> <!--margin-top:-2px-->
 										<td>Germany</td>
 										<td>2563</td>
 										<td>1025</td>
@@ -541,7 +541,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/India.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "India.png", height:"18" %></td>
 										<td>India</td>
 										<td>3652</td>
 										<td>2563</td>
@@ -556,7 +556,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/Spain.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Spain.png", height:"18" %></td>
 										<td>Spain</td>
 										<td>562</td>
 										<td>452</td>
@@ -571,7 +571,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/India.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "India.png", height:"18" %></td>
 										<td>Russia</td>
 										<td>1258</td>
 										<td>958</td>
@@ -586,7 +586,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/Spain.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Spain.png", height:"18" %></td>
 										<td>USA</td>
 										<td>4856</td>
 										<td>3621</td>
@@ -601,7 +601,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Germany.png", height:"18" %></td>
 										<td>Brazil</td>
 										<td>265</td>
 										<td>102</td>
@@ -616,7 +616,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Germany.png" %></td>
 										<td>Coloumbia</td>
 										<td>265</td>
 										<td>102</td>
@@ -631,7 +631,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td><img src="img/Germany.png" style="height:18px; margin-top:-2px;"></td>
+										<td><%= image_tag "Germany.png" %></td>
 										<td>France</td>
 										<td>265</td>
 										<td>102</td>
@@ -736,7 +736,7 @@
 	                  <li class="by-me">
 	                    <!-- Use the class "pull-left" in avatar -->
 	                    <div class="avatar pull-left">
-	                      <img src="img/user.jpg" alt=""/>
+	                      <%= image_tag "user.jpg" %>
 	                    </div>
 
 	                    <div class="chat-content">
@@ -751,7 +751,7 @@
 	                  <li class="by-other">
 	                    <!-- Use the class "pull-right" in avatar -->
 	                    <div class="avatar pull-right">
-	                      <img src="img/user22.png" alt=""/>
+	                      <%= image_tag "user22.png" %>
 	                    </div>
 
 	                    <div class="chat-content">
@@ -764,7 +764,7 @@
 
 	                  <li class="by-me">
 	                    <div class="avatar pull-left">
-	                      <img src="img/user.jpg" alt=""/>
+	                      <%= image_tag "user.jpg" %>
 	                    </div>
 
 	                    <div class="chat-content">
@@ -777,7 +777,7 @@
 	                  <li class="by-other">
 	                    <!-- Use the class "pull-right" in avatar -->
 	                    <div class="avatar pull-right">
-	                      <img src="img/user22.png" alt=""/>
+	                      <%= image_tag "user22.png" %>
 	                    </div>
 
 	                    <div class="chat-content">
@@ -819,7 +819,7 @@
 	                          </div>
 	                          <div class="col-lg-4">
 	                            <span class="profile-ava pull-right">
-	                                    <img alt="" class="simple" src="img/avatar1_small.jpg">
+	                                    <%= image_tag "avatar1_small.jpg", class: "simple" %>
 	                                    Jenifer smith
 	                            </span>                                
 	                          </div>
@@ -837,7 +837,7 @@
 	                              </td>
 	                              <td>
 	                                <span class="profile-ava">
-	                                    <img alt="" class="simple" src="img/avatar1_small.jpg">
+	                                    <%= image_tag "avatar1_small.jpg", class: "simple" %>
 	                                </span>
 	                              </td>
 	                          </tr>
@@ -875,7 +875,7 @@
 	                              </td>
 	                              <td>
 	                                  <span class="profile-ava">
-	                                    <img alt="" class="simple" src="img/avatar1_small.jpg">
+	                                    <%= image_tag "avatar1_small.jpg", class: "simple" %>
 	                                  </span>
 	                              </td>
 	                          </tr>
@@ -925,7 +925,7 @@
 	                              </td>
 	                              <td>
 	                                  <span class="profile-ava">
-	                                    <img alt="" class="simple" src="img/avatar1_small.jpg">
+	                                    <%= image_tag "avatar1_small.jpg", class: "simple" %>
 	                                  </span>
 	                              </td>
 	                          </tr>

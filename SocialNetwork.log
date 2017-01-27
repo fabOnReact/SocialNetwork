@@ -6752,3 +6752,579 @@ puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:7804)
 [0;37m2017-01-27 10:56:08.739[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:7804)
 [0;37m2017-01-27 10:56:08.789[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:7804)
 [0;37m2017-01-27 10:56:08.855[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.3ms) (pid:7804)
+[0;37m2017-01-27 14:14:24.921[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-27 14:14:24 +0100 (pid:17720)
+[0;37m2017-01-27 14:14:25.228[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17720)
+[0;37m2017-01-27 14:14:25.332[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:17720)
+[0;37m2017-01-27 14:14:25.334[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.6ms) (pid:17720)
+[0;37m2017-01-27 14:14:26.840[0m [[32mfyi[0m] Completed 200 OK in 1612ms (Views: 1543.0ms | ActiveRecord: 0.0ms) (pid:17720)
+[0;37m2017-01-27 14:19:27.646[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-27 14:19:27 +0100 (pid:17875)
+[0;37m2017-01-27 14:19:27.767[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17875)
+[0;37m2017-01-27 14:19:27.778[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:17875)
+[0;37m2017-01-27 14:19:27.779[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.2ms) (pid:17875)
+[0;37m2017-01-27 14:19:28.474[0m [[32mfyi[0m] Completed 200 OK in 280ms (Views: 272.1ms | ActiveRecord: 0.0ms) (pid:17875)
+[0;37m2017-01-27 14:19:28.956[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-27 14:19:28 +0100 (pid:17875)
+[0;37m2017-01-27 14:19:28.958[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17875)
+[0;37m2017-01-27 14:19:28.961[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:17875)
+[0;37m2017-01-27 14:19:28.963[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.6ms) (pid:17875)
+[0;37m2017-01-27 14:19:29.829[0m [[32mfyi[0m] Completed 200 OK in 125ms (Views: 122.7ms | ActiveRecord: 0.0ms) (pid:17875)
+[0;37m2017-01-27 14:38:10.437[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-27 14:38:10 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:10.781[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:4026)
+[0;37m2017-01-27 14:38:10.820[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:4026)
+[0;37m2017-01-27 14:38:10.821[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:12.353[0m [[32mfyi[0m] Completed 200 OK in 1572ms (Views: 1558.0ms | ActiveRecord: 0.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:21.610[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 14:38:21 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:21.629[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4026)
+[0;37m2017-01-27 14:38:21.631[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4026)
+[0;37m2017-01-27 14:38:21.632[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.472[0m [[32mfyi[0m] Completed 200 OK in 418ms (Views: 416.4ms | ActiveRecord: 0.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.881[0m [[32mfyi[0m] Started GET "/img/avatar-mini2.jpg" for 127.0.0.1 at 2017-01-27 14:38:22 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:22.892[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.893[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/avatar-mini2.jpg"): (pid:4026)
+[0;37m2017-01-27 14:38:22.893[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.896[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:22.965[0m [[32mfyi[0m] Started GET "/img/avatar-mini4.jpg" for 127.0.0.1 at 2017-01-27 14:38:22 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:22.993[0m [[32mfyi[0m] Started GET "/img/avatar-mini3.jpg" for 127.0.0.1 at 2017-01-27 14:38:22 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:22.103[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.104[0m [[32mfyi[0m] Started GET "/img/avatar1_small.jpg" for 127.0.0.1 at 2017-01-27 14:38:22 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:22.104[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.107[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/avatar-mini4.jpg"): (pid:4026)
+[0;37m2017-01-27 14:38:22.107[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.107[0m [[32mfyi[0m] Started GET "/img/Germany.png" for 127.0.0.1 at 2017-01-27 14:38:22 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:22.107[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/avatar-mini3.jpg"): (pid:4026)
+[0;37m2017-01-27 14:38:22.107[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.108[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/avatar1_small.jpg"): (pid:4026)
+[0;37m2017-01-27 14:38:22.110[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.111[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.111[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:22.112[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.112[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/Germany.png"): (pid:4026)
+[0;37m2017-01-27 14:38:22.112[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:22.118[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:22.118[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:22.134[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:22.401[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:22.401[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:22.406[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:22.416[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:22.421[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:22.434[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.436[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.436[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.441[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.443[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.445[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.445[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.446[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.450[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.454[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.508[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.510[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (0.9ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.517[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.521[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (58.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.525[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.685[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (152.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.690[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (143.5ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.694[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (154.4ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.699[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (160.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.703[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (149.5ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.711[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.713[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.713[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.714[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.715[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:22.715[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.716[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.716[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.716[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.717[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.717[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (310.7ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.718[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (296.7ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.718[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (301.5ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.718[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (306.5ms) (pid:4026)
+[0;37m2017-01-27 14:38:22.718[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (316.7ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.131[0m [[32mfyi[0m] Started GET "/img/Spain.png" for 127.0.0.1 at 2017-01-27 14:38:23 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:23.134[0m [[32mfyi[0m] Started GET "/img/user.jpg" for 127.0.0.1 at 2017-01-27 14:38:23 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:23.135[0m [[32mfyi[0m] Started GET "/img/user22.png" for 127.0.0.1 at 2017-01-27 14:38:23 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:23.137[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.137[0m [[32mfyi[0m] Started GET "/img/favicon.png" for 127.0.0.1 at 2017-01-27 14:38:23 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:23.137[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/Spain.png"): (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/user.jpg"): (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/user22.png"): (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/favicon.png"): (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.138[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.139[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:23.139[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.139[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:23.142[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:23.145[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:23.174[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:23.180[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:23.188[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.193[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.198[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.201[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.205[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.208[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.6ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.217[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.223[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.235[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.237[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:23.242[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.243[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.252[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.254[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:23.260[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.261[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.272[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.6ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.279[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.280[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.300[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.307[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.315[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.326[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.344[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.374[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.8ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.393[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.9ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.404[0m [[32mfyi[0m] Started GET "/img/India.png" for 127.0.0.1 at 2017-01-27 14:38:23 +0100 (pid:4026)
+[0;37m2017-01-27 14:38:23.429[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.438[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.455[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.461[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/img/India.png"): (pid:4026)
+[0;37m2017-01-27 14:38:23.463[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.467[0m [[31momg[0m]  (pid:4026)
+[0;37m2017-01-27 14:38:23.467[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (212.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.482[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:4026)
+[0;37m2017-01-27 14:38:23.512[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:4026)
+[0;37m2017-01-27 14:38:23.527[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.530[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.545[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.4ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.551[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.556[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4026)
+[0;37m2017-01-27 14:38:23.557[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:4026)
+[0;37m2017-01-27 14:38:23.558[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.6ms) (pid:4026)
+[0;37m2017-01-27 15:05:14.897[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:05:14 +0100 (pid:4956)
+[0;37m2017-01-27 15:05:14.994[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4956)
+[0;37m2017-01-27 15:05:15.460[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4956)
+[0;37m2017-01-27 15:05:15.569[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.9ms) (pid:4956)
+[0;37m2017-01-27 15:05:15.888[0m [[32mfyi[0m] Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms) (pid:4956)
+[0;37m2017-01-27 15:05:15.980[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:05:15.988[0m [[31momg[0m] SyntaxError (/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:822: syntax error, unexpected keyword_class, expecting ')'
+...e_tag "avatar1_small.jpg" class="simple" );@output_buffer.sa...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:840: syntax error, unexpected keyword_class, expecting ')'
+...e_tag "avatar1_small.jpg" class="simple" );@output_buffer.sa...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:878: syntax error, unexpected keyword_class, expecting ')'
+...e_tag "avatar1_small.jpg" class="simple" );@output_buffer.sa...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:928: syntax error, unexpected keyword_class, expecting ')'
+...e_tag "avatar1_small.jpg" class="simple" );@output_buffer.sa...
+...                               ^): (pid:4956)
+[0;37m2017-01-27 15:05:15.993[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:05:15.997[0m [[31momg[0m] app/views/layouts/admin.html.erb:822: syntax error, unexpected keyword_class, expecting ')'
+app/views/layouts/admin.html.erb:840: syntax error, unexpected keyword_class, expecting ')'
+app/views/layouts/admin.html.erb:878: syntax error, unexpected keyword_class, expecting ')'
+app/views/layouts/admin.html.erb:928: syntax error, unexpected keyword_class, expecting ')' (pid:4956)
+[0;37m2017-01-27 15:05:15.128[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (pid:4956)
+[0;37m2017-01-27 15:05:15.138[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:4956)
+[0;37m2017-01-27 15:05:15.142[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms) (pid:4956)
+[0;37m2017-01-27 15:05:15.146[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4956)
+[0;37m2017-01-27 15:05:15.147[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms) (pid:4956)
+[0;37m2017-01-27 15:05:15.151[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4956)
+[0;37m2017-01-27 15:05:15.152[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:4956)
+[0;37m2017-01-27 15:05:15.152[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.1ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.166[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:06:37 +0100 (pid:4956)
+[0;37m2017-01-27 15:06:37.168[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4956)
+[0;37m2017-01-27 15:06:37.171[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4956)
+[0;37m2017-01-27 15:06:37.172[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.5ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.175[0m [[32mfyi[0m] Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.176[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:06:37.176[0m [[31momg[0m] SyntaxError (/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:822: syntax error, unexpected '='
+...tag "avatar1_small.jpg", class="simple" );@output_buffer.saf...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:840: syntax error, unexpected '='
+...tag "avatar1_small.jpg", class="simple" );@output_buffer.saf...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:878: syntax error, unexpected '='
+...tag "avatar1_small.jpg", class="simple" );@output_buffer.saf...
+...                               ^
+/home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/admin.html.erb:928: syntax error, unexpected '='
+...tag "avatar1_small.jpg", class="simple" );@output_buffer.saf...
+...                               ^): (pid:4956)
+[0;37m2017-01-27 15:06:37.176[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:06:37.176[0m [[31momg[0m] app/views/layouts/admin.html.erb:822: syntax error, unexpected '='
+app/views/layouts/admin.html.erb:840: syntax error, unexpected '='
+app/views/layouts/admin.html.erb:878: syntax error, unexpected '='
+app/views/layouts/admin.html.erb:928: syntax error, unexpected '=' (pid:4956)
+[0;37m2017-01-27 15:06:37.275[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (pid:4956)
+[0;37m2017-01-27 15:06:37.280[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:4956)
+[0;37m2017-01-27 15:06:37.285[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.289[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4956)
+[0;37m2017-01-27 15:06:37.291[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.295[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4956)
+[0;37m2017-01-27 15:06:37.296[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms) (pid:4956)
+[0;37m2017-01-27 15:06:37.296[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.575[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:08:25 +0100 (pid:4956)
+[0;37m2017-01-27 15:08:25.583[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4956)
+[0;37m2017-01-27 15:08:25.601[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4956)
+[0;37m2017-01-27 15:08:25.606[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.3ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.276[0m [[32mfyi[0m] Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.277[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:08:25.277[0m [[31momg[0m] ActionView::Template::Error (undefined method `symbolize_keys' for "avatar":String): (pid:4956)
+[0;37m2017-01-27 15:08:25.277[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt="avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:4956)
+[0;37m2017-01-27 15:08:25.277[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:08:25.278[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb__2467095582777735118_19264480' (pid:4956)
+[0;37m2017-01-27 15:08:25.390[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:4956)
+[0;37m2017-01-27 15:08:25.395[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:4956)
+[0;37m2017-01-27 15:08:25.401[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.407[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4956)
+[0;37m2017-01-27 15:08:25.409[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.414[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4956)
+[0;37m2017-01-27 15:08:25.414[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:4956)
+[0;37m2017-01-27 15:08:25.415[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.329[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:09:36 +0100 (pid:4956)
+[0;37m2017-01-27 15:09:36.332[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4956)
+[0;37m2017-01-27 15:09:36.338[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4956)
+[0;37m2017-01-27 15:09:36.338[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.5ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.498[0m [[32mfyi[0m] Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.499[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:09:36.499[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )` to `config/initializers/assets.rb` and restart your server): (pid:4956)
+[0;37m2017-01-27 15:09:36.499[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:4956)
+[0;37m2017-01-27 15:09:36.499[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:09:36.499[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb__2467095582777735118_69974598704800' (pid:4956)
+[0;37m2017-01-27 15:09:36.581[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:4956)
+[0;37m2017-01-27 15:09:36.592[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:4956)
+[0;37m2017-01-27 15:09:36.596[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.600[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4956)
+[0;37m2017-01-27 15:09:36.602[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.606[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4956)
+[0;37m2017-01-27 15:09:36.607[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms) (pid:4956)
+[0;37m2017-01-27 15:09:36.607[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.9ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.880[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:12:31 +0100 (pid:4956)
+[0;37m2017-01-27 15:12:31.889[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:4956)
+[0;37m2017-01-27 15:12:31.906[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:4956)
+[0;37m2017-01-27 15:12:31.911[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.3ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.155[0m [[32mfyi[0m] Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.155[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:12:31.155[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )` to `config/initializers/assets.rb` and restart your server): (pid:4956)
+[0;37m2017-01-27 15:12:31.156[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:4956)
+[0;37m2017-01-27 15:12:31.156[0m [[31momg[0m]  (pid:4956)
+[0;37m2017-01-27 15:12:31.156[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb__2467095582777735118_69974619989100' (pid:4956)
+[0;37m2017-01-27 15:12:31.243[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:4956)
+[0;37m2017-01-27 15:12:31.247[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:4956)
+[0;37m2017-01-27 15:12:31.251[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.254[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:4956)
+[0;37m2017-01-27 15:12:31.256[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.260[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:4956)
+[0;37m2017-01-27 15:12:31.261[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:4956)
+[0;37m2017-01-27 15:12:31.261[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms) (pid:4956)
+[0;37m2017-01-27 15:12:37.240[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:12:37 +0100 (pid:5103)
+[0;37m2017-01-27 15:12:37.341[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:5103)
+[0;37m2017-01-27 15:12:37.352[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:5103)
+[0;37m2017-01-27 15:12:37.353[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (1.2ms) (pid:5103)
+[0;37m2017-01-27 15:12:38.924[0m [[32mfyi[0m] Completed 500 Internal Server Error in 1582ms (ActiveRecord: 0.0ms) (pid:5103)
+[0;37m2017-01-27 15:12:38.925[0m [[31momg[0m]  (pid:5103)
+[0;37m2017-01-27 15:12:38.925[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )` to `config/initializers/assets.rb` and restart your server): (pid:5103)
+[0;37m2017-01-27 15:12:38.925[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:5103)
+[0;37m2017-01-27 15:12:38.925[0m [[31momg[0m]  (pid:5103)
+[0;37m2017-01-27 15:12:38.925[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb___4302826633800838298_42843460' (pid:5103)
+[0;37m2017-01-27 15:12:39.109[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:5103)
+[0;37m2017-01-27 15:12:39.152[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:39.186[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.224[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:39.242[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.283[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:39.290[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.291[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.918[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:12:39 +0100 (pid:5103)
+[0;37m2017-01-27 15:12:39.919[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:5103)
+[0;37m2017-01-27 15:12:39.921[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:5103)
+[0;37m2017-01-27 15:12:39.922[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.5ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.997[0m [[32mfyi[0m] Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms) (pid:5103)
+[0;37m2017-01-27 15:12:39.998[0m [[31momg[0m]  (pid:5103)
+[0;37m2017-01-27 15:12:39.998[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )` to `config/initializers/assets.rb` and restart your server): (pid:5103)
+[0;37m2017-01-27 15:12:39.998[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:5103)
+[0;37m2017-01-27 15:12:39.998[0m [[31momg[0m]  (pid:5103)
+[0;37m2017-01-27 15:12:39.998[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb___4302826633800838298_43033320' (pid:5103)
+[0;37m2017-01-27 15:12:40.835[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:5103)
+[0;37m2017-01-27 15:12:40.879[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:40.917[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms) (pid:5103)
+[0;37m2017-01-27 15:12:40.957[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:40.973[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms) (pid:5103)
+[0;37m2017-01-27 15:12:40.101[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:5103)
+[0;37m2017-01-27 15:12:40.102[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:5103)
+[0;37m2017-01-27 15:12:40.102[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms) (pid:5103)
+[0;37m2017-01-27 15:17:28.383[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-27 15:17:28 +0100 (pid:5280)
+[0;37m2017-01-27 15:17:28.144[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:5280)
+[0;37m2017-01-27 15:17:28.154[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:5280)
+[0;37m2017-01-27 15:17:28.155[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (0.8ms) (pid:5280)
+[0;37m2017-01-27 15:17:28.445[0m [[32mfyi[0m] Completed 500 Internal Server Error in 301ms (ActiveRecord: 0.0ms) (pid:5280)
+[0;37m2017-01-27 15:17:28.446[0m [[31momg[0m]  (pid:5280)
+[0;37m2017-01-27 15:17:28.446[0m [[31momg[0m] ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )` to `config/initializers/assets.rb` and restart your server): (pid:5280)
+[0;37m2017-01-27 15:17:28.447[0m [[31momg[0m] 189: 	                        </li>
+    190: 	                        <li>
+    191: 	                            <a href="#">
+    192: 	                                <span class="photo"><%= image_tag "avatar-mini2.jpg", alt:"avatar" %></span>
+    193: 	                                <span class="subject">
+    194: 	                                <span class="from">Bob   Mckenzie</span>
+    195: 	                                <span class="time">5 mins</span> (pid:5280)
+[0;37m2017-01-27 15:17:28.448[0m [[31momg[0m]  (pid:5280)
+[0;37m2017-01-27 15:17:28.448[0m [[31momg[0m] app/views/layouts/admin.html.erb:192:in `_app_views_layouts_admin_html_erb__1020506244396550781_45327200' (pid:5280)
+[0;37m2017-01-27 15:17:28.572[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:5280)
+[0;37m2017-01-27 15:17:28.577[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:5280)
+[0;37m2017-01-27 15:17:28.580[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms) (pid:5280)
+[0;37m2017-01-27 15:17:28.584[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:5280)
+[0;37m2017-01-27 15:17:28.585[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:5280)
+[0;37m2017-01-27 15:17:28.590[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:5280)
+[0;37m2017-01-27 15:17:28.590[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms) (pid:5280)
+[0;37m2017-01-27 15:17:28.590[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms) (pid:5280)
