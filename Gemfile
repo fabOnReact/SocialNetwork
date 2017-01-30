@@ -34,7 +34,6 @@ gem 'jbuilder', '~> 2.5'
 gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 gem 'sprockets-rails', '2.3.3'
 
 group :development, :test do

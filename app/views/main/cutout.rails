@@ -1,2 +1,94 @@
+<!--style="background-image: url(<%#= asset_path 'line-icon.png' %>)"-->
+
+/* Staff cut out of admin.js
+//= require jquery-ui-1.10.4.min
+//= require jquery-1.8.3.min
+//= require jquery-ui-1.9.2.custom.min
+//= require bootstrap2
+//= require jquery.scrollTo.min
+//= require jquery.nicescroll
+//= require jquery.scrollTo.min
+//= require fullcalendar.min
+//= require fullcalendar
+//= require calendar-custom
+//= require jquery.rateit.min
+//= require jquery.customSelect.min
 
 
+/* Staff cut out of Asset.rb for the Admin page
+
+Rails.application.config.assets.precompile += %w( admin.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap-theme.css )
+Rails.application.config.assets.precompile += %w( owl.carousel.css )
+Rails.application.config.assets.precompile += %w( jquery-jvectormap-1.2.2.css )
+Rails.application.config.assets.precompile += %w( style.css )
+Rails.application.config.assets.precompile += %w( style-responsive.css )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.css )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.css )
+Rails.application.config.assets.precompile += %w( wow.min.css )
+Rails.application.config.assets.precompile += %w( custom.css )
+
+Rails.application.config.assets.precompile += %w( admin.js )
+
+Rails.application.config.assets.precompile += %w( jquery.js )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.js )
+Rails.application.config.assets.precompile += %w( jquery-1.8.3.min.js )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.9.2.custom.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( jquery.nicescroll.js )
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( fullcalendar.min.js )
+Rails.application.config.assets.precompile += %w( fullcalendar.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( calendar-custom.js )
+Rails.application.config.assets.precompile += %w( jquery.rateit.min.js )
+Rails.application.config.assets.precompile += %w( jquery.customSelect.min.js )
+Rails.application.config.assets.precompile += %w( Chart.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( scripts.js )
+
+
+Rails.application.config.assets.precompile += %w( admin.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap-theme.css )
+Rails.application.config.assets.precompile += %w( owl.carousel.css )
+Rails.application.config.assets.precompile += %w( jquery-jvectormap-1.2.2.css )
+Rails.application.config.assets.precompile += %w( style.css )
+Rails.application.config.assets.precompile += %w( style-responsive.css )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.css )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.css )
+Rails.application.config.assets.precompile += %w( wow.min.css )
+Rails.application.config.assets.precompile += %w( custom.css )
+
+Rails.application.config.assets.precompile += %w( admin.js )
+
+Rails.application.config.assets.precompile += %w( jquery.js )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.js )
+Rails.application.config.assets.precompile += %w( jquery-1.8.3.min.js )
+Rails.application.config.assets.precompile += %w( jquery-ui-1.9.2.custom.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( jquery.nicescroll.js )
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( fullcalendar.min.js )
+Rails.application.config.assets.precompile += %w( fullcalendar.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( calendar-custom.js )
+Rails.application.config.assets.precompile += %w( jquery.rateit.min.js )
+Rails.application.config.assets.precompile += %w( jquery.customSelect.min.js )
+Rails.application.config.assets.precompile += %w( Chart.js )
+Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+Rails.application.config.assets.precompile += %w( scripts.js )
+
+/* application.js
+
+//= require jquery-1.10.2
+//= require bootstrap
+//= require jquery.easing.min
+//= require jquery.scrollTo
+//= require wow.min
+//= require custom

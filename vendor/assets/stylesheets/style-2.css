@@ -1230,7 +1230,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
     height: 30px;
 
-    background: white asset-url('search-line-icon.png') no-repeat 3px;
+    background: white asset-path('search-line-icon.png') no-repeat 3px;
 
     padding-left: 24px;
 
@@ -2374,6 +2374,7 @@ div[data-role="editor-toolbar"] {
 
 .panel.panel-default {  
 
+  background-image: image-url('line-icon.png');
   border-radius: 0px;
 
   
@@ -6492,7 +6493,7 @@ ul.inbox-pagination li {
 
   background:#e9e3dd;
 
-  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTdWeWNteABnbzguiXSBxmfc8Z8nh_HHoWoK35QL81x4HnpVmgvQ');
+  background-image: asset-url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTdWeWNteABnbzguiXSBxmfc8Z8nh_HHoWoK35QL81x4HnpVmgvQ');
 
   background-repeat: no-repeat;
 
@@ -8312,7 +8313,7 @@ table.sliders tr td {
 
     width: 80px;
 
-    -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
+    -webkit-mask: asset-path('../img/mask.png') 0 0 no-repeat;
 
     mask: url('../img/mask.png') 0 0 no-repeat;
 

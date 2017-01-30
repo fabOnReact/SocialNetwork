@@ -14,9 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery-1.10.2
-//= require bootstrap
-//= require jquery.easing.min
-//= require jquery.scrollTo
-//= require wow.min
-//= require custom
