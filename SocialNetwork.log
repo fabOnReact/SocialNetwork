@@ -25665,3 +25665,1290 @@ puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:10548)
 [0;37m2017-01-30 16:09:44.807[0m [[32mfyi[0m] Started GET "/assets/line-icon.png" for 127.0.0.1 at 2017-01-30 16:09:44 +0100 (pid:12626)
 [0;37m2017-01-30 16:09:45.496[0m [[32mfyi[0m] Started GET "/assets/avatar-mini3.jpg" for 127.0.0.1 at 2017-01-30 16:09:45 +0100 (pid:12626)
 [0;37m2017-01-30 16:09:45.150[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 16:09:45 +0100 (pid:12626)
+[0;37m2017-01-30 18:29:22.535[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:29:22 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:22.639[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17962)
+[0;37m2017-01-30 18:29:22.649[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:17962)
+[0;37m2017-01-30 18:29:22.651[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.5ms) (pid:17962)
+[0;37m2017-01-30 18:29:23.732[0m [[32mfyi[0m] Completed 200 OK in 434ms (Views: 426.3ms | ActiveRecord: 0.0ms) (pid:17962)
+[0;37m2017-01-30 18:29:23.101[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.107[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.114[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.117[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.122[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.135[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.139[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.143[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.146[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.152[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.156[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.160[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.163[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.170[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.174[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.175[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.183[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.191[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.191[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.205[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.209[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.213[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.217[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.414[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:23.423[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:29:23 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.473[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.476[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:17962)
+[0;37m2017-01-30 18:29:29.479[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:17962)
+[0;37m2017-01-30 18:29:29.521[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (42.0ms) (pid:17962)
+[0;37m2017-01-30 18:29:29.900[0m [[32mfyi[0m] Completed 200 OK in 424ms (Views: 422.9ms | ActiveRecord: 0.0ms) (pid:17962)
+[0;37m2017-01-30 18:29:29.932[0m [[32mfyi[0m] Started GET "/assets/bootstrap.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.942[0m [[32mfyi[0m] Started GET "/assets/bootstrap-theme.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.942[0m [[32mfyi[0m] Started GET "/assets/owl.carousel.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.948[0m [[32mfyi[0m] Started GET "/assets/jquery-jvectormap-1.2.2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.954[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.957[0m [[32mfyi[0m] Started GET "/assets/style-responsive.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.961[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.964[0m [[32mfyi[0m] Started GET "/assets/elegant-icons-style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.971[0m [[32mfyi[0m] Started GET "/assets/widgets.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.975[0m [[32mfyi[0m] Started GET "/assets/xcharts.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.978[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.980[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.982[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.989[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.991[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.997[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:29.997[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:29 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.386[0m [[32mfyi[0m] Started GET "/assets/jquery-1.8.3.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.732[0m [[32mfyi[0m] Started GET "/assets/bootstrap2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.117[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.9.2.custom.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.142[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.161[0m [[32mfyi[0m] Started GET "/assets/jquery.nicescroll.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.169[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.199[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.233[0m [[32mfyi[0m] Started GET "/assets/jquery.rateit.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.290[0m [[32mfyi[0m] Started GET "/assets/calendar-custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.358[0m [[32mfyi[0m] Started GET "/assets/jquery.customSelect.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.395[0m [[32mfyi[0m] Started GET "/assets/scripts.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.426[0m [[32mfyi[0m] Started GET "/assets/Chart.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.442[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.470[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.482[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.529[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.610[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.637[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.691[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.173[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.260[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.264[0m [[32mfyi[0m] Started GET "/assets/avatar-mini2.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.265[0m [[32mfyi[0m] Started GET "/assets/avatar-mini.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.265[0m [[32mfyi[0m] Started GET "/assets/avatar-mini3.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.269[0m [[32mfyi[0m] Started GET "/assets/Germany.png" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.269[0m [[32mfyi[0m] Started GET "/assets/avatar1_small.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.269[0m [[32mfyi[0m] Started GET "/assets/India.png" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.277[0m [[32mfyi[0m] Started GET "/assets/Spain.png" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.281[0m [[32mfyi[0m] Started GET "/assets/user.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.284[0m [[32mfyi[0m] Started GET "/assets/user22.png" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.284[0m [[32mfyi[0m] Started GET "/assets/line-icon.png" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.485[0m [[32mfyi[0m] Started GET "/assets/avatar-mini4.jpg" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:30.610[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:30 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.690[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.691[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17962)
+[0;37m2017-01-30 18:29:41.694[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:17962)
+[0;37m2017-01-30 18:29:41.694[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.6ms) (pid:17962)
+[0;37m2017-01-30 18:29:41.754[0m [[32mfyi[0m] Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms) (pid:17962)
+[0;37m2017-01-30 18:29:41.783[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.790[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.792[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.795[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.798[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.807[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.808[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.813[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.823[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.828[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.833[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.836[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.839[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.843[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.845[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.850[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.853[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.856[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.857[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.859[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.862[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.867[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.869[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:41.944[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:29:41 +0100 (pid:17962)
+[0;37m2017-01-30 18:29:42.674[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:29:42 +0100 (pid:17962)
+[0;37m2017-01-30 18:31:56.329[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.129[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:31:56.139[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:31:56.141[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.7ms) (pid:18041)
+[0;37m2017-01-30 18:31:56.339[0m [[32mfyi[0m] Completed 200 OK in 210ms (Views: 203.2ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:31:56.369[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.373[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.381[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.390[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.396[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.397[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.400[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.400[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.403[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.415[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.420[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.426[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.428[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.432[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.436[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.439[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.442[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.445[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.449[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.452[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.455[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.456[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.464[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.657[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:31:56.669[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:31:56 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.333[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.336[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:32:03.339[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:32:03.387[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (47.5ms) (pid:18041)
+[0;37m2017-01-30 18:32:03.522[0m [[32mfyi[0m] Completed 200 OK in 186ms (Views: 184.6ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:32:03.564[0m [[32mfyi[0m] Started GET "/assets/bootstrap.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.579[0m [[32mfyi[0m] Started GET "/assets/bootstrap-theme.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.579[0m [[32mfyi[0m] Started GET "/assets/owl.carousel.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.581[0m [[32mfyi[0m] Started GET "/assets/jquery-jvectormap-1.2.2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.587[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.591[0m [[32mfyi[0m] Started GET "/assets/style-responsive.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.601[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.601[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.616[0m [[32mfyi[0m] Started GET "/assets/xcharts.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.620[0m [[32mfyi[0m] Started GET "/assets/widgets.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.624[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.628[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.630[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.631[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.634[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.639[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.641[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.648[0m [[32mfyi[0m] Started GET "/assets/jquery-1.8.3.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.650[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.9.2.custom.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.655[0m [[32mfyi[0m] Started GET "/assets/bootstrap2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.657[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.659[0m [[32mfyi[0m] Started GET "/assets/jquery.nicescroll.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.663[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.666[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.669[0m [[32mfyi[0m] Started GET "/assets/calendar-custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.670[0m [[32mfyi[0m] Started GET "/assets/jquery.rateit.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.675[0m [[32mfyi[0m] Started GET "/assets/jquery.customSelect.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.677[0m [[32mfyi[0m] Started GET "/assets/Chart.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.678[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.680[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.683[0m [[32mfyi[0m] Started GET "/assets/scripts.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.689[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.690[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.695[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.697[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.703[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.898[0m [[32mfyi[0m] Started GET "/assets/elegant-icons-style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.904[0m [[32mfyi[0m] Started GET "/assets/avatar-mini3.jpg" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.906[0m [[32mfyi[0m] Started GET "/assets/avatar-mini4.jpg" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.908[0m [[32mfyi[0m] Started GET "/assets/avatar-mini.jpg" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.912[0m [[32mfyi[0m] Started GET "/assets/Germany.png" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.914[0m [[32mfyi[0m] Started GET "/assets/avatar1_small.jpg" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.914[0m [[32mfyi[0m] Started GET "/assets/India.png" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.917[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.936[0m [[32mfyi[0m] Started GET "/assets/user.jpg" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.939[0m [[32mfyi[0m] Started GET "/assets/Spain.png" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:03.941[0m [[32mfyi[0m] Started GET "/assets/user22.png" for 127.0.0.1 at 2017-01-30 18:32:03 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:04.982[0m [[32mfyi[0m] Started GET "/assets/line-icon.png" for 127.0.0.1 at 2017-01-30 18:32:04 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:04.123[0m [[32mfyi[0m] Started GET "/assets/avatar-mini2.jpg" for 127.0.0.1 at 2017-01-30 18:32:04 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:04.131[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:32:04 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:04.134[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:32:04.134[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:32:04.134[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:32:04.134[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:32:04.146[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:32:04.151[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:32:04.152[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:18041)
+[0;37m2017-01-30 18:32:04.160[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.5ms) (pid:18041)
+[0;37m2017-01-30 18:32:04.170[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms) (pid:18041)
+[0;37m2017-01-30 18:32:04.175[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:32:04.176[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:32:04.176[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.0ms) (pid:18041)
+[0;37m2017-01-30 18:32:04.497[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:04 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.501[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.502[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:32:34.505[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:32:34.506[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:32:34.583[0m [[32mfyi[0m] Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:32:34.626[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.645[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.648[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.652[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.657[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.662[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.667[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.669[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.669[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.679[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.679[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.682[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.687[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.694[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.696[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.699[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.702[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.705[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.706[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.706[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.707[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.721[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.724[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.809[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:32:34.912[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:32:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:00.263[0m [[32mfyi[0m] Started GET "/assets/jquery.min.map" for 127.0.0.1 at 2017-01-30 18:41:00 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:00.278[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:41:00 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:00.280[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:00.281[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:41:00.281[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:00.281[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:41:00.335[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:41:00.342[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:00.343[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:41:00.350[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.5ms) (pid:18041)
+[0;37m2017-01-30 18:41:00.356[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms) (pid:18041)
+[0;37m2017-01-30 18:41:00.360[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:00.361[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 18:41:00.361[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms) (pid:18041)
+[0;37m2017-01-30 18:41:30.744[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.754[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:41:30.778[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:41:30.790[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.8ms) (pid:18041)
+[0;37m2017-01-30 18:41:30.136[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:41:30.166[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.180[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.180[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.180[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.191[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.192[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.195[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.202[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.204[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.211[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.214[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.218[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.219[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.219[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.219[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.219[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.228[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.233[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.240[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.243[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.244[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.246[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.247[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.345[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:30.446[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:41:30 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:40.557[0m [[32mfyi[0m] Started GET "/assets/jquery.min.map" for 127.0.0.1 at 2017-01-30 18:41:40 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:40.561[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:41:40 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:40.564[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:40.564[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:41:40.564[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:40.565[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:41:40.578[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:41:40.583[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:40.585[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:41:40.591[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.7ms) (pid:18041)
+[0;37m2017-01-30 18:41:40.596[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:41:40.600[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:40.601[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 18:41:40.601[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.2ms) (pid:18041)
+[0;37m2017-01-30 18:41:42.577[0m [[32mfyi[0m] Started GET "/assets/jquery.min.map" for 127.0.0.1 at 2017-01-30 18:41:42 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:42.581[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:41:42 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:42.584[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:42.584[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:41:42.584[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:42.584[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:41:42.600[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:41:42.607[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:42.609[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:18041)
+[0;37m2017-01-30 18:41:42.616[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.7ms) (pid:18041)
+[0;37m2017-01-30 18:41:42.621[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:41:42.626[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:42.627[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:41:42.627[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.9ms) (pid:18041)
+[0;37m2017-01-30 18:41:45.647[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 18:41:45 +0100 (pid:18041)
+[0;37m2017-01-30 18:41:45.649[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:45.649[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 18:41:45.650[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:41:45.650[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:41:45.662[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:41:45.668[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:45.669[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:18041)
+[0;37m2017-01-30 18:41:45.677[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.1ms) (pid:18041)
+[0;37m2017-01-30 18:41:45.682[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:41:45.687[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:41:45.688[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 18:41:45.688[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.3ms) (pid:18041)
+[0;37m2017-01-30 18:43:17.690[0m [[32mfyi[0m] Started GET "/welcome" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.691[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:43:17.693[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:43:17.724[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/admin (30.7ms) (pid:18041)
+[0;37m2017-01-30 18:43:17.827[0m [[32mfyi[0m] Completed 200 OK in 136ms (Views: 134.7ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:43:17.887[0m [[32mfyi[0m] Started GET "/assets/bootstrap.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.902[0m [[32mfyi[0m] Started GET "/assets/bootstrap-theme.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.905[0m [[32mfyi[0m] Started GET "/assets/owl.carousel.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.907[0m [[32mfyi[0m] Started GET "/assets/jquery-jvectormap-1.2.2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.911[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.916[0m [[32mfyi[0m] Started GET "/assets/style-responsive.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.929[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.932[0m [[32mfyi[0m] Started GET "/assets/elegant-icons-style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.932[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.943[0m [[32mfyi[0m] Started GET "/assets/widgets.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.947[0m [[32mfyi[0m] Started GET "/assets/xcharts.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.951[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.955[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.956[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.958[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.965[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.969[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.972[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.9.2.custom.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.975[0m [[32mfyi[0m] Started GET "/assets/bootstrap2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.976[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.979[0m [[32mfyi[0m] Started GET "/assets/jquery-1.8.3.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.982[0m [[32mfyi[0m] Started GET "/assets/jquery.nicescroll.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.986[0m [[32mfyi[0m] Started GET "/assets/calendar-custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.989[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.990[0m [[32mfyi[0m] Started GET "/assets/jquery.rateit.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.994[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.998[0m [[32mfyi[0m] Started GET "/assets/jquery.customSelect.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:17.999[0m [[32mfyi[0m] Started GET "/assets/Chart.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.171[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.199[0m [[32mfyi[0m] Started GET "/assets/scripts.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.424[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.134[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.204[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.234[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.260[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.289[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.221[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.230[0m [[32mfyi[0m] Started GET "/assets/avatar-mini3.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.233[0m [[32mfyi[0m] Started GET "/assets/avatar-mini4.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.236[0m [[32mfyi[0m] Started GET "/assets/India.png" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.238[0m [[32mfyi[0m] Started GET "/assets/Germany.png" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.240[0m [[32mfyi[0m] Started GET "/assets/avatar-mini.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.243[0m [[32mfyi[0m] Started GET "/assets/avatar1_small.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.245[0m [[32mfyi[0m] Started GET "/assets/Spain.png" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.249[0m [[32mfyi[0m] Started GET "/assets/user.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.252[0m [[32mfyi[0m] Started GET "/assets/user22.png" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.285[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.396[0m [[32mfyi[0m] Started GET "/assets/line-icon.png" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.425[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.428[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:43:18.428[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:43:18.428[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:43:18.428[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:43:18.440[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:43:18.445[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:43:18.446[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:43:18.452[0m [[32mfyi[0m] Started GET "/assets/avatar-mini2.jpg" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:43:18.455[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:43:18.461[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:43:18.468[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:43:18.469[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:43:18.469[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.6ms) (pid:18041)
+[0;37m2017-01-30 18:43:18.793[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:43:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.247[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.248[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:44:27.250[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:44:27.251[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (0.8ms) (pid:18041)
+[0;37m2017-01-30 18:44:27.314[0m [[32mfyi[0m] Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:44:27.335[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.340[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.344[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.347[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.352[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.356[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.358[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.361[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.363[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.369[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.376[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.379[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.382[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.385[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.388[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.389[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.391[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.392[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.392[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.395[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.401[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.402[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.404[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.510[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:44:27.608[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:44:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:47:06.369[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:47:06 +0100 (pid:18041)
+[0;37m2017-01-30 18:47:06.369[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:47:06.371[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:47:06.373[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (2.1ms) (pid:18041)
+[0;37m2017-01-30 18:47:06.374[0m [[32mfyi[0m] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:47:06.374[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:47:06.374[0m [[31momg[0m] ActionView::Template::Error (No route matches {:action=>"login", :controller=>"user"}): (pid:18041)
+[0;37m2017-01-30 18:47:06.375[0m [[31momg[0m] 21:     <li><a href="#about">About</a></li>
+    22: 	<li><a href="#service">Service</a></li>
+    23: 	<li><a href="#contact">Contact</a></li>
+    24:     <li><%= link_to "Log In", controller: "user", action: "login" %></li>
+    25:     <li><%= link_to "Sign Up", controller: "user", action: "signup" %></li>
+    26:   </ul>
+    27:         </div> (pid:18041)
+[0;37m2017-01-30 18:47:06.375[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:47:06.375[0m [[31momg[0m] app/views/main/welcome.html.erb:24:in `_app_views_main_welcome_html_erb___2623867181871644249_69968018812440' (pid:18041)
+[0;37m2017-01-30 18:47:06.515[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:47:06.519[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:18041)
+[0;37m2017-01-30 18:47:06.522[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms) (pid:18041)
+[0;37m2017-01-30 18:47:06.526[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:47:06.532[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms) (pid:18041)
+[0;37m2017-01-30 18:47:06.536[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:47:06.537[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:18041)
+[0;37m2017-01-30 18:47:06.537[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.1ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.384[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:48:11 +0100 (pid:18041)
+[0;37m2017-01-30 18:48:11.454[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:48:11.455[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:48:11.457[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.457[0m [[32mfyi[0m] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.458[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:11.458[0m [[31momg[0m] ActionView::Template::Error (No route matches {:action=>"login", :controller=>"user"}): (pid:18041)
+[0;37m2017-01-30 18:48:11.458[0m [[31momg[0m] 21:     <li><a href="#about">About</a></li>
+    22: 	<li><a href="#service">Service</a></li>
+    23: 	<li><a href="#contact">Contact</a></li>
+    24:     <li><%= link_to "Log In", controller: "user", action: "login" %></li>
+    25:     <li><%= link_to "Sign Up", controller: "user", action: "signup" %></li>
+    26:   </ul>
+    27:         </div> (pid:18041)
+[0;37m2017-01-30 18:48:11.458[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:11.458[0m [[31momg[0m] app/views/main/welcome.html.erb:24:in `_app_views_main_welcome_html_erb___2623867181871644249_69968037604200' (pid:18041)
+[0;37m2017-01-30 18:48:11.543[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:48:11.547[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:11.551[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.555[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:11.557[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.561[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:11.562[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:18041)
+[0;37m2017-01-30 18:48:11.562[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.491[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:48:14 +0100 (pid:18041)
+[0;37m2017-01-30 18:48:14.498[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:48:14.515[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:48:14.533[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.6ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.535[0m [[32mfyi[0m] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.541[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:14.542[0m [[31momg[0m] ActionView::Template::Error (No route matches {:action=>"login", :controller=>"user"}): (pid:18041)
+[0;37m2017-01-30 18:48:14.544[0m [[31momg[0m] 21:     <li><a href="#about">About</a></li>
+    22: 	<li><a href="#service">Service</a></li>
+    23: 	<li><a href="#contact">Contact</a></li>
+    24:     <li><%= link_to "Log In", controller: "user", action: "login" %></li>
+    25:     <li><%= link_to "Sign Up", controller: "user", action: "signup" %></li>
+    26:   </ul>
+    27:         </div> (pid:18041)
+[0;37m2017-01-30 18:48:14.544[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:14.545[0m [[31momg[0m] app/views/main/welcome.html.erb:24:in `_app_views_main_welcome_html_erb___2623867181871644249_69968014969240' (pid:18041)
+[0;37m2017-01-30 18:48:14.143[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:48:14.148[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.151[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.155[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.156[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.161[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.161[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.161[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.780[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:48:14 +0100 (pid:18041)
+[0;37m2017-01-30 18:48:14.781[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:48:14.783[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:48:14.784[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.784[0m [[32mfyi[0m] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.785[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:14.785[0m [[31momg[0m] ActionView::Template::Error (No route matches {:action=>"login", :controller=>"user"}): (pid:18041)
+[0;37m2017-01-30 18:48:14.785[0m [[31momg[0m] 21:     <li><a href="#about">About</a></li>
+    22: 	<li><a href="#service">Service</a></li>
+    23: 	<li><a href="#contact">Contact</a></li>
+    24:     <li><%= link_to "Log In", controller: "user", action: "login" %></li>
+    25:     <li><%= link_to "Sign Up", controller: "user", action: "signup" %></li>
+    26:   </ul>
+    27:         </div> (pid:18041)
+[0;37m2017-01-30 18:48:14.785[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:14.785[0m [[31momg[0m] app/views/main/welcome.html.erb:24:in `_app_views_main_welcome_html_erb___2623867181871644249_69968105088220' (pid:18041)
+[0;37m2017-01-30 18:48:14.867[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:48:14.871[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.875[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.879[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.880[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.885[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:14.886[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms) (pid:18041)
+[0;37m2017-01-30 18:48:14.886[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.436[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:48:19 +0100 (pid:18041)
+[0;37m2017-01-30 18:48:19.437[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:48:19.439[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:48:19.440[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.440[0m [[32mfyi[0m] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.441[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:19.441[0m [[31momg[0m] ActionView::Template::Error (No route matches {:action=>"login", :controller=>"user"}): (pid:18041)
+[0;37m2017-01-30 18:48:19.441[0m [[31momg[0m] 21:     <li><a href="#about">About</a></li>
+    22: 	<li><a href="#service">Service</a></li>
+    23: 	<li><a href="#contact">Contact</a></li>
+    24:     <li><%= link_to "Log In", controller: "user", action: "login" %></li>
+    25:     <li><%= link_to "Sign Up", controller: "user", action: "signup" %></li>
+    26:   </ul>
+    27:         </div> (pid:18041)
+[0;37m2017-01-30 18:48:19.441[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:48:19.441[0m [[31momg[0m] app/views/main/welcome.html.erb:24:in `_app_views_main_welcome_html_erb___2623867181871644249_69968272064560' (pid:18041)
+[0;37m2017-01-30 18:48:19.527[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:48:19.531[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:19.535[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.539[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:19.541[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.545[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:48:19.545[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms) (pid:18041)
+[0;37m2017-01-30 18:48:19.545[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms) (pid:18041)
+[0;37m2017-01-30 18:50:13.678[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.687[0m [[33mhmm[0m] DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/config/routes.rb:6) (pid:18041)
+[0;37m2017-01-30 18:50:13.687[0m [[33mhmm[0m] DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/config/routes.rb:6) (pid:18041)
+[0;37m2017-01-30 18:50:13.693[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:50:13.695[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:50:13.696[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:50:13.747[0m [[32mfyi[0m] Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:13.775[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.797[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.797[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.803[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.812[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.815[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.819[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.821[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.828[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.831[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.834[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.843[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.844[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.846[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.849[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.858[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.859[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.863[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.869[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.872[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.876[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.878[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.880[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:13.958[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:50:13 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:14.765[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:14 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:17.842[0m [[32mfyi[0m] Started GET "/user/signup" for 127.0.0.1 at 2017-01-30 18:50:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:17.844[0m [[32mfyi[0m] Processing by UserController#signup as HTML (pid:18041)
+[0;37m2017-01-30 18:50:17.846[0m [[32mfyi[0m] Rendering user/signup.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:50:17.847[0m [[32mfyi[0m] Rendered user/signup.html.erb within layouts/admin (0.3ms) (pid:18041)
+[0;37m2017-01-30 18:50:17.948[0m [[32mfyi[0m] Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:17.970[0m [[32mfyi[0m] Started GET "/user/signup" for 127.0.0.1 at 2017-01-30 18:50:17 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:17.971[0m [[32mfyi[0m] Processing by UserController#signup as HTML (pid:18041)
+[0;37m2017-01-30 18:50:17.973[0m [[32mfyi[0m] Rendering user/signup.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:50:17.973[0m [[32mfyi[0m] Rendered user/signup.html.erb within layouts/admin (0.3ms) (pid:18041)
+[0;37m2017-01-30 18:50:18.693[0m [[32mfyi[0m] Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:18.930[0m [[32mfyi[0m] Started GET "/assets/bootstrap.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.957[0m [[32mfyi[0m] Started GET "/assets/bootstrap-theme.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.102[0m [[32mfyi[0m] Started GET "/assets/owl.carousel.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.108[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.108[0m [[32mfyi[0m] Started GET "/assets/jquery-jvectormap-1.2.2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.131[0m [[32mfyi[0m] Started GET "/assets/style-responsive.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.135[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.140[0m [[32mfyi[0m] Started GET "/assets/elegant-icons-style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.143[0m [[32mfyi[0m] Started GET "/assets/widgets.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.146[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.146[0m [[32mfyi[0m] Started GET "/assets/xcharts.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.148[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.158[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.162[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.165[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.166[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.172[0m [[32mfyi[0m] Started GET "/assets/jquery-1.8.3.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.174[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.9.2.custom.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.177[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.177[0m [[32mfyi[0m] Started GET "/assets/bootstrap2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.178[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.180[0m [[32mfyi[0m] Started GET "/assets/jquery.nicescroll.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.181[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.192[0m [[32mfyi[0m] Started GET "/assets/jquery.rateit.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.193[0m [[32mfyi[0m] Started GET "/assets/jquery.customSelect.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.194[0m [[32mfyi[0m] Started GET "/assets/calendar-custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.197[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.200[0m [[32mfyi[0m] Started GET "/assets/Chart.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.206[0m [[32mfyi[0m] Started GET "/assets/scripts.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.209[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.211[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.215[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.219[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.224[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.227[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.234[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.291[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.420[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:18.598[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:18 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.626[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.627[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:50:20.629[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:50:20.630[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:50:20.689[0m [[32mfyi[0m] Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:20.702[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.703[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:50:20.704[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:50:20.705[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:20.771[0m [[32mfyi[0m] Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:20.799[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.803[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.806[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.814[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.817[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.818[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.841[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.843[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.847[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.847[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.854[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.856[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.860[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.862[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.867[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.869[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.870[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.874[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.877[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.878[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.880[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.889[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.889[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:20.975[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:50:20 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:21.778[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:21 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.798[0m [[32mfyi[0m] Started GET "/user/login" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.806[0m [[32mfyi[0m] Processing by UserController#login as HTML (pid:18041)
+[0;37m2017-01-30 18:50:23.828[0m [[32mfyi[0m] Rendering user/login.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:50:23.832[0m [[32mfyi[0m] Rendered user/login.html.erb within layouts/admin (0.3ms) (pid:18041)
+[0;37m2017-01-30 18:50:23.202[0m [[32mfyi[0m] Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:23.218[0m [[32mfyi[0m] Started GET "/user/login" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.219[0m [[32mfyi[0m] Processing by UserController#login as HTML (pid:18041)
+[0;37m2017-01-30 18:50:23.221[0m [[32mfyi[0m] Rendering user/login.html.erb within layouts/admin (pid:18041)
+[0;37m2017-01-30 18:50:23.222[0m [[32mfyi[0m] Rendered user/login.html.erb within layouts/admin (0.4ms) (pid:18041)
+[0;37m2017-01-30 18:50:23.315[0m [[32mfyi[0m] Completed 200 OK in 95ms (Views: 94.5ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:23.346[0m [[32mfyi[0m] Started GET "/assets/bootstrap.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.349[0m [[32mfyi[0m] Started GET "/assets/bootstrap-theme.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.362[0m [[32mfyi[0m] Started GET "/assets/owl.carousel.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.362[0m [[32mfyi[0m] Started GET "/assets/jquery-jvectormap-1.2.2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.380[0m [[32mfyi[0m] Started GET "/assets/elegant-icons-style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.381[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.392[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.394[0m [[32mfyi[0m] Started GET "/assets/style-responsive.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.397[0m [[32mfyi[0m] Started GET "/assets/xcharts.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.401[0m [[32mfyi[0m] Started GET "/assets/widgets.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.406[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.409[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.412[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.412[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.416[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.424[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.427[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.430[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.9.2.custom.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.432[0m [[32mfyi[0m] Started GET "/assets/jquery-1.8.3.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.435[0m [[32mfyi[0m] Started GET "/assets/bootstrap2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.436[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.439[0m [[32mfyi[0m] Started GET "/assets/jquery.nicescroll.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.450[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.451[0m [[32mfyi[0m] Started GET "/assets/calendar-custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.453[0m [[32mfyi[0m] Started GET "/assets/jquery.customSelect.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.453[0m [[32mfyi[0m] Started GET "/assets/fullcalendar.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.456[0m [[32mfyi[0m] Started GET "/assets/jquery.rateit.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.463[0m [[32mfyi[0m] Started GET "/assets/scripts.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.464[0m [[32mfyi[0m] Started GET "/assets/Chart.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.466[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.475[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.479[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.480[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.489[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.492[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.494[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.551[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.690[0m [[32mfyi[0m] Started GET "/assets/jquery-ui-1.10.4.min.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:23.865[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:23 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.399[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.400[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:50:25.402[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:50:25.404[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:50:25.466[0m [[32mfyi[0m] Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:25.490[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.491[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:50:25.493[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:50:25.495[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.7ms) (pid:18041)
+[0;37m2017-01-30 18:50:25.563[0m [[32mfyi[0m] Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:50:25.589[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.595[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.597[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.607[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.608[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.608[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.641[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.642[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.645[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.652[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.652[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.658[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.667[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.671[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.674[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.681[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.684[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.686[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.689[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.692[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.707[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.708[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.712[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.767[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:50:25.907[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:50:25 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.466[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.467[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:53:41.468[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:53:41.470[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:53:41.523[0m [[32mfyi[0m] Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:53:41.548[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.558[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.562[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.566[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.571[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.572[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.576[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.584[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.584[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.598[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.600[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.601[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.605[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.608[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.612[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.615[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.621[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.621[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.621[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.627[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.627[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.630[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.634[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.715[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:53:41.836[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:53:41 +0100 (pid:18041)
+[0;37m2017-01-30 18:54:19.655[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 18:54:19 +0100 (pid:18041)
+[0;37m2017-01-30 18:54:19.659[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:54:19.659[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 18:54:19.659[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:54:19.659[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:54:19.673[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:54:19.678[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:54:19.679[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:54:19.687[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (2.3ms) (pid:18041)
+[0;37m2017-01-30 18:54:19.692[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:54:19.696[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:54:19.697[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 18:54:19.698[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms) (pid:18041)
+[0;37m2017-01-30 18:55:32.434[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.435[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:55:32.436[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:55:32.438[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:55:32.507[0m [[32mfyi[0m] Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:55:32.539[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.544[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.549[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.553[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.555[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.561[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.562[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.566[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.573[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.577[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.582[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.585[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.589[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.591[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.594[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.596[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.597[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.606[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.606[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.609[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.611[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.618[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.621[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.771[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:32.818[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:55:32 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:34.721[0m [[32mfyi[0m] Started GET "/assets/jquery.min.map" for 127.0.0.1 at 2017-01-30 18:55:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:34.765[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.min.map" for 127.0.0.1 at 2017-01-30 18:55:34 +0100 (pid:18041)
+[0;37m2017-01-30 18:55:34.768[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:55:34.768[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/jquery-1.10.2.min.map"): (pid:18041)
+[0;37m2017-01-30 18:55:34.768[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 18:55:34.768[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 18:55:34.779[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 18:55:34.785[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 18:55:34.786[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms) (pid:18041)
+[0;37m2017-01-30 18:55:34.792[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (1.8ms) (pid:18041)
+[0;37m2017-01-30 18:55:34.797[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 18:55:34.802[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 18:55:34.804[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms) (pid:18041)
+[0;37m2017-01-30 18:55:34.804[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.9ms) (pid:18041)
+[0;37m2017-01-30 18:58:27.904[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.911[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:58:27.928[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:58:27.942[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.2ms) (pid:18041)
+[0;37m2017-01-30 18:58:27.156[0m [[32mfyi[0m] Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:58:27.183[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.189[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.199[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.203[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.207[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.207[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.213[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.217[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.217[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.224[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.228[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.235[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.239[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.242[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.244[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.246[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.248[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.252[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.256[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.258[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.261[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.261[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.261[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.342[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:27.462[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:27 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.779[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.780[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 18:58:52.782[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 18:58:52.784[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.7ms) (pid:18041)
+[0;37m2017-01-30 18:58:52.837[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 18:58:52.864[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.869[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.875[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.880[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.884[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.889[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.892[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.895[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.900[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.903[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.907[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.913[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.916[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.918[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.920[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.923[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.926[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.929[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.931[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.938[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.941[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.945[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:52.950[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:52 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:53.168[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 18:58:53 +0100 (pid:18041)
+[0;37m2017-01-30 18:58:53.145[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 18:58:53 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.318[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.319[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 19:00:26.321[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 19:00:26.322[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.4ms) (pid:18041)
+[0;37m2017-01-30 19:00:26.455[0m [[32mfyi[0m] Completed 200 OK in 136ms (Views: 135.3ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 19:00:26.481[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.488[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.493[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.496[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.499[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.505[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.507[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.510[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.515[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.520[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.522[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.523[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.525[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.526[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.533[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.537[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.540[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.545[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.551[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.553[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.553[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.558[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.561[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.640[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:26.760[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.125[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.126[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 19:00:42.127[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 19:00:42.129[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 19:00:42.214[0m [[32mfyi[0m] Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 19:00:42.242[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.247[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.250[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.254[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.258[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.263[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.265[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.269[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.271[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.274[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.279[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.283[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.289[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.290[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.293[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.294[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.296[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.298[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.301[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.303[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.309[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.312[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.321[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.517[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:42.526[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 19:00:42 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:52.465[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 19:00:52 +0100 (pid:18041)
+[0;37m2017-01-30 19:00:52.470[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:00:52.470[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 19:00:52.470[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:00:52.470[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 19:00:52.481[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 19:00:52.487[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 19:00:52.489[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms) (pid:18041)
+[0;37m2017-01-30 19:00:52.496[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (2.8ms) (pid:18041)
+[0;37m2017-01-30 19:00:52.503[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms) (pid:18041)
+[0;37m2017-01-30 19:00:52.509[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 19:00:52.510[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms) (pid:18041)
+[0;37m2017-01-30 19:00:52.510[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.5ms) (pid:18041)
+[0;37m2017-01-30 19:01:04.475[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 19:01:04 +0100 (pid:18041)
+[0;37m2017-01-30 19:01:04.480[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:01:04.480[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 19:01:04.480[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:01:04.480[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 19:01:04.497[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 19:01:04.503[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 19:01:04.504[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms) (pid:18041)
+[0;37m2017-01-30 19:01:04.511[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (1.7ms) (pid:18041)
+[0;37m2017-01-30 19:01:04.515[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 19:01:04.520[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 19:01:04.521[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 19:01:04.521[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.7ms) (pid:18041)
+[0;37m2017-01-30 19:01:26.303[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 19:01:26 +0100 (pid:18041)
+[0;37m2017-01-30 19:01:26.306[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:01:26.306[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 19:01:26.306[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:01:26.306[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 19:01:26.318[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 19:01:26.324[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 19:01:26.326[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms) (pid:18041)
+[0;37m2017-01-30 19:01:26.332[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (2.1ms) (pid:18041)
+[0;37m2017-01-30 19:01:26.337[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms) (pid:18041)
+[0;37m2017-01-30 19:01:26.343[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 19:01:26.344[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:18041)
+[0;37m2017-01-30 19:01:26.344[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.8ms) (pid:18041)
+[0;37m2017-01-30 19:02:21.222[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.223[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18041)
+[0;37m2017-01-30 19:02:21.225[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/application (pid:18041)
+[0;37m2017-01-30 19:02:21.227[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/application (1.3ms) (pid:18041)
+[0;37m2017-01-30 19:02:21.289[0m [[32mfyi[0m] Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms) (pid:18041)
+[0;37m2017-01-30 19:02:21.363[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.364[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.365[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.369[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.370[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.379[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.380[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.398[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.401[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.437[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.444[0m [[32mfyi[0m] Started GET "/assets/jquery-1.10.2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.448[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.461[0m [[32mfyi[0m] Started GET "/assets/jquery.easing.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.465[0m [[32mfyi[0m] Started GET "/assets/jquery.scrollTo.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.467[0m [[32mfyi[0m] Started GET "/assets/custom.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.469[0m [[32mfyi[0m] Started GET "/assets/jquery.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.474[0m [[32mfyi[0m] Started GET "/assets/wow.min.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.479[0m [[32mfyi[0m] Started GET "/assets/turbolinks.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.481[0m [[32mfyi[0m] Started GET "/assets/application.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.486[0m [[32mfyi[0m] Started GET "/assets/main.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.488[0m [[32mfyi[0m] Started GET "/assets/jquery_ujs.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.492[0m [[32mfyi[0m] Started GET "/assets/user.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.496[0m [[32mfyi[0m] Started GET "/assets/admin.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.501[0m [[32mfyi[0m] Started GET "/assets/jquery-2.self.js?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.696[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:21.791[0m [[32mfyi[0m] Started GET "/assets/fontawesome-webfont.woff2" for 127.0.0.1 at 2017-01-30 19:02:21 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.446[0m [[32mfyi[0m] Started GET "/assets/bootstrap.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.450[0m [[32mfyi[0m] Started GET "/assets/animate.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.454[0m [[32mfyi[0m] Started GET "/assets/default.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.458[0m [[32mfyi[0m] Started GET "/assets/user.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.461[0m [[32mfyi[0m] Started GET "/assets/admin.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.463[0m [[32mfyi[0m] Started GET "/assets/style.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.463[0m [[32mfyi[0m] Started GET "/assets/application.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.467[0m [[32mfyi[0m] Started GET "/assets/font-awesome.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.483[0m [[32mfyi[0m] Started GET "/assets/line-icons.css" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.489[0m [[32mfyi[0m] Started GET "/assets/style-2.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.675[0m [[32mfyi[0m] Started GET "/assets/main.self.css?body=1" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.811[0m [[32mfyi[0m] Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2017-01-30 19:02:23 +0100 (pid:18041)
+[0;37m2017-01-30 19:02:23.814[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:02:23.814[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"): (pid:18041)
+[0;37m2017-01-30 19:02:23.814[0m [[31momg[0m]  (pid:18041)
+[0;37m2017-01-30 19:02:23.814[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18041)
+[0;37m2017-01-30 19:02:23.827[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:18041)
+[0;37m2017-01-30 19:02:23.832[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:18041)
+[0;37m2017-01-30 19:02:23.833[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:18041)
+[0;37m2017-01-30 19:02:23.842[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [4 times] (3.7ms) (pid:18041)
+[0;37m2017-01-30 19:02:23.846[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms) (pid:18041)
+[0;37m2017-01-30 19:02:23.852[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:18041)
+[0;37m2017-01-30 19:02:23.854[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms) (pid:18041)
+[0;37m2017-01-30 19:02:23.854[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.6ms) (pid:18041)
