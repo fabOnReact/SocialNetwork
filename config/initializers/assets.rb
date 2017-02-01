@@ -8,12 +8,12 @@ Rails.application.config.assets.precompile += %w( bootstrap.css )
 Rails.application.config.assets.precompile += %w( animate.css )
 Rails.application.config.assets.precompile += %w( style.css )
 Rails.application.config.assets.precompile += %w( default.css )
-Rails.application.config.assets.precompile += %w( jquery-1.10.2.js )
-Rails.application.config.assets.precompile += %w( bootstrap.js )
-Rails.application.config.assets.precompile += %w( jquery.easing.min.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.js )
-Rails.application.config.assets.precompile += %w( wow.min.js )
-Rails.application.config.assets.precompile += %w( custom.js )
+#Rails.application.config.assets.precompile += %w( jquery-1.10.2.js )
+#Rails.application.config.assets.precompile += %w( bootstrap.js )
+#Rails.application.config.assets.precompile += %w( jquery.easing.min.js )
+#Rails.application.config.assets.precompile += %w( jquery.scrollTo.js )
+#Rails.application.config.assets.precompile += %w( wow.min.js )
+#Rails.application.config.assets.precompile += %w( custom.js )
 
 # Assets for User Controller
 

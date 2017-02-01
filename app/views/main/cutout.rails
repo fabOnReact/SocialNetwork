@@ -1,94 +1,134 @@
-<!--style="background-image: url(<%#= asset_path 'line-icon.png' %>)"-->
+# Links for the javascript and css included in the welcome index.html page
 
-/* Staff cut out of admin.js
-//= require jquery-ui-1.10.4.min
-//= require jquery-1.8.3.min
-//= require jquery-ui-1.9.2.custom.min
-//= require bootstrap2
-//= require jquery.scrollTo.min
-//= require jquery.nicescroll
-//= require jquery.scrollTo.min
-//= require fullcalendar.min
-//= require fullcalendar
-//= require calendar-custom
-//= require jquery.rateit.min
-//= require jquery.customSelect.min
+<html>
+  <head>
+  <title>SocialNetwork</title>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <!--<link rel="shortcut icon" href="img/favicon.png">-->
+  <!-- Bootstrap Core CSS -->
+  <%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>1
+  <!-- bootstrap theme -->
+  <%= stylesheet_link_tag 'bootstrap-theme', media: 'all', 'data-turbolinks-track': 'reload' %>1
+  <!-- owl carousel -->
+  <%= stylesheet_link_tag 'owl.carousel', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'jquery-jvectormap-1.2.2', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
+  <!-- Squad theme CSS -->
+  <%= stylesheet_link_tag 'style-2', media: 'all', 'data-turbolinks-track': 'reload' %>1
+  <%= stylesheet_link_tag 'style-responsive', media: 'all', 'data-turbolinks-track': 'reload' %>1
+  <%= stylesheet_link_tag 'jquery-ui-1.10.4.min', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+  <!-- font icon -->
+  <%= stylesheet_link_tag 'elegant-icons-style', media: 'all', 'data-turbolinks-track': 'reload' %> 1
+    <!-- font icon 
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    -->
+    <!-- full calendar css
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+  <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />-->
+    <!-- easy pie chart
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>-->
+    <!-- Custom styles -->
+    <%= stylesheet_link_tag 'fullcalendar', media: 'all', 'data-turbolinks-track': 'reload' %>  
+  <%= stylesheet_link_tag 'widgets', media: 'all', 'data-turbolinks-track': 'reload' %> 
+  <%= stylesheet_link_tag 'xcharts.min', media: 'all', 'data-turbolinks-track': 'reload' %> 
 
-/* Staff cut out of Asset.rb for the Admin page
+  <%= stylesheet_link_tag 'admin' %>1
 
-Rails.application.config.assets.precompile += %w( admin.css )
+  
 
-Rails.application.config.assets.precompile += %w( bootstrap.min.css )
-Rails.application.config.assets.precompile += %w( bootstrap-theme.css )
-Rails.application.config.assets.precompile += %w( owl.carousel.css )
-Rails.application.config.assets.precompile += %w( jquery-jvectormap-1.2.2.css )
-Rails.application.config.assets.precompile += %w( style.css )
-Rails.application.config.assets.precompile += %w( style-responsive.css )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.css )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.css )
-Rails.application.config.assets.precompile += %w( wow.min.css )
-Rails.application.config.assets.precompile += %w( custom.css )
+    <%= javascript_include_tag 'jquery-2', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-ui-1.10.4.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-1.8.3.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-ui-1.9.2.custom.min', 'data-turbolinks-track': 'reload' %>
+    <!-- bootstrap -->
+    <%= javascript_include_tag 'bootstrap2', 'data-turbolinks-track': 'reload' %>
+    <!-- nice scroll -->
+    <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.nicescroll', 'data-turbolinks-track': 'reload' %>
+    <!-- charts scripts -->
+    <!--<script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js" ></script>-->
+    
+    <!-- jQuery full calendar -->
+    <%= javascript_include_tag 'fullcalendar.min', 'data-turbolinks-track': 'reload' %><!-- Full Google Calendar - Calendar -->
+    <%= javascript_include_tag 'fullcalendar', 'data-turbolinks-track': 'reload' %>
+        
+    <!--script for this page only-->
+    <%= javascript_include_tag 'calendar-custom', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.rateit.min', 'data-turbolinks-track': 'reload' %>
+    <!-- custom select / additional file in assets/chart-master--> 
+    <%= javascript_include_tag 'jquery.customSelect.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'Chart.js', 'data-turbolinks-track': 'reload' %>
 
-Rails.application.config.assets.precompile += %w( admin.js )
+    <!--custome script for all page-->
+    <%= javascript_include_tag 'scripts', 'data-turbolinks-track': 'reload' %>
 
-Rails.application.config.assets.precompile += %w( jquery.js )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.js )
-Rails.application.config.assets.precompile += %w( jquery-1.8.3.min.js )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.9.2.custom.min.js )
-Rails.application.config.assets.precompile += %w( bootstrap.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( jquery.nicescroll.js )
-Rails.application.config.assets.precompile += %w( bootstrap.js )
-Rails.application.config.assets.precompile += %w( fullcalendar.min.js )
-Rails.application.config.assets.precompile += %w( fullcalendar.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( calendar-custom.js )
-Rails.application.config.assets.precompile += %w( jquery.rateit.min.js )
-Rails.application.config.assets.precompile += %w( jquery.customSelect.min.js )
-Rails.application.config.assets.precompile += %w( Chart.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( scripts.js )
+    <!-- custom script for this page-->
+    <!--<script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/xcharts.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/gdp-data.js"></script>  
+    <script src="js/morris.min.js"></script>
+    <script src="js/sparklines.js"></script>    
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>  -->
+    <script>
 
+      //knob
+      $(function() {
+        $(".knob").knob({
+          'draw' : function () { 
+            $(this.i).val(this.cv + '%')
+          }
+        })
+      });
 
-Rails.application.config.assets.precompile += %w( admin.css )
+      //carousel
+      $(document).ready(function() {
+          $("#owl-slider").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
 
-Rails.application.config.assets.precompile += %w( bootstrap.min.css )
-Rails.application.config.assets.precompile += %w( bootstrap-theme.css )
-Rails.application.config.assets.precompile += %w( owl.carousel.css )
-Rails.application.config.assets.precompile += %w( jquery-jvectormap-1.2.2.css )
-Rails.application.config.assets.precompile += %w( style.css )
-Rails.application.config.assets.precompile += %w( style-responsive.css )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.css )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.css )
-Rails.application.config.assets.precompile += %w( wow.min.css )
-Rails.application.config.assets.precompile += %w( custom.css )
+          });
+      });
 
-Rails.application.config.assets.precompile += %w( admin.js )
+      //custom select box
 
-Rails.application.config.assets.precompile += %w( jquery.js )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.10.4.min.js )
-Rails.application.config.assets.precompile += %w( jquery-1.8.3.min.js )
-Rails.application.config.assets.precompile += %w( jquery-ui-1.9.2.custom.min.js )
-Rails.application.config.assets.precompile += %w( bootstrap.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( jquery.nicescroll.js )
-Rails.application.config.assets.precompile += %w( bootstrap.js )
-Rails.application.config.assets.precompile += %w( fullcalendar.min.js )
-Rails.application.config.assets.precompile += %w( fullcalendar.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( calendar-custom.js )
-Rails.application.config.assets.precompile += %w( jquery.rateit.min.js )
-Rails.application.config.assets.precompile += %w( jquery.customSelect.min.js )
-Rails.application.config.assets.precompile += %w( Chart.js )
-Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
-Rails.application.config.assets.precompile += %w( scripts.js )
+      $(function(){
+          $('select.styled').customSelect();
+      });
+      
+      /* ---------- Map ---------- */
+    $(function(){
+      $('#map').vectorMap({
+        map: 'world_mill_en',
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#000', '#000'],
+            normalizeFunction: 'polynomial'
+          }]
+        },
+        backgroundColor: '#eef3f7',
+        onLabelShow: function(e, el, code){
+          el.html(el.html()+' (GDP - '+gdpData[code]+')');
+        }
+      });
+    });
 
-/* application.js
-
-//= require jquery-1.10.2
-//= require bootstrap
-//= require jquery.easing.min
-//= require jquery.scrollTo
-//= require wow.min
-//= require custom
+    </script>  
+    <!-- Core JavaScript Files -->
+    <%= javascript_include_tag "admin", 'data-turbolinks-track': 'reload'%>

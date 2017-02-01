@@ -14,11 +14,17 @@
  *= require_self
  *= require font-awesome
  *= require style-2
+ *= require admin
  */
 
- .signup {
- 	background: transparent;
- 	padding: 10px 30px;
- 	border: solid white 5px;
- 	color: white;
+ .login-form a {
+ 	color: white !important;
+ }
+
+ .btn-info {
+ 	background-color: #007aff;
+ }
+
+ .wideButton {
+ 	padding: 10px 50px;
  }
