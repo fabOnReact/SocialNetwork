@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-	layout "admin"
+	layout "user"
 
   	protect_from_forgery with: :exception
 end

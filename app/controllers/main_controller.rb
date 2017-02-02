@@ -1,6 +1,6 @@
 class MainController < ApplicationController
 
-	layout 'application'
+	layout 'main'
 
 	def welcome
 	end
