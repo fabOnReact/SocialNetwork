@@ -576,13 +576,13 @@ footer p {
 /* ==========================
 Parallax
 ============================= */
-
+/*
 #parallax1{	
-	background-image: /*url(../img/parallax/1.jpg)*/;
+	background-image: url(../img/parallax/1.jpg);
 }
 
 #parallax1:after {	
-	background-image: /*url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC)*/;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -595,12 +595,12 @@ Parallax
 
 
 #parallax2{	
-	background-image: /*url(../img/parallax/2.jpg)*/;
+	background-image: url(../img/parallax/2.jpg);
 
 }
 
 #parallax2:after  {	
-	background-image: /*url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC)*/;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -609,7 +609,7 @@ Parallax
 	top: 0;
 	opacity: 0.7;
 	z-index: -1;
-}
+}*/
 
 
 /* ===========================
@@ -684,7 +684,7 @@ Parallax
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
 }
-
+/*
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
@@ -717,7 +717,7 @@ Parallax
         -moz-transform: scale(1);
         transform: scale(1);
     }
-}
+}*/
 
 
 #text {

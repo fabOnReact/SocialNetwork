@@ -21,8 +21,8 @@
     <li><a href="#about">About</a></li>
 	<li><a href="#service">Service</a></li>
 	<li><a href="#contact">Contact</a></li>
-    <li><%= link_to "Log In", controller: "user", action: "login" %></li>
-    <li><%= link_to "Sign Up", controller: "user", action: "signup1" %></li>
+    <li><%= link_to "Log In", new_account_session_path %></li>
+    <li><%= link_to "Sign Up", new_account_registration_path  %></li>
   </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -47,6 +47,38 @@
 
 </section>
 <!-- /Section: intro -->
+
+<% if flash[:notice] %>
+    <div class="alert alert-success fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+          <i class="icon-remove"></i>
+      </button>
+      <strong>Well done!</strong> <%= flash[:notice] %>
+    </div>
+<% end %>
+
+<% if flash[:alert] %>
+    <div class="alert alert-block alert-danger fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+          <i class="icon-remove"></i>
+      </button>
+      <strong>Oh snap!</strong> <%= flash[:alert] %>
+    </div>               
+<% end %>                             
+<% if flash[:other] %> 
+    <div class="alert alert-info fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+          <i class="icon-remove"></i>
+      </button>
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning fade in">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+          <i class="icon-remove"></i>
+      </button>
+      <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    </div>   
+<% end %>
 
 <!-- Section: about -->
 <section id="about" class="home-section text-center">

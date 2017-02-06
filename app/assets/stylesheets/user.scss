@@ -1,3 +1,27 @@
 // Place all the styles related to the User controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ .login-form a {
+ 	color: white;
+ }
+
+ .btn-info {
+ 	background-color: #007aff;
+ }
+
+ .wideButton {
+ 	padding: 10px 50px;
+ }
+
+ .login-form {
+ 	margin-top: 50px;
+ }
+
+#lostPw {
+color: #797979;
+ }
+
+.remember_me_Label {
+ 	padding-left: 0px;
+ 	color: #797979;
+ }

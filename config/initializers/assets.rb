@@ -3,11 +3,22 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
+
+# Images
+
+Rails.application.config.assets.precompile += %w( avatar-mini.jpg )
+Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )
+Rails.application.config.assets.precompile += %w( avatar-mini3.jpg )
+Rails.application.config.assets.precompile += %w( avatar-mini4.jpg )
+Rails.application.config.assets.precompile += %w( avatar1_small.jpg )
+
 # Assets for Main Controller
-Rails.application.config.assets.precompile += %w( bootstrap.css )
-Rails.application.config.assets.precompile += %w( animate.css )
-Rails.application.config.assets.precompile += %w( style.css )
-Rails.application.config.assets.precompile += %w( default.css )
+#Rails.application.config.assets.precompile += %w( main.css )
+#Rails.application.config.assets.precompile += %w( main.js )
+#Rails.application.config.assets.precompile += %w( bootstrap.css )
+#Rails.application.config.assets.precompile += %w( animate.css )
+#Rails.application.config.assets.precompile += %w( style.css )
+#Rails.application.config.assets.precompile += %w( default.css )
 #Rails.application.config.assets.precompile += %w( jquery-1.10.2.js )
 #Rails.application.config.assets.precompile += %w( bootstrap.js )
 #Rails.application.config.assets.precompile += %w( jquery.easing.min.js )

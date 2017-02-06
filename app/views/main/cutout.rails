@@ -1,134 +1,65 @@
-# Links for the javascript and css included in the welcome index.html page
+<h2>Log in</h2>
 
-<html>
-  <head>
-  <title>SocialNetwork</title>
-  <%= csrf_meta_tags %>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-    <meta name="author" content="GeeksLabs">
-    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <!--<link rel="shortcut icon" href="img/favicon.png">-->
-  <!-- Bootstrap Core CSS -->
-  <%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>1
-  <!-- bootstrap theme -->
-  <%= stylesheet_link_tag 'bootstrap-theme', media: 'all', 'data-turbolinks-track': 'reload' %>1
-  <!-- owl carousel -->
-  <%= stylesheet_link_tag 'owl.carousel', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= stylesheet_link_tag 'jquery-jvectormap-1.2.2', media: 'all', 'data-turbolinks-track': 'reload' %>
-  
-  <!-- Squad theme CSS -->
-  <%= stylesheet_link_tag 'style-2', media: 'all', 'data-turbolinks-track': 'reload' %>1
-  <%= stylesheet_link_tag 'style-responsive', media: 'all', 'data-turbolinks-track': 'reload' %>1
-  <%= stylesheet_link_tag 'jquery-ui-1.10.4.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
 
-  <!-- font icon -->
-  <%= stylesheet_link_tag 'elegant-icons-style', media: 'all', 'data-turbolinks-track': 'reload' %> 1
-    <!-- font icon 
-    <link href="css/font-awesome.min.css" rel="stylesheet" />    -->
-    <!-- full calendar css
-    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
-  <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />-->
-    <!-- easy pie chart
-    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>-->
-    <!-- Custom styles -->
-    <%= stylesheet_link_tag 'fullcalendar', media: 'all', 'data-turbolinks-track': 'reload' %>  
-  <%= stylesheet_link_tag 'widgets', media: 'all', 'data-turbolinks-track': 'reload' %> 
-  <%= stylesheet_link_tag 'xcharts.min', media: 'all', 'data-turbolinks-track': 'reload' %> 
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
 
-  <%= stylesheet_link_tag 'admin' %>1
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
 
-  
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
 
-    <%= javascript_include_tag 'jquery-2', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery-ui-1.10.4.min', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery-1.8.3.min', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery-ui-1.9.2.custom.min', 'data-turbolinks-track': 'reload' %>
-    <!-- bootstrap -->
-    <%= javascript_include_tag 'bootstrap2', 'data-turbolinks-track': 'reload' %>
-    <!-- nice scroll -->
-    <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery.nicescroll', 'data-turbolinks-track': 'reload' %>
-    <!-- charts scripts -->
-    <!--<script src="assets/jquery-knob/js/jquery.knob.js"></script>
-    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
-    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-    <script src="js/owl.carousel.js" ></script>-->
-    
-    <!-- jQuery full calendar -->
-    <%= javascript_include_tag 'fullcalendar.min', 'data-turbolinks-track': 'reload' %><!-- Full Google Calendar - Calendar -->
-    <%= javascript_include_tag 'fullcalendar', 'data-turbolinks-track': 'reload' %>
-        
-    <!--script for this page only-->
-    <%= javascript_include_tag 'calendar-custom', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery.rateit.min', 'data-turbolinks-track': 'reload' %>
-    <!-- custom select / additional file in assets/chart-master--> 
-    <%= javascript_include_tag 'jquery.customSelect.min', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'Chart.js', 'data-turbolinks-track': 'reload' %>
+<%= render "devise/shared/links" %>
 
-    <!--custome script for all page-->
-    <%= javascript_include_tag 'scripts', 'data-turbolinks-track': 'reload' %>
 
-    <!-- custom script for this page-->
-    <!--<script src="js/sparkline-chart.js"></script>
-    <script src="js/easy-pie-chart.js"></script>
-    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="js/xcharts.min.js"></script>
-    <script src="js/jquery.autosize.min.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
-    <script src="js/gdp-data.js"></script>  
-    <script src="js/morris.min.js"></script>
-    <script src="js/sparklines.js"></script>    
-    <script src="js/charts.js"></script>
-    <script src="js/jquery.slimscroll.min.js"></script>  -->
-    <script>
-
-      //knob
-      $(function() {
-        $(".knob").knob({
-          'draw' : function () { 
-            $(this.i).val(this.cv + '%')
-          }
-        })
-      });
-
-      //carousel
-      $(document).ready(function() {
-          $("#owl-slider").owlCarousel({
-              navigation : true,
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem : true
-
-          });
-      });
-
-      //custom select box
-
-      $(function(){
-          $('select.styled').customSelect();
-      });
-      
-      /* ---------- Map ---------- */
-    $(function(){
-      $('#map').vectorMap({
-        map: 'world_mill_en',
-        series: {
-          regions: [{
-            values: gdpData,
-            scale: ['#000', '#000'],
-            normalizeFunction: 'polynomial'
-          }]
-        },
-        backgroundColor: '#eef3f7',
-        onLabelShow: function(e, el, code){
-          el.html(el.html()+' (GDP - '+gdpData[code]+')');
-        }
-      });
-    });
-
-    </script>  
-    <!-- Core JavaScript Files -->
-    <%= javascript_include_tag "admin", 'data-turbolinks-track': 'reload'%>
+<form class="login-form" action="index.html">        
+  <div class="login-wrap">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <p class="login-img"><i class="icon_lock_alt"></i></p>
+      <div class="field">
+      </div>      
+      <div class="input-group">
+        <span class="input-group-addon"><i class="icon_profile"></i></span>
+        <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder => "Username" %>
+        <!--<input type="text" class="form-control" placeholder="Username" autofocus>-->
+      </div>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+          <input type="password" class="form-control" placeholder="Password">
+      </div>
+      <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+          <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
+      </label>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+      <%= link_to "Signup", { controller: "user", action: "signup"}, class: "btn btn-info btn-lg btn-block signuptext" %>
+      <!--<button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>-->
+      <% end %>
+  </div>
+</form>
+<div class="text-right">
+        <div class="credits">
+            <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
+            -->
+            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</div>

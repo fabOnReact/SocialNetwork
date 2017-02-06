@@ -14,6 +14,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -24,6 +26,8 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-easing-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs wwith ease. Read more: https://github.com/rails/jbuilder
@@ -35,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'sprockets-rails', '2.3.3'
+gem 'sprockets-rails', :require => 'sprockets/railtie'  
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

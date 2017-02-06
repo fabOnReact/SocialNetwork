@@ -11,7 +11,6 @@
 @import url(line-icons.css);
 
 
-
 body {
 
     color: #797979;
@@ -138,9 +137,9 @@ table tr th { color: #688a7e;}
 
 }
 
-.login-img-body{
+.login-img2-body-body{
 
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+  background: image-url('bg-1.jpg') no-repeat center center fixed; 
 
   -webkit-background-size: cover;
 
@@ -154,7 +153,7 @@ table tr th { color: #688a7e;}
 
 .login-img2-body{
 
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+  background: image-url('bg-1.jpg') no-repeat center center fixed; 
 
   -webkit-background-size: cover;
 
@@ -168,7 +167,7 @@ table tr th { color: #688a7e;}
 
 .login-img3-body{
 
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+  background: image-url('bg-1.jpg') no-repeat center center fixed; 
 
   -webkit-background-size: cover;
 
@@ -639,22 +638,20 @@ ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
 ul.sidebar-menu li{
 
     line-height: 20px !important;
-
-    /*margin-bottom: 5px;
+/*
+    margin-bottom: 5px;
 
     margin-left:10px;
 
-    margin-right:10px;*/
-
-    
-
+    margin-right:10px;
+  */  
 }
 
-/*ul.sidebar-menu li:hover{
+ul.sidebar-menu li:hover{
 
     border-bottom: 1px solid #688a7e;
 
-}*/
+}
 
 ul.sidebar-menu li.sub-menu{
 
@@ -700,7 +697,7 @@ ul.sidebar-menu li a{
 
     transition: all 0.3s ease;
 
-    border-right: 1px solid #D7D7D7;
+    /*border-right: 1px solid #D7D7D7;*/
 
     border-bottom: 1px solid #D7D7D7;
 
@@ -722,7 +719,7 @@ ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:fo
 
     display: block;
 
-    /*border-radius: 4px;
+    /*border-radius: 4p
 
     -webkit-border-radius: 4px;*/
 
@@ -744,7 +741,7 @@ ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 
 }
 
-/*ul.sidebar-menu li.active a,*/ ul.sidebar-menu .sub-menu li.active a{
+ul.sidebar-menu li.active a, ul.sidebar-menu .sub-menu li.active { 
 
     border-bottom: 1px solid #d0d8df;   
 
@@ -1086,8 +1083,8 @@ a.logo span {
 
 
 
-/*notification*/
-
+/*
+notification*/
 
 
 #top_menu .nav > li, ul.top-menu > li {
@@ -1240,10 +1237,10 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-mi
+n-device-pixel-ratio:0) {
 
     /* Safari and Chrome */
-
     .dropdown-menu.extended  {
 
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important;
@@ -1718,7 +1715,7 @@ div[data-role="editor-toolbar"] {
 
 .log-arrow-up {
 
-    background: url("../img/arrow-up.png") no-repeat;
+    background: image-url("arrow-up.png") no-repeat;
 
     width: 20px;
 
@@ -2391,8 +2388,6 @@ div[data-role="editor-toolbar"] {
 
 }
 
-}
-
 .panel.panel-default.panel-heading {
 
   background: #97d3c5;   
@@ -3005,7 +3000,7 @@ div[data-role="editor-toolbar"] {
 
 }
 
-* /Widget-Content */
+/*Widget-Content */
 
 
 
@@ -3361,7 +3356,7 @@ div[data-role="editor-toolbar"] {
 
 /*-----	map-----*/
 
-* Google maps */
+/* Google maps */
 
 
 
@@ -3529,7 +3524,7 @@ div[data-role="editor-toolbar"] {
 
     box-shadow: none;
 
-    background: url("../img/search-icon.jpg") no-repeat 10px 8px;
+    background: image-url("search-icon.jpg") no-repeat 10px 8px;
 
     padding:0 5px 0 35px;
 
@@ -3751,7 +3746,7 @@ div[data-role="editor-toolbar"] {
 
 .panel-body.chart-texture {
 
-    background: url("../img/chart-texture.jpg");
+    background: image-url("chart-texture.jpg");
 
     -webkit-border-radius: 4px 4px 0px 0px;
 
@@ -4433,7 +4428,7 @@ ul.ft-link li a i {
 
     text-indent: -9999px;
 
-    background: url("../img/left-arrow.png") no-repeat;
+    background: image-url("left-arrow.png") no-repeat;
 
     width: 6px;
 
@@ -4449,7 +4444,7 @@ ul.ft-link li a i {
 
     text-indent: -9999px;
 
-    background: url("../img/right-arrow.png") no-repeat;
+    background: image-url("right-arrow.png") no-repeat;
 
     width: 6px;
 
@@ -4863,7 +4858,7 @@ ul.ft-link li a i {
 
 .profile-widget-img{
 
-    background: url('../img/backgrounds/bg-11-small.jpg') no-repeat !important;    
+    background: image-url('bg-11-small.jpg') no-repeat !important;    
 
 }
 
@@ -5537,7 +5532,7 @@ ul.ft-link li a i {
 
 .weather-bg-img {
 
-    background: url(../img/backgrounds/bg-14-small.jpg) no-repeat center center;    
+    background: image-url('bg-14-small.jpg') no-repeat center center;    
 
     color: #fff;
 
@@ -8313,9 +8308,9 @@ table.sliders tr td {
 
     width: 80px;
 
-    -webkit-mask: asset-path('../img/mask.png') 0 0 no-repeat;
+    -webkit-mask: asset-path('mask.png') 0 0 no-repeat;
 
-    mask: url('../img/mask.png') 0 0 no-repeat;
+    mask: image-url('mask.png') 0 0 no-repeat;
 
     -webkit-user-select: none;
 
@@ -8323,8 +8318,8 @@ table.sliders tr td {
 
     -ms-user-select: none;
 
-    -o-user-select: none;
-
+    -o-user-select : none;
+    
     user-select: none;
 
 }
@@ -8527,16 +8522,15 @@ table.sliders tr td {
 
     -webkit-border-radius: 6px;
 
-    -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
+    -webkit-mask: image-url("png") 0 0 no-repeat;
 
-    mask: url('../img/mask.png') 0 0 no-repeat;
+    mask: image-url("png") 0 0 no-repeat;
 
 }
 
 .switch-square > div.switch-off label {
 
-    border-color: #7f8c9a;
-
+    border-color: 7f8c9a;
     border-radius: 6px 0 0 6px;
 
 }
@@ -8553,11 +8547,12 @@ table.sliders tr td {
 
 }
 
-.switch-square span.switch-right {
+.switch-square span.switch-left {
 
-    border-radius: 0 6px 6px 0;
+    border-radius: 6px 0 0 6px;
 
 }
+
 
 .switch-square span.switch-right [class*="fui-"] {
 
@@ -8853,7 +8848,7 @@ table.sliders tr td {
 
 .has-js .label_radio {
 
-    background: url(../img/checkbox/radio-off.png) no-repeat;
+    background:  image-url("radio-off.png") no-repeat;
 
 }
 
@@ -8861,7 +8856,7 @@ table.sliders tr td {
 
 .has-js .label_check {
 
-    background: url(../img/checkbox/check-off.png) no-repeat;
+    background: image-url("check-off.png") no-repeat;
 
 }
 
@@ -8869,7 +8864,7 @@ table.sliders tr td {
 
 .has-js label.c_on {
 
-    background: url(../img/checkbox/check-on.png) no-repeat;
+    background: image-url("check-on.png") no-repeat;
 
 }
 
@@ -8877,7 +8872,7 @@ table.sliders tr td {
 
 .has-js label.r_on {
 
-    background: url(../img/checkbox/radio-on.png) no-repeat;
+    background: image-url("radio-on.png") no-repeat;
 
 }
 
@@ -8961,7 +8956,7 @@ table.sliders tr td {
 
 .daterangepicker .calendar th, .daterangepicker .calendar td {
 
-    font-family: 'Lato', sans-serif;
+    font-family: Lato sans-serif;
 
     font-weight: 300;
 
@@ -9867,7 +9862,7 @@ span.customSelect.changed {
 
 .customSelectInner {
 
-    background:url(../img/customSelect-arrow.gif) no-repeat center right;
+    background:image-url("customSelect-arrow.gif") no-repeat center right;
 
 }
 

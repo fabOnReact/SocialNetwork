@@ -7,25 +7,14 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <!--<link rel="shortcut icon" href="img/favicon.png">-->
-	<!-- Bootstrap Core CSS -->
-	<%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<!-- bootstrap theme -->
-	<%= stylesheet_link_tag 'bootstrap-theme', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <!-- font icon -->
-  <%= stylesheet_link_tag 'elegant-icons-style', media: 'all', 'data-turbolinks-track': 'reload' %>   
-	
-	<!-- Squad theme CSS -->
-	<%= stylesheet_link_tag 'style-2', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<%= stylesheet_link_tag 'style-responsive', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <!-- Rails CSS -->
-	<%= stylesheet_link_tag 'user' %>
+
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="js/lte-ie7.js"></script>
+    <script "js/html5shiv.js"></script>
+    <script "js/respond.min.js"></script>
+    <script "js/lte-ie7.js"></script>
   <![endif]-->  
     <!-- =======================================================
         Theme Name: NiceAdmin
@@ -164,7 +153,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><%= image_tag "avatar-mini.jpg"%></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -176,7 +165,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><%= image_tag "avatar-mini2.jpg" %></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -188,7 +177,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><%= image_tag "avatar-mini3.jpg" %></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -200,7 +189,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><%= image_tag "avatar-mini4.jpg" %></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -266,7 +255,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <%= image_tag "avatar1_small.jpg" %>
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -286,7 +275,9 @@
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                <%= link_to destroy_account_session_path, method: :delete do %>
+                                    <i class="icon_key_alt" aria-hidden="true"></i>Log out
+                                <% end %>
                             </li>
                             <li>
                                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -412,10 +403,9 @@
                   <button data-dismiss="alert" class="close close-sm" type="button">
                       <i class="icon-remove"></i>
                   </button>
-                  <strong>Oh snap!</strong> <%= flash[:notice] %>
+                  <strong>Oh snap!</strong> <%#= flash[:alert] %>
                 </div>               
-            <% end %>                    
-            
+            <% end %>
             <% if flash[:other] %> 
                 <div class="alert alert-info fade in">
                   <button data-dismiss="alert" class="close close-sm" type="button">
@@ -450,18 +440,7 @@
   </section>
   <!-- container section end -->
   	
-
-
-    <%= javascript_include_tag 'jquery-2', 'data-turbolinks-track': 'reload' %>
-    <!-- bootstrap -->
-    <%= javascript_include_tag 'bootstrap2', 'data-turbolinks-track': 'reload' %>
-    <!-- nice scroll -->
-    <%= javascript_include_tag 'jquery.scrollTo.min', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'jquery.nicescroll', 'data-turbolinks-track': 'reload' %>
-    <!--custome script for all page-->
-    <%= javascript_include_tag 'scripts', 'data-turbolinks-track': 'reload' %>
-    <!-- Core JavaScript Files -->
-    <%= javascript_include_tag "user", 'data-turbolinks-track': 'reload'%>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
 
   </body>
 </html>
