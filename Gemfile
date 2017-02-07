@@ -69,3 +69,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'country_select'
 
 gem 'devise'
+gem 'omniauth-facebook'

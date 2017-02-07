@@ -23862,3 +23862,1188 @@ Add `Rails.application.config.assets.precompile += %w( Germany.png )` to `config
 [0;37m2017-02-07 14:49:02.947[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:15427)
 [0;37m2017-02-07 14:49:02.952[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (4.3ms) (pid:15427)
 [0;37m2017-02-07 14:49:03.100[0m [[32mfyi[0m] Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms) (pid:15427)
+[0;37m2017-02-07 14:53:42.781[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 14:53:42 +0100 (pid:15427)
+[0;37m2017-02-07 14:53:42.808[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:15427)
+[0;37m2017-02-07 14:53:42.810[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:53:42.817[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:53:42.820[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (2.9ms) (pid:15427)
+[0;37m2017-02-07 14:53:42.873[0m [[32mfyi[0m] Completed 200 OK in 65ms (Views: 56.5ms | ActiveRecord: 0.2ms) (pid:15427)
+[0;37m2017-02-07 14:53:50.573[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 14:53:50 +0100 (pid:15427)
+[0;37m2017-02-07 14:53:50.625[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:15427)
+[0;37m2017-02-07 14:53:50.626[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"O9UZDDJhZTK89ti7UT0Ab9tYCztxFfnHlxyFqdZxMOGt3GHPcX4KX4W8eCYstMth240JP3ADO21Cnq3eX7Qjbw=="} (pid:15427)
+[0;37m2017-02-07 14:53:50.638[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:53:50.646[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:15427)
+[0;37m2017-02-07 14:53:50.654[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:15427)
+[0;37m2017-02-07 14:53:50.661[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:15427)
+[0;37m2017-02-07 14:53:50.662[0m [[32mfyi[0m] Completed 302 Found in 4ms (ActiveRecord: 0.4ms) (pid:15427)
+[0;37m2017-02-07 14:53:50.699[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 14:53:50 +0100 (pid:15427)
+[0;37m2017-02-07 14:53:50.721[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:15427)
+[0;37m2017-02-07 14:53:50.744[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:15427)
+[0;37m2017-02-07 14:53:50.756[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.0ms) (pid:15427)
+[0;37m2017-02-07 14:53:50.121[0m [[32mfyi[0m] Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms) (pid:15427)
+[0;37m2017-02-07 14:53:52.445[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 14:53:52 +0100 (pid:15427)
+[0;37m2017-02-07 14:53:52.446[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:15427)
+[0;37m2017-02-07 14:53:52.448[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:53:52.451[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:15427)
+[0;37m2017-02-07 14:53:52.452[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.2ms) (pid:15427)
+[0;37m2017-02-07 14:53:52.515[0m [[32mfyi[0m] Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.0ms) (pid:15427)
+[0;37m2017-02-07 14:54:00.740[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-07 14:54:00 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:00.743[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:15427)
+[0;37m2017-02-07 14:54:00.743[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"URtUfBm71HE/fmTOlR9r0JO7b65FPBw1YIGsy+/i0JkpyLz/YqQaQekaX5Ht3gPSTv4U0jrtDalK9TeLqP0vYA==", "user"=>{"email"=>"fabrizio@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:15427)
+[0;37m2017-02-07 14:54:00.745[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabrizio@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:00.884[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:15427)
+[0;37m2017-02-07 14:54:00.886[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2017-02-07 13:54:00', `last_sign_in_at` = '2017-02-07 13:48:54', `sign_in_count` = 6, `updated_at` = '2017-02-07 13:54:00' WHERE `users`.`id` = 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:00.966[0m [[0;37mmeh[0m] [1m[35m (79.0ms)[0m  [1m[35mCOMMIT[0m (pid:15427)
+[0;37m2017-02-07 14:54:00.969[0m [[32mfyi[0m] Redirected to http://localhost:3000/user_root (pid:15427)
+[0;37m2017-02-07 14:54:00.969[0m [[32mfyi[0m] Completed 302 Found in 226ms (ActiveRecord: 79.7ms) (pid:15427)
+[0;37m2017-02-07 14:54:00.972[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 14:54:00 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:00.975[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:15427)
+[0;37m2017-02-07 14:54:00.976[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:00.978[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:54:00.978[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:15427)
+[0;37m2017-02-07 14:54:01.301[0m [[32mfyi[0m] Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.3ms) (pid:15427)
+[0;37m2017-02-07 14:54:04.235[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 14:54:04 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:04.249[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:15427)
+[0;37m2017-02-07 14:54:04.250[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"nKd+SDarD3MVS4B56tmwYL+ViCdCyKmZgm+PD1ox6t/yWRlGn17eX9gKV4ZPh/4BM08ub91yfegTHqiPXMwePg=="} (pid:15427)
+[0;37m2017-02-07 14:54:04.265[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:04.283[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:54:04.325[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (3.9ms) (pid:15427)
+[0;37m2017-02-07 14:54:04.889[0m [[32mfyi[0m] Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.3ms) (pid:15427)
+[0;37m2017-02-07 14:54:09.957[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 14:54:09 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:09.958[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:15427)
+[0;37m2017-02-07 14:54:09.959[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:09.960[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:54:09.963[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (2.7ms) (pid:15427)
+[0;37m2017-02-07 14:54:10.180[0m [[32mfyi[0m] Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.3ms) (pid:15427)
+[0;37m2017-02-07 14:54:53.251[0m [[32mfyi[0m] Started PUT "/users" for 127.0.0.1 at 2017-02-07 14:54:53 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:53.253[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#update as HTML (pid:15427)
+[0;37m2017-02-07 14:54:53.253[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"4MFSebTCUyEtFxGL0JLOsS821Xx38K1/hb/70bBxgrKOPzV3HTeCDeBWxnR1zIDQo+xzNOhKeQ4UztxRtox2Uw==", "user"=>{"email"=>"fabrizio@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"} (pid:15427)
+[0;37m2017-02-07 14:54:53.254[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.305[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.441[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.575[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `encrypted_password` = '$2a$11$kAmOqYD/YfQ87c1p1U3q9uYXVJjHU1ieQSBiDdw20KO6LPJENMKr.', `updated_at` = '2017-02-07 13:54:53' WHERE `users`.`id` = 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.660[0m [[0;37mmeh[0m] [1m[35m (84.4ms)[0m  [1m[35mCOMMIT[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.663[0m [[32mfyi[0m] Redirected to http://localhost:3000/user_root (pid:15427)
+[0;37m2017-02-07 14:54:53.663[0m [[32mfyi[0m] Completed 302 Found in 410ms (ActiveRecord: 85.2ms) (pid:15427)
+[0;37m2017-02-07 14:54:53.666[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 14:54:53 +0100 (pid:15427)
+[0;37m2017-02-07 14:54:53.667[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:15427)
+[0;37m2017-02-07 14:54:53.669[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:15427)
+[0;37m2017-02-07 14:54:53.670[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:15427)
+[0;37m2017-02-07 14:54:53.670[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:15427)
+[0;37m2017-02-07 14:54:53.720[0m [[32mfyi[0m] Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.2ms) (pid:15427)
+[0;37m2017-02-07 15:05:48.266[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m (pid:16426)
+[0;37m2017-02-07 15:05:48.266[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3579009412087425540', 0);[0m (pid:16426)
+[0;37m2017-02-07 15:05:48.274[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:16426)
+[0;37m2017-02-07 15:05:48.280[0m [[32mfyi[0m] Migrating to AddOmniauthToUsers (20170207140518) (pid:16426)
+[0;37m2017-02-07 15:05:49.491[0m [[0;37mmeh[0m] [1m[35m (1210.0ms)[0m  [1m[35mALTER TABLE `users` ADD `provider` varchar(255)[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.470[0m [[0;37mmeh[0m] [1m[35m (978.9ms)[0m  [1m[35mALTER TABLE `users` ADD `uid` varchar(255)[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.471[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.472[0m [[0;37mmeh[0m] [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170207140518')[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.626[0m [[0;37mmeh[0m] [1m[35m (153.8ms)[0m  [1m[35mCOMMIT[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.684[0m [[0;37mmeh[0m] [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.687[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.687[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.688[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3579009412087425540')[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.691[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.693[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m (pid:16426)
+[0;37m2017-02-07 15:05:50.694[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m (pid:16426)
+[0;37m2017-02-07 15:35:20.752[0m [[32mfyi[0m] Started GET "/account/sign_up" for 127.0.0.1 at 2017-02-07 15:35:20 +0100 (pid:15427)
+[0;37m2017-02-07 15:35:20.776[0m [[31momg[0m] LoadError - cannot load such file -- omniauth:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  devise (4.2.0) lib/devise/omniauth.rb:2:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  devise (4.2.0) lib/devise/models/omniauthable.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  devise (4.2.0) lib/devise/models.rb:88:in `block (2 levels) in devise'
+  devise (4.2.0) lib/devise/models.rb:87:in `block in devise'
+  devise (4.2.0) lib/devise/models.rb:114:in `devise_modules_hook!'
+  devise (4.2.0) lib/devise/models.rb:84:in `devise'
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  devise (4.2.0) lib/devise.rb:301:in `get'
+  devise (4.2.0) lib/devise/mapping.rb:81:in `to'
+  devise (4.2.0) lib/devise/mapping.rb:76:in `modules'
+  devise (4.2.0) lib/devise/mapping.rb:93:in `routes'
+  devise (4.2.0) lib/devise/mapping.rb:160:in `default_used_route'
+  devise (4.2.0) lib/devise/mapping.rb:70:in `initialize'
+  devise (4.2.0) lib/devise.rb:331:in `add_mapping'
+  devise (4.2.0) lib/devise/rails/routes.rb:241:in `block in devise_for'
+  devise (4.2.0) lib/devise/rails/routes.rb:240:in `devise_for'
+  config/routes.rb:3:in `block in <top (required)>'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:389:in `eval_block'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:371:in `draw'
+  config/routes.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:287:in `block in load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:259:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:287:in `load'
+  railties (5.0.1) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (5.0.1) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (5.0.1) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (5.0.1) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (5.0.1) lib/active_support/file_update_checker.rb:77:in `execute'
+  railties (5.0.1) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (5.0.1) lib/rails/application/finisher.rb:132:in `block (2 levels) in <module:Finisher>'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:170:in `block in halting'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  activesupport (5.0.1) lib/active_support/execution_wrapper.rb:108:in `run!'
+  activesupport (5.0.1) lib/active_support/reloader.rb:113:in `run!'
+  activesupport (5.0.1) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+  activesupport (5.0.1) lib/active_support/execution_wrapper.rb:67:in `run!'
+  activesupport (5.0.1) lib/active_support/reloader.rb:59:in `run!'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:10:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:15427)
+[0;37m2017-02-07 15:35:20.805[0m [[32mfyi[0m] Started POST "/__better_errors/6e7c7eab0217d1b2/variables" for 127.0.0.1 at 2017-02-07 15:35:20 +0100 (pid:15427)
+[0;37m2017-02-07 15:39:46.255[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:39:46 +0100 (pid:16854)
+[0;37m2017-02-07 15:39:46.269[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:16854)
+[0;37m2017-02-07 15:39:46.284[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:39:46.295[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:39:46.299[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.8ms) (pid:16854)
+[0;37m2017-02-07 15:39:46.617[0m [[32mfyi[0m] Completed 200 OK in 333ms (Views: 325.1ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:39:52.313[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:39:52 +0100 (pid:16854)
+[0;37m2017-02-07 15:39:52.331[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:39:52.339[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:16854)
+[0;37m2017-02-07 15:39:52.360[0m [[32mfyi[0m] Redirected to http://localhost:3000/user_root (pid:16854)
+[0;37m2017-02-07 15:39:52.360[0m [[32mfyi[0m] Filter chain halted as :require_no_authentication rendered or redirected (pid:16854)
+[0;37m2017-02-07 15:39:52.360[0m [[32mfyi[0m] Completed 302 Found in 29ms (ActiveRecord: 1.4ms) (pid:16854)
+[0;37m2017-02-07 15:39:52.367[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 15:39:52 +0100 (pid:16854)
+[0;37m2017-02-07 15:39:52.372[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:39:52.373[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:16854)
+[0;37m2017-02-07 15:39:52.376[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:39:52.377[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.5ms) (pid:16854)
+[0;37m2017-02-07 15:39:52.454[0m [[32mfyi[0m] Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.4ms) (pid:16854)
+[0;37m2017-02-07 15:40:04.101[0m [[32mfyi[0m] Started GET "/user/welcome" for 127.0.0.1 at 2017-02-07 15:40:04 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:04.104[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:40:04.106[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:16854)
+[0;37m2017-02-07 15:40:04.109[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:40:04.110[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.4ms) (pid:16854)
+[0;37m2017-02-07 15:40:04.173[0m [[32mfyi[0m] Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 0.4ms) (pid:16854)
+[0;37m2017-02-07 15:40:06.998[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 15:40:06 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:07.782[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:16854)
+[0;37m2017-02-07 15:40:07.793[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"L64ronyj2YJ6BKjlm1cE1zPZoOJUsGVBDiLdw3oXx0xBUEys1VYIrrdFfxo+CUq2vwMGqssKsTCfU/pDfOozrQ=="} (pid:16854)
+[0;37m2017-02-07 15:40:07.913[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:16854)
+[0;37m2017-02-07 15:40:07.110[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:16854)
+[0;37m2017-02-07 15:40:07.121[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:16854)
+[0;37m2017-02-07 15:40:07.131[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:16854)
+[0;37m2017-02-07 15:40:07.133[0m [[32mfyi[0m] Completed 302 Found in 5ms (ActiveRecord: 0.5ms) (pid:16854)
+[0;37m2017-02-07 15:40:07.191[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:40:07 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:07.214[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:40:07.230[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:40:07.247[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.5ms) (pid:16854)
+[0;37m2017-02-07 15:40:07.758[0m [[32mfyi[0m] Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:40:08.990[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:40:08 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:08.994[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:40:08.999[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:40:09.120[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:16854)
+[0;37m2017-02-07 15:40:09.121[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (10.7ms) (pid:16854)
+[0;37m2017-02-07 15:40:09.630[0m [[32mfyi[0m] Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:40:11.109[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:11 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:11.487[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:11 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:18.263[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:40:18 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:18.265[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:40:18.268[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:40:18.272[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:16854)
+[0;37m2017-02-07 15:40:18.272[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.7ms) (pid:16854)
+[0;37m2017-02-07 15:40:18.324[0m [[32mfyi[0m] Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:40:24.466[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:24 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:26.135[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:26 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:32.878[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:40:32 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:32.123[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:40:32.149[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:40:32.196[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:16854)
+[0;37m2017-02-07 15:40:32.198[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.8ms) (pid:16854)
+[0;37m2017-02-07 15:40:32.782[0m [[32mfyi[0m] Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:40:44.679[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:44 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:45.972[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:45 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:46.887[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:40:46 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:49.443[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:40:49 +0100 (pid:16854)
+[0;37m2017-02-07 15:40:49.445[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:40:49.447[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:40:49.450[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.8ms) (pid:16854)
+[0;37m2017-02-07 15:40:49.450[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.3ms) (pid:16854)
+[0;37m2017-02-07 15:40:49.506[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:09.681[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:41:09 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:09.683[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:41:09.685[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:41:09.686[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.4ms) (pid:16854)
+[0;37m2017-02-07 15:41:09.766[0m [[32mfyi[0m] Completed 200 OK in 82ms (Views: 81.8ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:12.924[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:41:12 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:12.928[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:41:12.930[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:41:12.933[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (2.3ms) (pid:16854)
+[0;37m2017-02-07 15:41:13.410[0m [[32mfyi[0m] Completed 200 OK in 75ms (Views: 74.3ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:15.388[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:41:15 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:15.391[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:41:15.393[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:41:15.397[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:15.398[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.3ms) (pid:16854)
+[0;37m2017-02-07 15:41:15.452[0m [[32mfyi[0m] Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:17.298[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:41:17 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:17.400[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:41:17 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:17.546[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:41:17 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:20.753[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:41:20 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:20.758[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:41:20.760[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:41:20.762[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.4ms) (pid:16854)
+[0;37m2017-02-07 15:41:20.936[0m [[32mfyi[0m] Completed 200 OK in 178ms (Views: 177.0ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:22.570[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:41:22 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:22.574[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:41:22.577[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:41:22.582[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.5ms) (pid:16854)
+[0;37m2017-02-07 15:41:22.583[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (5.1ms) (pid:16854)
+[0;37m2017-02-07 15:41:22.650[0m [[32mfyi[0m] Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:41:23.962[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:41:23 +0100 (pid:16854)
+[0;37m2017-02-07 15:41:24.443[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:41:24 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:27.656[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:42:27 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:27.660[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:16854)
+[0;37m2017-02-07 15:42:27.663[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:16854)
+[0;37m2017-02-07 15:42:27.665[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.5ms) (pid:16854)
+[0;37m2017-02-07 15:42:27.736[0m [[32mfyi[0m] Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:42:30.624[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 15:42:30 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:30.627[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:42:30.631[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:42:30.637[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.7ms) (pid:16854)
+[0;37m2017-02-07 15:42:30.637[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (6.3ms) (pid:16854)
+[0;37m2017-02-07 15:42:30.716[0m [[32mfyi[0m] Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:42:35.328[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:42:35 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:35.447[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:42:35 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:44.626[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 15:42:44 +0100 (pid:16854)
+[0;37m2017-02-07 15:42:44.630[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:16854)
+[0;37m2017-02-07 15:42:44.633[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:16854)
+[0;37m2017-02-07 15:42:44.636[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:16854)
+[0;37m2017-02-07 15:42:44.636[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.5ms) (pid:16854)
+[0;37m2017-02-07 15:42:44.693[0m [[32mfyi[0m] Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.0ms) (pid:16854)
+[0;37m2017-02-07 15:45:01.322[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:45:01 +0100 (pid:17473)
+[0;37m2017-02-07 15:45:01.335[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:17473)
+[0;37m2017-02-07 15:45:01.353[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17473)
+[0;37m2017-02-07 15:45:01.364[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:17473)
+[0;37m2017-02-07 15:45:01.368[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (4.2ms) (pid:17473)
+[0;37m2017-02-07 15:45:01.731[0m [[32mfyi[0m] Completed 200 OK in 378ms (Views: 370.0ms | ActiveRecord: 0.0ms) (pid:17473)
+[0;37m2017-02-07 15:45:05.989[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:45:05 +0100 (pid:17473)
+[0;37m2017-02-07 15:45:06.383[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:17473)
+[0;37m2017-02-07 15:45:06.272[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:17473)
+[0;37m2017-02-07 15:45:06.457[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.8ms) (pid:17473)
+[0;37m2017-02-07 15:45:06.458[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (18.4ms) (pid:17473)
+[0;37m2017-02-07 15:45:06.119[0m [[32mfyi[0m] Completed 200 OK in 116ms (Views: 94.1ms | ActiveRecord: 1.0ms) (pid:17473)
+[0;37m2017-02-07 15:45:07.636[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:45:07 +0100 (pid:17473)
+[0;37m2017-02-07 15:45:07.789[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:45:07 +0100 (pid:17473)
+[0;37m2017-02-07 15:46:31.139[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:46:31 +0100 (pid:17546)
+[0;37m2017-02-07 15:46:31.155[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:17546)
+[0;37m2017-02-07 15:46:31.174[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17546)
+[0;37m2017-02-07 15:46:31.186[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:17546)
+[0;37m2017-02-07 15:46:31.190[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (4.3ms) (pid:17546)
+[0;37m2017-02-07 15:46:31.517[0m [[32mfyi[0m] Completed 200 OK in 344ms (Views: 335.8ms | ActiveRecord: 0.0ms) (pid:17546)
+[0;37m2017-02-07 15:46:33.677[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:46:33 +0100 (pid:17546)
+[0;37m2017-02-07 15:46:33.693[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:17546)
+[0;37m2017-02-07 15:46:33.717[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:17546)
+[0;37m2017-02-07 15:46:33.734[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:17546)
+[0;37m2017-02-07 15:46:33.734[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (16.6ms) (pid:17546)
+[0;37m2017-02-07 15:46:33.837[0m [[32mfyi[0m] Completed 200 OK in 144ms (Views: 121.4ms | ActiveRecord: 1.1ms) (pid:17546)
+[0;37m2017-02-07 15:46:35.955[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:46:35 +0100 (pid:17546)
+[0;37m2017-02-07 15:46:36.104[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:46:36 +0100 (pid:17546)
+[0;37m2017-02-07 15:47:49.354[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 15:47:49 +0100 (pid:17629)
+[0;37m2017-02-07 15:47:49.368[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:17629)
+[0;37m2017-02-07 15:47:49.381[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:17629)
+[0;37m2017-02-07 15:47:49.392[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:17629)
+[0;37m2017-02-07 15:47:49.396[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.8ms) (pid:17629)
+[0;37m2017-02-07 15:47:49.736[0m [[32mfyi[0m] Completed 200 OK in 355ms (Views: 346.3ms | ActiveRecord: 0.0ms) (pid:17629)
+[0;37m2017-02-07 15:47:51.355[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:47:51 +0100 (pid:17629)
+[0;37m2017-02-07 15:47:51.364[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:17629)
+[0;37m2017-02-07 15:47:51.385[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:17629)
+[0;37m2017-02-07 15:47:51.660[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (260.0ms) (pid:17629)
+[0;37m2017-02-07 15:47:51.660[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (275.2ms) (pid:17629)
+[0;37m2017-02-07 15:47:51.660[0m [[32mfyi[0m] Completed 500 Internal Server Error in 295ms (ActiveRecord: 1.0ms) (pid:17629)
+[0;37m2017-02-07 15:47:51.661[0m [[33mhmm[0m] DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from initialize at /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/better_errors-2.1.1/lib/better_errors/raised_exception.rb:7) (pid:17629)
+[0;37m2017-02-07 15:47:51.661[0m [[33mhmm[0m] DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from initialize at /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/better_errors-2.1.1/lib/better_errors/raised_exception.rb:8) (pid:17629)
+[0;37m2017-02-07 15:47:51.834[0m [[31momg[0m] NoMethodError - undefined method `omniauth_authorize_path' for #<#<Class:0x007f861c543c70>:0x007f861c5427f8>:
+  app/views/devise/shared/_links.html.erb:23:in `block in _app_views_devise_shared__links_html_erb__1776575478872600171_70106987308980'
+  app/views/devise/shared/_links.html.erb:22:in `_app_views_devise_shared__links_html_erb__1776575478872600171_70106987308980'
+  actionview (5.0.1) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:343:in `render_partial'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:311:in `block in render'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:310:in `render'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (5.0.1) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/devise/registrations/new.html.erb:29:in `_app_views_devise_registrations_new_html_erb__2351117649872965600_70106988807780'
+  actionview (5.0.1) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/fabrizio/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  responders (2.3.0) lib/action_controller/responder.rb:238:in `default_render'
+  responders (2.3.0) lib/action_controller/responder.rb:170:in `to_html'
+  responders (2.3.0) lib/action_controller/responder.rb:163:in `respond'
+  responders (2.3.0) lib/action_controller/responder.rb:156:in `call'
+  responders (2.3.0) lib/action_controller/respond_with.rb:205:in `respond_with'
+  devise (4.2.0) app/controllers/devise/registrations_controller.rb:10:in `new'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:17629)
+[0;37m2017-02-07 15:47:51.867[0m [[32mfyi[0m] Started POST "/__better_errors/03ecf5dfb77ad5a0/variables" for 127.0.0.1 at 2017-02-07 15:47:51 +0100 (pid:17629)
+[0;37m2017-02-07 15:52:18.687[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:52:18 +0100 (pid:17629)
+[0;37m2017-02-07 15:52:18.688[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:17629)
+[0;37m2017-02-07 15:52:18.690[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:17629)
+[0;37m2017-02-07 15:52:19.524[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (359.5ms) (pid:17629)
+[0;37m2017-02-07 15:52:19.525[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (362.1ms) (pid:17629)
+[0;37m2017-02-07 15:52:19.527[0m [[32mfyi[0m] Completed 500 Internal Server Error in 364ms (ActiveRecord: 0.0ms) (pid:17629)
+[0;37m2017-02-07 15:52:19.528[0m [[33mhmm[0m] DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from initialize at /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/better_errors-2.1.1/lib/better_errors/raised_exception.rb:7) (pid:17629)
+[0;37m2017-02-07 15:52:19.529[0m [[33mhmm[0m] DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from initialize at /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/better_errors-2.1.1/lib/better_errors/raised_exception.rb:8) (pid:17629)
+[0;37m2017-02-07 15:52:19.381[0m [[31momg[0m] NoMethodError - undefined method `omniauth_authorize_path' for #<#<Class:0x007f861c543c70>:0x007f8605649b90>:
+  app/views/devise/shared/_links.html.erb:23:in `block in _app_views_devise_shared__links_html_erb__1776575478872600171_70106823680220'
+  app/views/devise/shared/_links.html.erb:22:in `_app_views_devise_shared__links_html_erb__1776575478872600171_70106823680220'
+  actionview (5.0.1) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:343:in `render_partial'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:311:in `block in render'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/partial_renderer.rb:310:in `render'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (5.0.1) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/devise/registrations/new.html.erb:29:in `_app_views_devise_registrations_new_html_erb__2351117649872965600_70106824710940'
+  actionview (5.0.1) lib/action_view/template.rb:159:in `block in render'
+  activesupport (5.0.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:354:in `instrument'
+  actionview (5.0.1) lib/action_view/template.rb:157:in `render'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (5.0.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (5.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (5.0.1) lib/action_view/rendering.rb:103:in `_render_template'
+  actionpack (5.0.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (5.0.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+  actionpack (5.0.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+  actionpack (5.0.1) lib/abstract_controller/rendering.rb:26:in `render'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:36:in `render'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (5.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/fabrizio/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (5.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  responders (2.3.0) lib/action_controller/responder.rb:238:in `default_render'
+  responders (2.3.0) lib/action_controller/responder.rb:170:in `to_html'
+  responders (2.3.0) lib/action_controller/responder.rb:163:in `respond'
+  responders (2.3.0) lib/action_controller/responder.rb:156:in `call'
+  responders (2.3.0) lib/action_controller/respond_with.rb:205:in `respond_with'
+  devise (4.2.0) app/controllers/devise/registrations_controller.rb:10:in `new'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:17629)
+[0;37m2017-02-07 15:52:19.477[0m [[32mfyi[0m] Started POST "/__better_errors/84823dcae9b170aa/variables" for 127.0.0.1 at 2017-02-07 15:52:19 +0100 (pid:17629)
+[0;37m2017-02-07 15:52:29.262[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 15:52:29 +0100 (pid:17746)
+[0;37m2017-02-07 15:52:29.278[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:17746)
+[0;37m2017-02-07 15:52:29.306[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:17746)
+[0;37m2017-02-07 15:52:29.335[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:17746)
+[0;37m2017-02-07 15:52:29.353[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:17746)
+[0;37m2017-02-07 15:52:29.353[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (18.0ms) (pid:17746)
+[0;37m2017-02-07 15:52:29.714[0m [[32mfyi[0m] Completed 200 OK in 407ms (Views: 383.1ms | ActiveRecord: 1.9ms) (pid:17746)
+[0;37m2017-02-07 15:52:31.922[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:52:31 +0100 (pid:17746)
+[0;37m2017-02-07 15:52:32.265[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 15:52:32 +0100 (pid:17746)
+[0;37m2017-02-07 16:13:49.968[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:13:49 +0100 (pid:18113)
+[0;37m2017-02-07 16:13:49.981[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:18113)
+[0;37m2017-02-07 16:13:50.148[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18113)
+[0;37m2017-02-07 16:13:50.248[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18113)
+[0;37m2017-02-07 16:13:50.412[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:18113)
+[0;37m2017-02-07 16:13:50.413[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (16.4ms) (pid:18113)
+[0;37m2017-02-07 16:13:50.308[0m [[32mfyi[0m] Completed 200 OK in 307ms (Views: 287.3ms | ActiveRecord: 1.0ms) (pid:18113)
+[0;37m2017-02-07 16:13:55.647[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:13:55 +0100 (pid:18113)
+[0;37m2017-02-07 16:13:56.409[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:13:56 +0100 (pid:18113)
+[0;37m2017-02-07 16:17:02.289[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:17:02 +0100 (pid:18215)
+[0;37m2017-02-07 16:17:02.303[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:18215)
+[0;37m2017-02-07 16:17:02.317[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18215)
+[0;37m2017-02-07 16:17:02.328[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:18215)
+[0;37m2017-02-07 16:17:02.332[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.8ms) (pid:18215)
+[0;37m2017-02-07 16:17:02.635[0m [[32mfyi[0m] Completed 200 OK in 318ms (Views: 310.4ms | ActiveRecord: 0.0ms) (pid:18215)
+[0;37m2017-02-07 16:17:08.139[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:17:08 +0100 (pid:18215)
+[0;37m2017-02-07 16:17:08.149[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18215)
+[0;37m2017-02-07 16:17:08.169[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18215)
+[0;37m2017-02-07 16:17:08.184[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:18215)
+[0;37m2017-02-07 16:17:08.184[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (15.5ms) (pid:18215)
+[0;37m2017-02-07 16:17:08.282[0m [[32mfyi[0m] Completed 200 OK in 133ms (Views: 114.8ms | ActiveRecord: 1.1ms) (pid:18215)
+[0;37m2017-02-07 16:17:12.381[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:17:12 +0100 (pid:18215)
+[0;37m2017-02-07 16:17:12.633[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:17:12 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:39.254[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:18:39 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:39.259[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18215)
+[0;37m2017-02-07 16:18:39.262[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:18215)
+[0;37m2017-02-07 16:18:39.266[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (2.5ms) (pid:18215)
+[0;37m2017-02-07 16:18:39.340[0m [[32mfyi[0m] Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.0ms) (pid:18215)
+[0;37m2017-02-07 16:18:41.406[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:18:41 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:41.410[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18215)
+[0;37m2017-02-07 16:18:41.412[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18215)
+[0;37m2017-02-07 16:18:41.416[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:18215)
+[0;37m2017-02-07 16:18:41.416[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.9ms) (pid:18215)
+[0;37m2017-02-07 16:18:41.470[0m [[32mfyi[0m] Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms) (pid:18215)
+[0;37m2017-02-07 16:18:42.898[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:18:42 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:43.260[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:18:43 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:57.984[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:18:57 +0100 (pid:18215)
+[0;37m2017-02-07 16:18:57.988[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18215)
+[0;37m2017-02-07 16:18:57.990[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18215)
+[0;37m2017-02-07 16:18:57.995[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:18215)
+[0;37m2017-02-07 16:18:57.995[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.7ms) (pid:18215)
+[0;37m2017-02-07 16:18:58.569[0m [[32mfyi[0m] Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms) (pid:18215)
+[0;37m2017-02-07 16:19:24.549[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:19:24 +0100 (pid:18303)
+[0;37m2017-02-07 16:19:24.563[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:18303)
+[0;37m2017-02-07 16:19:24.578[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18303)
+[0;37m2017-02-07 16:19:24.589[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:18303)
+[0;37m2017-02-07 16:19:24.593[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.8ms) (pid:18303)
+[0;37m2017-02-07 16:19:24.902[0m [[32mfyi[0m] Completed 200 OK in 323ms (Views: 315.6ms | ActiveRecord: 0.0ms) (pid:18303)
+[0;37m2017-02-07 16:20:24.394[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:20:24 +0100 (pid:18303)
+[0;37m2017-02-07 16:20:24.410[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18303)
+[0;37m2017-02-07 16:20:24.430[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18303)
+[0;37m2017-02-07 16:20:24.447[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:18303)
+[0;37m2017-02-07 16:20:24.447[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (17.2ms) (pid:18303)
+[0;37m2017-02-07 16:20:24.538[0m [[32mfyi[0m] Completed 200 OK in 128ms (Views: 110.0ms | ActiveRecord: 0.9ms) (pid:18303)
+[0;37m2017-02-07 16:20:59.207[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:20:59 +0100 (pid:18401)
+[0;37m2017-02-07 16:20:59.221[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:18401)
+[0;37m2017-02-07 16:20:59.242[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18401)
+[0;37m2017-02-07 16:20:59.266[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18401)
+[0;37m2017-02-07 16:20:59.281[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:18401)
+[0;37m2017-02-07 16:20:59.282[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (15.1ms) (pid:18401)
+[0;37m2017-02-07 16:20:59.643[0m [[32mfyi[0m] Completed 200 OK in 401ms (Views: 380.7ms | ActiveRecord: 0.8ms) (pid:18401)
+[0;37m2017-02-07 16:21:05.489[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:21:05 +0100 (pid:18401)
+[0;37m2017-02-07 16:21:05.614[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:21:05 +0100 (pid:18401)
+[0;37m2017-02-07 16:22:47.448[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQCIzIuK9JoGhkQJmL1Bx9zIbcvzRvW5vjYE-pH9hZDRMO5xfcPQFXRg1iqZp-BTYLM97wDqAYWRlNMKl3f5SC8rYLBqHZ1KPGZl22cVLbOrqvWMyQv2WCQcCb7kR6uJTzH7Y6XgDfq8-G47dCd9LKWZnPf4jyPLlSKqwPsSXZiF13_RLrGbMNzOl_gwaB5eNkLA43H6F3tLVLB16bT3rUTV15FUGiyRWm7-OUGS3Jqsczmt3ML69D5UPAcRANWuAF1RJ34GRoX5Ij2Lg3nL6WUmu2eYlTfbiz-m-THh6RKZoxekVUaft5SFupd75GTj-JIMM8iWnNyAshbWd9jgc3pJ&state=c57bb865486b0c07401552d639a387b1c34b06cd17acbaa1" for 127.0.0.1 at 2017-02-07 16:22:47 +0100 (pid:18401)
+[0;37m2017-02-07 16:22:48.509[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:18401)
+[0;37m2017-02-07 16:22:48.509[0m [[32mfyi[0m] Parameters: {"code"=>"AQCIzIuK9JoGhkQJmL1Bx9zIbcvzRvW5vjYE-pH9hZDRMO5xfcPQFXRg1iqZp-BTYLM97wDqAYWRlNMKl3f5SC8rYLBqHZ1KPGZl22cVLbOrqvWMyQv2WCQcCb7kR6uJTzH7Y6XgDfq8-G47dCd9LKWZnPf4jyPLlSKqwPsSXZiF13_RLrGbMNzOl_gwaB5eNkLA43H6F3tLVLB16bT3rUTV15FUGiyRWm7-OUGS3Jqsczmt3ML69D5UPAcRANWuAF1RJ34GRoX5Ij2Lg3nL6WUmu2eYlTfbiz-m-THh6RKZoxekVUaft5SFupd75GTj-JIMM8iWnNyAshbWd9jgc3pJ", "state"=>"c57bb865486b0c07401552d639a387b1c34b06cd17acbaa1"} (pid:18401)
+[0;37m2017-02-07 16:22:48.511[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:18401)
+[0;37m2017-02-07 16:22:48.660[0m [[32mfyi[0m] Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.3ms) (pid:18401)
+[0;37m2017-02-07 16:22:48.665[0m [[31momg[0m] NoMethodError - undefined method `name=' for #<User:0x007f189442a078>:
+  activemodel (5.0.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  app/models/user.rb:12:in `block in from_omniauth'
+  activerecord (5.0.1) lib/active_record/core.rb:321:in `initialize'
+  activerecord (5.0.1) lib/active_record/inheritance.rb:65:in `new'
+  activerecord (5.0.1) lib/active_record/persistence.rb:33:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `block in create'
+  activerecord (5.0.1) lib/active_record/relation.rb:351:in `scoping'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:164:in `first_or_create'
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:403:in `call_app!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:357:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:67:in `block in callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:131:in `with_authorization_code!'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:66:in `callback_phase'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:18401)
+[0;37m2017-02-07 16:22:48.710[0m [[32mfyi[0m] Started POST "/__better_errors/3348f436bf1b93b6/variables" for 127.0.0.1 at 2017-02-07 16:22:48 +0100 (pid:18401)
+[0;37m2017-02-07 16:23:22.934[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQCIzIuK9JoGhkQJmL1Bx9zIbcvzRvW5vjYE-pH9hZDRMO5xfcPQFXRg1iqZp-BTYLM97wDqAYWRlNMKl3f5SC8rYLBqHZ1KPGZl22cVLbOrqvWMyQv2WCQcCb7kR6uJTzH7Y6XgDfq8-G47dCd9LKWZnPf4jyPLlSKqwPsSXZiF13_RLrGbMNzOl_gwaB5eNkLA43H6F3tLVLB16bT3rUTV15FUGiyRWm7-OUGS3Jqsczmt3ML69D5UPAcRANWuAF1RJ34GRoX5Ij2Lg3nL6WUmu2eYlTfbiz-m-THh6RKZoxekVUaft5SFupd75GTj-JIMM8iWnNyAshbWd9jgc3pJ&state=c57bb865486b0c07401552d639a387b1c34b06cd17acbaa1" for 127.0.0.1 at 2017-02-07 16:23:22 +0100 (pid:18401)
+[0;37m2017-02-07 16:23:23.291[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#failure as HTML (pid:18401)
+[0;37m2017-02-07 16:23:23.291[0m [[32mfyi[0m] Parameters: {"code"=>"AQCIzIuK9JoGhkQJmL1Bx9zIbcvzRvW5vjYE-pH9hZDRMO5xfcPQFXRg1iqZp-BTYLM97wDqAYWRlNMKl3f5SC8rYLBqHZ1KPGZl22cVLbOrqvWMyQv2WCQcCb7kR6uJTzH7Y6XgDfq8-G47dCd9LKWZnPf4jyPLlSKqwPsSXZiF13_RLrGbMNzOl_gwaB5eNkLA43H6F3tLVLB16bT3rUTV15FUGiyRWm7-OUGS3Jqsczmt3ML69D5UPAcRANWuAF1RJ34GRoX5Ij2Lg3nL6WUmu2eYlTfbiz-m-THh6RKZoxekVUaft5SFupd75GTj-JIMM8iWnNyAshbWd9jgc3pJ", "state"=>"c57bb865486b0c07401552d639a387b1c34b06cd17acbaa1"} (pid:18401)
+[0;37m2017-02-07 16:23:23.291[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:18401)
+[0;37m2017-02-07 16:23:23.291[0m [[32mfyi[0m] Completed 302 Found in 1ms (ActiveRecord: 0.0ms) (pid:18401)
+[0;37m2017-02-07 16:23:23.300[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:23:23 +0100 (pid:18401)
+[0;37m2017-02-07 16:23:23.304[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:18401)
+[0;37m2017-02-07 16:23:23.306[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:18401)
+[0;37m2017-02-07 16:23:23.307[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.2ms) (pid:18401)
+[0;37m2017-02-07 16:23:23.358[0m [[32mfyi[0m] Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms) (pid:18401)
+[0;37m2017-02-07 16:23:25.533[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:23:25 +0100 (pid:18401)
+[0;37m2017-02-07 16:23:25.536[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:18401)
+[0;37m2017-02-07 16:23:25.538[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:18401)
+[0;37m2017-02-07 16:23:25.542[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:18401)
+[0;37m2017-02-07 16:23:25.542[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.0ms) (pid:18401)
+[0;37m2017-02-07 16:23:25.599[0m [[32mfyi[0m] Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms) (pid:18401)
+[0;37m2017-02-07 16:23:27.923[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:23:27 +0100 (pid:18401)
+[0;37m2017-02-07 16:23:27.339[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:23:27 +0100 (pid:18401)
+[0;37m2017-02-07 16:34:35.660[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:34:35 +0100 (pid:19273)
+[0;37m2017-02-07 16:34:35.674[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:19273)
+[0;37m2017-02-07 16:34:35.694[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:19273)
+[0;37m2017-02-07 16:34:35.717[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:19273)
+[0;37m2017-02-07 16:34:35.733[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:19273)
+[0;37m2017-02-07 16:34:35.733[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (15.9ms) (pid:19273)
+[0;37m2017-02-07 16:34:36.966[0m [[32mfyi[0m] Completed 200 OK in 315ms (Views: 295.7ms | ActiveRecord: 1.2ms) (pid:19273)
+[0;37m2017-02-07 16:34:40.528[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:34:40 +0100 (pid:19273)
+[0;37m2017-02-07 16:34:40.768[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:34:40 +0100 (pid:19273)
+[0;37m2017-02-07 16:35:49.750[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:35:49 +0100 (pid:19273)
+[0;37m2017-02-07 16:35:51.478[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:35:51 +0100 (pid:19273)
+[0;37m2017-02-07 16:37:22.354[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:37:22 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:22.369[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:19407)
+[0;37m2017-02-07 16:37:22.647[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQBIsFH9XqmCn6UZHJfMbGaGiaVmMUTFy8v8N1jGxwpB7vHw22mIuLyFawgjKqL5CmkMgJeLV2MGpv06i2v23f0Swzdq1zwvX2ZHyf93Qp5DZuIN-oFSxkz2GeEuZraS3zZmd0hsO5d5ncICAQbFbMPTnY8Os68PtapRr1XG_IAanxUh1PKFNLznT0vKZINJc67pi5rsy65WbIJFKfUWcF3BPOdsGJkxuDEeLC5H0bLRNpo5PvWJ-Ho2DkEFnvv8NIw5Bo0fwFiO0xA9Y-jhp8nnsMu6aHdB1Jhm-D2-yh8A5aT1Mg9SXMoHKFfe-MQr-X4_4EvKtYslec7k26VHKlpN&state=8eeb5ee10b55ea715405e4cd6d7cec5ec3bffd5718c266d2" for 127.0.0.1 at 2017-02-07 16:37:22 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:22.677[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#failure as HTML (pid:19407)
+[0;37m2017-02-07 16:37:22.677[0m [[32mfyi[0m] Parameters: {"code"=>"AQBIsFH9XqmCn6UZHJfMbGaGiaVmMUTFy8v8N1jGxwpB7vHw22mIuLyFawgjKqL5CmkMgJeLV2MGpv06i2v23f0Swzdq1zwvX2ZHyf93Qp5DZuIN-oFSxkz2GeEuZraS3zZmd0hsO5d5ncICAQbFbMPTnY8Os68PtapRr1XG_IAanxUh1PKFNLznT0vKZINJc67pi5rsy65WbIJFKfUWcF3BPOdsGJkxuDEeLC5H0bLRNpo5PvWJ-Ho2DkEFnvv8NIw5Bo0fwFiO0xA9Y-jhp8nnsMu6aHdB1Jhm-D2-yh8A5aT1Mg9SXMoHKFfe-MQr-X4_4EvKtYslec7k26VHKlpN", "state"=>"8eeb5ee10b55ea715405e4cd6d7cec5ec3bffd5718c266d2"} (pid:19407)
+[0;37m2017-02-07 16:37:22.680[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:19407)
+[0;37m2017-02-07 16:37:22.681[0m [[32mfyi[0m] Completed 302 Found in 4ms (ActiveRecord: 0.0ms) (pid:19407)
+[0;37m2017-02-07 16:37:22.700[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:37:22 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:22.706[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19407)
+[0;37m2017-02-07 16:37:22.711[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19407)
+[0;37m2017-02-07 16:37:22.713[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (2.0ms) (pid:19407)
+[0;37m2017-02-07 16:37:23.685[0m [[32mfyi[0m] Completed 200 OK in 362ms (Views: 361.1ms | ActiveRecord: 0.0ms) (pid:19407)
+[0;37m2017-02-07 16:37:25.844[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:37:25 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:25.852[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:19407)
+[0;37m2017-02-07 16:37:25.867[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:19407)
+[0;37m2017-02-07 16:37:25.881[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:19407)
+[0;37m2017-02-07 16:37:25.881[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (13.9ms) (pid:19407)
+[0;37m2017-02-07 16:37:25.932[0m [[32mfyi[0m] Completed 200 OK in 80ms (Views: 65.7ms | ActiveRecord: 1.0ms) (pid:19407)
+[0;37m2017-02-07 16:37:27.521[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:37:27 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:27.673[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:37:27 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:27.904[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQA7tL3eSUW2BVO9HxD2ems290EYTxlforFymPXsXaCYbOZ5zog72aqrJ426Y_jLtQUEWs7xxwMo5kZ3e-nSi_L8sALfKFM1T80JkR3qvuTpdIOff_Hr4njFlcZqZNhqmX5n7lL2eQ1VtkHLTFmL9dFFUEqfKKz06nXRaxQQCzLQ2_M4USrIM9nBsLzDNPkZggswk6MBcEuyzHzt5E9foFNxuhppA5RD2MQNTzh049mPazzFYIw5ZA4nfy-uQMQ5h6JeRz5RfJxRgJaPcJu6PAuGLEIOkSJ5jqTkT7rdIFYlO4WbRzurqrxOsBIKh_9-Xkql3RV7IpVd8cH6bogYE8Oc&state=1b61c1f46ccb30c4161590dd5a5b7a7f9d4722eee2ce531e" for 127.0.0.1 at 2017-02-07 16:37:27 +0100 (pid:19407)
+[0;37m2017-02-07 16:37:28.636[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:19407)
+[0;37m2017-02-07 16:37:28.636[0m [[32mfyi[0m] Parameters: {"code"=>"AQA7tL3eSUW2BVO9HxD2ems290EYTxlforFymPXsXaCYbOZ5zog72aqrJ426Y_jLtQUEWs7xxwMo5kZ3e-nSi_L8sALfKFM1T80JkR3qvuTpdIOff_Hr4njFlcZqZNhqmX5n7lL2eQ1VtkHLTFmL9dFFUEqfKKz06nXRaxQQCzLQ2_M4USrIM9nBsLzDNPkZggswk6MBcEuyzHzt5E9foFNxuhppA5RD2MQNTzh049mPazzFYIw5ZA4nfy-uQMQ5h6JeRz5RfJxRgJaPcJu6PAuGLEIOkSJ5jqTkT7rdIFYlO4WbRzurqrxOsBIKh_9-Xkql3RV7IpVd8cH6bogYE8Oc", "state"=>"1b61c1f46ccb30c4161590dd5a5b7a7f9d4722eee2ce531e"} (pid:19407)
+[0;37m2017-02-07 16:37:28.638[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19407)
+[0;37m2017-02-07 16:37:28.782[0m [[32mfyi[0m] Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.3ms) (pid:19407)
+[0;37m2017-02-07 16:37:28.786[0m [[31momg[0m] NoMethodError - undefined method `name=' for #<User:0x007fc240324038>:
+  activemodel (5.0.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  app/models/user.rb:12:in `block in from_omniauth'
+  activerecord (5.0.1) lib/active_record/core.rb:321:in `initialize'
+  activerecord (5.0.1) lib/active_record/inheritance.rb:65:in `new'
+  activerecord (5.0.1) lib/active_record/persistence.rb:33:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `block in create'
+  activerecord (5.0.1) lib/active_record/relation.rb:351:in `scoping'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:164:in `first_or_create'
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:403:in `call_app!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:357:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:67:in `block in callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:131:in `with_authorization_code!'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:66:in `callback_phase'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:19407)
+[0;37m2017-02-07 16:37:28.870[0m [[32mfyi[0m] Started POST "/__better_errors/6fe63263a475192d/variables" for 127.0.0.1 at 2017-02-07 16:37:28 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:29.748[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQA7tL3eSUW2BVO9HxD2ems290EYTxlforFymPXsXaCYbOZ5zog72aqrJ426Y_jLtQUEWs7xxwMo5kZ3e-nSi_L8sALfKFM1T80JkR3qvuTpdIOff_Hr4njFlcZqZNhqmX5n7lL2eQ1VtkHLTFmL9dFFUEqfKKz06nXRaxQQCzLQ2_M4USrIM9nBsLzDNPkZggswk6MBcEuyzHzt5E9foFNxuhppA5RD2MQNTzh049mPazzFYIw5ZA4nfy-uQMQ5h6JeRz5RfJxRgJaPcJu6PAuGLEIOkSJ5jqTkT7rdIFYlO4WbRzurqrxOsBIKh_9-Xkql3RV7IpVd8cH6bogYE8Oc&state=1b61c1f46ccb30c4161590dd5a5b7a7f9d4722eee2ce531e" for 127.0.0.1 at 2017-02-07 16:39:29 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:30.155[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#failure as HTML (pid:19407)
+[0;37m2017-02-07 16:39:30.155[0m [[32mfyi[0m] Parameters: {"code"=>"AQA7tL3eSUW2BVO9HxD2ems290EYTxlforFymPXsXaCYbOZ5zog72aqrJ426Y_jLtQUEWs7xxwMo5kZ3e-nSi_L8sALfKFM1T80JkR3qvuTpdIOff_Hr4njFlcZqZNhqmX5n7lL2eQ1VtkHLTFmL9dFFUEqfKKz06nXRaxQQCzLQ2_M4USrIM9nBsLzDNPkZggswk6MBcEuyzHzt5E9foFNxuhppA5RD2MQNTzh049mPazzFYIw5ZA4nfy-uQMQ5h6JeRz5RfJxRgJaPcJu6PAuGLEIOkSJ5jqTkT7rdIFYlO4WbRzurqrxOsBIKh_9-Xkql3RV7IpVd8cH6bogYE8Oc", "state"=>"1b61c1f46ccb30c4161590dd5a5b7a7f9d4722eee2ce531e"} (pid:19407)
+[0;37m2017-02-07 16:39:30.156[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:19407)
+[0;37m2017-02-07 16:39:30.156[0m [[32mfyi[0m] Completed 302 Found in 0ms (ActiveRecord: 0.0ms) (pid:19407)
+[0;37m2017-02-07 16:39:30.164[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:39:30 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:30.167[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19407)
+[0;37m2017-02-07 16:39:30.170[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19407)
+[0;37m2017-02-07 16:39:30.172[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.5ms) (pid:19407)
+[0;37m2017-02-07 16:39:30.217[0m [[32mfyi[0m] Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms) (pid:19407)
+[0;37m2017-02-07 16:39:32.347[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:39:32 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:32.350[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:19407)
+[0;37m2017-02-07 16:39:32.352[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:19407)
+[0;37m2017-02-07 16:39:32.356[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:19407)
+[0;37m2017-02-07 16:39:32.356[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.7ms) (pid:19407)
+[0;37m2017-02-07 16:39:32.407[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms) (pid:19407)
+[0;37m2017-02-07 16:39:33.541[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:39:33 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:33.699[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:39:33 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:33.922[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQDG0F_gXHWLRPQ5RECk1rHvE1kg-FEZcYu3h1JgOIIoOow12HSsSmGE-52uKlcAiGTLpRcswA0Jc6z-cUAtk_6z5WBT89x1TkFq6IovWoLrZ9ZAUUyTe4CzJ4sRVuS6COfOhkq7WrQOYleamMrCNkuqa8WT7jar7F9julZlnhyg3fvx66X2ACxTnF46l8X6rHBbGAyDE3NFb_pgqTW286E0k6S4f3-aK1NiF4QzDq53RG9FHkDIu-zCHCiAKcoVS4bojt8ZwrACXJBWux93ckJIG9HSapnh2v8ECqcqiGwX_oHeb1Q5cTl2KOywAIW_Z2eG-Tldk2WYEa_0IHvu6XPc&state=c455b123e3d8f50fe12f8c3f022388e44e2b3210c6f5aa6f" for 127.0.0.1 at 2017-02-07 16:39:33 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:34.592[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:19407)
+[0;37m2017-02-07 16:39:34.592[0m [[32mfyi[0m] Parameters: {"code"=>"AQDG0F_gXHWLRPQ5RECk1rHvE1kg-FEZcYu3h1JgOIIoOow12HSsSmGE-52uKlcAiGTLpRcswA0Jc6z-cUAtk_6z5WBT89x1TkFq6IovWoLrZ9ZAUUyTe4CzJ4sRVuS6COfOhkq7WrQOYleamMrCNkuqa8WT7jar7F9julZlnhyg3fvx66X2ACxTnF46l8X6rHBbGAyDE3NFb_pgqTW286E0k6S4f3-aK1NiF4QzDq53RG9FHkDIu-zCHCiAKcoVS4bojt8ZwrACXJBWux93ckJIG9HSapnh2v8ECqcqiGwX_oHeb1Q5cTl2KOywAIW_Z2eG-Tldk2WYEa_0IHvu6XPc", "state"=>"c455b123e3d8f50fe12f8c3f022388e44e2b3210c6f5aa6f"} (pid:19407)
+[0;37m2017-02-07 16:39:34.594[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19407)
+[0;37m2017-02-07 16:39:34.732[0m [[32mfyi[0m] Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.3ms) (pid:19407)
+[0;37m2017-02-07 16:39:34.736[0m [[31momg[0m] NoMethodError - undefined method `name=' for #<User:0x007fc21c3880c0>:
+  activemodel (5.0.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  app/models/user.rb:12:in `block in from_omniauth'
+  activerecord (5.0.1) lib/active_record/core.rb:321:in `initialize'
+  activerecord (5.0.1) lib/active_record/inheritance.rb:65:in `new'
+  activerecord (5.0.1) lib/active_record/persistence.rb:33:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `block in create'
+  activerecord (5.0.1) lib/active_record/relation.rb:351:in `scoping'
+  activerecord (5.0.1) lib/active_record/relation.rb:150:in `create'
+  activerecord (5.0.1) lib/active_record/relation.rb:164:in `first_or_create'
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:403:in `call_app!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:357:in `callback_phase'
+  omniauth-oauth2 (1.4.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:67:in `block in callback_phase'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:131:in `with_authorization_code!'
+  omniauth-facebook (4.0.0) lib/omniauth/strategies/facebook.rb:66:in `callback_phase'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:19407)
+[0;37m2017-02-07 16:39:34.779[0m [[32mfyi[0m] Started POST "/__better_errors/6f1431f8f1e3fb96/variables" for 127.0.0.1 at 2017-02-07 16:39:34 +0100 (pid:19407)
+[0;37m2017-02-07 16:39:44.997[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQDG0F_gXHWLRPQ5RECk1rHvE1kg-FEZcYu3h1JgOIIoOow12HSsSmGE-52uKlcAiGTLpRcswA0Jc6z-cUAtk_6z5WBT89x1TkFq6IovWoLrZ9ZAUUyTe4CzJ4sRVuS6COfOhkq7WrQOYleamMrCNkuqa8WT7jar7F9julZlnhyg3fvx66X2ACxTnF46l8X6rHBbGAyDE3NFb_pgqTW286E0k6S4f3-aK1NiF4QzDq53RG9FHkDIu-zCHCiAKcoVS4bojt8ZwrACXJBWux93ckJIG9HSapnh2v8ECqcqiGwX_oHeb1Q5cTl2KOywAIW_Z2eG-Tldk2WYEa_0IHvu6XPc&state=c455b123e3d8f50fe12f8c3f022388e44e2b3210c6f5aa6f" for 127.0.0.1 at 2017-02-07 16:39:44 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:45.116[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:19497)
+[0;37m2017-02-07 16:39:48.565[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:39:48 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:49.292[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 16:39:49.293[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#failure as HTML (pid:19497)
+[0;37m2017-02-07 16:39:49.297[0m [[32mfyi[0m] Parameters: {"code"=>"AQDG0F_gXHWLRPQ5RECk1rHvE1kg-FEZcYu3h1JgOIIoOow12HSsSmGE-52uKlcAiGTLpRcswA0Jc6z-cUAtk_6z5WBT89x1TkFq6IovWoLrZ9ZAUUyTe4CzJ4sRVuS6COfOhkq7WrQOYleamMrCNkuqa8WT7jar7F9julZlnhyg3fvx66X2ACxTnF46l8X6rHBbGAyDE3NFb_pgqTW286E0k6S4f3-aK1NiF4QzDq53RG9FHkDIu-zCHCiAKcoVS4bojt8ZwrACXJBWux93ckJIG9HSapnh2v8ECqcqiGwX_oHeb1Q5cTl2KOywAIW_Z2eG-Tldk2WYEa_0IHvu6XPc", "state"=>"c455b123e3d8f50fe12f8c3f022388e44e2b3210c6f5aa6f"} (pid:19497)
+[0;37m2017-02-07 16:39:49.300[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:19497)
+[0;37m2017-02-07 16:39:49.301[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19497)
+[0;37m2017-02-07 16:39:49.303[0m [[32mfyi[0m] Completed 302 Found in 3ms (ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:39:49.304[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.7ms) (pid:19497)
+[0;37m2017-02-07 16:39:49.654[0m [[32mfyi[0m] Completed 200 OK in 361ms (Views: 359.4ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:39:51.458[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:39:51 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:51.469[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:19497)
+[0;37m2017-02-07 16:39:51.488[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:39:51.502[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:19497)
+[0;37m2017-02-07 16:39:51.502[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (13.3ms) (pid:19497)
+[0;37m2017-02-07 16:39:51.558[0m [[32mfyi[0m] Completed 200 OK in 89ms (Views: 70.5ms | ActiveRecord: 1.3ms) (pid:19497)
+[0;37m2017-02-07 16:39:53.600[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:39:53 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:53.199[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:39:53 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:53.402[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQDBDFXeI8210PSYnf_yV_jvxQ9MI7ZQIUKYxnmwSfIIfLi9E95qtLOkVcK070XUYwgc7sly_yzFM4DNEFZOjldqidxBHgPFokMC18X0ex0w_eskWJhC_Ov1DvgGR9PzE3wkfcI1X_6bJ2TeiS-CleIbZlNlk-9erdV1NeE4ceostoFxm6moup3LOFamIhaWsblAV22MJhVmzh5IPPFSpwTXQZeLfarJTRe8phxT2_FCmoUQj2IfVTxiFZCUN9dDUUjmN0XIsYl989MvNLAxH8W3pHnnhzsdtSFu1xzHekh5tpMxQEwKVUlG6Bjy46fCSRIVN3iU3U9uyR8oxxurazSc&state=4ab996abba9eef5374fdc9efd51fd16a41d51b69feb09baa" for 127.0.0.1 at 2017-02-07 16:39:53 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:54.436[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:19497)
+[0;37m2017-02-07 16:39:54.437[0m [[32mfyi[0m] Parameters: {"code"=>"AQDBDFXeI8210PSYnf_yV_jvxQ9MI7ZQIUKYxnmwSfIIfLi9E95qtLOkVcK070XUYwgc7sly_yzFM4DNEFZOjldqidxBHgPFokMC18X0ex0w_eskWJhC_Ov1DvgGR9PzE3wkfcI1X_6bJ2TeiS-CleIbZlNlk-9erdV1NeE4ceostoFxm6moup3LOFamIhaWsblAV22MJhVmzh5IPPFSpwTXQZeLfarJTRe8phxT2_FCmoUQj2IfVTxiFZCUN9dDUUjmN0XIsYl989MvNLAxH8W3pHnnhzsdtSFu1xzHekh5tpMxQEwKVUlG6Bjy46fCSRIVN3iU3U9uyR8oxxurazSc", "state"=>"4ab996abba9eef5374fdc9efd51fd16a41d51b69feb09baa"} (pid:19497)
+[0;37m2017-02-07 16:39:54.456[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.184[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.191[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabrizio.bertoglio@gmail.com' LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.193[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `provider`, `uid`) VALUES ('fabrizio.bertoglio@gmail.com', '$2a$11$LjePsSCP.euamd2ppQd8..4okkbAtbCw/nIDUa.ey0JvjVxIwHvxC', '2017-02-07 15:39:54', '2017-02-07 15:39:54', 'facebook', '10210855772523702')[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.258[0m [[0;37mmeh[0m] [1m[35m (64.8ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.259[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.261[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2017-02-07 15:39:54', `last_sign_in_at` = '2017-02-07 15:39:54', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 2[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.313[0m [[0;37mmeh[0m] [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.314[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/user_root (pid:19497)
+[0;37m2017-02-07 16:39:54.314[0m [[32mfyi[0m] Completed 302 Found in 271ms (ActiveRecord: 118.3ms) (pid:19497)
+[0;37m2017-02-07 16:39:54.325[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 16:39:54 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:54.329[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 16:39:54.330[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:39:54.332[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:39:54.333[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:19497)
+[0;37m2017-02-07 16:39:54.385[0m [[32mfyi[0m] Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.3ms) (pid:19497)
+[0;37m2017-02-07 16:39:59.900[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 16:39:59 +0100 (pid:19497)
+[0;37m2017-02-07 16:39:59.119[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:19497)
+[0;37m2017-02-07 16:39:59.120[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"mLsG+xH4RkfcGZLrW6aCH4KIqM389ZRZ7iHQtkcpauJmEk22A2372JH6/brCsldKDZcFgBKxKQKm5aWUlZCHWg=="} (pid:19497)
+[0;37m2017-02-07 16:39:59.135[0m [[0;37mmeh[0m] [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:39:59.151[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:39:59.183[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (3.0ms) (pid:19497)
+[0;37m2017-02-07 16:39:59.928[0m [[32mfyi[0m] Completed 200 OK in 81ms (Views: 78.6ms | ActiveRecord: 0.5ms) (pid:19497)
+[0;37m2017-02-07 16:46:39.887[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 16:46:39 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:39.893[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:19497)
+[0;37m2017-02-07 16:46:39.893[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"iw3W0aH8vpyPQ39CPN9B8ZkSHLWqkh8jB9zAUx7sW+t1pJ2cs2kDA8KgEBOly5SkFg2x+ETWonhPGLVxzFW2Uw=="} (pid:19497)
+[0;37m2017-02-07 16:46:39.895[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:46:39.897[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 16:46:39.898[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 16:46:39.899[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:19497)
+[0;37m2017-02-07 16:46:39.899[0m [[32mfyi[0m] Completed 302 Found in 5ms (ActiveRecord: 0.5ms) (pid:19497)
+[0;37m2017-02-07 16:46:39.907[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:46:39 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:39.910[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 16:46:39.911[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19497)
+[0;37m2017-02-07 16:46:39.913[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (0.9ms) (pid:19497)
+[0;37m2017-02-07 16:46:39.967[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:46:42.659[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 16:46:42 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:42.662[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:19497)
+[0;37m2017-02-07 16:46:42.666[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:46:42.672[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:19497)
+[0;37m2017-02-07 16:46:42.672[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (6.2ms) (pid:19497)
+[0;37m2017-02-07 16:46:42.730[0m [[32mfyi[0m] Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:46:47.208[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 16:46:47 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:47.213[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 16:46:47.215[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19497)
+[0;37m2017-02-07 16:46:47.217[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.4ms) (pid:19497)
+[0;37m2017-02-07 16:46:47.285[0m [[32mfyi[0m] Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:46:48.928[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 16:46:48 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:48.932[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:19497)
+[0;37m2017-02-07 16:46:48.934[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:46:48.937[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:19497)
+[0;37m2017-02-07 16:46:48.937[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.6ms) (pid:19497)
+[0;37m2017-02-07 16:46:48.995[0m [[32mfyi[0m] Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 16:46:50.726[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:46:50 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:50.973[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 16:46:50 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:51.172[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQDocrwsQPkw7jHCVJ_9RNDoNjb07eaqEglfLdnvW-TPMi9cPyfzqyy8MB3gwbVIA0-QyRlkMP2PuZHA4XvvwUmyHoR_gYc9wsPyVKjNvNIV-zXWCHdGUlBy0P7JCFhRZKdYFtYQECkqrona8_3cuR4Xzr8lHcLJU4CZhyYi6mQrt79nRbwK-0GZNZrfnJaowTQL1ETrfOwFcYghx-1IBbnNb5kAs7yGWgf62X8wwVkvxfHEfvKj9GqtdpMKhNIHKHM4O82o_KvCCd5C-vf_tNDTIs2PYY5huIPMl2NwlKjpRSZcYUL8HKYhH_QrnnOaNSGJV99FlrQYXSkycaax0rJA&state=f4e28599a28d02e6624db6cd0bf3fabcdec408193e7e56d8" for 127.0.0.1 at 2017-02-07 16:46:51 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:51.803[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:19497)
+[0;37m2017-02-07 16:46:51.803[0m [[32mfyi[0m] Parameters: {"code"=>"AQDocrwsQPkw7jHCVJ_9RNDoNjb07eaqEglfLdnvW-TPMi9cPyfzqyy8MB3gwbVIA0-QyRlkMP2PuZHA4XvvwUmyHoR_gYc9wsPyVKjNvNIV-zXWCHdGUlBy0P7JCFhRZKdYFtYQECkqrona8_3cuR4Xzr8lHcLJU4CZhyYi6mQrt79nRbwK-0GZNZrfnJaowTQL1ETrfOwFcYghx-1IBbnNb5kAs7yGWgf62X8wwVkvxfHEfvKj9GqtdpMKhNIHKHM4O82o_KvCCd5C-vf_tNDTIs2PYY5huIPMl2NwlKjpRSZcYUL8HKYhH_QrnnOaNSGJV99FlrQYXSkycaax0rJA", "state"=>"f4e28599a28d02e6624db6cd0bf3fabcdec408193e7e56d8"} (pid:19497)
+[0;37m2017-02-07 16:46:51.804[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:46:51.805[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 16:46:51.806[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2017-02-07 15:46:51', `sign_in_count` = 2, `updated_at` = '2017-02-07 15:46:51' WHERE `users`.`id` = 2[0m (pid:19497)
+[0;37m2017-02-07 16:46:51.870[0m [[0;37mmeh[0m] [1m[35m (63.0ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 16:46:51.870[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/user_root (pid:19497)
+[0;37m2017-02-07 16:46:51.871[0m [[32mfyi[0m] Completed 302 Found in 68ms (ActiveRecord: 63.5ms) (pid:19497)
+[0;37m2017-02-07 16:46:51.880[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 16:46:51 +0100 (pid:19497)
+[0;37m2017-02-07 16:46:51.883[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 16:46:51.884[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 16:46:51.886[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 16:46:51.887[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:19497)
+[0;37m2017-02-07 16:46:51.943[0m [[32mfyi[0m] Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.2ms) (pid:19497)
+[0;37m2017-02-07 17:54:10.193[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 17:54:10 +0100 (pid:19497)
+[0;37m2017-02-07 17:54:10.196[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:19497)
+[0;37m2017-02-07 17:54:10.196[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"fmLTL+07v3ee0HCkuKIxY114um3ZuE2Vgw5wZs+aVR/6RWDfIIuHMyadChzSpWA/VJLRgXsVfqN/KWsxe0sryg=="} (pid:19497)
+[0;37m2017-02-07 17:54:10.198[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:54:10.200[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 17:54:10.204[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (3.9ms) (pid:19497)
+[0;37m2017-02-07 17:54:10.277[0m [[32mfyi[0m] Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.3ms) (pid:19497)
+[0;37m2017-02-07 17:55:20.199[0m [[32mfyi[0m] Started PUT "/users" for 127.0.0.1 at 2017-02-07 17:55:20 +0100 (pid:19497)
+[0;37m2017-02-07 17:55:20.202[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#update as HTML (pid:19497)
+[0;37m2017-02-07 17:55:20.203[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"hn7pVCUTQAeN/NwP/nTva5BZ7vTn8sYQXf3tqv3XVrwCWVqk6KN4QzWxpreUc743mbOFGEVf9Sah2vb9SQYoaQ==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"} (pid:19497)
+[0;37m2017-02-07 17:55:20.204[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:55:20.206[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:55:20.503[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 17:55:20.507[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (3.0ms) (pid:19497)
+[0;37m2017-02-07 17:55:20.562[0m [[32mfyi[0m] Completed 200 OK in 360ms (Views: 59.8ms | ActiveRecord: 0.5ms) (pid:19497)
+[0;37m2017-02-07 17:55:40.149[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 17:55:40 +0100 (pid:19497)
+[0;37m2017-02-07 17:55:40.152[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:19497)
+[0;37m2017-02-07 17:55:40.152[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"4J0oOFOjacGsSA6b4IF+qDt/d0XuoBqE3nrUswMJ/S9kupvInhNRhRQFdCOKhi/0MpUcqUwNKbIiXc/kt9iD+g=="} (pid:19497)
+[0;37m2017-02-07 17:55:40.153[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:55:40.154[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 17:55:40.155[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 17:55:40.155[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:19497)
+[0;37m2017-02-07 17:55:40.155[0m [[32mfyi[0m] Completed 302 Found in 4ms (ActiveRecord: 0.4ms) (pid:19497)
+[0;37m2017-02-07 17:55:40.191[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 17:55:40 +0100 (pid:19497)
+[0;37m2017-02-07 17:55:40.194[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 17:55:40.195[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:19497)
+[0;37m2017-02-07 17:55:40.196[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (0.9ms) (pid:19497)
+[0;37m2017-02-07 17:55:40.242[0m [[32mfyi[0m] Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 17:55:42.682[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 17:55:42 +0100 (pid:19497)
+[0;37m2017-02-07 17:55:42.685[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:19497)
+[0;37m2017-02-07 17:55:42.687[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 17:55:42.690[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:19497)
+[0;37m2017-02-07 17:55:42.690[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.5ms) (pid:19497)
+[0;37m2017-02-07 17:55:42.738[0m [[32mfyi[0m] Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms) (pid:19497)
+[0;37m2017-02-07 17:56:10.119[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 17:56:10 +0100 (pid:19497)
+[0;37m2017-02-07 17:56:10.388[0m [[32mfyi[0m] Started GET "/users/auth/facebook" for 127.0.0.1 at 2017-02-07 17:56:10 +0100 (pid:19497)
+[0;37m2017-02-07 17:56:10.666[0m [[32mfyi[0m] Started GET "/users/auth/facebook/callback?code=AQBVdlNAyIs91tXUGQpcrUNLCd1NAog4JmgnJUOBaB1XwwvODPZJdySCmgZiHJmyrZ-O95J-2qFIAdxTo3VLoqYM6qXSNcXfjbrphijCGoPqJ2VbBiNoikqccXiOJLyv9vp6o-ay5Gro72eYptRMxGsc16xm4sbDnLj4gyRgVBfyvQ4vEuVAu67MXG1KyLRMXRYQV13J9vfHpVF51NcVrEcvQoCE-jWXEUzw0D4yW6ggwDtTtzlaJIFGe_B8xyDKFTwUJ2m_WWFGuU4V0ipavIIjk0kB-uc7U-IuRwFO4eAHHtHwhRoQ9nJ4r0GV02dZ6Y7WkkTDxCvsCzj7dDb8MV4C&state=46444d895bc6249c53d45627c89a23dbf90ec1679921cf2d" for 127.0.0.1 at 2017-02-07 17:56:10 +0100 (pid:19497)
+[0;37m2017-02-07 17:56:11.307[0m [[32mfyi[0m] Processing by Users::OmniauthCallbacksController#facebook as HTML (pid:19497)
+[0;37m2017-02-07 17:56:11.307[0m [[32mfyi[0m] Parameters: {"code"=>"AQBVdlNAyIs91tXUGQpcrUNLCd1NAog4JmgnJUOBaB1XwwvODPZJdySCmgZiHJmyrZ-O95J-2qFIAdxTo3VLoqYM6qXSNcXfjbrphijCGoPqJ2VbBiNoikqccXiOJLyv9vp6o-ay5Gro72eYptRMxGsc16xm4sbDnLj4gyRgVBfyvQ4vEuVAu67MXG1KyLRMXRYQV13J9vfHpVF51NcVrEcvQoCE-jWXEUzw0D4yW6ggwDtTtzlaJIFGe_B8xyDKFTwUJ2m_WWFGuU4V0ipavIIjk0kB-uc7U-IuRwFO4eAHHtHwhRoQ9nJ4r0GV02dZ6Y7WkkTDxCvsCzj7dDb8MV4C", "state"=>"46444d895bc6249c53d45627c89a23dbf90ec1679921cf2d"} (pid:19497)
+[0;37m2017-02-07 17:56:11.308[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '10210855772523702' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:56:11.309[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:19497)
+[0;37m2017-02-07 17:56:11.311[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2017-02-07 16:56:11', `last_sign_in_at` = '2017-02-07 15:46:51', `sign_in_count` = 3, `updated_at` = '2017-02-07 16:56:11' WHERE `users`.`id` = 2[0m (pid:19497)
+[0;37m2017-02-07 17:56:11.354[0m [[0;37mmeh[0m] [1m[35m (43.3ms)[0m  [1m[35mCOMMIT[0m (pid:19497)
+[0;37m2017-02-07 17:56:11.355[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/user_root (pid:19497)
+[0;37m2017-02-07 17:56:11.355[0m [[32mfyi[0m] Completed 302 Found in 48ms (ActiveRecord: 43.9ms) (pid:19497)
+[0;37m2017-02-07 17:56:11.390[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 17:56:11 +0100 (pid:19497)
+[0;37m2017-02-07 17:56:11.392[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:19497)
+[0;37m2017-02-07 17:56:11.393[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:19497)
+[0;37m2017-02-07 17:56:11.394[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:19497)
+[0;37m2017-02-07 17:56:11.395[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.2ms) (pid:19497)
+[0;37m2017-02-07 17:56:11.451[0m [[32mfyi[0m] Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.3ms) (pid:19497)
