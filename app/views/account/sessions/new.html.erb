@@ -1,6 +1,6 @@
-<form class="login-form" action="index.html">        
+<form class="login-form">        
   <div class="login-wrap">
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), method: :post) do |f| %>
       <p class="login-img"><i class="icon_lock_alt"></i></p>
       <div class="field">
       </div>      
@@ -20,9 +20,8 @@
           <span class="pull-right"> <%= link_to "Forgot Password?", {}, :id => "lostPw" %></span>
       </label>
       <% end -%>      
-      <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-      <%= link_to "Signup", { controller: "user", action: "signup"}, class: "btn btn-info btn-lg btn-block signuptext" %>
-      <!--<button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>-->
+      <%= f.submit "Login", :class => "btn btn-primary btn-lg btn-block" %>
+      <%= link_to "Signup", new_account_registration_path, :method => :get, class: "btn btn-info btn-lg btn-block signuptext" %>
       <% end %>
   </div>
 </form>
