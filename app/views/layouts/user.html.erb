@@ -264,7 +264,7 @@
                             <div class="log-arrow-up"></div>
                             <li class="eborder-top">
                                 <!--<a href="#"><i class="icon_profile"></i> My Profile</a>-->
-                                <%= link_to edit_account_registration_path, method: :get do %>
+                                <%= link_to edit_user_registration_path, method: :get do %>
                                     <i class="icon_profile" aria-hidden="true"></i>My Profile
                                 <% end %>                                
                             </li>
@@ -278,7 +278,7 @@
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <%= link_to destroy_account_session_path, method: :delete do %>
+                                <%= link_to destroy_user_session_path, method: :delete do %>
                                     <i class="icon_key_alt" aria-hidden="true"></i>Log out
                                 <% end %>
                             </li>
