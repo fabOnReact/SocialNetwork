@@ -25047,3 +25047,1047 @@ Add `Rails.application.config.assets.precompile += %w( Germany.png )` to `config
 [0;37m2017-02-07 17:56:11.394[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:19497)
 [0;37m2017-02-07 17:56:11.395[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.2ms) (pid:19497)
 [0;37m2017-02-07 17:56:11.451[0m [[32mfyi[0m] Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.3ms) (pid:19497)
+[0;37m2017-02-07 18:24:33.927[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m (pid:21100)
+[0;37m2017-02-07 18:24:33.927[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3579009412087425540', 0);[0m (pid:21100)
+[0;37m2017-02-07 18:24:33.935[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:21100)
+[0;37m2017-02-07 18:24:33.939[0m [[32mfyi[0m] Migrating to AddConfirmableToDevise (20170207171708) (pid:21100)
+[0;37m2017-02-07 18:24:34.908[0m [[0;37mmeh[0m] [1m[35m (967.2ms)[0m  [1m[35mALTER TABLE `users` ADD `confirmation_token` varchar(255)[0m (pid:21100)
+[0;37m2017-02-07 18:24:35.931[0m [[0;37mmeh[0m] [1m[35m (1022.7ms)[0m  [1m[35mALTER TABLE `users` ADD `confirmed_at` datetime[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.762[0m [[0;37mmeh[0m] [1m[35m (1144.2ms)[0m  [1m[35mALTER TABLE `users` ADD `confirmation_sent_at` datetime[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.433[0m [[0;37mmeh[0m] [1m[35m (355.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_confirmation_token`  ON `users` (`confirmation_token`) [0m (pid:21100)
+[0;37m2017-02-07 18:24:37.477[0m [[0;37mmeh[0m] [1m[35m (44.2ms)[0m  [1m[33mUPDATE users SET confirmed_at = NOW()[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.478[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.479[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170207171708')[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.522[0m [[0;37mmeh[0m] [1m[35m (42.4ms)[0m  [1m[35mCOMMIT[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.524[0m [[0;37mmeh[0m] [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.526[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.527[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.527[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3579009412087425540')[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.531[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.533[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m (pid:21100)
+[0;37m2017-02-07 18:24:37.533[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m (pid:21100)
+[0;37m2017-02-07 18:31:05.779[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 18:31:05 +0100 (pid:21124)
+[0;37m2017-02-07 18:31:05.794[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:21124)
+[0;37m2017-02-07 18:31:05.858[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:21124)
+[0;37m2017-02-07 18:31:05.858[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"Q/CgpaDBwc3q2bdKz62uTjGATbye0lkw53Y9rbllutF0DttwdFsOax8cdd2tf2wfx9hxzeSfvY+jjL9ecgG0lg=="} (pid:21124)
+[0;37m2017-02-07 18:31:05.870[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:21124)
+[0;37m2017-02-07 18:31:05.882[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21124)
+[0;37m2017-02-07 18:31:05.883[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:21124)
+[0;37m2017-02-07 18:31:05.891[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:21124)
+[0;37m2017-02-07 18:31:05.892[0m [[32mfyi[0m] Completed 302 Found in 33ms (ActiveRecord: 1.6ms) (pid:21124)
+[0;37m2017-02-07 18:31:05.917[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:31:05 +0100 (pid:21124)
+[0;37m2017-02-07 18:31:05.923[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21124)
+[0;37m2017-02-07 18:31:05.928[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:21124)
+[0;37m2017-02-07 18:31:05.930[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.8ms) (pid:21124)
+[0;37m2017-02-07 18:31:06.273[0m [[32mfyi[0m] Completed 200 OK in 349ms (Views: 348.3ms | ActiveRecord: 0.0ms) (pid:21124)
+[0;37m2017-02-07 18:31:08.802[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 18:31:08 +0100 (pid:21124)
+[0;37m2017-02-07 18:31:08.809[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:21124)
+[0;37m2017-02-07 18:31:08.814[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:21124)
+[0;37m2017-02-07 18:31:08.827[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:21124)
+[0;37m2017-02-07 18:31:08.827[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (12.6ms) (pid:21124)
+[0;37m2017-02-07 18:31:08.882[0m [[32mfyi[0m] Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 0.0ms) (pid:21124)
+[0;37m2017-02-07 18:31:19.198[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:31:19 +0100 (pid:21124)
+[0;37m2017-02-07 18:31:19.202[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21124)
+[0;37m2017-02-07 18:31:19.202[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"1v/rdEodSzpJqNnD0oFeNuWzoU4hfv7D4Ee39aon7178v8sMgqs7xRfSRHQC1xAoIqAidgikeN8laDNBAfgPKw==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21124)
+[0;37m2017-02-07 18:31:19.356[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21124)
+[0;37m2017-02-07 18:31:19.363[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber87@gmail.com' LIMIT 1[0m (pid:21124)
+[0;37m2017-02-07 18:31:19.365[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabri.ber87@gmail.com', '$2a$11$JW/l1rbHdjREbi1zTzOlF.0LVPpzmHKxKhF.tNlKgzSjF7pbkffn6', '2017-02-07 17:31:19', '2017-02-07 17:31:19', 'uKdBGswHDGDu7wvriv1U', '2017-02-07 17:31:19')[0m (pid:21124)
+[0;37m2017-02-07 18:31:19.412[0m [[0;37mmeh[0m] [1m[35m (45.5ms)[0m  [1m[35mCOMMIT[0m (pid:21124)
+[0;37m2017-02-07 18:31:19.438[0m [[32mfyi[0m] Completed 500 Internal Server Error in 235ms (ActiveRecord: 46.1ms) (pid:21124)
+[0;37m2017-02-07 18:31:19.442[0m [[31momg[0m] NameError - undefined local variable or method `unconfirmed_email' for #<User:0x007fcf6402c778>:
+  activemodel (5.0.1) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (4.2.0) lib/devise/models/confirmable.rb:107:in `pending_reconfirmation?'
+  devise (4.2.0) lib/devise/models/confirmable.rb:116:in `send_confirmation_instructions'
+  devise (4.2.0) lib/devise/models/confirmable.rb:179:in `send_on_create_confirmation_instructions'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:232:in `block in conditional'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:456:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:456:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_commit_callbacks'
+  activerecord (5.0.1) lib/active_record/transactions.rb:354:in `committed!'
+  activerecord (5.0.1) lib/active_record/connection_adapters/abstract/transaction.rb:87:in `commit_records'
+  activerecord (5.0.1) lib/active_record/connection_adapters/abstract/transaction.rb:178:in `commit_transaction'
+  activerecord (5.0.1) lib/active_record/connection_adapters/abstract/transaction.rb:202:in `within_new_transaction'
+  activerecord (5.0.1) lib/active_record/connection_adapters/abstract/database_statements.rb:232:in `transaction'
+  activerecord (5.0.1) lib/active_record/transactions.rb:211:in `transaction'
+  activerecord (5.0.1) lib/active_record/transactions.rb:392:in `with_transaction_returning_status'
+  activerecord (5.0.1) lib/active_record/transactions.rb:319:in `block in save'
+  activerecord (5.0.1) lib/active_record/transactions.rb:334:in `rollback_active_record_state!'
+  activerecord (5.0.1) lib/active_record/transactions.rb:318:in `save'
+  activerecord (5.0.1) lib/active_record/suppressor.rb:41:in `save'
+  devise (4.2.0) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:21124)
+[0;37m2017-02-07 18:31:19.511[0m [[32mfyi[0m] Started POST "/__better_errors/6946e118c10af240/variables" for 127.0.0.1 at 2017-02-07 18:31:19 +0100 (pid:21124)
+[0;37m2017-02-07 18:33:03.225[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:33:03 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:03.241[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:21881)
+[0;37m2017-02-07 18:33:03.298[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21881)
+[0;37m2017-02-07 18:33:03.298[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"1v/rdEodSzpJqNnD0oFeNuWzoU4hfv7D4Ee39aon7178v8sMgqs7xRfSRHQC1xAoIqAidgikeN8laDNBAfgPKw==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21881)
+[0;37m2017-02-07 18:33:03.462[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m (pid:21881)
+[0;37m2017-02-07 18:33:03.469[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber87@gmail.com' LIMIT 1[0m (pid:21881)
+[0;37m2017-02-07 18:33:03.475[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m (pid:21881)
+[0;37m2017-02-07 18:33:03.482[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:21881)
+[0;37m2017-02-07 18:33:03.493[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:21881)
+[0;37m2017-02-07 18:33:03.494[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (11.8ms) (pid:21881)
+[0;37m2017-02-07 18:33:03.820[0m [[32mfyi[0m] Completed 200 OK in 521ms (Views: 338.8ms | ActiveRecord: 1.8ms) (pid:21881)
+[0;37m2017-02-07 18:33:20.912[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:33:20 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:20.916[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21881)
+[0;37m2017-02-07 18:33:20.916[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"tGYEmKR+uuEhHAOi2BUS3Tqre4Za/eVAXajwiJKLOnCeJiTgbMjKHn9mnhUIQ1zD/bj4vnMnY1yYh3Q8OVTaBQ==", "user"=>{"email"=>"fabri.ber@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21881)
+[0;37m2017-02-07 18:33:21.588[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21881)
+[0;37m2017-02-07 18:33:21.598[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber@gmail.com' LIMIT 1[0m (pid:21881)
+[0;37m2017-02-07 18:33:21.612[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabri.ber@gmail.com', '$2a$11$4EMnKkBSfLbZOws4IcEK8../e.SDER6KnS17hV2UA81xPp/oSZ.yu', '2017-02-07 17:33:21', '2017-02-07 17:33:21', 'Hkai66QDDiXfm62jn1qv', '2017-02-07 17:33:21')[0m (pid:21881)
+[0;37m2017-02-07 18:33:21.156[0m [[0;37mmeh[0m] [1m[35m (94.2ms)[0m  [1m[35mCOMMIT[0m (pid:21881)
+[0;37m2017-02-07 18:33:21.615[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:21881)
+[0;37m2017-02-07 18:33:21.616[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (1.3ms) (pid:21881)
+[0;37m2017-02-07 18:33:21.756[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 147.1ms (pid:21881)
+[0;37m2017-02-07 18:33:21.763[0m [[32mfyi[0m] Sent mail to fabri.ber@gmail.com (6.9ms) (pid:21881)
+[0;37m2017-02-07 18:33:21.763[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 18:33:21 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: fabri.ber@gmail.com
+Message-ID: <589a04e1b973f_55792a03d9825317@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabri.ber@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Hkai66QDDiXfm62jn1qv">Confirm my account</a></p> (pid:21881)
+[0;37m2017-02-07 18:33:21.767[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:21881)
+[0;37m2017-02-07 18:33:21.767[0m [[32mfyi[0m] Completed 302 Found in 851ms (ActiveRecord: 94.7ms) (pid:21881)
+[0;37m2017-02-07 18:33:21.782[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:33:21 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:21.788[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21881)
+[0;37m2017-02-07 18:33:21.790[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:21881)
+[0;37m2017-02-07 18:33:21.791[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.1ms) (pid:21881)
+[0;37m2017-02-07 18:33:21.843[0m [[32mfyi[0m] Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms) (pid:21881)
+[0;37m2017-02-07 18:33:33.449[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 18:33:33 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:33.452[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:21881)
+[0;37m2017-02-07 18:33:33.454[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:21881)
+[0;37m2017-02-07 18:33:33.459[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:21881)
+[0;37m2017-02-07 18:33:33.459[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.4ms) (pid:21881)
+[0;37m2017-02-07 18:33:33.514[0m [[32mfyi[0m] Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms) (pid:21881)
+[0;37m2017-02-07 18:33:47.488[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:33:47 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:47.492[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21881)
+[0;37m2017-02-07 18:33:47.494[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"qJ9+xOa8hacliHz2ElneacqxnXSuxtPd8RTsOpx8G+qC3168Lgr1WHvy4UHCD5B3DaIeTIccVcE0O2iON6P7nw==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21881)
+[0;37m2017-02-07 18:33:47.642[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21881)
+[0;37m2017-02-07 18:33:47.643[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabrizio.bertoglio@gmail.com' LIMIT 1[0m (pid:21881)
+[0;37m2017-02-07 18:33:47.646[0m [[0;37mmeh[0m] [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m (pid:21881)
+[0;37m2017-02-07 18:33:47.649[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:21881)
+[0;37m2017-02-07 18:33:47.654[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:21881)
+[0;37m2017-02-07 18:33:47.654[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.4ms) (pid:21881)
+[0;37m2017-02-07 18:33:47.733[0m [[32mfyi[0m] Completed 200 OK in 239ms (Views: 84.0ms | ActiveRecord: 0.7ms) (pid:21881)
+[0;37m2017-02-07 18:33:58.691[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:33:58 +0100 (pid:21881)
+[0;37m2017-02-07 18:33:58.695[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21881)
+[0;37m2017-02-07 18:33:58.695[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zdg9jmLsN2tXQfnwjxRWRmisgfFyoj0SudBtntVns3pPmB32qlpHlAk7ZEdfQhhYr78CyVt4uw58/+kqfrhTDw==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21881)
+[0;37m2017-02-07 18:33:58.843[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:21881)
+[0;37m2017-02-07 18:33:58.844[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber87@gmail.com' LIMIT 1[0m (pid:21881)
+[0;37m2017-02-07 18:33:58.845[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m (pid:21881)
+[0;37m2017-02-07 18:33:58.848[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:21881)
+[0;37m2017-02-07 18:33:58.853[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.6ms) (pid:21881)
+[0;37m2017-02-07 18:33:58.853[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.9ms) (pid:21881)
+[0;37m2017-02-07 18:33:58.915[0m [[32mfyi[0m] Completed 200 OK in 220ms (Views: 67.7ms | ActiveRecord: 0.5ms) (pid:21881)
+[0;37m2017-02-07 18:34:59.619[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:34:59 +0100 (pid:21881)
+[0;37m2017-02-07 18:34:59.625[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:21881)
+[0;37m2017-02-07 18:34:59.625[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"pKMTJUlYmLiFL+lBEn+62cy0WeWSmqyRJ5qu4oiDudqO4zNdge7oR9tVdPbCKfTHC6fa3btAKo3itSpWI1xZrw==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:21881)
+[0;37m2017-02-07 18:34:59.774[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m (pid:21881)
+[0;37m2017-02-07 18:34:59.776[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber87@gmail.com' LIMIT 1[0m (pid:21881)
+[0;37m2017-02-07 18:34:59.777[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabri.ber87@gmail.com', '$2a$11$8MX/0U9W7kjGd.ZgQAufgepLH0swe8o0welx3W/y5aapMVBDZYZXS', '2017-02-07 17:34:59', '2017-02-07 17:34:59', '2psadZ5zxF6oE-cGjGmF', '2017-02-07 17:34:59')[0m (pid:21881)
+[0;37m2017-02-07 18:34:59.858[0m [[0;37mmeh[0m] [1m[35m (80.5ms)[0m  [1m[35mCOMMIT[0m (pid:21881)
+[0;37m2017-02-07 18:34:59.865[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:21881)
+[0;37m2017-02-07 18:34:59.866[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms) (pid:21881)
+[0;37m2017-02-07 18:34:59.867[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 7.4ms (pid:21881)
+[0;37m2017-02-07 18:34:59.870[0m [[32mfyi[0m] Sent mail to fabri.ber87@gmail.com (3.0ms) (pid:21881)
+[0;37m2017-02-07 18:34:59.870[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 18:34:59 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: fabri.ber87@gmail.com
+Message-ID: <589a0543d3fee_55792a03d0c254b@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabri.ber87@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=2psadZ5zxF6oE-cGjGmF">Confirm my account</a></p> (pid:21881)
+[0;37m2017-02-07 18:34:59.873[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:21881)
+[0;37m2017-02-07 18:34:59.873[0m [[32mfyi[0m] Completed 302 Found in 248ms (ActiveRecord: 81.1ms) (pid:21881)
+[0;37m2017-02-07 18:34:59.911[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:34:59 +0100 (pid:21881)
+[0;37m2017-02-07 18:34:59.913[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:21881)
+[0;37m2017-02-07 18:34:59.915[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:21881)
+[0;37m2017-02-07 18:34:59.916[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (0.9ms) (pid:21881)
+[0;37m2017-02-07 18:34:59.973[0m [[32mfyi[0m] Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms) (pid:21881)
+[0;37m2017-02-07 18:57:12.258[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:57:12 +0100 (pid:23565)
+[0;37m2017-02-07 18:57:12.275[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:23565)
+[0;37m2017-02-07 18:57:12.293[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23565)
+[0;37m2017-02-07 18:57:12.307[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23565)
+[0;37m2017-02-07 18:57:12.311[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.6ms) (pid:23565)
+[0;37m2017-02-07 18:57:13.354[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__4125662861058267728_70119302843760 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:23565)
+[0;37m2017-02-07 18:57:18.147[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__4125662861058267728_70119302843760 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:23565)
+[0;37m2017-02-07 18:57:18.876[0m [[32mfyi[0m] Completed 200 OK in 6583ms (Views: 6571.7ms | ActiveRecord: 0.0ms) (pid:23565)
+[0;37m2017-02-07 18:57:28.651[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 18:57:28 +0100 (pid:23565)
+[0;37m2017-02-07 18:57:28.667[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:23565)
+[0;37m2017-02-07 18:57:28.691[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:23565)
+[0;37m2017-02-07 18:57:28.705[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:23565)
+[0;37m2017-02-07 18:57:28.705[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (13.9ms) (pid:23565)
+[0;37m2017-02-07 18:57:28.777[0m [[32mfyi[0m] Completed 200 OK in 110ms (Views: 87.4ms | ActiveRecord: 1.2ms) (pid:23565)
+[0;37m2017-02-07 18:57:42.749[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:57:42 +0100 (pid:23565)
+[0;37m2017-02-07 18:57:42.752[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:23565)
+[0;37m2017-02-07 18:57:42.752[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"20fD8TAR3xG6Qm0fHlqmy1Pd4pMUqObvzqJIjsEWRwbxB+OJ+Kev7uQ48KjODOjVlM5hqz1yYPMLjcw6asmncw==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:23565)
+[0;37m2017-02-07 18:57:42.992[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23565)
+[0;37m2017-02-07 18:57:43.230[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabrizio.bertoglio@gmail.com' LIMIT 1[0m (pid:23565)
+[0;37m2017-02-07 18:57:43.409[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabrizio.bertoglio@gmail.com', '$2a$11$MGk14.nDgO1DRFck2BQ4q.TjGZ7YnEgvjV/LBcc5jWw5EALqYXKPe', '2017-02-07 17:57:43', '2017-02-07 17:57:43', 'gApgm2Gnz6xgfBiEBqEJ', '2017-02-07 17:57:43')[0m (pid:23565)
+[0;37m2017-02-07 18:57:43.912[0m [[0;37mmeh[0m] [1m[35m (86.4ms)[0m  [1m[35mCOMMIT[0m (pid:23565)
+[0;37m2017-02-07 18:57:43.356[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:23565)
+[0;37m2017-02-07 18:57:43.357[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms) (pid:23565)
+[0;37m2017-02-07 18:57:43.482[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 131.9ms (pid:23565)
+[0;37m2017-02-07 18:57:43.487[0m [[32mfyi[0m] Sent mail to fabrizio.bertoglio@gmail.com (5.3ms) (pid:23565)
+[0;37m2017-02-07 18:57:43.487[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 18:57:43 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: fabrizio.bertoglio@gmail.com
+Message-ID: <589a0a97766b3_5c0d33ed5702127c@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabrizio.bertoglio@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=gApgm2Gnz6xgfBiEBqEJ">Confirm my account</a></p> (pid:23565)
+[0;37m2017-02-07 18:57:43.491[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:23565)
+[0;37m2017-02-07 18:57:43.492[0m [[32mfyi[0m] Completed 302 Found in 739ms (ActiveRecord: 87.1ms) (pid:23565)
+[0;37m2017-02-07 18:57:43.517[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:57:43 +0100 (pid:23565)
+[0;37m2017-02-07 18:57:43.520[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23565)
+[0;37m2017-02-07 18:57:43.521[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23565)
+[0;37m2017-02-07 18:57:43.522[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (0.9ms) (pid:23565)
+[0;37m2017-02-07 18:57:43.572[0m [[32mfyi[0m] Completed 200 OK in 52ms (Views: 51.6ms | ActiveRecord: 0.0ms) (pid:23565)
+[0;37m2017-02-07 18:58:33.854[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 18:58:33 +0100 (pid:23650)
+[0;37m2017-02-07 18:58:33.868[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:23650)
+[0;37m2017-02-07 18:58:33.888[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:23650)
+[0;37m2017-02-07 18:58:33.915[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:23650)
+[0;37m2017-02-07 18:58:33.932[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:23650)
+[0;37m2017-02-07 18:58:33.933[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (17.3ms) (pid:23650)
+[0;37m2017-02-07 18:58:34.254[0m [[32mfyi[0m] Completed 200 OK in 365ms (Views: 342.1ms | ActiveRecord: 1.0ms) (pid:23650)
+[0;37m2017-02-07 18:58:43.834[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 18:58:43 +0100 (pid:23650)
+[0;37m2017-02-07 18:58:43.837[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:23650)
+[0;37m2017-02-07 18:58:43.837[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSoh+cuQTVW3D+xz8fwIGaDZ2sF4Z2/iueUiaGeOCtNfagGBAyY9qul1ccQhqkYHZ8pZ+VG96f58yqbczFHqpg==", "user"=>{"email"=>"fabrizio@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:23650)
+[0;37m2017-02-07 18:58:43.995[0m [[0;37mmeh[0m] [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m (pid:23650)
+[0;37m2017-02-07 18:58:44.252[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabrizio@email.com' LIMIT 1[0m (pid:23650)
+[0;37m2017-02-07 18:58:44.405[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabrizio@email.com', '$2a$11$nB9spzZjXb28N8CRJza1hexdzM1u5n9XJPZydBDqAu2Ksg8TRzAGu', '2017-02-07 17:58:44', '2017-02-07 17:58:44', '-NuxAFV-VYCDYeajAG-i', '2017-02-07 17:58:44')[0m (pid:23650)
+[0;37m2017-02-07 18:58:44.503[0m [[0;37mmeh[0m] [1m[35m (45.8ms)[0m  [1m[35mCOMMIT[0m (pid:23650)
+[0;37m2017-02-07 18:58:44.280[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:23650)
+[0;37m2017-02-07 18:58:44.281[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms) (pid:23650)
+[0;37m2017-02-07 18:58:44.383[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 108.5ms (pid:23650)
+[0;37m2017-02-07 18:58:44.389[0m [[32mfyi[0m] Sent mail to fabrizio@email.com (5.9ms) (pid:23650)
+[0;37m2017-02-07 18:58:44.389[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 18:58:44 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabrizio@email.com
+Message-ID: <589a0ad45e4ef_5c621a40ab4806d4@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabrizio@email.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=-NuxAFV-VYCDYeajAG-i">Confirm my account</a></p> (pid:23650)
+[0;37m2017-02-07 18:58:44.394[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:23650)
+[0;37m2017-02-07 18:58:44.394[0m [[32mfyi[0m] Completed 302 Found in 557ms (ActiveRecord: 46.5ms) (pid:23650)
+[0;37m2017-02-07 18:58:44.417[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 18:58:44 +0100 (pid:23650)
+[0;37m2017-02-07 18:58:44.422[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23650)
+[0;37m2017-02-07 18:58:44.424[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23650)
+[0;37m2017-02-07 18:58:44.425[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.3ms) (pid:23650)
+[0;37m2017-02-07 18:58:44.472[0m [[32mfyi[0m] Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms) (pid:23650)
+[0;37m2017-02-07 18:59:02.177[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=-NuxAFV-VYCDYeajAG-i" for 127.0.0.1 at 2017-02-07 18:59:02 +0100 (pid:23650)
+[0;37m2017-02-07 18:59:02.405[0m [[31momg[0m] AbstractController::ActionNotFound - The action 'show' could not be found for ConfirmationsController:
+  actionpack (5.0.1) lib/abstract_controller/base.rb:121:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+  actionpack (5.0.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:23650)
+[0;37m2017-02-07 18:59:02.226[0m [[32mfyi[0m] Started POST "/__better_errors/d155437d0d23ca72/variables" for 127.0.0.1 at 2017-02-07 18:59:02 +0100 (pid:23650)
+[0;37m2017-02-07 18:59:47.866[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=-NuxAFV-VYCDYeajAG-i" for 127.0.0.1 at 2017-02-07 18:59:47 +0100 (pid:23757)
+[0;37m2017-02-07 18:59:47.882[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:23757)
+[0;37m2017-02-07 18:59:47.947[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:23757)
+[0;37m2017-02-07 18:59:47.947[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"-NuxAFV-VYCDYeajAG-i"} (pid:23757)
+[0;37m2017-02-07 18:59:47.958[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '-NuxAFV-VYCDYeajAG-i' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:23757)
+[0;37m2017-02-07 18:59:47.969[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23757)
+[0;37m2017-02-07 18:59:47.971[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `confirmed_at` = '2017-02-07 17:59:47', `updated_at` = '2017-02-07 17:59:47' WHERE `users`.`id` = 7[0m (pid:23757)
+[0;37m2017-02-07 18:59:48.178[0m [[0;37mmeh[0m] [1m[35m (45.7ms)[0m  [1m[35mCOMMIT[0m (pid:23757)
+[0;37m2017-02-07 18:59:48.319[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:23757)
+[0;37m2017-02-07 18:59:48.322[0m [[32mfyi[0m] Completed 302 Found in 85ms (ActiveRecord: 47.3ms) (pid:23757)
+[0;37m2017-02-07 18:59:48.555[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 18:59:48 +0100 (pid:23757)
+[0;37m2017-02-07 18:59:48.625[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23757)
+[0;37m2017-02-07 18:59:48.673[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23757)
+[0;37m2017-02-07 18:59:48.778[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.5ms) (pid:23757)
+[0;37m2017-02-07 18:59:48.779[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (10.5ms) (pid:23757)
+[0;37m2017-02-07 18:59:48.403[0m [[32mfyi[0m] Completed 200 OK in 341ms (Views: 339.4ms | ActiveRecord: 0.0ms) (pid:23757)
+[0;37m2017-02-07 19:00:17.649[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:00:17 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:17.665[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:23808)
+[0;37m2017-02-07 19:00:17.683[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23808)
+[0;37m2017-02-07 19:00:17.695[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23808)
+[0;37m2017-02-07 19:00:17.699[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (3.8ms) (pid:23808)
+[0;37m2017-02-07 19:00:18.709[0m [[32mfyi[0m] Completed 200 OK in 388ms (Views: 378.7ms | ActiveRecord: 0.0ms) (pid:23808)
+[0;37m2017-02-07 19:00:21.944[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:00:21 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:21.954[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:23808)
+[0;37m2017-02-07 19:00:21.977[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:23808)
+[0;37m2017-02-07 19:00:21.992[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.6ms) (pid:23808)
+[0;37m2017-02-07 19:00:21.992[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (15.5ms) (pid:23808)
+[0;37m2017-02-07 19:00:22.855[0m [[32mfyi[0m] Completed 200 OK in 131ms (Views: 110.0ms | ActiveRecord: 1.1ms) (pid:23808)
+[0;37m2017-02-07 19:00:35.446[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:00:35 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:35.449[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:23808)
+[0;37m2017-02-07 19:00:35.450[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"k7HcHBfoAat0SdpHtVsjewY9TkiMWM8VLtNk7jSKnkVjcgJkKkcPmbacECUWr1WEkGHA1TcglSVti/yv/JZPfA==", "user"=>{"email"=>"ezio@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:23808)
+[0;37m2017-02-07 19:00:35.609[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m (pid:23808)
+[0;37m2017-02-07 19:00:35.633[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ezio@email.com' LIMIT 1[0m (pid:23808)
+[0;37m2017-02-07 19:00:35.637[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('ezio@email.com', '$2a$11$bITDYGHQvag.OokCqkrhR.z1Jdn.kyL9KPWtbisvszv60FqEVzb7i', '2017-02-07 18:00:35', '2017-02-07 18:00:35', '5vvnqEtk5cnapRxrjZVH', '2017-02-07 18:00:35')[0m (pid:23808)
+[0;37m2017-02-07 19:00:35.736[0m [[0;37mmeh[0m] [1m[35m (97.6ms)[0m  [1m[35mCOMMIT[0m (pid:23808)
+[0;37m2017-02-07 19:00:36.147[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:23808)
+[0;37m2017-02-07 19:00:36.157[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms) (pid:23808)
+[0;37m2017-02-07 19:00:36.115[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 107.4ms (pid:23808)
+[0;37m2017-02-07 19:00:36.121[0m [[32mfyi[0m] Sent mail to ezio@email.com (5.5ms) (pid:23808)
+[0;37m2017-02-07 19:00:36.121[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:00:36 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: ezio@email.com
+Message-ID: <589a0b441ce61_5d0033330e432537@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ezio@email.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=5vvnqEtk5cnapRxrjZVH">Confirm my account</a></p> (pid:23808)
+[0;37m2017-02-07 19:00:36.126[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:23808)
+[0;37m2017-02-07 19:00:36.127[0m [[32mfyi[0m] Completed 302 Found in 677ms (ActiveRecord: 98.4ms) (pid:23808)
+[0;37m2017-02-07 19:00:36.151[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:00:36 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:36.154[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23808)
+[0;37m2017-02-07 19:00:36.156[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23808)
+[0;37m2017-02-07 19:00:36.157[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.2ms) (pid:23808)
+[0;37m2017-02-07 19:00:36.211[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms) (pid:23808)
+[0;37m2017-02-07 19:00:41.371[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=5vvnqEtk5cnapRxrjZVH" for 127.0.0.1 at 2017-02-07 19:00:41 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:41.377[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:23808)
+[0;37m2017-02-07 19:00:41.377[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"5vvnqEtk5cnapRxrjZVH"} (pid:23808)
+[0;37m2017-02-07 19:00:41.379[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '5vvnqEtk5cnapRxrjZVH' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:23808)
+[0;37m2017-02-07 19:00:41.380[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23808)
+[0;37m2017-02-07 19:00:41.383[0m [[0;37mmeh[0m] [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `confirmed_at` = '2017-02-07 18:00:41', `updated_at` = '2017-02-07 18:00:41' WHERE `users`.`id` = 8[0m (pid:23808)
+[0;37m2017-02-07 19:00:41.453[0m [[0;37mmeh[0m] [1m[35m (69.3ms)[0m  [1m[35mCOMMIT[0m (pid:23808)
+[0;37m2017-02-07 19:00:41.454[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:23808)
+[0;37m2017-02-07 19:00:41.455[0m [[32mfyi[0m] Completed 302 Found in 77ms (ActiveRecord: 70.1ms) (pid:23808)
+[0;37m2017-02-07 19:00:41.676[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:00:41 +0100 (pid:23808)
+[0;37m2017-02-07 19:00:41.688[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23808)
+[0;37m2017-02-07 19:00:41.692[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23808)
+[0;37m2017-02-07 19:00:41.701[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.7ms) (pid:23808)
+[0;37m2017-02-07 19:00:41.701[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (8.4ms) (pid:23808)
+[0;37m2017-02-07 19:00:41.769[0m [[32mfyi[0m] Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms) (pid:23808)
+[0;37m2017-02-07 19:09:22.716[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:09:22 +0100 (pid:24151)
+[0;37m2017-02-07 19:09:22.732[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m (pid:24151)
+[0;37m2017-02-07 19:09:22.758[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:09:22.789[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:09:22.808[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.5ms) (pid:24151)
+[0;37m2017-02-07 19:09:22.808[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (19.4ms) (pid:24151)
+[0;37m2017-02-07 19:09:23.153[0m [[32mfyi[0m] Completed 200 OK in 394ms (Views: 369.2ms | ActiveRecord: 1.2ms) (pid:24151)
+[0;37m2017-02-07 19:09:36.156[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:09:36 +0100 (pid:24151)
+[0;37m2017-02-07 19:09:36.159[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:09:36.159[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pmq36kM4SqDGn7Zg1k3NNkrBDHNtpBC9X5qbh5vXgLODQBVbbFMnpgkrKik63Vux5qIuTGLOOCOODYNVjR8lag==", "user"=>{"email"=>"dsaf@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:09:36.312[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:09:36.322[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dsaf@email.com' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:09:36.323[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('dsaf@email.com', '$2a$11$QYcWEGGzAdVKW3di0Uk5C.ezvuzrzZYSw1YRb.7/ihiOO/zEaKfFu', '2017-02-07 18:09:36', '2017-02-07 18:09:36', 'PkSjmMfySZ99aDcpBpj7', '2017-02-07 18:09:36')[0m (pid:24151)
+[0;37m2017-02-07 19:09:36.366[0m [[0;37mmeh[0m] [1m[35m (42.3ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:09:36.601[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:09:36.602[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms) (pid:24151)
+[0;37m2017-02-07 19:09:36.701[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 105.7ms (pid:24151)
+[0;37m2017-02-07 19:09:36.707[0m [[32mfyi[0m] Sent mail to dsaf@email.com (6.0ms) (pid:24151)
+[0;37m2017-02-07 19:09:36.707[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:09:36 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: dsaf@email.com
+Message-ID: <589a0d60ac08c_5e5736f6ed86482a@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome dsaf@email.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=PkSjmMfySZ99aDcpBpj7">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:09:36.712[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:09:36.712[0m [[32mfyi[0m] Completed 302 Found in 553ms (ActiveRecord: 42.9ms) (pid:24151)
+[0;37m2017-02-07 19:09:36.734[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:09:36 +0100 (pid:24151)
+[0;37m2017-02-07 19:09:36.739[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:09:36.741[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:09:36.742[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:09:36.796[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:09:44.218[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=PkSjmMfySZ99aDcpBpj7" for 127.0.0.1 at 2017-02-07 19:09:44 +0100 (pid:24151)
+[0;37m2017-02-07 19:09:44.227[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:24151)
+[0;37m2017-02-07 19:09:44.227[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"PkSjmMfySZ99aDcpBpj7"} (pid:24151)
+[0;37m2017-02-07 19:09:44.230[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'PkSjmMfySZ99aDcpBpj7' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:09:44.231[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:09:44.234[0m [[0;37mmeh[0m] [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `confirmed_at` = '2017-02-07 18:09:44', `updated_at` = '2017-02-07 18:09:44' WHERE `users`.`id` = 9[0m (pid:24151)
+[0;37m2017-02-07 19:09:44.330[0m [[0;37mmeh[0m] [1m[35m (94.5ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:09:44.332[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:24151)
+[0;37m2017-02-07 19:09:44.333[0m [[32mfyi[0m] Completed 302 Found in 105ms (ActiveRecord: 95.4ms) (pid:24151)
+[0;37m2017-02-07 19:09:44.411[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:09:44 +0100 (pid:24151)
+[0;37m2017-02-07 19:09:44.420[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:09:44.423[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:09:44.430[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:24151)
+[0;37m2017-02-07 19:09:44.430[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (6.4ms) (pid:24151)
+[0;37m2017-02-07 19:09:44.492[0m [[32mfyi[0m] Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:36.167[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:20:36 +0100 (pid:24151)
+[0;37m2017-02-07 19:20:36.171[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:20:36.173[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:20:36.174[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.1ms) (pid:24151)
+[0;37m2017-02-07 19:20:36.907[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__939905588157525428_57128360 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:24151)
+[0;37m2017-02-07 19:20:41.631[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__939905588157525428_57128360 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:24151)
+[0;37m2017-02-07 19:20:42.110[0m [[32mfyi[0m] Completed 200 OK in 5939ms (Views: 5938.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:48.963[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:20:48 +0100 (pid:24151)
+[0;37m2017-02-07 19:20:48.966[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:20:48.969[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:20:48.973[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:48.973[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:49.959[0m [[32mfyi[0m] Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:57.761[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:20:57 +0100 (pid:24151)
+[0;37m2017-02-07 19:20:57.766[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:20:57.766[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"rkdzZsj1kjZ9OyaKCkvkTX81iwPsCi7I1DwD2oTAvKJehK0e9VqcBL/u7Oipv5Ky6WkFnldydPiXZJubTNxtmw==", "user"=>{"email"=>"dsafasd@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:20:57.910[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:20:57.912[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dsafasd@email.com' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:20:57.913[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('dsafasd@email.com', '$2a$11$SbOMK0bQErqK0qKqVvrXbuTDCxzpP/u0rJvA4Kp95p62WmK1c6Rtu', '2017-02-07 18:20:57', '2017-02-07 18:20:57', 'siypWXnm2DoMzUFcMxsu', '2017-02-07 18:20:57')[0m (pid:24151)
+[0;37m2017-02-07 19:20:58.864[0m [[0;37mmeh[0m] [1m[35m (172.5ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:20:58.955[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:20:58.962[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms) (pid:24151)
+[0;37m2017-02-07 19:20:58.967[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 8.6ms (pid:24151)
+[0;37m2017-02-07 19:20:58.997[0m [[32mfyi[0m] Sent mail to dsafasd@email.com (2.8ms) (pid:24151)
+[0;37m2017-02-07 19:20:58.997[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:20:58 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: dsafasd@email.com
+Message-ID: <589a100a17d23_5e5736f6f64649b8@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome dsafasd@email.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=siypWXnm2DoMzUFcMxsu">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:20:58.102[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:20:58.103[0m [[32mfyi[0m] Completed 302 Found in 336ms (ActiveRecord: 173.1ms) (pid:24151)
+[0;37m2017-02-07 19:20:58.123[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:20:58 +0100 (pid:24151)
+[0;37m2017-02-07 19:20:58.126[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:20:58.128[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:20:58.129[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:20:58.187[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:21:51.436[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:21:51 +0100 (pid:24151)
+[0;37m2017-02-07 19:21:51.441[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:21:51.444[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:21:51.446[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.9ms) (pid:24151)
+[0;37m2017-02-07 19:21:52.311[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__939905588157525428_69961811205180 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:24151)
+[0;37m2017-02-07 19:21:56.185[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:21:56 +0100 (pid:24151)
+[0;37m2017-02-07 19:21:56.242[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:21:56.254[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:21:56.272[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:24151)
+[0;37m2017-02-07 19:21:56.272[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (17.7ms) (pid:24151)
+[0;37m2017-02-07 19:21:57.139[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_main_html_erb__939905588157525428_69961811205180 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/main.html.erb:15) (pid:24151)
+[0;37m2017-02-07 19:21:57.840[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_56528640 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:22:01.620[0m [[32mfyi[0m] Completed 200 OK in 10179ms (Views: 10178.1ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:22:02.319[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_56528640 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:22:02.915[0m [[32mfyi[0m] Completed 200 OK in 6673ms (Views: 6671.5ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:22:05.893[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:22:05 +0100 (pid:24151)
+[0;37m2017-02-07 19:22:05.948[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:22:05.977[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:22:05.101[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:22:05.101[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.8ms) (pid:24151)
+[0;37m2017-02-07 19:22:05.167[0m [[32mfyi[0m] Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:22:18.473[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:22:18 +0100 (pid:24151)
+[0;37m2017-02-07 19:22:18.477[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:22:18.477[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"PGXPVcYM076cf8lXK4itgrALoZTL+hdsIQ1Ka88A/GrMphEt+6PdjF6qAzWIfNt9JlcvCXCCTVxiVdIqBxwtUw==", "user"=>{"email"=>"sdf@email.cm", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:22:18.624[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:22:18.625[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'sdf@email.cm' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:22:18.627[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('sdf@email.cm', '$2a$11$NBUqgiu11737YBeY9mw4b.BbdlR6jXiCOZ8OItQCbC3/Qtczr5RIu', '2017-02-07 18:22:18', '2017-02-07 18:22:18', 'vjZpRz-PmyyUTwyfzbrb', '2017-02-07 18:22:18')[0m (pid:24151)
+[0;37m2017-02-07 19:22:18.675[0m [[0;37mmeh[0m] [1m[35m (47.6ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:22:18.683[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:22:18.685[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms) (pid:24151)
+[0;37m2017-02-07 19:22:18.685[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 8.4ms (pid:24151)
+[0;37m2017-02-07 19:22:18.690[0m [[32mfyi[0m] Sent mail to sdf@email.cm (4.6ms) (pid:24151)
+[0;37m2017-02-07 19:22:18.690[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:22:18 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: sdf@email.cm
+Message-ID: <589a105aa7a51_5e5736f6ed865033@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome sdf@email.cm!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=vjZpRz-PmyyUTwyfzbrb">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:22:18.694[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:22:18.694[0m [[32mfyi[0m] Completed 302 Found in 217ms (ActiveRecord: 48.3ms) (pid:24151)
+[0;37m2017-02-07 19:22:18.712[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:22:18 +0100 (pid:24151)
+[0;37m2017-02-07 19:22:18.715[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:22:18.717[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:22:18.719[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.2ms) (pid:24151)
+[0;37m2017-02-07 19:22:18.789[0m [[32mfyi[0m] Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:24:47.607[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:24:47 +0100 (pid:24151)
+[0;37m2017-02-07 19:24:47.611[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:24:47.613[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:24:47.618[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.4ms) (pid:24151)
+[0;37m2017-02-07 19:24:47.618[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.9ms) (pid:24151)
+[0;37m2017-02-07 19:24:48.519[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_69961829307320 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:24:50.895[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:24:50 +0100 (pid:24151)
+[0;37m2017-02-07 19:24:51.155[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:24:51.295[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:24:51.498[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (2.0ms) (pid:24151)
+[0;37m2017-02-07 19:24:51.596[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (201.2ms) (pid:24151)
+[0;37m2017-02-07 19:24:53.744[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_69961823806400 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:24:54.247[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_69961829307320 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:24:55.401[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:24:55 +0100 (pid:24151)
+[0;37m2017-02-07 19:24:55.600[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:24:55 +0100 (pid:24151)
+[0;37m2017-02-07 19:24:55.799[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:24:56.103[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:24:56.571[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:24:56.600[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:24:56.771[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:24151)
+[0;37m2017-02-07 19:24:56.904[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.4ms) (pid:24151)
+[0;37m2017-02-07 19:24:57.206[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (335.3ms) (pid:24151)
+[0;37m2017-02-07 19:24:57.401[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (401.1ms) (pid:24151)
+[0;37m2017-02-07 19:24:58.799[0m [[32mfyi[0m] Completed 200 OK in 11188ms (Views: 11187.4ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:24:58.827[0m [[32mfyi[0m] Completed 200 OK in 2725ms (Views: 2724.5ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:24:58.842[0m [[32mfyi[0m] Completed 200 OK in 2739ms (Views: 2738.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:24:59.516[0m [[33mhmm[0m] DEPRECATION WARNING: Extra .css in SCSS/ERB file is unnecessary. Rename /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.css.scss.erb to /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb. (called from _app_views_layouts_user_html_erb__1842573585572651593_69961823806400 at /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/views/layouts/user.html.erb:11) (pid:24151)
+[0;37m2017-02-07 19:25:00.243[0m [[32mfyi[0m] Completed 200 OK in 9048ms (Views: 9046.8ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:25:13.166[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:25:13 +0100 (pid:24151)
+[0;37m2017-02-07 19:25:13.168[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:25:13.169[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"UqKt73lEMSMFPCUzD9Dw5SPLgoKaNKlLboR3M5aV0JrviA9eVi9cJcqIuXrjQGZij6igvZVegdW/E2/hgF11Qw==", "user"=>{"email"=>"fabr@email.c", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:25:13.316[0m [[0;37mmeh[0m] [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:25:13.317[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabr@email.c' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:25:13.319[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabr@email.c', '$2a$11$.JZSYbvfPntNze9axybBxu7VIznQdrYzQUp64o6btV.wpVCJRatfS', '2017-02-07 18:25:13', '2017-02-07 18:25:13', 'yNx9t9f5WCqdNZkLJpSG', '2017-02-07 18:25:13')[0m (pid:24151)
+[0;37m2017-02-07 19:25:13.439[0m [[0;37mmeh[0m] [1m[35m (119.2ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:25:13.445[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:25:13.446[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms) (pid:24151)
+[0;37m2017-02-07 19:25:13.446[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 6.5ms (pid:24151)
+[0;37m2017-02-07 19:25:13.449[0m [[32mfyi[0m] Sent mail to fabr@email.c (2.4ms) (pid:24151)
+[0;37m2017-02-07 19:25:13.449[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:25:13 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabr@email.c
+Message-ID: <589a11096d4d6_5e5736f6ff065199@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabr@email.c!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=yNx9t9f5WCqdNZkLJpSG">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:25:13.452[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:25:13.452[0m [[32mfyi[0m] Completed 302 Found in 284ms (ActiveRecord: 120.0ms) (pid:24151)
+[0;37m2017-02-07 19:25:13.478[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:25:13 +0100 (pid:24151)
+[0;37m2017-02-07 19:25:13.481[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:25:13.482[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:25:13.484[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.5ms) (pid:24151)
+[0;37m2017-02-07 19:25:13.530[0m [[32mfyi[0m] Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:26:36.725[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:26:36 +0100 (pid:24151)
+[0;37m2017-02-07 19:26:36.731[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:26:36.733[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:26:36.735[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.7ms) (pid:24151)
+[0;37m2017-02-07 19:26:36.875[0m [[32mfyi[0m] Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:27:00.442[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:27:00 +0100 (pid:24151)
+[0;37m2017-02-07 19:27:00.482[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:27:00.507[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:27:00.525[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.6ms) (pid:24151)
+[0;37m2017-02-07 19:27:00.123[0m [[32mfyi[0m] Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:27:02.461[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:27:02 +0100 (pid:24151)
+[0;37m2017-02-07 19:27:02.464[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:27:02.466[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:27:02.470[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:27:02.470[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.9ms) (pid:24151)
+[0;37m2017-02-07 19:27:02.525[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:27:13.277[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:27:13 +0100 (pid:24151)
+[0;37m2017-02-07 19:27:13.280[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:27:13.280[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"whFJAJDMe6+OSGm/SLMAx4q9LLmBtf2QzhrghXigmvJ/O+uxv6cWqUH89fakI5ZAJt4Oho7f1Q4fjfhXbmg/Kw==", "user"=>{"email"=>"dasf@email", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:27:13.426[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:27:13.428[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'dasf@email' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:27:13.429[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('dasf@email', '$2a$11$2oF9NNGFMKDQB.SLlFGtJetl24b/ETOarLbl8IDRZE9ZhoEgBJPYK', '2017-02-07 18:27:13', '2017-02-07 18:27:13', 'PAHp13TmP9zXyJZseb2M', '2017-02-07 18:27:13')[0m (pid:24151)
+[0;37m2017-02-07 19:27:13.467[0m [[0;37mmeh[0m] [1m[35m (36.9ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:27:13.475[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:27:13.476[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms) (pid:24151)
+[0;37m2017-02-07 19:27:13.476[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 7.8ms (pid:24151)
+[0;37m2017-02-07 19:27:13.480[0m [[32mfyi[0m] Sent mail to dasf@email (3.8ms) (pid:24151)
+[0;37m2017-02-07 19:27:13.480[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:27:13 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: dasf@email
+Message-ID: <589a118174b82_5e5736f6ed865292@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome dasf@email!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=PAHp13TmP9zXyJZseb2M">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:27:13.483[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:27:13.483[0m [[32mfyi[0m] Completed 302 Found in 203ms (ActiveRecord: 37.6ms) (pid:24151)
+[0;37m2017-02-07 19:27:13.514[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:27:13 +0100 (pid:24151)
+[0;37m2017-02-07 19:27:13.517[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:27:13.518[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:27:13.520[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.2ms) (pid:24151)
+[0;37m2017-02-07 19:27:13.569[0m [[32mfyi[0m] Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.602[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:28:19 +0100 (pid:24151)
+[0;37m2017-02-07 19:28:19.604[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:28:19.606[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:28:19.610[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.610[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.6ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.663[0m [[32mfyi[0m] Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.695[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:28:19 +0100 (pid:24151)
+[0;37m2017-02-07 19:28:19.698[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:28:19.700[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:28:19.705[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.7ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.705[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.7ms) (pid:24151)
+[0;37m2017-02-07 19:28:19.759[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:28:47.181[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:28:47 +0100 (pid:24151)
+[0;37m2017-02-07 19:28:47.184[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:28:47.184[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjt93UesR2fI5TpcjxvxdLJCNa3GV1UbcCfqkuRedwaMe12ljxo3mJafp+tfTb9qdVG2le+N0we1CG4mT4GXcw==", "user"=>{"email"=>"fabri.ber@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:28:47.331[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:28:47.332[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabri.ber@gmail.com' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:28:47.333[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabri.ber@gmail.com', '$2a$11$Wi19fj8/bhzpi9T95TUvp.n169L8Jf/2H8kR1UGo3Gs8HNXZLlj6i', '2017-02-07 18:28:47', '2017-02-07 18:28:47', 'X72sT33n5b56YjPaTZVt', '2017-02-07 18:28:47')[0m (pid:24151)
+[0;37m2017-02-07 19:28:47.376[0m [[0;37mmeh[0m] [1m[35m (42.8ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:28:47.383[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:28:47.384[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.5ms) (pid:24151)
+[0;37m2017-02-07 19:28:47.384[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 6.6ms (pid:24151)
+[0;37m2017-02-07 19:28:47.386[0m [[32mfyi[0m] Sent mail to fabri.ber@gmail.com (2.2ms) (pid:24151)
+[0;37m2017-02-07 19:28:47.386[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:28:47 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabri.ber@gmail.com
+Message-ID: <589a11df5e06b_5e5736f6e4c653b5@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabri.ber@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=X72sT33n5b56YjPaTZVt">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:28:47.389[0m [[32mfyi[0m] Redirected to http://127.0.0.1:3000/ (pid:24151)
+[0;37m2017-02-07 19:28:47.390[0m [[32mfyi[0m] Completed 302 Found in 205ms (ActiveRecord: 43.3ms) (pid:24151)
+[0;37m2017-02-07 19:28:47.416[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:28:47 +0100 (pid:24151)
+[0;37m2017-02-07 19:28:47.418[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:28:47.420[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:28:47.421[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:28:47.461[0m [[32mfyi[0m] Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:05.402[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=X72sT33n5b56YjPaTZVt" for 127.0.0.1 at 2017-02-07 19:29:05 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:05.406[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:24151)
+[0;37m2017-02-07 19:29:05.406[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"X72sT33n5b56YjPaTZVt"} (pid:24151)
+[0;37m2017-02-07 19:29:05.408[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'X72sT33n5b56YjPaTZVt' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:05.409[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:29:05.411[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `confirmed_at` = '2017-02-07 18:29:05', `updated_at` = '2017-02-07 18:29:05' WHERE `users`.`id` = 14[0m (pid:24151)
+[0;37m2017-02-07 19:29:05.492[0m [[0;37mmeh[0m] [1m[35m (79.5ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:29:05.493[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:24151)
+[0;37m2017-02-07 19:29:05.493[0m [[32mfyi[0m] Completed 302 Found in 87ms (ActiveRecord: 80.3ms) (pid:24151)
+[0;37m2017-02-07 19:29:05.540[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:29:05 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:05.544[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:29:05.547[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:05.550[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:05.550[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.7ms) (pid:24151)
+[0;37m2017-02-07 19:29:05.622[0m [[32mfyi[0m] Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:18.407[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:29:18 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:18.416[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:29:18.416[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"F/8gGwwFAbgoIa5qSmy8cpz9z4xvCmZYSji19qPdWm2q1YKqI25svueVMiOm/Cr1MJ7ts2BgTsabr60ktRX/tA==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:24151)
+[0;37m2017-02-07 19:29:18.418[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabri.ber87@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:18.418[0m [[32mfyi[0m] Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:29:18.420[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:29:18.421[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"F/8gGwwFAbgoIa5qSmy8cpz9z4xvCmZYSji19qPdWm2q1YKqI25svueVMiOm/Cr1MJ7ts2BgTsabr60ktRX/tA==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:24151)
+[0;37m2017-02-07 19:29:18.563[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:18.567[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:18.567[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.9ms) (pid:24151)
+[0;37m2017-02-07 19:29:18.627[0m [[32mfyi[0m] Completed 200 OK in 206ms (Views: 64.4ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:24.361[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:29:24 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:24.367[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:29:24.367[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RNgXlIpl8JlZHHXrp0e/hxelqcP7iaa5b3gONVCPThUOcLvfUL6xKrQ7Z5CDYh5sD20mACEDgQ0Kvjqw4qY4Q==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:24151)
+[0;37m2017-02-07 19:29:24.369[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabri.ber87@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:24.369[0m [[32mfyi[0m] Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:29:24.370[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:29:24.371[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"6RNgXlIpl8JlZHHXrp0e/hxelqcP7iaa5b3gONVCPThUOcLvfUL6xKrQ7Z5CDYh5sD20mACEDgQ0Kvjqw4qY4Q==", "user"=>{"email"=>"fabri.ber87@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:24151)
+[0;37m2017-02-07 19:29:24.514[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:24.517[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.8ms) (pid:24151)
+[0;37m2017-02-07 19:29:24.517[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (3.2ms) (pid:24151)
+[0;37m2017-02-07 19:29:24.573[0m [[32mfyi[0m] Completed 200 OK in 202ms (Views: 59.9ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:29.518[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:29:29 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:29.521[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:29:29.523[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:29.526[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.8ms) (pid:24151)
+[0;37m2017-02-07 19:29:29.527[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.4ms) (pid:24151)
+[0;37m2017-02-07 19:29:29.577[0m [[32mfyi[0m] Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:43.354[0m [[32mfyi[0m] Started POST "/users" for 127.0.0.1 at 2017-02-07 19:29:43 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:43.384[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:29:43.385[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"/6i90HGvK0SeVTFC4JRacTHafSRxaKyy6JGc63jvlgdCgh9hXsRGQlHhrQsMBMz2nblfG34ChCw5BoQ5bicz3g==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"} (pid:24151)
+[0;37m2017-02-07 19:29:43.177[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:29:43.178[0m [[0;37mmeh[0m] [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fabrizio.bertoglio@gmail.com' LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:43.179[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `confirmation_token`, `confirmation_sent_at`) VALUES ('fabrizio.bertoglio@gmail.com', '$2a$11$oGa09P3Qs5zVMXJVDs.6dus3jeXX329TwU9dfu5i1LQLGd0Ox8WPO', '2017-02-07 18:29:43', '2017-02-07 18:29:43', '35yLYhJ1L9kh4LdT2yeg', '2017-02-07 18:29:43')[0m (pid:24151)
+[0;37m2017-02-07 19:29:43.307[0m [[0;37mmeh[0m] [1m[35m (127.0ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:29:43.313[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:29:43.314[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (0.5ms) (pid:24151)
+[0;37m2017-02-07 19:29:43.314[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 6.2ms (pid:24151)
+[0;37m2017-02-07 19:29:43.316[0m [[32mfyi[0m] Sent mail to fabrizio.bertoglio@gmail.com (2.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:43.317[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:29:43 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabrizio.bertoglio@gmail.com
+Message-ID: <589a12174d040_5e5736f6e4c65423@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabrizio.bertoglio@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=35yLYhJ1L9kh4LdT2yeg">Confirm my account</a></p> (pid:24151)
+[0;37m2017-02-07 19:29:43.319[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:29:43.320[0m [[32mfyi[0m] Completed 302 Found in 281ms (ActiveRecord: 127.6ms) (pid:24151)
+[0;37m2017-02-07 19:29:43.337[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:29:43 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:43.340[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:29:43.342[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:29:43.343[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:43.384[0m [[32mfyi[0m] Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:49.435[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=35yLYhJ1L9kh4LdT2yeg" for 127.0.0.1 at 2017-02-07 19:29:49 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:49.439[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:24151)
+[0;37m2017-02-07 19:29:49.440[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"35yLYhJ1L9kh4LdT2yeg"} (pid:24151)
+[0;37m2017-02-07 19:29:49.441[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`confirmation_token` = '35yLYhJ1L9kh4LdT2yeg' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:49.442[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:29:49.444[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `confirmed_at` = '2017-02-07 18:29:49', `updated_at` = '2017-02-07 18:29:49' WHERE `users`.`id` = 15[0m (pid:24151)
+[0;37m2017-02-07 19:29:49.556[0m [[0;37mmeh[0m] [1m[35m (111.3ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:29:49.558[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:24151)
+[0;37m2017-02-07 19:29:49.558[0m [[32mfyi[0m] Completed 302 Found in 119ms (ActiveRecord: 112.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:49.582[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:29:49 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:49.586[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:29:49.588[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:49.592[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:24151)
+[0;37m2017-02-07 19:29:49.592[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (4.5ms) (pid:24151)
+[0;37m2017-02-07 19:29:49.649[0m [[32mfyi[0m] Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:29:58.508[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:29:58 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:58.510[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:29:58.511[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"z4SdLADFp0xxMrg36IYKJrSHre0nAuh0dLaTHWzW8yVyrj+dL67KSr6GJH4EFpyhGOSP0ihowOqlIYvPeh5W/A==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"} (pid:24151)
+[0;37m2017-02-07 19:29:58.512[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabrizio.bertoglio@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:58.657[0m [[0;37mmeh[0m] [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:29:58.658[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2017-02-07 18:29:58', `last_sign_in_at` = '2017-02-07 18:29:58', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2017-02-07 18:29:58' WHERE `users`.`id` = 15[0m (pid:24151)
+[0;37m2017-02-07 19:29:58.750[0m [[0;37mmeh[0m] [1m[35m (90.9ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:29:58.753[0m [[32mfyi[0m] Redirected to http://localhost:3000/user_root (pid:24151)
+[0;37m2017-02-07 19:29:58.753[0m [[32mfyi[0m] Completed 302 Found in 243ms (ActiveRecord: 91.7ms) (pid:24151)
+[0;37m2017-02-07 19:29:58.776[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-02-07 19:29:58 +0100 (pid:24151)
+[0;37m2017-02-07 19:29:58.780[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:29:58.782[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:29:58.784[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:29:58.784[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:24151)
+[0;37m2017-02-07 19:29:58.842[0m [[32mfyi[0m] Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:30:02.444[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-02-07 19:30:02 +0100 (pid:24151)
+[0;37m2017-02-07 19:30:02.448[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#edit as HTML (pid:24151)
+[0;37m2017-02-07 19:30:02.448[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"4I4cDoxP8pWJVA/2m3tTZM9xG6JMeJSHerrx2A7ybsJ3NjhPd8PiB+GIZYs2atdWa5FRQTiwmqwdUu3fEQok+Q=="} (pid:24151)
+[0;37m2017-02-07 19:30:02.449[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:30:02.451[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:30:02.455[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (3.6ms) (pid:24151)
+[0;37m2017-02-07 19:30:02.509[0m [[32mfyi[0m] Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:30:08.292[0m [[32mfyi[0m] Started DELETE "/users" for 127.0.0.1 at 2017-02-07 19:30:08 +0100 (pid:24151)
+[0;37m2017-02-07 19:30:08.296[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#destroy as HTML (pid:24151)
+[0;37m2017-02-07 19:30:08.296[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"GWeOOs9y+kGI7JzyduezPtcIE3t7olm3yo7jkTmsvu2O36p7NP7q0+Aw9o/b9jcMc+hZmA9qV5ytZv+WJlT01g=="} (pid:24151)
+[0;37m2017-02-07 19:30:08.298[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:30:08.299[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:30:08.300[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 15[0m (pid:24151)
+[0;37m2017-02-07 19:30:08.367[0m [[0;37mmeh[0m] [1m[35m (66.1ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:30:08.369[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:30:08.369[0m [[32mfyi[0m] Completed 302 Found in 72ms (ActiveRecord: 66.8ms) (pid:24151)
+[0;37m2017-02-07 19:30:08.388[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:30:08 +0100 (pid:24151)
+[0;37m2017-02-07 19:30:08.392[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:30:08.394[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:30:08.396[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.5ms) (pid:24151)
+[0;37m2017-02-07 19:30:08.446[0m [[32mfyi[0m] Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:44:12.602[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:44:12 +0100 (pid:24151)
+[0;37m2017-02-07 19:44:12.606[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:44:12.608[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:44:12.613[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:24151)
+[0;37m2017-02-07 19:44:12.614[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (5.1ms) (pid:24151)
+[0;37m2017-02-07 19:44:12.674[0m [[32mfyi[0m] Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:44:28.115[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:44:28 +0100 (pid:24151)
+[0;37m2017-02-07 19:44:28.123[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:44:28.125[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:44:28.130[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.3ms) (pid:24151)
+[0;37m2017-02-07 19:44:28.130[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (4.9ms) (pid:24151)
+[0;37m2017-02-07 19:44:28.205[0m [[32mfyi[0m] Completed 200 OK in 81ms (Views: 80.7ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:08.442[0m [[32mfyi[0m] Started GET "/users/index.html" for 127.0.0.1 at 2017-02-07 19:46:08 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:08.449[0m [[31momg[0m]  (pid:24151)
+[0;37m2017-02-07 19:46:08.449[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/users/index.html"): (pid:24151)
+[0;37m2017-02-07 19:46:08.449[0m [[31momg[0m]  (pid:24151)
+[0;37m2017-02-07 19:46:08.449[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:24151)
+[0;37m2017-02-07 19:46:08.687[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:24151)
+[0;37m2017-02-07 19:46:08.861[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:24151)
+[0;37m2017-02-07 19:46:08.863[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms) (pid:24151)
+[0;37m2017-02-07 19:46:08.920[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (32.1ms) (pid:24151)
+[0;37m2017-02-07 19:46:08.938[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.7ms) (pid:24151)
+[0;37m2017-02-07 19:46:08.953[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:24151)
+[0;37m2017-02-07 19:46:08.954[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms) (pid:24151)
+[0;37m2017-02-07 19:46:08.954[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3@myapp/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (266.2ms) (pid:24151)
+[0;37m2017-02-07 19:46:10.691[0m [[32mfyi[0m] Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-07 19:46:10 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:10.694[0m [[32mfyi[0m] Processing by Devise::RegistrationsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:46:10.695[0m [[32mfyi[0m] Rendering devise/registrations/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:10.699[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:24151)
+[0;37m2017-02-07 19:46:10.699[0m [[32mfyi[0m] Rendered devise/registrations/new.html.erb within layouts/user (3.6ms) (pid:24151)
+[0;37m2017-02-07 19:46:10.761[0m [[32mfyi[0m] Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:16.426[0m [[32mfyi[0m] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-07 19:46:16 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:16.429[0m [[32mfyi[0m] Processing by Devise::SessionsController#destroy as HTML (pid:24151)
+[0;37m2017-02-07 19:46:16.429[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"GGkdclweLTyyuraV8stORST7mKGl+eBTbmTAPJmePPkOpFHC7xt4zNIi48o98Ta/Pim7lpHEgxkDyMLjvWZ1/A=="} (pid:24151)
+[0;37m2017-02-07 19:46:16.430[0m [[32mfyi[0m] Redirected to http://localhost:3000/ (pid:24151)
+[0;37m2017-02-07 19:46:16.430[0m [[32mfyi[0m] Filter chain halted as :verify_signed_out_user rendered or redirected (pid:24151)
+[0;37m2017-02-07 19:46:16.430[0m [[32mfyi[0m] Completed 302 Found in 1ms (ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:16.462[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-02-07 19:46:16 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:16.464[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:24151)
+[0;37m2017-02-07 19:46:16.466[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:24151)
+[0;37m2017-02-07 19:46:16.467[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.1ms) (pid:24151)
+[0;37m2017-02-07 19:46:16.522[0m [[32mfyi[0m] Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:18.866[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:46:18 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:18.903[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:46:18.928[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:18.977[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.6ms) (pid:24151)
+[0;37m2017-02-07 19:46:18.979[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (5.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:18.157[0m [[32mfyi[0m] Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:20.677[0m [[32mfyi[0m] Started GET "/users/password/new" for 127.0.0.1 at 2017-02-07 19:46:20 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:20.735[0m [[32mfyi[0m] Processing by Devise::PasswordsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:46:20.737[0m [[32mfyi[0m] Rendering devise/passwords/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:20.740[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.2ms) (pid:24151)
+[0;37m2017-02-07 19:46:20.740[0m [[32mfyi[0m] Rendered devise/passwords/new.html.erb within layouts/user (3.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:20.787[0m [[32mfyi[0m] Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:27.420[0m [[32mfyi[0m] Started POST "/users/password" for 127.0.0.1 at 2017-02-07 19:46:27 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:27.423[0m [[32mfyi[0m] Processing by Devise::PasswordsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:46:27.423[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"NGj8Jf/j5K01tXTN0l7tfVmB1GHDkRknmr7k+pzB7XcipbCVTOaxXVUtIZIdZJWHQ1P3Vvesem33EuYluDmkcg==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com"}, "commit"=>"Send me reset password instructions"} (pid:24151)
+[0;37m2017-02-07 19:46:27.425[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabrizio.bertoglio@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:46:27.429[0m [[32mfyi[0m] Rendering devise/passwords/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:27.432[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:24151)
+[0;37m2017-02-07 19:46:27.432[0m [[32mfyi[0m] Rendered devise/passwords/new.html.erb within layouts/user (3.3ms) (pid:24151)
+[0;37m2017-02-07 19:46:27.482[0m [[32mfyi[0m] Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:46:46.303[0m [[32mfyi[0m] Started POST "/users/password" for 127.0.0.1 at 2017-02-07 19:46:46 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:46.307[0m [[32mfyi[0m] Processing by Devise::PasswordsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:46:46.307[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"FqGudAnIlf+N2rTz0Vi5bNWFB/YYmsYHW8aLLDm29owAbOLEus3AD+1C4aweYsGWz1ckwSynpU02aonzHU6/iQ==", "user"=>{"email"=>"fabri.ber87@gmail.com"}, "commit"=>"Send me reset password instructions"} (pid:24151)
+[0;37m2017-02-07 19:46:46.309[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabri.ber87@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:46:46.312[0m [[32mfyi[0m] Rendering devise/passwords/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:46.316[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (0.9ms) (pid:24151)
+[0;37m2017-02-07 19:46:46.316[0m [[32mfyi[0m] Rendered devise/passwords/new.html.erb within layouts/user (3.3ms) (pid:24151)
+[0;37m2017-02-07 19:46:46.359[0m [[32mfyi[0m] Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.3ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.254[0m [[32mfyi[0m] Started POST "/users/password" for 127.0.0.1 at 2017-02-07 19:46:55 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:55.256[0m [[32mfyi[0m] Processing by Devise::PasswordsController#create as HTML (pid:24151)
+[0;37m2017-02-07 19:46:55.256[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"hBV/Z9ZG8ERdkfQqJkRl1Dp2xA6mIdShL4T+lXoE8xOS2DPXZUOltD0JoXXpfh0uIKTnOZIct+tCKPxKXvy6Fg==", "user"=>{"email"=>"fabri.ber@gmail.com"}, "commit"=>"Send me reset password instructions"} (pid:24151)
+[0;37m2017-02-07 19:46:55.258[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'fabri.ber@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:46:55.433[0m [[0;37mmeh[0m] [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`reset_password_token` = '9a9ad8046181ed1354a94722ea1d7b59d3806fc4489246e14518bce0fa319dfb' ORDER BY `users`.`id` ASC LIMIT 1[0m (pid:24151)
+[0;37m2017-02-07 19:46:55.433[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:24151)
+[0;37m2017-02-07 19:46:55.435[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE `users` SET `reset_password_token` = '9a9ad8046181ed1354a94722ea1d7b59d3806fc4489246e14518bce0fa319dfb', `reset_password_sent_at` = '2017-02-07 18:46:55', `updated_at` = '2017-02-07 18:46:55' WHERE `users`.`id` = 14[0m (pid:24151)
+[0;37m2017-02-07 19:46:55.542[0m [[0;37mmeh[0m] [1m[35m (106.8ms)[0m  [1m[35mCOMMIT[0m (pid:24151)
+[0;37m2017-02-07 19:46:55.552[0m [[32mfyi[0m] Rendering devise/mailer/reset_password_instructions.html.erb (pid:24151)
+[0;37m2017-02-07 19:46:55.553[0m [[32mfyi[0m] Rendered devise/mailer/reset_password_instructions.html.erb (0.7ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.553[0m [[0;37mmeh[0m] Devise::Mailer#reset_password_instructions: processed outbound mail in 10.1ms (pid:24151)
+[0;37m2017-02-07 19:46:55.557[0m [[32mfyi[0m] Sent mail to fabri.ber@gmail.com (3.2ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.557[0m [[0;37mmeh[0m] Date: Tue, 07 Feb 2017 19:46:55 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabri.ber@gmail.com
+Message-ID: <589a161f87705_5e5736f6f646558a@fabrizio-Lenovo-G50-70.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello fabri.ber@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=V-UzGY8TfyTcmL-y-NV7">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p> (pid:24151)
+[0;37m2017-02-07 19:46:55.561[0m [[32mfyi[0m] Redirected to http://localhost:3000/users/sign_in (pid:24151)
+[0;37m2017-02-07 19:46:55.561[0m [[32mfyi[0m] Completed 302 Found in 304ms (ActiveRecord: 107.6ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.588[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-07 19:46:55 +0100 (pid:24151)
+[0;37m2017-02-07 19:46:55.592[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:24151)
+[0;37m2017-02-07 19:46:55.594[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:24151)
+[0;37m2017-02-07 19:46:55.598[0m [[32mfyi[0m] Rendered devise/shared/_links.html.erb (1.1ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.598[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (4.0ms) (pid:24151)
+[0;37m2017-02-07 19:46:55.647[0m [[32mfyi[0m] Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms) (pid:24151)

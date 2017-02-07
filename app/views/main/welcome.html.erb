@@ -35,6 +35,23 @@
 <section id="intro" class="intro">
 
 	<div class="slogan">
+	<% if flash[:notice] %>
+    <div class="alert alert-success fade in custom-message custom-notice">
+      <button data-dismiss="alert" class="close close-sm" type="button">
+          <i class="icon-remove"></i>
+      </button>
+      <strong>Well done!</strong> <%= flash[:notice] %>
+    </div>
+	<% end %>
+
+	<% if flash[:alert] %>
+	    <div class="alert alert-block alert-danger fade in custom-message custom-alert">
+	      <button data-dismiss="alert" class="close close-sm" type="button">
+	          <i class="icon-remove"></i>
+	      </button>
+	      <strong>Oh snap!</strong> <%= flash[:alert] %>
+	    </div>               
+	<% end %>   
 		<h2>BARTERING <span class="text_color">APPS</span> </h2>
 		<h4>Developers working in exchange of Accomodation</h4>
 		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default btn-lg signup" %>
@@ -44,27 +61,10 @@
 			</a>
 		</div>
 	</div>
-
+                          
 </section>
 <!-- /Section: intro -->
 
-<% if flash[:notice] %>
-    <div class="alert alert-success fade in">
-      <button data-dismiss="alert" class="close close-sm" type="button">
-          <i class="icon-remove"></i>
-      </button>
-      <strong>Well done!</strong> <%= flash[:notice] %>
-    </div>
-<% end %>
-
-<% if flash[:alert] %>
-    <div class="alert alert-block alert-danger fade in">
-      <button data-dismiss="alert" class="close close-sm" type="button">
-          <i class="icon-remove"></i>
-      </button>
-      <strong>Oh snap!</strong> <%= flash[:alert] %>
-    </div>               
-<% end %>                             
 <% if flash[:other] %> 
     <div class="alert alert-info fade in">
       <button data-dismiss="alert" class="close close-sm" type="button">

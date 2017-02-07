@@ -1,4 +1,8 @@
 Rails.application.configure do
+  # Before doing production need to perform the following
+  # Password reset tokens and Rails Logs
+  # Configure the Devise Mailer
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -44,7 +48,8 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = :debug
+  # for Devise Reset Tokens and logs set to warn
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
