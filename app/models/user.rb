@@ -7,9 +7,9 @@ class User < ApplicationRecord
 
     #	has_secure_password
 	validates :email, confirmation: true
-	validates :email_confirmation, presence: true
+	#validates :email_confirmation, presence: true
 	validates :password, confirmation: true
-	validates :password_confirmation, presence: true
+	#validates :password_confirmation, presence: true
 	
 	def self.from_omniauth(auth)
 		where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
