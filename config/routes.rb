@@ -8,11 +8,11 @@ Rails.application.routes.draw do
   	#:confirmations => "confirmations"
   }
 
-  #devise_for :users, controllers: { registrations: 'registrations' }
   # log out
   #devise_scope :user do
   #  delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
   # => end  
+
   get '/main/home' => 'main#welcome'
   get '/user/welcome' => 'user#welcome'
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get

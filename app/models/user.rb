@@ -1,12 +1,13 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  	#attr_accessor :current_password
     devise :database_authenticatable, :registerable,
            :recoverable, :rememberable, :trackable, :validatable, :confirmable
     devise :omniauthable, :omniauth_providers => [:facebook]
 
     #	has_secure_password
-	validates :email, confirmation: true
+	#validates :email, confirmation: true
 	#validates :email_confirmation, presence: true
 	validates :password, confirmation: true
 	#validates :password_confirmation, presence: true
