@@ -1,4 +1,4 @@
-/*
+	/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -22,6 +22,7 @@
 @import "default";
 @import "style-responsive";
 @import "user";
+@import "jquery-ui";
    
 .signup {
  	background: transparent;
@@ -59,6 +60,21 @@
 	margin-top: 15px;
 	font-weight: 700;
 }
+
+/* User Css */
+
+.small-image {
+	height: 34px;
+}
+
+.index-image {
+	height: 62px;
+}
+
+.navigationName {
+	padding-left: 7px;
+}
+
 
 /* Media Queries */
 

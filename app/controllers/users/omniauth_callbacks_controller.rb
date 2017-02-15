@@ -1,4 +1,4 @@
-class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def facebook
     #binding.pry
     # You need to implement the method below in your model (e.g. app/models/user.rb)

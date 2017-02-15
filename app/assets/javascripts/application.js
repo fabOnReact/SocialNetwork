@@ -9,14 +9,18 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+//= require_self
 //= require jquery
+//= require jquery-ui
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require jquery.scrollTo
 //= require jquery.nicescroll
+//= require jquery.tagsinput
+//= require bootstrap-switch
 //= require wow.min
 //= require custom
 //= require scripts
+//= require form-component
 //= require jquery_ujs
 //= require turbolinks
-//= require_self

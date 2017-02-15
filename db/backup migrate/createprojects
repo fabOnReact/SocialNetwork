@@ -1,0 +1,37 @@
+class CreateProjects < ActiveRecord::Migration[5.0]
+  def change
+  	create_table :developers do |t|
+  		t.integer :experience
+  		t.string :interests
+  	end
+
+    create_table :projects do |t|
+    	t.string :name
+    	t.belongs_to :developer, index: true
+    	t.belongs_to :host, index: true
+    	t.string :description
+    	t.integer :percentage_completion
+    	t.integer :budget
+    	t.integer :nemployees
+    	t.integer :ninvestors
+    	t.boolean :hiring
+    end
+
+    create_table :tasks do |t|
+    	t.string :name
+    	t.belongs_to :project, index: true
+    	t.text :description
+    	t.boolean :completed
+    	t.string :skill
+    	t.integer :days
+    end
+
+    create_table :ads do |t|
+    	t.belongs_to :project, index: true
+    	t.text :title
+    	t.text :description
+    	t.integer :budget
+    	t.integer :days
+    end
+ end
+end

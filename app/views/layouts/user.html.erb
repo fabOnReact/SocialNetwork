@@ -36,7 +36,7 @@
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+            <a href="index.html" class="logo">Bartering <span class="lite">Apps</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -255,16 +255,23 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <%= image_tag "avatar1_small.jpg" %>
+                                <% if current_user && current_user.image != nil %>
+                                    <%= image_tag current_user.image, :class => "small-image" %>
+                                <% end %>
                             </span>
-                            <span class="username">Jenifer Smith</span>
+                            <span class="username navigationName">
+                                <% if current_user && current_user.firstname && current_user.lastname != nil %>
+                                    <%= current_user.firstname %> 
+                                    <%= current_user.lastname %> 
+                                <% end %>
+                            </span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
                             <li class="eborder-top">
                                 <!--<a href="#"><i class="icon_profile"></i> My Profile</a>-->
-                                <%= link_to edit_user_registration_path, method: :get do %>
+                                <%= link_to edit_user_registration_path(current_user), method: :get do %>
                                     <i class="icon_profile" aria-hidden="true"></i>My Profile
                                 <% end %>                                
                             </li>
@@ -308,15 +315,30 @@
                           <span>Dashboard</span>
                       </a>
                   </li>
-          <li class="sub-menu">
+                  <li class="sub-menu">
+
                       <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
-                          <span>Forms</span>
+                          <span>Developer</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
-                          <li><a class="" href="form_validation.html">Form Validation</a></li>
+                        <li>
+                            <% if current_user != nil %>
+                                <% if current_user.developer == nil %>
+                                    <%= link_to new_developer_path(current_user) do %><!--<a class="" href="form_component.html">-->
+                                    Profile Management
+                                    <% end %><!--</a>-->
+                                <% end %>
+                        </li>                          
+                        <li>
+                                <% if current_user.developer != nil %>
+                                    <%= link_to edit_developer_path(current_user.developer) do %><!--<a class="" href="form_component.html">-->
+                                    Edit
+                                    <% end %><!--</a>-->
+                                <% end %>
+                            <% end %>
+                        </li>
                       </ul>
                   </li>       
                   <li class="sub-menu">

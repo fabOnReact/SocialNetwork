@@ -14,7 +14,10 @@ Rails.application.routes.draw do
   # => end  
 
   get '/main/home' => 'main#welcome'
-get '/users/welcome' => 'user#welcome'
+  get '/users/welcome' => 'user#welcome'
+  
+  resources :developers
+
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   

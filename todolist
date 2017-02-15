@@ -1,7 +1,14 @@
-1. gestire e salvare i dati da fecebook inclusa la foto
-2. gestire l'upload della foto
+1. Creare 2 join, fra projects e developer, projects e hosts
+utilizzare has and belongs to 
+
 3. decidere come gestire le funzionalità investor host e developer
 4. messaggistica 
 5. notifiche
 6. home e link di sinistra
 7. ricerca
+2. gestire l'upload della foto
+
+
+
+PRODUZIONE 
+1. gestire e salvare i dati da fecebook inclusa la foto

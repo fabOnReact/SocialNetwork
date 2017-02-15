@@ -14,14 +14,24 @@ class User < ApplicationRecord
 	# associations
 
 	has_and_belongs_to_many :roles
+	has_one :developer
+	has_one :host
 
 	def self.from_omniauth(auth)
-		#binding.pry
 		where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
 			user.email = auth.info.email
 			user.password = Devise.friendly_token[0,20]
-			user.firstname = auth.info.first_name   # assuming the user model has a name
-			user.lastname = auth.info.last_name 
+			name = auth.info.name.split(" ")   
+			user.firstname = name[0]
+			user.lastname = name[1]
+			user.image = auth.info.image 
+			#user.verified = auth.info.verified 
+			#user.description = auth.info.description 
+			#user.location = auth.extra.raw_info.location[name]
+			#user.lastname = auth.extra.raw_info.location[id]
+			#user.gender = auth.info.raw_info.gender 
+			#user.timezone = auth.info.raw_info.timezone
+		binding.pry
 			#user.image = auth.info.image # assuming the user model has an image
 			# If you are using confirmable and the provider(s) you use validate emails, 
 			# uncomment the line below to skip the confirmation emails.
