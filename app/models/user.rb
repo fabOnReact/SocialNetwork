@@ -31,7 +31,6 @@ class User < ApplicationRecord
 			#user.lastname = auth.extra.raw_info.location[id]
 			#user.gender = auth.info.raw_info.gender 
 			#user.timezone = auth.info.raw_info.timezone
-		binding.pry
 			#user.image = auth.info.image # assuming the user model has an image
 			# If you are using confirmable and the provider(s) you use validate emails, 
 			# uncomment the line below to skip the confirmation emails.

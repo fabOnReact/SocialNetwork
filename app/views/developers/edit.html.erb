@@ -41,15 +41,7 @@
                       <%= f.text_field :skill_list, :class => "tagsinput form-control", :id => "tagsinput", value: f.object.skill_list.map { |t| t}.join(', ') %>
                       <%#= raw @developer.skill_list.map { |t| link_to t}.join(', ') %>
                     </div>
-                  </div>   
-                  <section class="panel">
-                      <header class="panel-heading">
-                          Tags Input
-                      </header>
-                      <div class="panel-body">
-                          <input name="tagsinput" id="tagsinput" class="tagsinput" value="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal" />
-                      </div>
-                  </section>                                                                                 --
+                  </div>                                                                                   --
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>
@@ -63,6 +55,8 @@
         </section>   
     </div>
 </div>
+
+<%# console %> 
 <!-- page end-->
 <div class="text-right">
   <div class="credits">

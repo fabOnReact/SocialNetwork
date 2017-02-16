@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
   
-  #devise_for :users
+  get 'hosts/index'
+  get 'hosts/new'
+  get 'hosts/edit'
+
   # omniauth facebook
   devise_for :users, :controllers => { 
   	:omniauth_callbacks => "users/omniauth_callbacks",
     :registrations => "registrations"
   	#:confirmations => "confirmations"
-  }
-
+  } 
+=begin
+  do
+  get '/users/connect/:network', :to => redirect("/users/auth/%{network}"), :as => 'user_oauth_connect'
+  end
+=end
   # log out
   #devise_scope :user do
   #  delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
@@ -19,9 +26,6 @@ Rails.application.routes.draw do
   resources :developers
 
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
-  #match '/:controller(/:action(/:id))', welcome:via => [:get, :post]
-  #resources :account
   root :to => 'main#welcome'
 end

@@ -11,10 +11,10 @@
 // about supported directives.
 //= require_self
 //= require jquery
-//= require jquery-ui
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require jquery.scrollTo
+//= require jquery-ui
 //= require jquery.nicescroll
 //= require jquery.tagsinput
 //= require bootstrap-switch
