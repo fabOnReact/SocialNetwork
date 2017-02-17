@@ -88,6 +88,9 @@ function initializeJS() {
 
 }
 
-jQuery(document).ready(function(){
+/*jQuery(document).ready(function(){
+    initializeJS();
+});*/
+jQuery(document).on('turbolinks:load', function(){
     initializeJS();
 });

@@ -16,7 +16,7 @@ class DevelopersController < ApplicationController
 		@developer = Developer.new(input_params)
 		if @developer.save
 			current_user.developer = @developer
-			redirect_to action: "index"
+			redirect_to action: "show"
 		else
 			render "new"
 		end

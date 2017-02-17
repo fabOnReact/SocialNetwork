@@ -9,7 +9,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
 
 	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
+  <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
     <script "js/html5shiv.js"></script>
@@ -27,5 +27,7 @@
 	</head>
   <body>
     <%= render partial: "partials/usernavigation" %>
+    <%= yield %>
+    <%= render partial: "partials/userfooter" %>
   </body>
 </html>
