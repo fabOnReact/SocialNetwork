@@ -22,5 +22,3 @@
 //= require wow.min
 //= require custom
 //= require jquery_ujs
-//= require_self
-//= require turbolinks

@@ -15,6 +15,5 @@ module SocialNetwork
     config.logger = ActiveSupport::Logger.new('SocialNetwork.log')
     config.assets.paths << Rails.root.join("vendor","assets", "fonts")
     config.assets.paths << Rails.root.join("vendor","assets", "img")
-    config.assets.precompile += %w( main.js main.css )
   end
 end
