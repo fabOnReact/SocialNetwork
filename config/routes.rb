@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
   
+  get 'projects/index'
+
+  get 'projects/new'
+
+  get 'projects/edit'
+
+  get 'projects/show'
+
+  get 'hosts/index'
+
+  get 'hosts/new'
+
+  get 'hosts/show'
+
   get 'hosts/index'
   get 'hosts/new'
   get 'hosts/edit'
@@ -23,7 +37,7 @@ Rails.application.routes.draw do
   get '/main/home' => 'main#welcome'
   get '/users/welcome' => 'user#welcome'
   
-  resources :developers
+  resources :developers, :hosts, :projects
 
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
   

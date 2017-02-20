@@ -14,10 +14,11 @@ class DevelopersController < ApplicationController
 
 	def create
 		@developer = Developer.new(input_params)
-		if @developer.save
-			current_user.developer = @developer
-			redirect_to action: "show"
+		if @developer.save && current_user.developer = @developer
+			flash[:notice] = "Profile sucessfully Saved"
+			redirect_to action: "edit"
 		else
+			flash[:alert] = "An error has occurred during the saving"
 			render "new"
 		end
 	end
@@ -29,8 +30,10 @@ class DevelopersController < ApplicationController
 	def update
 		@developer = Developer.find(params[:id])
 		if @developer.update_attributes(input_params) 
+			flash[:notice] = "Profile sucessfully Saved"
 			redirect_to action: "show", id: @developer.id
 		else
+			flash[:alert] = "An error has occurred during the saving"
 			render "new"
 		end			
 	end 

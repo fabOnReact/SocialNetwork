@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170213134807) do
+ActiveRecord::Schema.define(version: 20170220091232) do
 
   create_table "ads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer  "project_id"
@@ -50,15 +50,16 @@ ActiveRecord::Schema.define(version: 20170213134807) do
   end
 
   create_table "hosts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.integer  "nbuilding"
-    t.text     "house_type", limit: 65535
-    t.integer  "rooms"
-    t.integer  "bathrooms"
-    t.boolean  "kitchen"
-    t.text     "activities", limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-    t.integer  "user_id"
+    t.integer "user_id"
+    t.text    "description",  limit: 65535
+    t.string  "location"
+    t.integer "singleroom"
+    t.integer "sharedroom"
+    t.integer "surfspot"
+    t.integer "barbecue"
+    t.integer "villa"
+    t.integer "swimmingpool"
+    t.integer "skiresort"
     t.index ["user_id"], name: "index_hosts_on_user_id", using: :btree
   end
 

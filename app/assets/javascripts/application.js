@@ -20,5 +20,4 @@
 //= require scripts
 //= require bootstrap-switch
 //= require wow.min
-//= require custom
 //= require jquery_ujs

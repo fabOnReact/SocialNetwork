@@ -1,0 +1,39 @@
+<!-- page start-->
+<%= @projects %>
+<div class="row">
+  <div class="col-sm-12">
+      <section class="panel">
+          <header class="panel-heading">
+              Projects
+          </header>
+          <table class="table">
+              <thead>
+              <tr>
+                  <th>Project Id</th>
+                  <th>Location</th>
+                  <th>Single Room</th>
+                  <th>Surfspot</th>
+                  <th>Barbecue</th>
+                  <th>Villa</th>
+                  <th>Swimmingpool</th>
+                  <th>Skiresort</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @projects.each do |project| %>
+              <tr>
+                  <td><%= project.id %></td>
+                  <td><%= project.location %></td>
+                  <td><%= project.singleroom %></td>
+                  <td><%= project.Surfspot %></td>
+                  <td><%= project.Barbecue %></td>
+                  <td><%= project.Villa %></td>
+                  <td><%= project.Swimmingpool %></td>
+                  <td><%= project.Skiresort %></td>
+              </tr>
+              <% end %>
+              </tbody>
+          </table>
+      </section>
+  </div>
+</div>
