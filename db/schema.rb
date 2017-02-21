@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170221095830) do
+ActiveRecord::Schema.define(version: 20170221150731) do
 
   create_table "ads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer  "project_id"
@@ -74,15 +74,17 @@ ActiveRecord::Schema.define(version: 20170221095830) do
     t.integer  "host_id"
     t.text     "description",  limit: 65535
     t.string   "location"
-    t.integer  "singleroom"
-    t.integer  "sharedroom"
-    t.integer  "surfspot"
-    t.integer  "barbecue"
-    t.integer  "villa"
-    t.integer  "swimmingpool"
-    t.integer  "skiresort"
+    t.boolean  "singleroom"
+    t.boolean  "sharedroom"
+    t.boolean  "surfspot"
+    t.boolean  "barbecue"
+    t.boolean  "villa"
+    t.boolean  "swimmingpool"
+    t.boolean  "skiresort"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.string   "country"
+    t.string   "state"
     t.index ["host_id"], name: "index_locations_on_host_id", using: :btree
   end
 

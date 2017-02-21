@@ -1,4 +1,19 @@
-2. Creare una tabella per le locations, host has_many locations , location belongs_to host
+Current Task
+Fatto -->  Creare una tabella per le locations, host has_many locations , location belongs_to host 
+Fatto --> Creazione routes, Controller, Views
+Da Fare --> Creazione Links in navigationuser
+Da Fare --> Creazione singole azioni 
+Da Fare --> Creazione Views
+
+Fatto --> 
+Fatto --> 
+Fatto --> 
+Da Fare --> 
+Da Fare --> 
+Da Fare --> 
+
+
+
 3. decidere come gestire le funzionalità investor host e developer
 3a. gestire l'upload della foto
 4. messaggistica 

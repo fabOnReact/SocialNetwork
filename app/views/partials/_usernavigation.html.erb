@@ -339,24 +339,24 @@
                         <li>
                             <% if current_user.host != nil %>                       
                                 <% if current_user.host.projects != nil %>
-                                    <%= link_to projects_path(current_user) do %><!--<a class="" href="form_component.html">-->
+                                    <%= link_to hosts_path(current_user) do %><!--<a class="" href="form_component.html">-->
                                     Locations and Projects
                                     <% end %><!--</a>-->
                                 <% end %>
                         </li>                                                  
                         <li>
-                                    <%= link_to edit_host_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
+                                    <%= link_to new_location_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
                                     Create New Location
                                     <% end %><!--</a>-->                             
                         </li> 
                         <li>
                                     <%= link_to edit_host_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
-                                    Edit Location
+                                    EditHost->todo
                                     <% end %><!--</a>-->                             
                         </li>  
                         <li>
                                     <%= link_to new_project_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
-                                        Create Project
+                                    Create Project
                                     <% end %><!--</a>-->                                                  
                                 <% end %>
                             <% end %>

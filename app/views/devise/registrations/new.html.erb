@@ -27,7 +27,7 @@
                     <div class="col-lg-10">
                       <%#= f.text_field :country, :class => "form-control", :id => "country" %>
                       <%#= country_select(:country,  { include_blank: 'Select a country' }, {}, { :class => "form-control", :id => "location"}) %>
-                      <%= country_select(resource, "country", {include_blank: 'Select a country', selected: ''}, {class: 'form-control', :id => "country_select"}) %>
+                      <%= f.country_select(:country, {include_blank: 'Select a country', selected: current_user.country}, {class: 'form-control', :id => "country_select"}) %>
                       <%#= f.select(:country, { include_blank: 'Select a country' }, { class: 'country-select-box' }) %>
                     </div>
                   </div>
