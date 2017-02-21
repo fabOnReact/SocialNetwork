@@ -1,6 +1,4 @@
-1. Creare 2 join, fra projects e developer, projects e hosts
-utilizzare has and belongs to 
-
+2. Creare una tabella per le locations, host has_many locations , location belongs_to host
 3. decidere come gestire le funzionalità investor host e developer
 3a. gestire l'upload della foto
 4. messaggistica 

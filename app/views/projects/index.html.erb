@@ -1,5 +1,79 @@
 <!-- page start-->
-<%= @projects %>
+<%#= @projects %>
+<div class="row">
+  <div class="col-sm-12">
+      <section class="panel">
+          <header class="panel-heading">
+              Locations
+          </header>
+          <table class="table">
+              <thead>
+              <tr>
+                  <th>Location Id</th>
+                  <th>Location</th>
+                  <th class="Checkbox">Single Room</th>
+                  <th class="Checkbox">Surfspot</th>
+                  <th class="Checkbox">Barbecue</th>
+                  <th class="Checkbox">Villa</th>
+                  <th class="Checkbox">Swimmingpool</th>
+                  <th class="Checkbox">Skiresort</th>
+              </tr>
+              </thead>
+              <tbody>
+              <%# @host.each do |location| %>
+              <tr>
+                  <td><%= @host.id %></td>
+                  <td><%= @host.location %></td>
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.singleroom %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>                    
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.surfspot %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>                    
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.barbecue %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>  
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.villa %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>  
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.swimmingpool %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>                                                                          
+                  <td class="col-md-1 Checkbox">
+                      <% if @host.skiresort %>
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>                  
+              </tr>
+              <%# end %>
+              </tbody>
+          </table>
+      </section>
+  </div>
+</div>
+
 <div class="row">
   <div class="col-sm-12">
       <section class="panel">
@@ -9,28 +83,32 @@
           <table class="table">
               <thead>
               <tr>
-                  <th>Project Id</th>
-                  <th>Location</th>
-                  <th>Single Room</th>
-                  <th>Surfspot</th>
-                  <th>Barbecue</th>
-                  <th>Villa</th>
-                  <th>Swimmingpool</th>
-                  <th>Skiresort</th>
+                  <th>Project Name</th>
+                  <th class="Fieldnumber">% Completion</th>
+                  <th class="Fieldnumber">Budget</th>
+                  <th class="Fieldnumber">Number of Employees</th>
+                  <th class="Fieldnumber">Number of Investors</th>
+                  <th class="Checkbox">Hiring</th>
               </tr>
               </thead>
               <tbody>
               <% @projects.each do |project| %>
+              <div class="row">
               <tr>
-                  <td><%= project.id %></td>
-                  <td><%= project.location %></td>
-                  <td><%= project.singleroom %></td>
-                  <td><%= project.Surfspot %></td>
-                  <td><%= project.Barbecue %></td>
-                  <td><%= project.Villa %></td>
-                  <td><%= project.Swimmingpool %></td>
-                  <td><%= project.Skiresort %></td>
+                  <td class="col-md-1"><%= project.name %></td>
+                  <td class="col-md-1 Fieldnumber"><%= project.percentage_completion %></td>
+                  <td class="col-md-2 Fieldnumber"><%= project.budget %></td>
+                  <td class="col-md-1 Fieldnumber"><%= project.nemployees %></td>
+                  <td class="col-md-1 Fieldnumber"><%= project.ninvestors %></td>
+                  <td class="col-md-1 Checkbox">
+                  	  <% if project.hiring %>
+                  	  	<i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  	  <% else %>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                      <% end %>
+                  </td>
               </tr>
+              </div>
               <% end %>
               </tbody>
           </table>

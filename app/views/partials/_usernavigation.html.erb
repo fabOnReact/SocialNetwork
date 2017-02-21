@@ -335,33 +335,29 @@
                                     Profile Creation
                                     <% end %><!--</a>-->
                                 <% end %>
-                        </li>                          
-                        <li>
-                                <% if current_user.host != nil %>
-                                    <%= link_to host_path(current_user.host.id) do %><!--<a class="" href="form_component.html">-->
-                                    Profile
-                                    <% end %><!--</a>-->
-                                <% end %>
-                        </li>
-                        <li>
-                                <% if current_user.host != nil %>
-                                    <%= link_to edit_host_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
-                                    Edit
-                                    <% end %><!--</a>-->
-                                <% end %>
-                        </li>  
-                        <li>
-                                <% if current_user.host.projects != nil %>
-                                    <%= link_to projects_path(current_user) do %><!--<a class="" href="form_component.html">-->
-                                    Current Projects
-                                    <% end %><!--</a>-->
-                                <% end %>
                         </li> 
                         <li>
-                                <% if current_user.host != nil %>
-                                    <%= link_to new_project_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
-                                    Create Project
+                            <% if current_user.host != nil %>                       
+                                <% if current_user.host.projects != nil %>
+                                    <%= link_to projects_path(current_user) do %><!--<a class="" href="form_component.html">-->
+                                    Locations and Projects
                                     <% end %><!--</a>-->
+                                <% end %>
+                        </li>                                                  
+                        <li>
+                                    <%= link_to edit_host_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
+                                    Create New Location
+                                    <% end %><!--</a>-->                             
+                        </li> 
+                        <li>
+                                    <%= link_to edit_host_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
+                                    Edit Location
+                                    <% end %><!--</a>-->                             
+                        </li>  
+                        <li>
+                                    <%= link_to new_project_path(current_user.host) do %><!--<a class="" href="form_component.html">-->
+                                        Create Project
+                                    <% end %><!--</a>-->                                                  
                                 <% end %>
                             <% end %>
                         </li>                         

@@ -1,0 +1,106 @@
+.signup {
+ 	background: transparent;
+ 	padding: 10px 30px;
+ 	border: solid white 5px;
+ 	color: white;
+ }
+
+#intro.intro {
+ 	height: 600px;
+ 	padding: 0 0 !important;
+ }
+
+.slogan {
+	display: flex;
+	float: none;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+/* Main Css */ 
+
+
+
+/* GET Registration/new */
+
+.links {
+	margin-top: 15px;
+	font-weight: 700;
+}
+/* User Css */
+
+td {
+	box-sizing: border-box;
+}
+
+.small-image {
+	height: 34px;
+}
+
+.index-image {
+	height: 62px;
+}
+
+.navigationName {
+	padding-left: 7px;
+}
+
+.developerTitle {
+	padding-top: 10px;
+}
+
+.hostcheckbox {
+	width: 8.333333333333332%;
+}
+
+.checkbox {
+	padding-left: 1px;
+	padding-bottom: 5px;
+}
+
+.table td {
+	border: solid 1px #dddddd;
+}
+
+.table .Fieldnumber {
+	text-align: right;
+	width: 10%;
+}
+
+.table .Checkbox {
+	text-align: center;
+	width: 10%;
+}
+
+/* Specific Mozilla */
+
+@-moz-document url(http://localhost:3000/),
+	   url-prefix(http://localhost:3000/),
+       domain(mozilla.org)
+    {
+      /* CSS rules here apply to:
+         + The page "http://www.w3.org/".
+         + Any page whose URL begins with "http://www.w3.org/Style/"
+         + Any page whose URL's host is "mozilla.org" or ends with
+           ".mozilla.org"
+       */
+
+      /* make the above-mentioned pages really ugly */
+      .table {
+		border-collapse: separate;
+	}
+	  .table td {
+	    border: solid 0px #dddddd;
+	  }
+
+}
+
+/* Media Queries */
+
+@media (min-width: 1550px) {
+ 	.intro {
+ 		height: 900px;
+ 	}
+}

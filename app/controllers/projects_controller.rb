@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   def index
+  	@host = current_user.host
   	@projects = current_user.host.projects
   end
 
@@ -23,4 +24,10 @@ class ProjectsController < ApplicationController
 
   def show
   end
+
+  private
+  def input_params
+  	params.require(:project).permit(:name, :description, :percentage_completion, :budget, :nemployees, :ninvestors, :hiring)
+  end
+
 end

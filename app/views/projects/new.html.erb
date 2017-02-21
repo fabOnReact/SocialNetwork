@@ -4,12 +4,10 @@
             <header class="panel-heading">
                <h2>Project Creation</h2>
             </header>
-
             <div class="panel-body">
               <div class="form">
                 <%= form_for(@project, html: {class: "form-validate form-horizontal" }) do |f| %>
-                  <%= render 'partials/error_messages', object: @host %>                
-
+                  <%= render 'partials/error_messages', object: @project %>                
                   <div class="form-group ">
                       <%= f.label :name, "Name", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
@@ -17,40 +15,51 @@
                     </div>
                   </div> 
                   <div class="form-group ">
-                      <%= f.label :location, "Location", :class => "control-label col-lg-2" %>
+                      <%= f.label :description, "Description", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :location, :class => "form-control" %>
+                      <%= f.text_field :description, :class => "form-control" %>
+                    </div>
+                  </div> 
+                  <div class="form-group ">
+                      <%= f.label :percentage_completion, "Percentage of completion", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.number_field :percentage_completion, :class => "form-control" %>
+                    </div>
+                  </div> 
+                  <div class="form-group ">
+                      <%= f.label :budget, "budget", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.number_field :budget, :class => "form-control" %>
+                    </div>
+                  </div>                   
+                  <div class="form-group ">
+                      <%= f.label :nemployees, "Number of Employees", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.text_field :nemployees, :class => "form-control" %>
+                    </div>
+                  </div>                   
+                  <div class="form-group ">
+                      <%= f.label :ninvestors, "Number of Investors", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.text_field :ninvestors, :class => "form-control" %>
                     </div>
                   </div> 
                   <div class="form-group">
-                      <label class="control-label col-lg-2" for="inputSuccess">Inline checkboxes</label>
+                      <label class="control-label col-lg-2" for="inputSuccess">Hiring</label>
                       <div class="col-lg-10">
-                          <label class="checkbox-inline">
-                          	  <%= f.check_box :singleroom %> Singleroom
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :surfspot %> Surfspot
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Barbecue
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Villa
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Swimmingpool
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Skiresort
-                          </label>                                          
+                          <div class="checkbox">
+                              <label>
+                                  <%= f.check_box :hiring %> 
+                              </label>
+                          </div>
                       </div>
-                  </div>                                                                                                    
+                  </div>                                                                                                                   
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>
                           <%#= link_to "Cancel", edit_user_registration_path, :method => :get, :class => "btn btn-default wideButton" %>
                       </div>
-                  </div>
+                  </div>                
                 <% end %> 
               </div>
             </div>
