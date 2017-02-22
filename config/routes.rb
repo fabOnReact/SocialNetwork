@@ -1,28 +1,43 @@
 Rails.application.routes.draw do
   
-  # omniauth facebook
+# omniauth facebook
   devise_for :users, :controllers => { 
   	:omniauth_callbacks => "users/omniauth_callbacks",
     :registrations => "registrations"
   	#:confirmations => "confirmations"
   } 
-=begin
-  do
-  get '/users/connect/:network', :to => redirect("/users/auth/%{network}"), :as => 'user_oauth_connect'
-  end
-=end
-  # log out
-  #devise_scope :user do
-  #  delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
-  # => end  
 
   get '/main/home' => 'main#welcome'
   get '/users/welcome' => 'user#welcome'
   get '/locations/:id/delete' => 'locations#delete', :as => :delete_location
-  
-  resources :developers, :hosts, :projects, :locations
+  get '/projects/:id/delete' => 'projects#delete', :as => :delete_project
+  get '/ads/:id/delete' => 'ads#delete', :as => :delete_ad
+  get '/tasks/:id/delete' => 'tasks#delete', :as => :delete_task
+
+  resources :developers, :hosts, :projects, :locations, :ads, :tasks
 
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
   
   root :to => 'main#welcome'
 end
+
+
+
+
+
+
+
+
+
+
+
+=begin
+  do
+  get '/users/connect/:network', :to => redirect("/users/auth/%{network}"), :as => 'user_oauth_connect'
+  end
+
+ log out
+ devise_scope :user do
+  delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+ end  
+=end

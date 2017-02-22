@@ -4,7 +4,7 @@ Fatto --> Creazione routes, Controller, Views
 Fatto --> Creazione Links in navigationuser fatto
 Fatto --> Creazione singole azioni fatto
 Fatto --> completare le edit delle singole location e la delete
-Da Fare --> mettere a posto il index della hosts
+Fatto --> mettere a posto il index della hosts
 Da Fare --> mettere a post update user cambiare la path della edit.html.erb
 Da Fare --> Creazione Views
 
@@ -15,10 +15,8 @@ Da Fare -->
 Da Fare --> 
 Da Fare --> 
 
-
-
 3. decidere come gestire le funzionalità investor host e developer
-3a. gestire l'upload della foto
+3a. gestire l'upload della foto con carrierwave
 4. messaggistica 
 5. notifiche
 6. home e link di sinistra
@@ -26,3 +24,6 @@ Da Fare -->
 
 PRODUZIONE 
 1. gestire e salvare i dati da fecebook inclusa la foto
+
+ALTRE COSE DA FARE
+1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations

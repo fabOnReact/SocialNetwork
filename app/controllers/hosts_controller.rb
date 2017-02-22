@@ -28,8 +28,8 @@ class HostsController < ApplicationController
   end
 
   def update
-    @host = Host.new(input_params)
-    if @host.save
+    @host = Host.find(params[:id])
+    if @host.update_attributes(input_params)
     	flash[:notice] = "Profile sucessfully Edited"
     	redirect_to action: "edit"
     else
