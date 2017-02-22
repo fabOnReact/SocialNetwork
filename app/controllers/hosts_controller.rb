@@ -2,6 +2,7 @@ class HostsController < ApplicationController
   def index
     @locations = current_user.host.locations
     @projects = current_user.host.projects
+    #@tasks = @projects.tasks
   end
 
   def new

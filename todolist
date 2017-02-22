@@ -1,12 +1,19 @@
 Current Task
-Fatto -->  Creare una tabella per le locations, host has_many locations , location belongs_to host 
+Fatto --> Creare una tabella per le locations, host has_many locations , location belongs_to host 
 Fatto --> Creazione routes, Controller, Views
 Fatto --> Creazione Links in navigationuser fatto
 Fatto --> Creazione singole azioni fatto
 Fatto --> completare le edit delle singole location e la delete
 Fatto --> mettere a posto il index della hosts
-Da Fare --> mettere a post update user cambiare la path della edit.html.erb
-Da Fare --> Creazione Views
+Fatto --> mettere a post update user cambiare la path della edit.html.erb
+Fatto --> Creazione Views
+
+Da Fare --> In corso Creazione Ads and Task
+			Corrente ho appena finito la creazione di stask ora riindirizza alla hosts#index
+Da Fare --> visualizzare task nella index, visualizzare progetti con all'interno le task 
+Da Fare --> visualizzare locations con all'interno le foto
+Da Fare --> creare ads
+Da Fare --> Produzione su Heroku
 
 Fatto --> 
 Fatto --> 
@@ -27,3 +34,4 @@ PRODUZIONE
 
 ALTRE COSE DA FARE
 1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations
+2. search
