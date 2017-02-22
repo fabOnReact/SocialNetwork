@@ -39,19 +39,17 @@
                     </div>
                   </div> 
                   <div class="form-group">
-                      <label class="control-label col-lg-2" for="inputSuccess">Hiring</label>
-                      <div class="col-lg-10">
+                      <label class="control-label col-lg-2 col-md-1 col-sm-1 col-xs-6" for="inputSuccess">Hiring</label>
+                      <div class="col-sm-1 col-xs-6">
                           <div class="checkbox">
-                              <label>
                                   <%= f.check_box :hiring %> 
-                              </label>
                           </div>
                       </div>
                   </div>                                                                                                                   
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>
-                          <%#= link_to "Cancel", edit_user_registration_path, :method => :get, :class => "btn btn-default wideButton" %>
+                          <%= link_to "Cancel", hosts_path, :method => :get, :class => "btn btn-default wideButton" %>
                       </div>
                   </div>                
                 <% end %> 

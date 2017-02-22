@@ -16,8 +16,7 @@ class LocationsController < ApplicationController
   		render "new"
   	end  		
   end
-
-  def edit
+ def edit
   	@location = Location.find(params[:id])
   end
 

@@ -8,12 +8,13 @@ Fatto --> mettere a posto il index della hosts
 Fatto --> mettere a post update user cambiare la path della edit.html.erb
 Fatto --> Creazione Views
 
-Da Fare --> In corso Creazione Ads and Task
+Fatto --> In corso Creazione Ads and Task
 			Corrente ho appena finito la creazione di stask ora riindirizza alla hosts#index
-Da Fare --> visualizzare task nella index, visualizzare progetti con all'interno le task 
-Da Fare --> visualizzare locations con all'interno le foto
+Fatto --> visualizzare task nella index, visualizzare progetti con all'interno le task 
+Da Fare --> visualizzare locations con all'interno le foto, caricamento foto con carrierwave
 Da Fare --> creare ads
 Da Fare --> Produzione su Heroku
+Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
 
 Fatto --> 
 Fatto --> 
