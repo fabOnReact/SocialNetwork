@@ -430,6 +430,14 @@
                   <strong>Oh snap!</strong> <%= flash[:alert] %>
                 </div>               
             <% end %>
+            <% if flash[:warning] %> 
+                <div class="alert alert-warning fade in">
+                  <button data-dismiss="alert" class="close close-sm" type="button">
+                      <i class="icon-remove"></i>
+                  </button>
+                  <strong>Warning!</strong> <%= flash[:warning] %>
+                </div>   
+            <% end %>            
             <% if flash[:other] %> 
                 <div class="alert alert-info fade in">
                   <button data-dismiss="alert" class="close close-sm" type="button">

@@ -1,8 +1,11 @@
 Current Task
 Fatto -->  Creare una tabella per le locations, host has_many locations , location belongs_to host 
 Fatto --> Creazione routes, Controller, Views
-Da Fare --> Creazione Links in navigationuser
-Da Fare --> Creazione singole azioni 
+Fatto --> Creazione Links in navigationuser fatto
+Fatto --> Creazione singole azioni fatto
+Fatto --> completare le edit delle singole location e la delete
+Da Fare --> mettere a posto il index della hosts
+Da Fare --> mettere a post update user cambiare la path della edit.html.erb
 Da Fare --> Creazione Views
 
 Fatto --> 
@@ -20,9 +23,6 @@ Da Fare -->
 5. notifiche
 6. home e link di sinistra
 7. ricerca
-
-
-
 
 PRODUZIONE 
 1. gestire e salvare i dati da fecebook inclusa la foto

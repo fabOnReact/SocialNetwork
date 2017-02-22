@@ -22,12 +22,33 @@ class LocationsController < ApplicationController
   end
 
   def update
+    @location = Location.find(params[:id])
+  	if @location.update_attributes(input_params) && current_user.host.locations.find(@location.id).update_attributes(input_params)
+      flash[:notice] = "Location sucessfully Updated"
+      redirect_to controller: "hosts", action: "index"
+    else
+      flash[:alert] = "An error has occurred during the update"
+      render "new"
+    end      
+  end
+
+  def show 
+  	@location = Location.find(params[:id])
   end
 
   def delete
+    @location = Location.find(params[:id])
   end
 
   def destroy
+    @location = Location.find(params[:id])
+    if @location.destroy
+      flash[:notice] = "Location deleted successfully"
+      redirect_to controller: "hosts", action: "index"
+    else 
+      flash[:alert] = "Location was not deleted, please try again"
+      render("delete")
+    end
   end
 
   private

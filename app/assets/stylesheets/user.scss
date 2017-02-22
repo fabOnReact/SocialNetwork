@@ -1,6 +1,69 @@
 // Place all the styles related to the User controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* GET Registration/new */
+
+.links {
+	margin-top: 15px;
+	font-weight: 700;
+}
+
+td {
+	box-sizing: border-box;
+}
+
+.small-image {
+	height: 34px;
+}
+
+.index-image {
+	height: 62px;
+}
+
+.navigationName {
+	padding-left: 7px;
+}
+
+.developerTitle {
+	padding-top: 10px;
+}
+
+
+/* GET sessions#new */
+
+.checkbox input[type="checkbox"] {
+	margin-left: 0px;
+	float: none;
+}
+
+
+/* GET hosts#index */
+
+.hostcheckbox {
+	width: 8.333333333333332%;
+}
+
+.checkbox {
+	padding-left: 1px;
+	padding-bottom: 5px;
+}
+
+.table td {
+	border: solid 1px #dddddd;
+}
+
+.table .Fieldnumber {
+	text-align: right;
+/*	width: 10%;*/
+}
+
+.table .Checkbox {
+	text-align: center;
+/*	width: 10%;*/
+}
+
  .login-form a {
  	color: white;
  }
@@ -26,6 +89,45 @@ color: #797979;
  	color: #797979;
  }
 
-/*.table .btn {
-	border-radius: 10%;
-}*/
+ .table .btn {
+ 	border-radius: 10%;
+ 	padding: 0px 6px;
+ }
+
+ .table .fa-info {
+ 	padding: 0px 2px;
+ }
+
+.options {
+	text-align: center;
+}
+
+/* GET locations#delete */
+
+.alert-warning {
+	color: black;
+}
+
+
+ /* Specific Mozilla */
+
+@-moz-document url(http://localhost:3000/),
+	   url-prefix(http://localhost:3000/),
+       domain(mozilla.org)
+    {
+      /* CSS rules here apply to:
+         + The page "http://www.w3.org/".
+         + Any page whose URL begins with "http://www.w3.org/Style/"
+         + Any page whose URL's host is "mozilla.org" or ends with
+           ".mozilla.org"
+       */
+
+      /* make the above-mentioned pages really ugly */
+      .table {
+		border-collapse: separate;
+	}
+	  .table td {
+	    border: solid 0px #dddddd;
+	  }
+
+}
