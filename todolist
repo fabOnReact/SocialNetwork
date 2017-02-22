@@ -36,3 +36,4 @@ PRODUZIONE
 ALTRE COSE DA FARE
 1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations
 2. search
+3. envornment variable per tutte le password

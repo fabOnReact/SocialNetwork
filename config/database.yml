@@ -9,7 +9,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: fabrizio
-  password: piemonte2787
+  password: <%= ENV['DATABASE_PW'] %>
   socket: /var/run/mysqld/mysqld.sock
 
 development:
