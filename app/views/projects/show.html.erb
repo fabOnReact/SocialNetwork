@@ -63,7 +63,7 @@
               <thead>
               <tr class="row">
                   <th class="">Task Name</th>
-                  <th class="Fieldnumber hidden-xs">Task Description</th>
+                  <th class="hidden-xs">Task Description</th>
                   <th class="Fieldnumber hidden-xs">Task Skills Required</th>
                   <th class="Fieldnumber hidden-sm hidden-xs">Days</th>
                   <th class="Checkbox hidden-sm hidden-xs">Completed</th>
@@ -74,14 +74,14 @@
               <% @tasks.each do |task| %>
               <tr class="row">
                   <td class="col-md-4"><%= task.name %></td>
-                  <td class="col-md-2 Fieldnumber hidden-xs"><%= task.description %></td>
+                  <td class="col-md-2 hidden-xs"><%= task.description %></td>
                   <td class="col-md-2 Fieldnumber hidden-sm hidden-xs"><%= task.skill_list %></td>
                   <td class="col-md-1 Fieldnumber hidden-sm hidden-xs"><%= task.days %></td>
                   <td class="col-md-1 Checkbox">
                       <% if task.completed %>
                         <i class="fa fa-check-square-o" aria-hidden="true"></i>
                       <% else %>
-                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                        <i class="fa fa-square-o" aria-hidden="true"></i>""
                       <% end %>
                   </td>
                   <td class="options col-md-2">

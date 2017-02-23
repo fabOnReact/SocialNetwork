@@ -1,4 +1,4 @@
-<div class="row">
+ <div class="row">
 			</div>
               <div class="row">
                 <!-- profile-widget -->
@@ -8,6 +8,7 @@
                             <div class="col-lg-2 col-sm-4">
                               <h4><%= @user.firstname %> <%= current_user.lastname %> </h4>               
                               <div class="follow-ava">
+                                  <%= image_tag @user.avatar.url, :class => "index-image" if @user.image != nil %>
                                   <%= image_tag @user.image, :class => "index-image" if @user.image != nil %>
                                   <img src="img/profile-widget-avatar.jpg" alt="">
                               </div>

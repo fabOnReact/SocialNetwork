@@ -7,7 +7,7 @@
 
             <div class="panel-body">
               <div class="form">
-                <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "form-validate form-horizontal" }) do |f| %>
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "form-validate form-horizontal", multipart: true }) do |f| %>
 
                   <%= devise_error_messages! %>
                   <%= render 'partials/error_messages', object: resource %>                
@@ -42,6 +42,12 @@
                       <%= f.select(:roles_id, Role.all.collect {|p| [ p.role, p.id ]}, {:selected => resource.roles_id}, {:class => "form-control"}) %>
                     </div>
                   </div>
+                  <div class="form-group ">
+                      <%= f.label :avatar, "Image Upload", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.file_field :avatar %>
+                    </div>
+                  </div>                  
                   <div class="form-group ">
                       <%= f.label :email, "Email", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">

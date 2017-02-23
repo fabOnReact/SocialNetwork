@@ -71,3 +71,7 @@ gem 'country_select'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'acts-as-taggable-on', '~> 4.0'
+
+gem 'fog', '~> 1.38'
+gem 'rmagick', '~> 2.16'
+gem 'carrierwave', '~> 1.0'

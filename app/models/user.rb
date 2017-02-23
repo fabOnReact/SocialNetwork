@@ -17,6 +17,9 @@ class User < ApplicationRecord
 	has_one :developer
 	has_one :host
 
+	# carrierwave
+	mount_uploader :avatar, AvatarUploader
+
 	def self.from_omniauth(auth)
 		where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
 			user.email = auth.info.email
