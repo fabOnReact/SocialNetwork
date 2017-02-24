@@ -12,6 +12,12 @@ Fatto --> In corso Creazione Ads and Task
 			Corrente ho appena finito la creazione di stask ora riindirizza alla hosts#index
 Fatto --> visualizzare task nella index, visualizzare progetti con all'interno le task 
 Da Fare --> visualizzare locations con all'interno le foto, caricamento foto con carrierwave
+
+Dettagli --> Seguire le istruzioni per configurare l'upload multiple, ultimo passo fatto installazione gem con github
+
+https://github.com/carrierwaveuploader/carrierwave#multiple-file-uploads
+
+
 Da Fare --> creare ads
 Da Fare --> Migrate Down database Produzione su Heroku
 Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
