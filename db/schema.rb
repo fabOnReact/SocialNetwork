@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170224090524) do
+ActiveRecord::Schema.define(version: 20170224151133) do
 
   create_table "ads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer  "project_id"
@@ -20,7 +20,13 @@ ActiveRecord::Schema.define(version: 20170224090524) do
     t.integer  "days"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "location_id"
+    t.integer  "task_id"
+    t.boolean  "remote"
+    t.string   "skill_list"
+    t.index ["location_id"], name: "index_ads_on_location_id", using: :btree
     t.index ["project_id"], name: "index_ads_on_project_id", using: :btree
+    t.index ["task_id"], name: "index_ads_on_task_id", using: :btree
   end
 
   create_table "developers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|

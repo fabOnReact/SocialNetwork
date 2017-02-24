@@ -102,12 +102,16 @@ color: #797979;
 	text-align: center;
 }
 
-/* GET locations#delete */
+/* GET locations#new */ 
 
-.alert-warning {
-	color: black;
+.imagesUpload {
+	padding-top: 0px;
+	text-align: right;
 }
 
+.uploadButton {
+	margin-top: 7px;
+}
 
 /* GET locations#show */
 
@@ -115,7 +119,19 @@ color: #797979;
 	width: 90%;
 }
 
- /* Specific Mozilla */
+/* GET locations#delete */
+
+.alert-warning {
+	color: black;
+}
+
+/* GET tasks#new */
+
+#completedCheckbox {
+	text-align: left;
+}
+
+/* Specific Mozilla */
 
 @-moz-document url(http://localhost:3000/),
 	   url-prefix(http://localhost:3000/),
@@ -136,4 +152,20 @@ color: #797979;
 	    border: solid 0px #dddddd;
 	  }
 
+}
+
+/* Media Queries */
+
+/* GET locations#show */
+
+@media (min-width: 766px) {
+ 	.houseimage {
+ 		margin-bottom: 20px;
+ 	}
+}
+
+@media (max-width: 800px) {
+ 	#navProfile {
+ 		display: none;
+ 	}
 }

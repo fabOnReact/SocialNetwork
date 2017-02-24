@@ -57,9 +57,12 @@
                       </div>
                   </div>    
                   <div class="form-group ">
-                      <%= f.label :houseimages, "House Images", :class => "control-label col-lg-2" %>
+                      <div class="col-lg-2 imagesUpload"
+                        <%= f.label :houseimages, "Upload house Images"%> </br>
+                        <div>Select multiple images using CTRL</div>
+                      </div>
                     <div class="col-lg-10">
-                      <%= f.file_field :houseimages, multiple: true, :class => "form-control" %>
+                      <%= f.file_field :houseimages, multiple: true, :class => "uploadButton" %>
                     </div>
                   </div>                                                                                                                    
                   <div class="form-group ">

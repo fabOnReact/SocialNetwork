@@ -55,10 +55,19 @@
                               <%= f.check_box :skiresort %> Skiresort
                           </label>                                          
                       </div>
-                  </div>                                                                                                    
+                  </div>                                                                 
+                  <div class="form-group ">
+                      <div class="col-lg-2 imagesUpload"
+                        <%= f.label :houseimages, "Upload house Images"%> </br>
+                        <div>Select multiple images using CTRL</div>
+                      </div>
+                    <div class="col-lg-10">
+                      <%= f.file_field :houseimages, multiple: true, :class => "uploadButton" %>
+                    </div>
+                  </div>                                                       
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
-                          <%= f.submit "Save", :class => "btn btn-primary wideButton"%>
+                          <%= f.submit "Update", :class => "btn btn-primary wideButton"%>
                           <%= link_to "Cancel", hosts_path, :method => :get, :class => "btn btn-default wideButton" %>
                       </div>
                   </div>

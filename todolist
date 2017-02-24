@@ -15,7 +15,7 @@ Fatto --> visualizzare locations con all'interno le foto, caricamento foto con c
 
 Fatto --> Seguire le istruzioni per configurare l'upload multiple, ultimo passo fatto installazione gem con github
 
-In corso --> mettere a posto il padding bottom del col-md per 360X640 , con una media query in modo che ci sia padding bottom
+Fatto --> mettere a posto il padding bottom del col-md per 360X640 , con una media query in modo che ci sia padding bottom
 Da Fare --> creare ads
 Da Fare --> Migrate Down database Produzione su Heroku
 Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
@@ -29,6 +29,9 @@ Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Task
 8. dashboard
 9. mappatura locations
 10. notifiche
+11. Finire emails
+12. FARE VALIDAZIONI
+13. Campi text, da rappresentare in con un blocco di testo
 
 PRODUZIONE 
 1. gestire e salvare i dati da fecebook inclusa la foto
@@ -38,6 +41,12 @@ ALTRE COSE DA FARE
 2. search
 3. envornment variable per tutte le password
 
+OPZIONALI
+1. Locations - Pictures
+Creare modello/tabella album e photos, per poter modificare, aggiungere, eliminare singole foto e albums.
+2. Ruolo Educator
+4. Possibilità di ingrandire i campi di testo
+3. Moneta/Crediti
 
 Fatto --> 
 Fatto --> 
