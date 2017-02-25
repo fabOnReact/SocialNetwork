@@ -33,6 +33,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @tasks = @project.tasks
+    @ads = @project.ads
   end
 
   def delete 
