@@ -13,7 +13,7 @@ class AdsController < ApplicationController
     @task = Task.find(@ad.task_id)
     if @ad.save && @location.ads << @ad && @project.ads << @ad && @task.ad = @ad
       flash[:notice] = "Ad sucessfully Saved"
-      redirect_to controller: "locations", action: "index"
+      redirect_to controller: "projects", action: "show", id: @ad.project_id
     else
       flash[:alert] = "An error has occurred during the saving"
       render "new"
@@ -25,9 +25,9 @@ class AdsController < ApplicationController
 
   def update
     @ad = Ad.find(params[:id])
-    if @ad.update_attributes(input_params) && current_user.host.locations.find(@ad.id).update_attributes(input_params)
+    if @ad.update_attributes(input_params) #&& current_user.host.locations.find(@ad.location_id).update_attributes(input_params)
       flash[:notice] = "Ad sucessfully Updated"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to controller: "projects", action: "show", id: @ad.project_id
     else
       flash[:alert] = "An error has occurred during the update"
       render "new"
@@ -47,7 +47,7 @@ class AdsController < ApplicationController
     @ad = Ad.find(params[:id])
     if @ad.destroy
       flash[:notice] = "Ad deleted successfully"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to controller: "projects", action: "show", id: @task.project_id
     else 
       flash[:alert] = "Ad was not deleted, please try again"
       render("delete")

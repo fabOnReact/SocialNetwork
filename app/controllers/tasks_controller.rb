@@ -13,7 +13,7 @@ class TasksController < ApplicationController
     @project = Project.find(@task.project_id)
     if @task.save && @project.tasks << @task
       flash[:notice] = "Task sucessfully Saved"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to controller: "projects", action: "show", id: @task.project_id
     else
       flash[:alert] = "An error has occurred during the saving"
       render "new"
@@ -28,7 +28,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     if @task.update_attributes(input_params) #&& current_user.host.tasks.find(@task.id).update
       flash[:notice] = "Task sucessfully Updated"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to controller: "projects", action: "show", id: @task.project_id
     else
       flash[:alert] = "An error has occurred during the saving"
       render "edit"
@@ -48,7 +48,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     if @task.destroy
       flash[:notice] = "Task sucessfully Deleted"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to controller: "projects", action: "show", id: @task.project_id
     else
       flash[:alert] = "An error has occurred during the Deletion"
       render "delete"

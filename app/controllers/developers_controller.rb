@@ -16,7 +16,7 @@ class DevelopersController < ApplicationController
 		@developer = Developer.new(input_params)
 		if @developer.save && current_user.developer = @developer
 			flash[:notice] = "Profile sucessfully Saved"
-			redirect_to action: "edit"
+			redirect_to action: "edit", id: @developer.id
 		else
 			flash[:alert] = "An error has occurred during the saving"
 			render "new"
