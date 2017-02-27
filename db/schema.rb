@@ -12,14 +12,17 @@
 
 ActiveRecord::Schema.define(version: 20170227083404) do
 
-  create_table "ads", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "ads", force: :cascade do |t|
     t.integer  "project_id"
-    t.text     "title",       limit: 65535
-    t.text     "description", limit: 65535
+    t.text     "title"
+    t.text     "description"
     t.integer  "budget"
     t.integer  "days"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "location_id"
     t.integer  "task_id"
     t.boolean  "remote"
@@ -29,7 +32,7 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.index ["task_id"], name: "index_ads_on_task_id", using: :btree
   end
 
-  create_table "developers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "developers", force: :cascade do |t|
     t.integer  "experience"
     t.string   "interests"
     t.datetime "created_at",  null: false
@@ -41,23 +44,23 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.index ["user_id"], name: "index_developers_on_user_id", using: :btree
   end
 
-  create_table "developers_projects", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "developers_projects", id: false, force: :cascade do |t|
     t.integer "developer_id"
     t.integer "project_id"
     t.index ["developer_id"], name: "index_developers_projects_on_developer_id", using: :btree
     t.index ["project_id"], name: "index_developers_projects_on_project_id", using: :btree
   end
 
-  create_table "developers_skills", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "developers_skills", force: :cascade do |t|
     t.integer "developer_id"
     t.integer "skill_id"
     t.index ["developer_id"], name: "index_developers_skills_on_developer_id", using: :btree
     t.index ["skill_id"], name: "index_developers_skills_on_skill_id", using: :btree
   end
 
-  create_table "hosts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "hosts", force: :cascade do |t|
     t.integer "user_id"
-    t.text    "description",  limit: 65535
+    t.text    "description"
     t.string  "location"
     t.integer "singleroom"
     t.integer "sharedroom"
@@ -69,23 +72,23 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.index ["user_id"], name: "index_hosts_on_user_id", using: :btree
   end
 
-  create_table "hosts_projects", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "hosts_projects", id: false, force: :cascade do |t|
     t.integer "host_id"
     t.integer "project_id"
     t.index ["host_id"], name: "index_hosts_projects_on_host_id", using: :btree
     t.index ["project_id"], name: "index_hosts_projects_on_project_id", using: :btree
   end
 
-  create_table "location_images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "location_images", force: :cascade do |t|
     t.integer  "location_id"
     t.string   "houseimages"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
-  create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "locations", force: :cascade do |t|
     t.integer  "host_id"
-    t.text     "description",  limit: 65535
+    t.text     "description"
     t.string   "location"
     t.boolean  "singleroom"
     t.boolean  "sharedroom"
@@ -94,15 +97,15 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.boolean  "villa"
     t.boolean  "swimmingpool"
     t.boolean  "skiresort"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.string   "country"
     t.string   "state"
-    t.text     "houseimages",  limit: 65535
+    t.text     "houseimages"
     t.index ["host_id"], name: "index_locations_on_host_id", using: :btree
   end
 
-  create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "percentage_completion"
@@ -114,20 +117,20 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.datetime "updated_at",            null: false
   end
 
-  create_table "roles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "roles", force: :cascade do |t|
     t.string   "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "roles_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "roles_users", force: :cascade do |t|
     t.integer "role_id"
     t.integer "user_id"
     t.index ["role_id"], name: "index_roles_users_on_role_id", using: :btree
     t.index ["user_id"], name: "index_roles_users_on_user_id", using: :btree
   end
 
-  create_table "taggings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
     t.string   "taggable_type"
     t.integer  "taggable_id"
@@ -146,37 +149,37 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.index ["tagger_id"], name: "index_taggings_on_tagger_id", using: :btree
   end
 
-  create_table "tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string  "name",                       collation: "utf8_bin"
+  create_table "tags", force: :cascade do |t|
+    t.string  "name"
     t.integer "taggings_count", default: 0
     t.index ["name"], name: "index_tags_on_name", unique: true, using: :btree
   end
 
-  create_table "tasks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "tasks", force: :cascade do |t|
     t.string   "name"
     t.integer  "project_id"
-    t.text     "description", limit: 65535
+    t.text     "description"
     t.boolean  "completed"
     t.string   "skills_list"
     t.integer  "days"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.index ["project_id"], name: "index_tasks_on_project_id", using: :btree
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string   "email",                                default: "", null: false
-    t.string   "encrypted_password",                   default: "", null: false
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                        default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                                        null: false
-    t.datetime "updated_at",                                        null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.string   "provider"
     t.string   "uid"
     t.string   "confirmation_token"
@@ -190,9 +193,9 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.string   "image"
     t.boolean  "verified"
     t.integer  "location_id"
-    t.text     "gender",                 limit: 65535
+    t.text     "gender"
     t.integer  "timezone"
-    t.text     "description",            limit: 65535
+    t.text     "description"
     t.string   "avatar"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree

@@ -227,7 +227,7 @@
                     <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <%= image_tag current_user.avatar.url(:thumb) if current_user && current_user.avatar.url != nil %>
+                                <%= image_tag current_user.avatar.url(:thumb).to_s if current_user && current_user.avatar.url != nil %>
                                 <%= image_tag current_user.image, :class => "small-image" if current_user && current_user.image != nil && current_user.avatar.url == nil %>
                             </span>
                             <span class="username navigationName">

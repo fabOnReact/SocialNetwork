@@ -52,6 +52,7 @@ Creare modello/tabella album e photos, per poter modificare, aggiungere, elimina
 4. Possibilità di ingrandire i campi di testo
 3. Moneta/Crediti
 5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
+6. carrierwave :thumb image not working
 
 Fatto --> 
 Fatto --> 

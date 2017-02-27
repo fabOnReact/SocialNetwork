@@ -16,11 +16,11 @@ user = User.create(:email => "ezio@email.com", :firstname => "Ezio", :lastname =
 
 # To be edited when database is resetted, you should fix the Host object
 user = User.find(1)
-host = Host.create(:description => "Nice Place near skiresort", :location => "Prali", :singleroom => 1, :skiresort => 1)
+host = Host.new(:description => "Nice Place near skiresort", :location => "Prali", :singleroom => 1, :skiresort => 1)
 user.host = host
+user.skip_confirmation!	
+user.save
 
-
-user.email_confirmation = "ezio@email.com"
 user = User.find(1)
 location = Location.create(:description => "Nice Room near to Awesome Ski Resort", :location => "Prali", :singleroom => 1, :skiresort => 1, :country => "IT", :state => "Piedmont")
 user.host.locations << location
