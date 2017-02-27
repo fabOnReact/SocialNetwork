@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :location_images
 # omniauth facebook
   devise_for :users, :controllers => { 
   	:omniauth_callbacks => "users/omniauth_callbacks",
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   get '/projects/:id/delete' => 'projects#delete', :as => :delete_project
   get '/ads/:id/delete' => 'ads#delete', :as => :delete_ad
   get '/tasks/:id/delete' => 'tasks#delete', :as => :delete_task
+  get '/location_image/:id/delete' => 'location_images#delete', :as => :delete_location_images
 
   resources :developers, :hosts, :projects, :locations, :ads, :tasks
 

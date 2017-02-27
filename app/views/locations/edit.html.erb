@@ -55,16 +55,18 @@
                               <%= f.check_box :skiresort %> Skiresort
                           </label>                                          
                       </div>
-                  </div>                                                                 
-                  <div class="form-group ">
-                      <div class="col-lg-2 imagesUpload"
-                        <%= f.label :houseimages, "Upload house Images"%> </br>
-                        <div>Select multiple images using CTRL</div>
+                  </div>    
+                  <%= f.fields_for :location_images do |p| %>
+                    <div class="form-group ">
+                        <div class="col-lg-2 col-md-2 imagesUpload">
+                          <%= p.label :houseimages, "Upload house Images"%> </br>
+                          <div>Select multiple images using CTRL</div>
+                        </div>
+                      <div class="col-lg-10 col-md-10">
+                        <%= p.file_field :houseimages, :multiple => true, name: "location_images[houseimages][]", :class => "uploadButton" %>
                       </div>
-                    <div class="col-lg-10">
-                      <%= f.file_field :houseimages, multiple: true, :class => "uploadButton" %>
-                    </div>
-                  </div>                                                       
+                    </div>  
+                  <% end %>                                                    
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>

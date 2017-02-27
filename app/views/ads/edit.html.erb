@@ -68,7 +68,7 @@
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Save", :class => "btn btn-primary wideButton"%>
-                          <%#= link_to "Cancel", edit_user_registration_path, :method => :get, :class => "btn btn-default wideButton" %>
+                          <%= link_to "Cancel", project_path(@ad.project_id), :method => :get, :class => "btn btn-default wideButton" %>
                       </div>
                   </div>                
                 <% end %> 

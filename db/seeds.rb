@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-=begin
+
 role = Role.create(:role => "Developer")
 role = Role.create(:role => "Host")
 
@@ -18,9 +18,9 @@ user = User.create(:email => "ezio@email.com", :firstname => "Ezio", :lastname =
 user = User.find(1)
 host = Host.create(:description => "Nice Place near skiresort", :location => "Prali", :singleroom => 1, :skiresort => 1)
 user.host = host
-=end
 
-#user.email_confirmation = "ezio@email.com"
+
+user.email_confirmation = "ezio@email.com"
 user = User.find(1)
 location = Location.create(:description => "Nice Room near to Awesome Ski Resort", :location => "Prali", :singleroom => 1, :skiresort => 1, :country => "IT", :state => "Piedmont")
 user.host.locations << location
@@ -30,4 +30,8 @@ user.host.projects << project
 
 task = Task.create(:name => "Front end WebSite", :description => "creation of the Front End responsive Website for all devices", :completed => 0, :skills_list => "css, html, javascript,", :days => 4)
 project.tasks << task
-#ad = Ad.create()
+
+ad = Ad.create(:title => "Front End WebDevelopment", :description => "Webapp Front End Development with HTML, CSS on Ruby on Rails Framework", :budget => 0, :days => 5)
+project.ads << ad
+location.ads << ad
+task.ad = ad

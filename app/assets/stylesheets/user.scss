@@ -117,12 +117,33 @@ color: #797979;
 
 .houseimage {
 	width: 90%;
+	margin-bottom: 10px;
+}
+
+#colPictures {
+	text-align: center;
+}
+
+.imageEdit {
+	padding: 2px 15px;
+	font-size: 10px;
 }
 
 /* GET locations#delete */
 
 .alert-warning {
 	color: black;
+}
+
+
+/* GET location_image#show */
+
+.buttonLeft {
+	float: left;
+}
+
+.buttonRight {
+	float: right;
 }
 
 /* GET tasks#new */
@@ -159,10 +180,25 @@ color: #797979;
 /* GET locations#show */
 
 @media (min-width: 766px) {
- 	.houseimage {
- 		margin-bottom: 20px;
+ 	#colPictures {
+ 		margin-bottom: 10px;
  	}
 }
+
+@media (max-width: 766px) {
+ 	#colPictures {
+ 		margin-bottom: 10px;
+ 	}
+}
+
+@media (max-width: 360px) {
+ 	.imageEdit {
+ 		padding: 4px 10px;
+ 		font-size: 7px;
+ 	}
+}
+
+/* Others */
 
 @media (max-width: 800px) {
  	#navProfile {

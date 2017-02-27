@@ -52,7 +52,7 @@
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>
-                          <%= link_to "Back", hosts_path, :method => :get, :class => "btn btn-default wideButton" %>
+                          <%= link_to "Back", project_path(@task.project_id), :method => :get, :class => "btn btn-default wideButton" %>
                       </div>
                   </div>                           
                 <% end %> 

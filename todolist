@@ -17,7 +17,11 @@ Fatto --> Seguire le istruzioni per configurare l'upload multiple, ultimo passo 
 
 Fatto --> mettere a posto il padding bottom del col-md per 360X640 , con una media query in modo che ci sia padding bottom
 Fatto --> creare ads
-Da Fare --> Migrate Down database Produzione su Heroku
+Started --> Migrate Down database Produzione su Heroku
+Iniziato --> Corretto la migrazione per aggiungere AddHouseimages to Location
+testare le houseimages in development e poi provare a migrare il db produzione in heroku
+
+Da Fare --> Migrazione per tag fields
 Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
 
 3. decidere come gestire le funzionalità investor host e developer
@@ -47,6 +51,7 @@ Creare modello/tabella album e photos, per poter modificare, aggiungere, elimina
 2. Ruolo Educator
 4. Possibilità di ingrandire i campi di testo
 3. Moneta/Crediti
+5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
 
 Fatto --> 
 Fatto --> 
