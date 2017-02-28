@@ -76,6 +76,7 @@ gem 'omniauth-facebook'
 gem 'acts-as-taggable-on', '~> 4.0'
 
 gem 'fog', '~> 1.38'
+#gem 'fog-aws'
 gem 'rmagick', '~> 2.16'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick'

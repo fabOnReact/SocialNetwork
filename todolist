@@ -17,17 +17,19 @@ Fatto --> Seguire le istruzioni per configurare l'upload multiple, ultimo passo 
 
 Fatto --> mettere a posto il padding bottom del col-md per 360X640 , con una media query in modo che ci sia padding bottom
 Fatto --> creare ads
-Started --> Migrate Down database Produzione su Heroku
-Iniziato --> Corretto la migrazione per aggiungere AddHouseimages to Location
+Fatto --> Migrate Down database Produzione su Heroku
+Fatto --> Corretto la migrazione per aggiungere AddHouseimages to Location
 testare le houseimages in development e poi provare a migrare il db produzione in heroku
 
-Da Fare --> Migrazione per tag fields
-Da Fare --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
+Fatto --> Migrazione per tag fields
+Fatto --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
+Fatto --> gestire l'upload della foto con carrierwave
+Da Fare --> ho fatto la migrazione in produzione e cambiato il database a postgresql, dal log di heroku sembra che ci sia un problema con la configurazione di carrierwave fog, devo quindi configurare aws come da manuale in modo che le immagini vengano uploadate li 
+
+
 
 3. decidere come gestire le funzionalità investor host e developer
-3a. gestire l'upload della foto con carrierwave
 4. messaggistica 
-
 6. home e link di sinistra
 7. ricerca
 8. dashboard
