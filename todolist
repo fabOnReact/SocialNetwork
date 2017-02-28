@@ -28,6 +28,8 @@ Da Fare --> Problema con Devise Secret, Risolvere il problema trovati nel heroku
 1 non funzionano le icone in css file line-icon
 2 l'asset non viene caricato in produzione
 3 fare il precompile
+Soluzione --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
+Soluzione --> Per il link controllare che sia corretto
 
 SUCCESSIVE
 
