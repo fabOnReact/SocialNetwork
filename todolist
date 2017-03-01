@@ -31,15 +31,20 @@ Da Fare --> Problema con Devise Secret, Risolvere il problema trovati nel heroku
 2 l'asset non viene caricato in produzione
 3 fare il precompile
 --------------------------------------------------------------------------------------
-Risolto --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
-Soluzione --> Per il link controllare che sia corretto
-Da Fare --> Risolvere i problemi collegati alle alle altre icone ElegantIcons
-Da Fare --> Campo interest di Developer Edit e create deve essere come skill list, act_as_taggable_on
+Fatto --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
+Fatto --> Risolvere i problemi collegati alle alle altre icone ElegantIcons
+Fatto --> Campo interest di Developer Edit e create deve essere come skill list, act_as_taggable_on
 
 PROBLEMA 2
-Hai aggiornato i dati smtp all'interno di development.rb e production.rb, ora devi testare in produzione e risolvere l'attuale errore.
+Fatto --> Hai aggiornato i dati smtp all'interno di development.rb e production.rb, ora devi testare in produzione e risolvere l'attuale errore.
 
 PROBLEMA 3
+Fatto --> Per il link controllare che sia corretto
+
+PROBLEMA 4
+Da Fare --> Modificare il link di rindirizzo di facebook, verificare l errore nel log e i dettagli
+
+PROBLEMA 5
 Da Fare --> Creare Messaggistica Mailboxer
 
 SUCCESSIVE
@@ -74,6 +79,8 @@ OPZIONALI
 4. Possibilità di ingrandire i campi di testo
 3. Moneta/Crediti
 5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
+6. Nella edit del profile il campo Password viene automaticamente compilato nel caso la password venga salvata
+7. usare avatar nel caso non venga inclusa una immagine del profilo
 
 Fatto --> 
 Fatto --> 

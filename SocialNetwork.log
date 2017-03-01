@@ -2099,3 +2099,434 @@ Content-Transfer-Encoding: 7bit
 [0;37m2017-03-01 16:38:44.954[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (5.6ms) (pid:23478)
 [0;37m2017-03-01 16:38:44.955[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.2ms) (pid:23478)
 [0;37m2017-03-01 16:38:44.956[0m [[32mfyi[0m] Completed 200 OK in 233ms (Views: 231.9ms | ActiveRecord: 0.3ms) (pid:23478)
+[0;37m2017-03-01 17:06:57.464[0m [[32mfyi[0m] Started GET "/" for 127.0.0.1 at 2017-03-01 17:06:57 +0100 (pid:23478)
+[0;37m2017-03-01 17:06:57.473[0m [[32mfyi[0m] Processing by MainController#welcome as HTML (pid:23478)
+[0;37m2017-03-01 17:06:57.476[0m [[32mfyi[0m] Rendering main/welcome.html.erb within layouts/main (pid:23478)
+[0;37m2017-03-01 17:06:57.478[0m [[32mfyi[0m] Rendered main/welcome.html.erb within layouts/main (1.7ms) (pid:23478)
+[0;37m2017-03-01 17:06:57.820[0m [[32mfyi[0m] Completed 200 OK in 347ms (Views: 346.0ms | ActiveRecord: 0.0ms) (pid:23478)
+[0;37m2017-03-01 17:07:10.229[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:07:10 +0100 (pid:23478)
+[0;37m2017-03-01 17:07:10.235[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23478)
+[0;37m2017-03-01 17:07:10.237[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23478)
+[0;37m2017-03-01 17:07:10.243[0m [[32mfyi[0m] Rendered devise/shared/_links2.html.erb (1.6ms) (pid:23478)
+[0;37m2017-03-01 17:07:10.243[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (5.9ms) (pid:23478)
+[0;37m2017-03-01 17:07:10.508[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (5.4ms) (pid:23478)
+[0;37m2017-03-01 17:07:10.509[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23478)
+[0;37m2017-03-01 17:07:10.510[0m [[32mfyi[0m] Completed 200 OK in 275ms (Views: 273.4ms | ActiveRecord: 0.0ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.534[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:07:14 +0100 (pid:23478)
+[0;37m2017-03-01 17:07:14.539[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:23478)
+[0;37m2017-03-01 17:07:14.539[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"tlE0uwFoqiJTMeDs3Mr6IE2B2nk+sHShDEaWBURtA0H5UQNrRpnh6F/IBuFHUrWQKpswRwnmpAfHeQp992jW1g==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"} (pid:23478)
+[0;37m2017-03-01 17:07:14.542[0m [[0;37mmeh[0m] [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "fabrizio.bertoglio@gmail.com"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:07:14.716[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23478)
+[0;37m2017-03-01 17:07:14.718[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:23478)
+[0;37m2017-03-01 17:07:14.718[0m [[32mfyi[0m] Completed 401 Unauthorized in 179ms (ActiveRecord: 0.7ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.747[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:07:14 +0100 (pid:23478)
+[0;37m2017-03-01 17:07:14.751[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23478)
+[0;37m2017-03-01 17:07:14.753[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23478)
+[0;37m2017-03-01 17:07:14.758[0m [[32mfyi[0m] Rendered devise/shared/_links2.html.erb (1.6ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.758[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (4.7ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.956[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (4.4ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.957[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.2ms) (pid:23478)
+[0;37m2017-03-01 17:07:14.957[0m [[32mfyi[0m] Completed 200 OK in 206ms (Views: 204.7ms | ActiveRecord: 0.0ms) (pid:23478)
+[0;37m2017-03-01 17:07:38.184[0m [[32mfyi[0m] Started GET "/users/confirmation/new" for 127.0.0.1 at 2017-03-01 17:07:38 +0100 (pid:23482)
+[0;37m2017-03-01 17:07:38.516[0m [[0;37mmeh[0m] [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m (pid:23482)
+[0;37m2017-03-01 17:07:38.546[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#new as HTML (pid:23482)
+[0;37m2017-03-01 17:07:38.579[0m [[32mfyi[0m] Rendering devise/confirmations/new.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:07:38.582[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.4ms) (pid:23482)
+[0;37m2017-03-01 17:07:38.590[0m [[32mfyi[0m] Rendered devise/shared/_links2.html.erb (1.1ms) (pid:23482)
+[0;37m2017-03-01 17:07:38.591[0m [[32mfyi[0m] Rendered devise/confirmations/new.html.erb within layouts/user (11.8ms) (pid:23482)
+[0;37m2017-03-01 17:07:39.171[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (7.6ms) (pid:23482)
+[0;37m2017-03-01 17:07:39.172[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.2ms) (pid:23482)
+[0;37m2017-03-01 17:07:39.172[0m [[32mfyi[0m] Completed 200 OK in 625ms (Views: 596.7ms | ActiveRecord: 3.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:04.846[0m [[32mfyi[0m] Started POST "/users/confirmation" for 127.0.0.1 at 2017-03-01 17:08:04 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:04.889[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#create as HTML (pid:23482)
+[0;37m2017-03-01 17:08:04.892[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pr4lk236iZZ0lV+4iJpy5/RNojupuVQbJIX53kEPmL1xvhJDKgvCXHhsubUTAj1Xk1dIBZ7vhL3vumWm8gpNKg==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com"}, "commit"=>"Submit"} (pid:23482)
+[0;37m2017-03-01 17:08:04.980[0m [[0;37mmeh[0m] [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "fabrizio.bertoglio@gmail.com"], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:04.995[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23482)
+[0;37m2017-03-01 17:08:04.101[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m (pid:23482)
+[0;37m2017-03-01 17:08:04.224[0m [[32mfyi[0m] Rendering devise/mailer/confirmation_instructions.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:04.225[0m [[32mfyi[0m] Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:04.347[0m [[0;37mmeh[0m] Devise::Mailer#confirmation_instructions: processed outbound mail in 134.0ms (pid:23482)
+[0;37m2017-03-01 17:08:07.246[0m [[32mfyi[0m] Sent mail to fabrizio.bertoglio@gmail.com (2898.7ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.247[0m [[0;37mmeh[0m] Date: Wed, 01 Mar 2017 17:08:04 +0100
+From: fabri.ber87@gmail.com
+Reply-To: fabri.ber87@gmail.com
+To: fabrizio.bertoglio@gmail.com
+Message-ID: <58b6f1e455e78_5bba2ffb4087c9@fabrizio-Lenovo-G50-70.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fabrizio.bertoglio@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:5000/users/confirmation?confirmation_token=3yJn5ER8VXnL2VsNtsYu">Confirm my account</a></p> (pid:23482)
+[0;37m2017-03-01 17:08:07.266[0m [[32mfyi[0m] Redirected to http://localhost:5000/users/sign_in (pid:23482)
+[0;37m2017-03-01 17:08:07.267[0m [[32mfyi[0m] Completed 302 Found in 3178ms (ActiveRecord: 1.4ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.292[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:08:07 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:07.301[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23482)
+[0;37m2017-03-01 17:08:07.303[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:08:07.312[0m [[32mfyi[0m] Rendered devise/shared/_links2.html.erb (1.4ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.312[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (9.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.503[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (15.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.504[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:07.504[0m [[32mfyi[0m] Completed 200 OK in 203ms (Views: 202.1ms | ActiveRecord: 0.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.317[0m [[32mfyi[0m] Started GET "/users/confirmation?confirmation_token=3yJn5ER8VXnL2VsNtsYu" for 127.0.0.1 at 2017-03-01 17:08:20 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:20.321[0m [[32mfyi[0m] Processing by Devise::ConfirmationsController#show as HTML (pid:23482)
+[0;37m2017-03-01 17:08:20.321[0m [[32mfyi[0m] Parameters: {"confirmation_token"=>"3yJn5ER8VXnL2VsNtsYu"} (pid:23482)
+[0;37m2017-03-01 17:08:20.324[0m [[0;37mmeh[0m] [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "3yJn5ER8VXnL2VsNtsYu"], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:20.325[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23482)
+[0;37m2017-03-01 17:08:20.327[0m [[0;37mmeh[0m] [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", 2017-03-01 16:08:20 UTC], ["updated_at", 2017-03-01 16:08:20 UTC], ["id", 15]] (pid:23482)
+[0;37m2017-03-01 17:08:20.409[0m [[0;37mmeh[0m] [1m[35m (80.1ms)[0m  [1m[35mCOMMIT[0m (pid:23482)
+[0;37m2017-03-01 17:08:20.411[0m [[32mfyi[0m] Redirected to http://localhost:5000/users/sign_in (pid:23482)
+[0;37m2017-03-01 17:08:20.411[0m [[32mfyi[0m] Completed 302 Found in 90ms (ActiveRecord: 81.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.439[0m [[32mfyi[0m] Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:08:20 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:20.442[0m [[32mfyi[0m] Processing by Devise::SessionsController#new as HTML (pid:23482)
+[0;37m2017-03-01 17:08:20.445[0m [[32mfyi[0m] Rendering devise/sessions/new.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:08:20.449[0m [[32mfyi[0m] Rendered devise/shared/_links2.html.erb (0.9ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.449[0m [[32mfyi[0m] Rendered devise/sessions/new.html.erb within layouts/user (4.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.634[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (5.7ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.635[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:20.635[0m [[32mfyi[0m] Completed 200 OK in 193ms (Views: 191.9ms | ActiveRecord: 0.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.333[0m [[32mfyi[0m] Started POST "/users/sign_in" for 127.0.0.1 at 2017-03-01 17:08:39 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:39.337[0m [[32mfyi[0m] Processing by Devise::SessionsController#create as HTML (pid:23482)
+[0;37m2017-03-01 17:08:39.337[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"MHBK+uf1CyTWhmqHdQarGw+IPYfV4PIlVXHYo53unPp/cH0qoARA7tp/jIrunuSraJLXueK2IoOeTkTbLutJbQ==", "user"=>{"email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"} (pid:23482)
+[0;37m2017-03-01 17:08:39.338[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "fabrizio.bertoglio@gmail.com"], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:39.533[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23482)
+[0;37m2017-03-01 17:08:39.534[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", 2017-03-01 16:08:39 UTC], ["last_sign_in_at", 2017-03-01 16:08:39 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", 2017-03-01 16:08:39 UTC], ["id", 15]] (pid:23482)
+[0;37m2017-03-01 17:08:39.549[0m [[0;37mmeh[0m] [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m (pid:23482)
+[0;37m2017-03-01 17:08:39.552[0m [[32mfyi[0m] Redirected to http://localhost:5000/users/edit (pid:23482)
+[0;37m2017-03-01 17:08:39.552[0m [[32mfyi[0m] Completed 302 Found in 215ms (ActiveRecord: 14.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.583[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-03-01 17:08:39 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:39.592[0m [[32mfyi[0m] Processing by RegistrationsController#edit as HTML (pid:23482)
+[0;37m2017-03-01 17:08:39.594[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:39.597[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:08:39.599[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.635[0m [[0;37mmeh[0m] [1m[36mRole Load (0.4ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m (pid:23482)
+[0;37m2017-03-01 17:08:39.645[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (47.8ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.930[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.2ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:39.939[0m [[0;37mmeh[0m] [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:39.940[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (103.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.941[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:39.941[0m [[32mfyi[0m] Completed 200 OK in 349ms (Views: 341.0ms | ActiveRecord: 5.8ms) (pid:23482)
+[0;37m2017-03-01 17:08:40.763[0m [[32mfyi[0m] Started GET "/images/default_avatar.png" for 127.0.0.1 at 2017-03-01 17:08:40 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:40.808[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:40.809[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/images/default_avatar.png"): (pid:23482)
+[0;37m2017-03-01 17:08:40.810[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:40.811[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:23482)
+[0;37m2017-03-01 17:08:40.931[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:23482)
+[0;37m2017-03-01 17:08:40.980[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:40.993[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:23482)
+[0;37m2017-03-01 17:08:40.127[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [85 times] (19.5ms) (pid:23482)
+[0;37m2017-03-01 17:08:40.133[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms) (pid:23482)
+[0;37m2017-03-01 17:08:40.138[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:40.139[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms) (pid:23482)
+[0;37m2017-03-01 17:08:40.139[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.342[0m [[32mfyi[0m] Started PUT "/users" for 127.0.0.1 at 2017-03-01 17:08:54 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:54.347[0m [[32mfyi[0m] Processing by RegistrationsController#update as HTML (pid:23482)
+[0;37m2017-03-01 17:08:54.347[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"d5jhfxy1GGJGSdAvdCOmHu82pXYbyfBlufVWrmBY9FwXL0oDTYNcsBPhfVhEyZIJtsZ7a1qRKMTWDzBdcCtVWA==", "user"=>{"firstname"=>"Fabrizio", "lastname"=>"Bertoglio", "country"=>"", "location"=>"", "roles_id"=>"1", "email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"} (pid:23482)
+[0;37m2017-03-01 17:08:54.349[0m [[0;37mmeh[0m] [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:54.350[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:54.492[0m [[0;37mmeh[0m] [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m (pid:23482)
+[0;37m2017-03-01 17:08:54.495[0m [[0;37mmeh[0m] [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "firstname" = $1, "lastname" = $2, "roles_id" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["firstname", "Fabrizio"], ["lastname", "Bertoglio"], ["roles_id", 1], ["updated_at", 2017-03-01 16:08:54 UTC], ["id", 15]] (pid:23482)
+[0;37m2017-03-01 17:08:54.515[0m [[0;37mmeh[0m] [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m (pid:23482)
+[0;37m2017-03-01 17:08:54.520[0m [[32mfyi[0m] Redirected to http://localhost:5000/user_root (pid:23482)
+[0;37m2017-03-01 17:08:54.520[0m [[32mfyi[0m] Completed 302 Found in 173ms (ActiveRecord: 20.8ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.554[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-03-01 17:08:54 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:54.561[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:23482)
+[0;37m2017-03-01 17:08:54.563[0m [[0;37mmeh[0m] [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:54.566[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:08:54.566[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.776[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.3ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:54.777[0m [[0;37mmeh[0m] [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:54.778[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (9.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.779[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.779[0m [[32mfyi[0m] Completed 200 OK in 218ms (Views: 214.1ms | ActiveRecord: 1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.918[0m [[32mfyi[0m] Started GET "/images/default_avatar.png" for 127.0.0.1 at 2017-03-01 17:08:54 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:54.922[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:54.922[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/images/default_avatar.png"): (pid:23482)
+[0;37m2017-03-01 17:08:54.922[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:54.922[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:23482)
+[0;37m2017-03-01 17:08:54.934[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:23482)
+[0;37m2017-03-01 17:08:54.938[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:54.939[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.967[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [85 times] (18.8ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.971[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.976[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:54.977[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:54.977[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.424[0m [[32mfyi[0m] Started GET "/users/edit" for 127.0.0.1 at 2017-03-01 17:08:58 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:58.428[0m [[32mfyi[0m] Processing by RegistrationsController#edit as HTML (pid:23482)
+[0;37m2017-03-01 17:08:58.428[0m [[32mfyi[0m] Parameters: {"authenticity_token"=>"RkqoKZQP11lZYXN8BWiU1uSLwkJaspWw8jJTbU0xx2sm/QNVxTmTiwzJ3gs1gqDBvXscXxvqTRGdyDWeXUJmbw=="} (pid:23482)
+[0;37m2017-03-01 17:08:58.430[0m [[0;37mmeh[0m] [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:58.432[0m [[32mfyi[0m] Rendering devise/registrations/edit.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:08:58.436[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.7ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.456[0m [[0;37mmeh[0m] [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT "roles".* FROM "roles"[0m (pid:23482)
+[0;37m2017-03-01 17:08:58.458[0m [[32mfyi[0m] Rendered devise/registrations/edit.html.erb within layouts/user (25.5ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.735[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.3ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:58.736[0m [[0;37mmeh[0m] [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:08:58.737[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (9.4ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.738[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.738[0m [[32mfyi[0m] Completed 200 OK in 310ms (Views: 306.6ms | ActiveRecord: 1.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.854[0m [[32mfyi[0m] Started GET "/images/default_avatar.png" for 127.0.0.1 at 2017-03-01 17:08:58 +0100 (pid:23482)
+[0;37m2017-03-01 17:08:58.859[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:58.859[0m [[31momg[0m] ActionController::RoutingError (No route matches [GET] "/images/default_avatar.png"): (pid:23482)
+[0;37m2017-03-01 17:08:58.859[0m [[31momg[0m]  (pid:23482)
+[0;37m2017-03-01 17:08:58.859[0m [[31momg[0m] actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:23482)
+[0;37m2017-03-01 17:08:58.875[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (pid:23482)
+[0;37m2017-03-01 17:08:58.881[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:58.882[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.907[0m [[32mfyi[0m] Rendered collection of /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [85 times] (18.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.912[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.917[0m [[32mfyi[0m] Rendering /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (pid:23482)
+[0;37m2017-03-01 17:08:58.918[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms) (pid:23482)
+[0;37m2017-03-01 17:08:58.918[0m [[32mfyi[0m] Rendered /home/fabrizio/.rvm/gems/ruby-2.3.3/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.3ms) (pid:23482)
+[0;37m2017-03-01 17:09:19.910[0m [[32mfyi[0m] Started PUT "/users" for 127.0.0.1 at 2017-03-01 17:09:19 +0100 (pid:23482)
+[0;37m2017-03-01 17:09:19.914[0m [[32mfyi[0m] Processing by RegistrationsController#update as HTML (pid:23482)
+[0;37m2017-03-01 17:09:19.915[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFf/y9j8TnSJ45VyHNNGXYt+uKtdH49ZbWpbgPIa8xRo4FS3icoKptxLOAUsOXJK0o5mthxHV/gCkD1z4mlSEA==", "user"=>{"firstname"=>"Fabrizio", "lastname"=>"Bertoglio", "country"=>"", "location"=>"", "roles_id"=>"1", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f2203a7e028 @tempfile=#<Tempfile:/tmp/RackMultipart20170301-23482-1xefspp.JPG>, @original_filename="GOPR5985.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"GOPR5985.JPG\"\r\nContent-Type: image/jpeg\r\n">, "email"=>"fabrizio.bertoglio@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"} (pid:23482)
+[0;37m2017-03-01 17:09:19.916[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:09:19.918[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:09:20.566[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23482)
+[0;37m2017-03-01 17:09:20.644[0m [[0;37mmeh[0m] [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "avatar" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["avatar", "GOPR5985.JPG"], ["updated_at", 2017-03-01 16:09:20 UTC], ["id", 15]] (pid:23482)
+[0;37m2017-03-01 17:09:22.821[0m [[0;37mmeh[0m] [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m (pid:23482)
+[0;37m2017-03-01 17:09:22.826[0m [[32mfyi[0m] Redirected to http://localhost:5000/user_root (pid:23482)
+[0;37m2017-03-01 17:09:22.826[0m [[32mfyi[0m] Completed 302 Found in 2911ms (ActiveRecord: 10.7ms) (pid:23482)
+[0;37m2017-03-01 17:09:22.856[0m [[32mfyi[0m] Started GET "/user_root" for 127.0.0.1 at 2017-03-01 17:09:22 +0100 (pid:23482)
+[0;37m2017-03-01 17:09:22.860[0m [[32mfyi[0m] Processing by UserController#welcome as HTML (pid:23482)
+[0;37m2017-03-01 17:09:22.862[0m [[0;37mmeh[0m] [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:09:22.865[0m [[32mfyi[0m] Rendering user/welcome.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:09:22.866[0m [[32mfyi[0m] Rendered user/welcome.html.erb within layouts/user (0.4ms) (pid:23482)
+[0;37m2017-03-01 17:09:23.126[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.2ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:09:23.128[0m [[0;37mmeh[0m] [1m[36mHost Load (0.2ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:09:23.129[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (13.0ms) (pid:23482)
+[0;37m2017-03-01 17:09:23.130[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.5ms) (pid:23482)
+[0;37m2017-03-01 17:09:23.130[0m [[32mfyi[0m] Completed 200 OK in 269ms (Views: 265.6ms | ActiveRecord: 0.8ms) (pid:23482)
+[0;37m2017-03-01 17:10:45.372[0m [[32mfyi[0m] Started GET "/developers/new.15" for 127.0.0.1 at 2017-03-01 17:10:45 +0100 (pid:23482)
+[0;37m2017-03-01 17:10:45.386[0m [[32mfyi[0m] Processing by DevelopersController#new as (pid:23482)
+[0;37m2017-03-01 17:10:45.388[0m [[0;37mmeh[0m] [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:10:45.390[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.3ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:10:45.407[0m [[32mfyi[0m] Rendering developers/new.html.erb within layouts/user (pid:23482)
+[0;37m2017-03-01 17:10:45.414[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.9ms) (pid:23482)
+[0;37m2017-03-01 17:10:45.526[0m [[32mfyi[0m] Rendered developers/new.html.erb within layouts/user (118.3ms) (pid:23482)
+[0;37m2017-03-01 17:10:45.831[0m [[0;37mmeh[0m] [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:10:45.832[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (9.2ms) (pid:23482)
+[0;37m2017-03-01 17:10:45.836[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.4ms) (pid:23482)
+[0;37m2017-03-01 17:10:45.836[0m [[32mfyi[0m] Completed 200 OK in 450ms (Views: 410.6ms | ActiveRecord: 25.4ms) (pid:23482)
+[0;37m2017-03-01 17:10:52.634[0m [[32mfyi[0m] Started GET "/developers/index.html" for 127.0.0.1 at 2017-03-01 17:10:52 +0100 (pid:23482)
+[0;37m2017-03-01 17:10:52.639[0m [[32mfyi[0m] Processing by DevelopersController#show as HTML (pid:23482)
+[0;37m2017-03-01 17:10:52.639[0m [[32mfyi[0m] Parameters: {"id"=>"index"} (pid:23482)
+[0;37m2017-03-01 17:10:52.642[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.6ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]] (pid:23482)
+[0;37m2017-03-01 17:10:52.643[0m [[32mfyi[0m] Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms) (pid:23482)
+[0;37m2017-03-01 17:10:52.649[0m [[31momg[0m] ActiveRecord::RecordNotFound - Couldn't find Developer with 'id'=index:
+  activerecord (5.0.1) lib/active_record/core.rb:173:in `find'
+  app/controllers/developers_controller.rb:43:in `show'
+  actionpack (5.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:126:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:455:in `call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+  activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+  actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+  actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.4.0) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:26:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread' (pid:23482)
+[0;37m2017-03-01 17:10:52.770[0m [[32mfyi[0m] Started POST "/__better_errors/c8f4e5e8ad09a23b/variables" for 127.0.0.1 at 2017-03-01 17:10:52 +0100 (pid:23482)
+[0;37m2017-03-01 17:11:59.985[0m [[32mfyi[0m] Started GET "/developers/new.15" for 127.0.0.1 at 2017-03-01 17:11:59 +0100 (pid:23478)
+[0;37m2017-03-01 17:12:00.588[0m [[32mfyi[0m] Processing by DevelopersController#new as (pid:23478)
+[0;37m2017-03-01 17:12:00.665[0m [[0;37mmeh[0m] [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:00.111[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.3ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:00.123[0m [[32mfyi[0m] Rendering developers/new.html.erb within layouts/user (pid:23478)
+[0;37m2017-03-01 17:12:00.128[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.4ms) (pid:23478)
+[0;37m2017-03-01 17:12:00.144[0m [[32mfyi[0m] Rendered developers/new.html.erb within layouts/user (20.6ms) (pid:23478)
+[0;37m2017-03-01 17:12:00.345[0m [[0;37mmeh[0m] [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:00.345[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (14.6ms) (pid:23478)
+[0;37m2017-03-01 17:12:00.349[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.3ms) (pid:23478)
+[0;37m2017-03-01 17:12:00.349[0m [[32mfyi[0m] Completed 200 OK in 290ms (Views: 224.0ms | ActiveRecord: 10.3ms) (pid:23478)
+[0;37m2017-03-01 17:12:21.595[0m [[32mfyi[0m] Started POST "/developers" for 127.0.0.1 at 2017-03-01 17:12:21 +0100 (pid:23478)
+[0;37m2017-03-01 17:12:21.600[0m [[32mfyi[0m] Processing by DevelopersController#create as HTML (pid:23478)
+[0;37m2017-03-01 17:12:21.600[0m [[32mfyi[0m] Parameters: {"utf8"=>"✓", "authenticity_token"=>"weXpJraO7KnUpmNKvCgETxxNNDy8Q/i5D/PP6LOrfSOhUkJa57ioe4EOzj2MwjBYRb3qIf0bIBhgCakbo9jcJw==", "developer"=>{"jobtitle"=>"Ruby on Rails full stack developer", "experience"=>"1", "interest_list"=>"surfing,snowboarding", "website_url"=>"", "skill_list"=>"html,css,rails"}, "commit"=>"Save"} (pid:23478)
+[0;37m2017-03-01 17:12:21.605[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23478)
+[0;37m2017-03-01 17:12:21.724[0m [[0;37mmeh[0m] [1m[35mSQL (117.3ms)[0m  [1m[32mINSERT INTO "developers" ("experience", "created_at", "updated_at", "jobtitle", "website_url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["experience", 1], ["created_at", 2017-03-01 16:12:21 UTC], ["updated_at", 2017-03-01 16:12:21 UTC], ["jobtitle", "Ruby on Rails full stack developer"], ["website_url", ""]] (pid:23478)
+[0;37m2017-03-01 17:12:21.983[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (71.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('html') OR LOWER(name) = LOWER('css') OR LOWER(name) = LOWER('rails'))[0m (pid:23478)
+[0;37m2017-03-01 17:12:21.989[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "rails"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:21.995[0m [[0;37mmeh[0m] [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "rails"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.629[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (64.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'skills' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.104[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.107[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."taggable_id" = $3 AND "taggings"."context" = $4 AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT $5[0m  [["tag_id", 1], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.109[0m [[0;37mmeh[0m] [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["tag_id", 1], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["created_at", 2017-03-01 16:12:22 UTC]] (pid:23478)
+[0;37m2017-03-01 17:12:22.132[0m [[0;37mmeh[0m] [1m[35mSQL (21.9ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1[0m  [["id", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.134[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.136[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."taggable_id" = $3 AND "taggings"."context" = $4 AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT $5[0m  [["tag_id", 2], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.137[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["tag_id", 2], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["created_at", 2017-03-01 16:12:22 UTC]] (pid:23478)
+[0;37m2017-03-01 17:12:22.138[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1[0m  [["id", 2]] (pid:23478)
+[0;37m2017-03-01 17:12:22.140[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.142[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."taggable_id" = $3 AND "taggings"."context" = $4 AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT $5[0m  [["tag_id", 3], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.143[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["tag_id", 3], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "skills"], ["created_at", 2017-03-01 16:12:22 UTC]] (pid:23478)
+[0;37m2017-03-01 17:12:22.144[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1[0m  [["id", 3]] (pid:23478)
+[0;37m2017-03-01 17:12:22.145[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('surfing') OR LOWER(name) = LOWER('snowboarding'))[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.146[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "surfing"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.147[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "surfing"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.148[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = $1 LIMIT $2[0m  [["name", "snowboarding"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.148[0m [[0;37mmeh[0m] [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "snowboarding"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.150[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'interests' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.153[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.154[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."taggable_id" = $3 AND "taggings"."context" = $4 AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT $5[0m  [["tag_id", 4], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "interests"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.155[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["tag_id", 4], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "interests"], ["created_at", 2017-03-01 16:12:22 UTC]] (pid:23478)
+[0;37m2017-03-01 17:12:22.157[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1[0m  [["id", 4]] (pid:23478)
+[0;37m2017-03-01 17:12:22.158[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.160[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."taggable_id" = $3 AND "taggings"."context" = $4 AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT $5[0m  [["tag_id", 5], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "interests"], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.161[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["tag_id", 5], ["taggable_type", "Developer"], ["taggable_id", 1], ["context", "interests"], ["created_at", 2017-03-01 16:12:22 UTC]] (pid:23478)
+[0;37m2017-03-01 17:12:22.162[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = $1[0m  [["id", 5]] (pid:23478)
+[0;37m2017-03-01 17:12:22.178[0m [[0;37mmeh[0m] [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.179[0m [[0;37mmeh[0m] [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.181[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.2ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.182[0m [[0;37mmeh[0m] [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.184[0m [[0;37mmeh[0m] [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "developers" SET "updated_at" = $1, "user_id" = $2 WHERE "developers"."id" = $3[0m  [["updated_at", 2017-03-01 16:12:22 UTC], ["user_id", 15], ["id", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.185[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('html') OR LOWER(name) = LOWER('css') OR LOWER(name) = LOWER('rails'))[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.187[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'skills' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.188[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('surfing') OR LOWER(name) = LOWER('snowboarding'))[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.189[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'interests' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.200[0m [[0;37mmeh[0m] [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m (pid:23478)
+[0;37m2017-03-01 17:12:22.202[0m [[32mfyi[0m] Redirected to http://localhost:5000/developers/1/edit (pid:23478)
+[0;37m2017-03-01 17:12:22.202[0m [[32mfyi[0m] Completed 302 Found in 601ms (ActiveRecord: 316.8ms) (pid:23478)
+[0;37m2017-03-01 17:12:22.206[0m [[32mfyi[0m] Started GET "/developers/1/edit" for 127.0.0.1 at 2017-03-01 17:12:22 +0100 (pid:23478)
+[0;37m2017-03-01 17:12:22.210[0m [[32mfyi[0m] Processing by DevelopersController#edit as HTML (pid:23478)
+[0;37m2017-03-01 17:12:22.210[0m [[32mfyi[0m] Parameters: {"id"=>"1"} (pid:23478)
+[0;37m2017-03-01 17:12:22.212[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.4ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.214[0m [[32mfyi[0m] Rendering developers/edit.html.erb within layouts/user (pid:23478)
+[0;37m2017-03-01 17:12:22.216[0m [[32mfyi[0m] Rendered partials/_error_messages.html.erb (0.4ms) (pid:23478)
+[0;37m2017-03-01 17:12:22.220[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tagging Load (0.5ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.223[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'interests' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.225[0m [[0;37mmeh[0m] [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'skills' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Developer"]] (pid:23478)
+[0;37m2017-03-01 17:12:22.226[0m [[32mfyi[0m] Rendered developers/edit.html.erb within layouts/user (11.3ms) (pid:23478)
+[0;37m2017-03-01 17:12:22.434[0m [[0;37mmeh[0m] [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.437[0m [[0;37mmeh[0m] [1m[36mDeveloper Load (0.2ms)[0m  [1m[34mSELECT  "developers".* FROM "developers" WHERE "developers"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.438[0m [[0;37mmeh[0m] [1m[36mHost Load (0.3ms)[0m  [1m[34mSELECT  "hosts".* FROM "hosts" WHERE "hosts"."user_id" = $1 LIMIT $2[0m  [["user_id", 15], ["LIMIT", 1]] (pid:23478)
+[0;37m2017-03-01 17:12:22.439[0m [[32mfyi[0m] Rendered partials/_usernavigation.html.erb (10.6ms) (pid:23478)
+[0;37m2017-03-01 17:12:22.440[0m [[32mfyi[0m] Rendered partials/_userfooter.html.erb (0.4ms) (pid:23478)
+[0;37m2017-03-01 17:12:22.440[0m [[32mfyi[0m] Completed 200 OK in 230ms (Views: 223.6ms | ActiveRecord: 3.4ms) (pid:23478)
