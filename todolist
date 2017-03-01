@@ -24,22 +24,27 @@ Fatto --> Locations - Pictures - Upload di Immagini Molteplici
 Fatto --> carrierwave :thumb image not working
 Fatto --> ho fatto la migrazione in produzione e cambiato il database a postgresql, dal log di heroku sembra che ci sia un problema con la configurazione di carrierwave fog, devo quindi configurare aws come da manuale in modo che le immagini vengano uploadate li 
 
+PROBLEMA 1
 Da Fare --> Problema con Devise Secret, Risolvere il problema trovati nel heroku log.
+--------------------------------------------------------------------------------------
 1 non funzionano le icone in css file line-icon
 2 l'asset non viene caricato in produzione
 3 fare il precompile
+--------------------------------------------------------------------------------------
 Soluzione --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
 Soluzione --> Per il link controllare che sia corretto
 
-SUCCESSIVE
+PROBLEMA 2
+Da Fare --> Creare Messaggistica Mailboxer
 
-4. messaggistica 
-3. decidere come gestire le funzionalità investor host e developer
-8. dashboard
-7. ricerca
-9. mappatura locations
-12. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
-11. Finire emails
+SUCCESSIVE
+1. informarsi e guardare i video sul Testing
+2. decidere come gestire le funzionalità investor host e developer
+3. dashboard
+4. ricerca
+5. mappatura locations
+6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
+7. Finire emails
 
 
 IMPORTANTI - SICUREZZA
