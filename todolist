@@ -31,10 +31,14 @@ Da Fare --> Problema con Devise Secret, Risolvere il problema trovati nel heroku
 2 l'asset non viene caricato in produzione
 3 fare il precompile
 --------------------------------------------------------------------------------------
-Soluzione --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
+Risolto --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file , controllare successivamente se il problema è risolto
 Soluzione --> Per il link controllare che sia corretto
+Da Fare --> Risolvere i problemi collegati alle alle altre icone ElegantIcons
 
 PROBLEMA 2
+Hai aggiornato i dati smtp all'interno di development.rb e production.rb, ora devi testare in produzione e risolvere l'attuale errore.
+
+PROBLEMA 3
 Da Fare --> Creare Messaggistica Mailboxer
 
 SUCCESSIVE

@@ -21,3 +21,5 @@
 .byebug_history
 
 /todolist
+/procfile
+/.env
