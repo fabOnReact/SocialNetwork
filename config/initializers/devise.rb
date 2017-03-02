@@ -248,8 +248,9 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], callback_url: " https://barteringapps.herokuapp.com/users/auth/facebook/callback", scope: 'public_profile, email', image_size: 'large', provider_ignores_state: true #[:width => 34, :height => 34]
- # OmniAuth.config.full_host = "http://127.0.0.1:3000" # Or have an environment specific URL.
+  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], callback_url: "https://barteringapps.herokuapp.com/users/auth/facebook/callback", scope: 'public_profile, email', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}, image_size: 'large', provider_ignores_state: true 
+  #[:width => 34, callback_url: ENV['SERVER_ROOT']+'/users/auth/facebook/callback', :height => 34], http://127.0.0.1:5000/users/auth/facebook/callback, callback_url: "https://barteringapps.herokuapp.com/users/auth/facebook/callback"
+  # OmniAuth.config.full_host = "http://127.0.0.1:3000" # Or have an environment specific URL.
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.

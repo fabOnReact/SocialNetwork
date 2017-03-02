@@ -43,8 +43,14 @@ Fatto --> Per il link controllare che sia corretto
 
 PROBLEMA 4
 Da Fare --> Modificare il link di rindirizzo di facebook, verificare l errore nel log e i dettagli
+Ho approfondito, ho cambiato in devise.rb come spiegato nella discussione di stackoverflow il callback in dinamico ed ho anche aggiunto ssl
+Da Fare --> Creare il session controller per facebook login
 
 PROBLEMA 5
+Da Fare --> Errore quando viene creata una location senza immagini
+Da Fare --> Eliminare la prima pagina Host
+
+PROBLEMA 6
 Da Fare --> Creare Messaggistica Mailboxer
 
 SUCCESSIVE
@@ -64,7 +70,7 @@ SECONDARIE
 6. home e link di sinistra
 10. notifiche
 13. Campi text, da rappresentare in con un blocco di testo
-
+14. Inserire eventi per usare l app dal cellulare
 
 PRODUZIONE 
 1. gestire e salvare i dati da fecebook inclusa la foto
@@ -81,6 +87,11 @@ OPZIONALI
 5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
 6. Nella edit del profile il campo Password viene automaticamente compilato nel caso la password venga salvata
 7. usare avatar nel caso non venga inclusa una immagine del profilo
+
+SEO 
+1. Nome --> Working4Accomodation
+2. Chiedere consigli SEO
+
 
 Fatto --> 
 Fatto --> 
