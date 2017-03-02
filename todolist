@@ -42,31 +42,34 @@ PROBLEMA 3
 Fatto --> Per il link controllare che sia corretto
 
 PROBLEMA 4
-Da Fare --> Modificare il link di rindirizzo di facebook, verificare l errore nel log e i dettagli
+Fatto --> Modificare il link di rindirizzo di facebook, verificare l errore nel log e i dettagli
 Ho approfondito, ho cambiato in devise.rb come spiegato nella discussione di stackoverflow il callback in dinamico ed ho anche aggiunto ssl
-Da Fare --> Creare il session controller per facebook login
 
 PROBLEMA 5
-Da Fare --> Errore quando viene creata una location senza immagini
-Da Fare --> Eliminare la prima pagina Host
+Fatto --> Errore quando viene creata una location senza immagini
+Da Fare --> Modificare la prima pagina Host
+
+	a. Migrazione per cambiare i campi
+		 CAMPI NECESSARI
+		 Descrizione, skills, interessi
+
 
 PROBLEMA 6
 Da Fare --> Creare Messaggistica Mailboxer
 
 SUCCESSIVE
-1. informarsi e guardare i video sul Testing
-2. decidere come gestire le funzionalità investor host e developer
 3. dashboard
 4. ricerca
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
 7. Finire emails
-
+2. decidere come gestire le funzionalità investor host e developer
 
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
 
 SECONDARIE
+1. informarsi e guardare i video sul Testing
 6. home e link di sinistra
 10. notifiche
 13. Campi text, da rappresentare in con un blocco di testo
@@ -87,6 +90,7 @@ OPZIONALI
 5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
 6. Nella edit del profile il campo Password viene automaticamente compilato nel caso la password venga salvata
 7. usare avatar nel caso non venga inclusa una immagine del profilo
+8. Creare il session controller per facebook login
 
 SEO 
 1. Nome --> Working4Accomodation

@@ -25,7 +25,7 @@
                   <div class="form-group ">
                       <%= f.label :interest_list, "Interests", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :interest_list, :class => "form-control", :id => "lastname" %>
+                      <%= f.text_field :interest_list,  :class => "tagsinput form-control", :id => "tagsinput", value: f.object.interest_list.map { |t| t}.join(', ') %>
                     </div>
                   </div> 
 

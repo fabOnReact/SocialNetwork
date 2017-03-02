@@ -10,9 +10,11 @@ class LocationsController < ApplicationController
   def create
   	@location = Location.new(input_params)
     	if @location.save && current_user.host.locations << @location
-        params[:location_images]['houseimages'].each do |a|
-          @location_images = @location.location_images.create!(:houseimages => a)
-        end      
+        if params[:location_images] != nil
+          params[:location_images]['houseimages'].each do |a|
+            @location_images = @location.location_images.create!(:houseimages => a)
+          end      
+        end
       flash[:notice] = "Location sucessfully Updated"
       redirect_to controller: "hosts", action: "index"
       else
