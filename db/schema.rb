@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227083404) do
+ActiveRecord::Schema.define(version: 20170303141409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,11 +32,18 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.index ["task_id"], name: "index_ads_on_task_id", using: :btree
   end
 
+  create_table "conversations", force: :cascade do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
   create_table "developers", force: :cascade do |t|
     t.integer  "experience"
-    t.string   "interests"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "interest_list"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.integer  "user_id"
     t.string   "jobtitle"
     t.string   "website_url"
@@ -61,14 +68,8 @@ ActiveRecord::Schema.define(version: 20170227083404) do
   create_table "hosts", force: :cascade do |t|
     t.integer "user_id"
     t.text    "description"
-    t.string  "location"
-    t.integer "singleroom"
-    t.integer "sharedroom"
-    t.integer "surfspot"
-    t.integer "barbecue"
-    t.integer "villa"
-    t.integer "swimmingpool"
-    t.integer "skiresort"
+    t.string  "interest_list"
+    t.string  "skill_list"
     t.index ["user_id"], name: "index_hosts_on_user_id", using: :btree
   end
 
@@ -103,6 +104,17 @@ ActiveRecord::Schema.define(version: 20170227083404) do
     t.string   "state"
     t.text     "houseimages"
     t.index ["host_id"], name: "index_locations_on_host_id", using: :btree
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "conversation_id"
+    t.integer  "user_id"
+    t.boolean  "read",            default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.index ["conversation_id"], name: "index_messages_on_conversation_id", using: :btree
+    t.index ["user_id"], name: "index_messages_on_user_id", using: :btree
   end
 
   create_table "projects", force: :cascade do |t|

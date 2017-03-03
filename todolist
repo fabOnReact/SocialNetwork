@@ -47,26 +47,22 @@ Ho approfondito, ho cambiato in devise.rb come spiegato nella discussione di sta
 
 PROBLEMA 5
 Fatto --> Errore quando viene creata una location senza immagini
-Da Fare --> Modificare la prima pagina Host
-
-	a. Migrazione per cambiare i campi
-		 CAMPI NECESSARI
-		 Descrizione, skills, interessi
-
+Fatto --> Modificare la prima pagina Host
 
 PROBLEMA 6
-Da Fare --> Creare Messaggistica Mailboxer
+Da Fare --> Creare Messaggistica Mailboxer o chat con ActionCable 
 
 SUCCESSIVE
 3. dashboard
 4. ricerca
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
-7. Finire emails
-2. decidere come gestire le funzionalità investor host e developer
+7. decidere come gestire le funzionalità investor host e developer
+8. Rendere la pagina iniziale responsive, finire inserendo nuove immagini (1. mare e monti, per ricordare le vacanze, 2. immagini dell'applicazione)
 
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
+2. Cambiare il colore dei link in footer
 
 SECONDARIE
 1. informarsi e guardare i video sul Testing

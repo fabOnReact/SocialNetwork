@@ -201,7 +201,30 @@ color: #797979;
 /* Others */
 
 @media (max-width: 800px) {
- 	#navProfile {
+ 	/*#navProfile {
+ 		display: none;
+ 	}*/
+ 	#task_notificatoin_bar {
  		display: none;
  	}
+ 	#mail_notificatoin_bar {
+ 		display: none;
+ 	}
+ 	#alert_notificatoin_bar {
+ 		display: none;
+ 	}
+ 	#searchBar {
+ 		display: none;
+ 	}
+}
+
+@media (max-width: 510px) {
+ 	#logoTitle {
+ 		display: none;
+ 	}
+
+ 	.notification-row {
+ 		display: block;
+ 	}
+
 }

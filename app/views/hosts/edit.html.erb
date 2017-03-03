@@ -2,7 +2,7 @@
     <div class="col-lg-12">
         <section class="panel">
             <header class="panel-heading">
-               <h2>Host Profile Creation</h2>
+               <h2>Host Profile Editing</h2>
             </header>
 
             <div class="panel-body">
@@ -15,36 +15,19 @@
                     <div class="col-lg-10">
                       <%= f.text_field :description, :class => "form-control" %>
                     </div>
-                  </div> 
+                  </div>                                                                                                
                   <div class="form-group ">
-                      <%= f.label :location, "Location", :class => "control-label col-lg-2" %>
+                      <%= f.label :interest_list, "Interests", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :location, :class => "form-control" %>
+                      <%= f.text_field :interest_list,  :class => "tagsinput form-control", :id => "tagsinput", value: f.object.interest_list.map { |t| t}.join(', ') %>
                     </div>
                   </div> 
-                  <div class="form-group">
-                      <label class="control-label col-lg-2" for="inputSuccess">Inline checkboxes</label>
-                      <div class="col-lg-10">
-                          <label class="checkbox-inline">
-                          	  <%= f.check_box :singleroom %> Singleroom
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :surfspot %> Surfspot
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Barbecue
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Villa
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Swimmingpool
-                          </label>
-                          <label class="checkbox-inline">
-                              <%= f.check_box :singleroom %> Skiresort
-                          </label>                                          
-                      </div>
-                  </div>                                                                                                    
+                  <div class="form-group ">
+                      <%= f.label :skill_list, "Skills", :class => "control-label col-lg-2" %>
+                    <div class="col-lg-10">
+                      <%= f.text_field :skill_list, :class => "tagsinput form-control", :id => "tagsinput", value: f.object.skill_list.map { |t| t}.join(', ') %>
+                    </div>
+                  </div>                     
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>

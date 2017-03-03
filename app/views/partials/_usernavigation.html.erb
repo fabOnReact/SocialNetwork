@@ -8,13 +8,13 @@
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">Bartering <span class="lite">Apps</span></a>
+            <a href="index.html" class="logo" id="logoTitle">Bartering <span class="lite">Apps</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
                 <!--  search form start -->
                 <ul class="nav top-menu">                    
-                    <li>
+                    <li id="searchBar">
                         <form class="navbar-form">
                             <input class="form-control" placeholder="Search" type="text">
                         </form>
@@ -297,24 +297,18 @@
                         <li>
                             <% if current_user != nil %>
                                 <% if current_user.developer == nil %>
-                                    <%= link_to new_developer_path(current_user) do %><!--<a class="" href="form_component.html">-->
-                                    Profile Creation
-                                    <% end %><!--</a>-->
+                                    <%= link_to "Profile Creation", new_developer_path(current_user) %>
                                 <% end %>
                         </li>                          
                         <li>
                                 <% if current_user.developer != nil %>
-                                    <%= link_to developer_path(current_user.developer.id) do %><!--<a class="" href="form_component.html">-->
-                                    Profile
-                                    <% end %><!--</a>-->
+                                    <%= link_to "Profile", developer_path(current_user.developer.id) %>
                                 <% end %>
                         </li>
                         <li>
 
                                 <% if current_user.developer != nil %>
-                                    <%= link_to edit_developer_path(current_user.developer) do %><!--<a class="" href="form_component.html">-->
-                                    Edit
-                                    <% end %><!--</a>-->
+                                    <%= link_to "Profile Editing", edit_developer_path(current_user.developer) %>
                                 <% end %>
                             <% end %>
                         </li>                        
@@ -330,16 +324,29 @@
                         <li>
                             <% if current_user != nil %>
                                 <% if current_user.host == nil %>
-                                    <%= link_to new_host_path(current_user) do %><!--<a class="" href="form_component.html">-->
-                                    Profile Creation
-                                    <% end %><!--</a>-->
-                                <% end %>
-                        </li> 
+                                    <%= link_to "Profile Creation", new_host_path(current_user) %>
+                                <% else %>
+                        </li>
                         <li>
-                            <% if current_user.host != nil %>                       
-                                <% if current_user.host.projects != nil %>
-                                    <%= link_to "Locations and Projects", hosts_path(current_user)%>
+                                    <%= link_to "Profile Editing", edit_host_path(current_user.host.id) %>
                                 <% end %>
+                            <% end %>
+                        </li>                                                                         
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a class="" href="javascript:;">
+                          <i class="fa fa-globe"></i>
+                          <span>Locations</span>  
+                          <span class="menu-arrow arrow_carrot-right"></span>                        
+                      </a>
+                      <ul class="sub">
+                        <li>
+                            <% if current_user != nil %>
+                                <% if current_user.host != nil %>                       
+                                    <% if current_user.host.projects != nil %>
+                                        <%= link_to "Locations and Projects", hosts_path(current_user)%>
+                                    <% end %>
                         </li>                                                  
                         <li>
                                     <%= link_to "Create Location", new_location_path(current_user.host) %>
@@ -357,14 +364,8 @@
                                     <% end %>                                         
                                 <% end %>
                             <% end %>
-                        </li>                                                                         
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="" href="widgets.html">
-                          <i class="icon_genius"></i>
-                          <span>Widgets</span>
-                      </a>
+                        </li>                       
+                  </ul>
                   </li>
                   <li>                     
                       <a class="" href="chart-chartjs.html">

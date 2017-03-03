@@ -1,6 +1,20 @@
-1 wifi sharing 
+1 Q&A coding website with payd subscription and betting for questions
+	1. Betting for answers
+	2. Monthly subscription for getting a number of bets or answers
+	3. giving 10% or 20% of the bet to voters with experience, they win if the upvote the correct answer, they can loose if they vote flagged one or wrong one
+	4. having a certain reputation to vote and answer betting questions
+	5. Flagging - Bet 30$ and flag somebody that is spamming, 
+		a. If it was not spam, we get the 30$ 
+		b. If it was was spam, you get back your bet, the spammer pays 30$
+		c. You get back your 30$, but not the bet, the senior member get it.
+		d. Colui che ha fatto la domanda è stato aiutato ed ha raggiunto la risposta. Split della bounty 50% 50%
+		d. La quota dipende dalla issue, dal tempo per risolvere la disputa e dal professionista. Si parla di cifre fra i 5-30 $ 
+2 wifi sharing 
 
 OPEN SOURCE SOFTWARE
-OPENWISP
+openwisp
 
-2 long term room rental
+IDEE
+amici su facebook si scambiano il wifi in cambio di credito convertibile in moneta
+
+3 long term room rental

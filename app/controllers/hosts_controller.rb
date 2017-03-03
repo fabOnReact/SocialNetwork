@@ -17,7 +17,7 @@ class HostsController < ApplicationController
   	@host = Host.new(input_params)
   	if @host.save && current_user.host = @host
   		flash[:notice] = "Profile sucessfully Saved"
-  		redirect_to action: "edit", id: @host.id
+  		redirect_to action: "index", id: @host.id
   	else
   		flash[:alert] = "An error has occurred during the saving"
   		render "new"
@@ -46,6 +46,6 @@ class HostsController < ApplicationController
   private
 
   def input_params
-  	params.require(:host).permit(:description, :location, :singleroom, :sharedroom, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort)
+  	params.require(:host).permit(:description, :location, :singleroom, :sharedroom, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :interest_list, :skill_list)
   end
 end
