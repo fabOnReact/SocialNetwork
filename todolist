@@ -51,6 +51,8 @@ Fatto --> Modificare la prima pagina Host
 
 PROBLEMA 6
 Da Fare --> Creare Messaggistica Mailboxer o chat con ActionCable 
+sono arrivato a copiare il conversations controller
+https://medium.com/@danamulder/tutorial-create-a-simple-messaging-system-on-rails-d9b94b0fbca1#.5eiirxjb7
 
 SUCCESSIVE
 3. dashboard
