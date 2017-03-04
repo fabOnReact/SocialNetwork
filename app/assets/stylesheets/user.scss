@@ -152,6 +152,21 @@ color: #797979;
 	text-align: left;
 }
 
+
+/* GET conversationa/:id/messages/index */
+
+#messageHeader {
+	border-bottom: none;
+}
+
+#messageSender {
+	font-weight: bold;
+}
+
+#messageBody {
+	border-top: none;
+}
+
 /* Specific Mozilla */
 
 @-moz-document url(http://localhost:3000/),

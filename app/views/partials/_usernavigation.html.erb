@@ -241,13 +241,10 @@
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
                             <li class="eborder-top">
-                                <!--<a href="#"><i class="icon_profile"></i> My Profile</a>-->
-                                <%= link_to edit_user_registration_path, method: :get do %>
-                                    <i class="icon_profile" aria-hidden="true"></i>My Profile
-                                <% end %>                                
+                                <%= link_to edit_user_registration_path, method: :get do %><i class="icon_profile" aria-hidden="true"></i>My Profile<% end %>                                
                             </li>
                             <li>
-                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
+                                <%= link_to conversations_path, method: :get do %><i class="icon_mail_alt"></i> My Inbox<% end %>
                             </li>
                             <li>
                                 <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
