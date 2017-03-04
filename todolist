@@ -25,7 +25,7 @@ Fatto --> carrierwave :thumb image not working
 Fatto --> ho fatto la migrazione in produzione e cambiato il database a postgresql, dal log di heroku sembra che ci sia un problema con la configurazione di carrierwave fog, devo quindi configurare aws come da manuale in modo che le immagini vengano uploadate li 
 
 PROBLEMA 1
-Da Fare --> Problema con Devise Secret, Risolvere il problema trovati nel heroku log.
+Fatto --> Problema con Devise Secret, Risolvere il problema trovati nel heroku log.
 --------------------------------------------------------------------------------------
 1 non funzionano le icone in css file line-icon
 2 l'asset non viene caricato in produzione
@@ -50,12 +50,19 @@ Fatto --> Errore quando viene creata una location senza immagini
 Fatto --> Modificare la prima pagina Host
 
 PROBLEMA 6
-Da Fare --> Creare Messaggistica Mailboxer o chat con ActionCable 
-sono arrivato a copiare il conversations controller
-https://medium.com/@danamulder/tutorial-create-a-simple-messaging-system-on-rails-d9b94b0fbca1#.5eiirxjb7
+Fatto --> Creare Messaggistica Mailboxer o chat con ActionCable --> Fatto in modo semplice
+
+CORRENTE
+Da Fare --> dashboard
+			1. Nel developer controller ho creato l azione index che indirizza alla dashboard. Qui faccio una selezione degli
+			ads sulla base delle skills del developer. Poi voglio mostrare delle tabelle con i dati dei progetti, ho gia fatto 
+			alcune query e sono presenti nel controller e nella index.html.erb, ma ho scoperto che dei progetti sono restati senza host e sto indagando sulla join fra host e projects che dovrebbe essere hosts_projects.
+
+			The problem is that you have deleted some users and hosts, while respective host and projects has been not deleted. You need to find you a way to keep this foreign keys syncronized --> risolto :dependent => :destroy
+
+Da Fare -->	Creato il loop ora bisogna inserire le variabili nei campi, il problema è che per il nome e cognome 				bisogna recuperare il modello user
 
 SUCCESSIVE
-3. dashboard
 4. ricerca
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
@@ -65,13 +72,17 @@ SUCCESSIVE
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
 2. Cambiare il colore dei link in footer
+3. Mettere un limite alle immagini
 
 SECONDARIE
 1. informarsi e guardare i video sul Testing
 6. home e link di sinistra
-10. notifiche
+10. notifiche - riattivare i due div nascosti task alert e i numeri per mail
 13. Campi text, da rappresentare in con un blocco di testo
 14. Inserire eventi per usare l app dal cellulare
+
+TESTING
+1. testare che  :dependent => :destroy funzioni
 
 PRODUZIONE 
 1. gestire e salvare i dati da fecebook inclusa la foto
@@ -89,6 +100,11 @@ OPZIONALI
 6. Nella edit del profile il campo Password viene automaticamente compilato nel caso la password venga salvata
 7. usare avatar nel caso non venga inclusa una immagine del profilo
 8. Creare il session controller per facebook login
+
+SHORTCUTS
+heroku pg:psql per accedere al database produzione
+psql -d SocialNetwork_development per accedere al db
+\dt per mostrare tutte le tabelle
 
 SEO 
 1. Nome --> Working4Accomodation

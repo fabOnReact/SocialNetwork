@@ -14,9 +14,9 @@ class User < ApplicationRecord
 	# associations
 
 	has_and_belongs_to_many :roles
-	has_one :developer
-	has_one :host
-	has_many :messages
+	has_one :developer, :dependent => :destroy
+	has_one :host, :dependent => :destroy
+	has_many :messages, :dependent => :destroy
 
 	# carrierwave
 	mount_uploader :avatar, AvatarUploader

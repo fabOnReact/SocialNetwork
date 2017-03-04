@@ -113,11 +113,12 @@
                     </li>
                     <!-- task notificatoin end -->
                     <!-- inbox notificatoin start-->
-                    <li id="mail_notificatoin_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <li id="mail_notificatoin_bar" class="dropdown-toggle">
+                        <%= link_to conversations_path, class: "dropdown-toggle" do %> <!--<a class="dropdown-toggle" href="#"> data-toggle="dropdown"-->
                             <i class="icon-envelope-l"></i>
                             <span class="badge bg-important">5</span>
-                        </a>
+                        <!--</a>-->
+                        <% end %>
                         <ul class="dropdown-menu extended inbox">
                             <div class="notify-arrow notify-arrow-blue"></div>
                             <li>
@@ -278,10 +279,14 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
                   <li class="">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Dashboard</span>
-                      </a>
+                    <%# if current_user.host == nil %>
+                        <%= link_to developers_path do %>
+                  <!--<a class="" href="index.html">-->
+                      <i class="icon_house_alt"></i>
+                      <span>Dashboard</span>
+                        <% end %>
+                    <%# end %>
+                      <!--</a>-->
                   </li>
                   <li class="sub-menu">
 
@@ -360,7 +365,7 @@
                                         <%= link_to "Create Ad", new_ad_path(current_user.host) %> 
                                     <% end %>                                         
                                 <% end %>
-                            <% end %>
+                            <% end %>   
                         </li>                       
                   </ul>
                   </li>

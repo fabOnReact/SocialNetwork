@@ -1,8 +1,8 @@
 class DevelopersController < ApplicationController
 
-	def index
+	def index	
+		@ads = Ad.tagged_with(current_user.developer.skills)
 	end
-
 
 	def new
 		if current_user.developer == nil 			
