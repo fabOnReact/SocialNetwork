@@ -153,7 +153,7 @@ color: #797979;
 }
 
 
-/* GET conversationa/:id/messages/index */
+/* GET conversation/:id/messages/index */
 
 #messageHeader {
 	border-bottom: none;
@@ -165,6 +165,14 @@ color: #797979;
 
 #messageBody {
 	border-top: none;
+}
+
+#message_body {
+	height: 200px;
+}
+
+#messages .btn-primary {
+	margin-top: 10px;
 }
 
 /* Specific Mozilla */

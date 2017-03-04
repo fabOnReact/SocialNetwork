@@ -16,6 +16,7 @@ class User < ApplicationRecord
 	has_and_belongs_to_many :roles
 	has_one :developer
 	has_one :host
+	has_many :messages
 
 	# carrierwave
 	mount_uploader :avatar, AvatarUploader
