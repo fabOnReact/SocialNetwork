@@ -1,36 +1,52 @@
 <div class="row">
-    <div class="col-lg-12">
-        <section class="panel">
-            <header class="panel-heading">
-               Conversations
-            </header>
-            <div class="panel-body">
-              <div class="form">          
-                  <div class="form-group ">
-                      <%= f.label :firstname, "First Name *", :class => "control-label col-lg-2" %>
-                    <div class="col-lg-10">
-                      <%= f.text_field :firstname, :class => "form-control", :id => "firstname" %>
-                    </div>
-                  </div>                               
-              </div> 
-                <% end %>
-                  <div class="links ">
-                    <%= render "devise/shared/links"%>
-                  </div>
-            </div>
-        </section>
-    </div>
-</div>
-<!-- page end-->
-<div class="text-right">
-  <div class="credits">
-      <!-- 
-          All the links in the footer should remain intact. 
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-      -->
-      <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  <div class="col-sm-12">
+      <section class="panel">
+          <header class="panel-heading">
+              Projects based on your Skills
+          </header>
+          <table class="table">
+              <thead>
+              <tr class="row">
+                  <th class="col-md-2">Project Name</th>
+                  <th class="col-md-2">Country</th>
+                  <th class="col-md-1 hidden-xs">Location</th>
+                  <th class="col-md-2 hidden-xs">Task Name</th>
+                  <th class="col-md-2 hidden-xs">Skills</th>
+                  <th class="col-md-2 hidden-sm hidden-xs">Host</th>
+                  <th class="col-md-1 Fieldnumber hidden-xs">Budget</th>
+                  <th class="col-md-2 options">Options</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <% @projecs.each do |project| %>
+                
+
+              <% i = 0 %>
+              <% while i < @ads.size do %>
+                <% project = Project.find(@ads[i].project_id) %>
+                <% location = Location.find(@ads[i].location_id) %>
+                <% host = Host.find(location.host_id) %>
+                <% user = User.find(host.user_id) %>
+                <% task = Task.find(@ads[i].task_id) %>
+                  <tr class="row">
+                      <td class="col-md-2"><%= project.name %></td>
+                      <td class="col-md-2"><%= location.country_name %></td>
+                      <td class="col-md-1 hidden-xs"><%= location.location %></td>
+                      <td class="col-md-2"><%= task.name %></td>
+                      <td class="col-md-2"><%= task.skills_list %></td>                                            
+                      <td class="col-md-2 hidden-sm hidden-xs"><%= user.firstname %> <%= user.lastname %></td>
+                      <td class="col-md-1 Fieldnumber hidden-xs"><%= project.budget %></td>
+                      <td class="col-md-2 options">
+                        <div class="btn-group">
+                        <%= link_to project_path(project.id), class: "btn btn-primary" do %><i class="fa fa-arrow-right" aria-hidden="true"></i><% end %>
+                        </div>
+                      </td>                  
+                  </tr>
+                  <% i+=1 %>
+               <% end %>
+              </tbody>
+          </table>
+      </section>
   </div>
 </div>
-

@@ -1,7 +1,19 @@
 class DevelopersController < ApplicationController
 
 	def index	
-		@ads = Ad.tagged_with(current_user.developer.skills)
+		if current_user.developer.skills != nil
+			i = 0
+			old_ad = "firstloop"
+			@projects = []
+			@ads = Ad.tagged_with(current_user.developer.skills, :any => true)
+			@ads.each do |ad|
+				if i > 0 && old_project_id == ad.project_id
+					@projects << ad.project_id 
+					i+=1
+					old_project_id = ad.project_id
+				end
+			end
+		end
 	end
 
 	def new

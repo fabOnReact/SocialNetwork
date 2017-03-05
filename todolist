@@ -53,16 +53,20 @@ PROBLEMA 6
 Fatto --> Creare Messaggistica Mailboxer o chat con ActionCable --> Fatto in modo semplice
 
 CORRENTE
-Da Fare --> dashboard
+Fatto --> dashboard
 			1. Nel developer controller ho creato l azione index che indirizza alla dashboard. Qui faccio una selezione degli
 			ads sulla base delle skills del developer. Poi voglio mostrare delle tabelle con i dati dei progetti, ho gia fatto 
 			alcune query e sono presenti nel controller e nella index.html.erb, ma ho scoperto che dei progetti sono restati senza host e sto indagando sulla join fra host e projects che dovrebbe essere hosts_projects.
 
 			The problem is that you have deleted some users and hosts, while respective host and projects has been not deleted. You need to find you a way to keep this foreign keys syncronized --> risolto :dependent => :destroy
 
-Da Fare -->	Creato il loop ora bisogna inserire le variabili nei campi, il problema è che per il nome e cognome 				bisogna recuperare il modello user
+Fatto -->	Creato il loop ora bisogna inserire le variabili nei campi, il problema è che per il nome e cognome 				bisogna recuperare il modello user
+
+Da Fare --> nella developers index a riga 53 bisogna fare un check che le immagini visuallizate sulla pagina non siano già state fatte vedere. Ho provato usando una variabile old_location, il problema è che alcuni ad non erano in ordine per location, quindi nel loop non erano adiacenti. L'opzione è controllare che non facciano parte dell'array old_locations oppure dal controller estrapolare dagli ad tutte le locations ed inserirle in una array...
+
 
 SUCCESSIVE
+3. Cancellare da AWS le immagini non utilizzate
 4. ricerca
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
@@ -80,6 +84,7 @@ SECONDARIE
 10. notifiche - riattivare i due div nascosti task alert e i numeri per mail
 13. Campi text, da rappresentare in con un blocco di testo
 14. Inserire eventi per usare l app dal cellulare
+15. in Task skills_list dovrebbe essere corretto in skill_list, bisogna fare una ricerca nelle view e controller per correggere
 
 TESTING
 1. testare che  :dependent => :destroy funzioni
