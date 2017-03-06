@@ -6,6 +6,7 @@ class DevelopersController < ApplicationController
 			old_ad = "firstloop"
 			@projects = []
 			@ads = Ad.tagged_with(current_user.developer.skills, :any => true)
+			@ads = @ads.order(location_id: :desc)
 			@ads.each do |ad|
 				if i > 0 && old_project_id == ad.project_id
 					@projects << ad.project_id 
@@ -14,6 +15,11 @@ class DevelopersController < ApplicationController
 				end
 			end
 		end
+		@location = Location.new
+		@location.ads.build
+		@project = Project.new
+		@project.tasks.build
+		@project.ads.build
 	end
 
 	def new

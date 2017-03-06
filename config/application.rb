@@ -13,6 +13,7 @@ module SocialNetwork
     # -- all .rb files in that directory are automatically loaded.
     config.assets.enabled = true
     config.logger = ActiveSupport::Logger.new('SocialNetwork.log')
+    config.assets.paths << Rails.root.join("app","assets", "javascripts")
     config.assets.paths << Rails.root.join("vendor","assets", "fonts")
     config.assets.paths << Rails.root.join("vendor","assets", "img")
   end

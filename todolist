@@ -62,8 +62,12 @@ Fatto --> dashboard
 
 Fatto -->	Creato il loop ora bisogna inserire le variabili nei campi, il problema è che per il nome e cognome 				bisogna recuperare il modello user
 
-Da Fare --> nella developers index a riga 53 bisogna fare un check che le immagini visuallizate sulla pagina non siano già state fatte vedere. Ho provato usando una variabile old_location, il problema è che alcuni ad non erano in ordine per location, quindi nel loop non erano adiacenti. L'opzione è controllare che non facciano parte dell'array old_locations oppure dal controller estrapolare dagli ad tutte le locations ed inserirle in una array...
+Fatto --> nella developers index a riga 53 bisogna fare un check che le immagini visualizzate sulla pagina non siano già state fatte vedere. Ho provato usando una variabile old_location, il problema è che alcuni ad non erano in ordine per location, quindi nel loop non erano adiacenti. L'opzione è controllare che non facciano parte dell'array old_locations oppure dal controller estrapolare dagli ad tutte le locations ed inserirle in una array...
 
+Riassunto --> Sistemato la ricerca inline dal punto di vista estetico, ora voglio creare in js l evento toggle con jquery per mostrare e nascondere le opzioni avanzate, ma asset precompile non funziona quindi bisogna capire come funziona la asset pipeline perche ho controllato il fingerprinted file e alla fine non contiene js di user.js
+probabile che bisogni aggiornare le path e seguire tutti i settings
+
+Ho salvato la ricerca su How to create Jquery for toggle div
 
 SUCCESSIVE
 3. Cancellare da AWS le immagini non utilizzate
@@ -110,6 +114,7 @@ SHORTCUTS
 heroku pg:psql per accedere al database produzione
 psql -d SocialNetwork_development per accedere al db
 \dt per mostrare tutte le tabelle
+rake assets:precompile
 
 SEO 
 1. Nome --> Working4Accomodation

@@ -21,3 +21,4 @@
 //= require bootstrap-switch
 //= require wow.min
 //= require jquery_ujs
+//= require user

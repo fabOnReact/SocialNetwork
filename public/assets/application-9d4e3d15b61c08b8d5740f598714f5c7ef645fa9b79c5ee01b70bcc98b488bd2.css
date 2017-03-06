@@ -17145,13 +17145,17 @@ td.visible-print {
 }
 @font-face {
   font-family: 'ElegantIcons';
-  src: url("/assets/ElegantIcons.eot");
-  src: url("/assets/ElegantIcons.eot?#iefix") format("embedded-opentype"), url("/assets/ElegantIcons.woff") format("woff"), url("/assets/ElegantIcons.ttf") format("truetype"), url("/assets/ElegantIcons.svg#ElegantIcons") format("svg");
+  src: url(/assets/ElegantIcons-912b4fcc232e1f45d329e2a127bca4bdf3195d965a2abce223b068e3c3c7db6a.eot), url(/assets/ElegantIcons-912b4fcc232e1f45d329e2a127bca4bdf3195d965a2abce223b068e3c3c7db6a.eot?#iefix) format("embedded-opentype"), url(/assets/ElegantIcons-be1825e52a0dc7df04df9322f62abe2a2f2a25d98aac186de0140dfc7f6bdcae.woff) format("woff"), url(/assets/ElegantIcons-7be552fcc35865c045cfafde15e7939c557cb88801a1abf461a4febc6d55fea0.ttf) format("truetype"), url(/assets/ElegantIcons-91f068a06a78d5ecdea0571a3b56f51d723ce1adbf5ba64283ecc1805b04e60b.svg) format("svg");
+  /*src: url('/assets/ElegantIcons.eot');
+  src: url('/assets/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+  	 url('/assets/ElegantIcons.woff') format('woff'),
+  	 url('/assets/ElegantIcons.ttf') format('truetype'),
+  	 url('/assets/ElegantIcons.svg#ElegantIcons') format('svg');*/
   font-weight: normal;
   font-style: normal;
 }
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 13, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 18, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 [data-icon]:before {
   font-family: 'ElegantIcons';
   content: attr(data-icon);
@@ -17170,7 +17174,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="your-class-prefix"] {
 */
-/* line 31, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 36, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_up, .arrow_down, .arrow_left, .arrow_right, .arrow_left-up, .arrow_right-up, .arrow_right-down, .arrow_left-down, .arrow-up-down, .arrow_up-down_alt, .arrow_left-right_alt, .arrow_left-right, .arrow_expand_alt2, .arrow_expand_alt, .arrow_condense, .arrow_expand, .arrow_move, .arrow_carrot-up, .arrow_carrot-down, .arrow_carrot-left, .arrow_carrot-right, .arrow_carrot-2up, .arrow_carrot-2down, .arrow_carrot-2left, .arrow_carrot-2right, .arrow_carrot-up_alt2, .arrow_carrot-down_alt2, .arrow_carrot-left_alt2, .arrow_carrot-right_alt2, .arrow_carrot-2up_alt2, .arrow_carrot-2down_alt2, .arrow_carrot-2left_alt2, .arrow_carrot-2right_alt2, .arrow_triangle-up, .arrow_triangle-down, .arrow_triangle-left, .arrow_triangle-right, .arrow_triangle-up_alt2, .arrow_triangle-down_alt2, .arrow_triangle-left_alt2, .arrow_triangle-right_alt2, .arrow_back, .icon_minus-06, .icon_plus, .icon_close, .icon_check, .icon_minus_alt2, .icon_plus_alt2, .icon_close_alt2, .icon_check_alt2, .icon_zoom-out_alt, .icon_zoom-in_alt, .icon_search, .icon_box-empty, .icon_box-selected, .icon_minus-box, .icon_plus-box, .icon_box-checked, .icon_circle-empty, .icon_circle-slelected, .icon_stop_alt2, .icon_stop, .icon_pause_alt2, .icon_pause, .icon_menu, .icon_menu-square_alt2, .icon_menu-circle_alt2, .icon_ul, .icon_ol, .icon_adjust-horiz, .icon_adjust-vert, .icon_document_alt, .icon_documents_alt, .icon_pencil, .icon_pencil-edit_alt, .icon_pencil-edit, .icon_folder-alt, .icon_folder-open_alt, .icon_folder-add_alt, .icon_info_alt, .icon_error-oct_alt, .icon_error-circle_alt, .icon_error-triangle_alt, .icon_question_alt2, .icon_question, .icon_comment_alt, .icon_chat_alt, .icon_vol-mute_alt, .icon_volume-low_alt, .icon_volume-high_alt, .icon_quotations, .icon_quotations_alt2, .icon_clock_alt, .icon_lock_alt, .icon_lock-open_alt, .icon_key_alt, .icon_cloud_alt, .icon_cloud-upload_alt, .icon_cloud-download_alt, .icon_image, .icon_images, .icon_lightbulb_alt, .icon_gift_alt, .icon_house_alt, .icon_genius, .icon_mobile, .icon_tablet, .icon_laptop, .icon_desktop, .icon_camera_alt, .icon_mail_alt, .icon_cone_alt, .icon_ribbon_alt, .icon_bag_alt, .icon_creditcard, .icon_cart_alt, .icon_paperclip, .icon_tag_alt, .icon_tags_alt, .icon_trash_alt, .icon_cursor_alt, .icon_mic_alt, .icon_compass_alt, .icon_pin_alt, .icon_pushpin_alt, .icon_map_alt, .icon_drawer_alt, .icon_toolbox_alt, .icon_book_alt, .icon_calendar, .icon_film, .icon_table, .icon_contacts_alt, .icon_headphones, .icon_lifesaver, .icon_piechart, .icon_refresh, .icon_link_alt, .icon_link, .icon_loading, .icon_blocked, .icon_archive_alt, .icon_heart_alt, .icon_star_alt, .icon_star-half_alt, .icon_star, .icon_star-half, .icon_tools, .icon_tool, .icon_cog, .icon_cogs, .arrow_up_alt, .arrow_down_alt, .arrow_left_alt, .arrow_right_alt, .arrow_left-up_alt, .arrow_right-up_alt, .arrow_right-down_alt, .arrow_left-down_alt, .arrow_condense_alt, .arrow_expand_alt3, .arrow_carrot_up_alt, .arrow_carrot-down_alt, .arrow_carrot-left_alt, .arrow_carrot-right_alt, .arrow_carrot-2up_alt, .arrow_carrot-2dwnn_alt, .arrow_carrot-2left_alt, .arrow_carrot-2right_alt, .arrow_triangle-up_alt, .arrow_triangle-down_alt, .arrow_triangle-left_alt, .arrow_triangle-right_alt, .icon_minus_alt, .icon_plus_alt, .icon_close_alt, .icon_check_alt, .icon_zoom-out, .icon_zoom-in, .icon_stop_alt, .icon_menu-square_alt, .icon_menu-circle_alt, .icon_document, .icon_documents, .icon_pencil_alt, .icon_folder, .icon_folder-open, .icon_folder-add, .icon_folder_upload, .icon_folder_download, .icon_info, .icon_error-circle, .icon_error-oct, .icon_error-triangle, .icon_question_alt, .icon_comment, .icon_chat, .icon_vol-mute, .icon_volume-low, .icon_volume-high, .icon_quotations_alt, .icon_clock, .icon_lock, .icon_lock-open, .icon_key, .icon_cloud, .icon_cloud-upload, .icon_cloud-download, .icon_lightbulb, .icon_gift, .icon_house, .icon_camera, .icon_mail, .icon_cone, .icon_ribbon, .icon_bag, .icon_cart, .icon_tag, .icon_tags, .icon_trash, .icon_cursor, .icon_mic, .icon_compass, .icon_pin, .icon_pushpin, .icon_map, .icon_drawer, .icon_toolbox, .icon_book, .icon_contacts, .icon_archive, .icon_heart, .icon_profile, .icon_group, .icon_grid-2x2, .icon_grid-3x3, .icon_music, .icon_pause_alt, .icon_phone, .icon_upload, .icon_download, .social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_tumblr, .social_tumbleupon, .social_wordpress, .social_instagram, .social_dribbble, .social_vimeo, .social_linkedin, .social_rss, .social_deviantart, .social_share, .social_myspace, .social_skype, .social_youtube, .social_picassa, .social_googledrive, .social_flickr, .social_blogger, .social_spotify, .social_delicious, .social_facebook_circle, .social_twitter_circle, .social_pinterest_circle, .social_googleplus_circle, .social_tumblr_circle, .social_stumbleupon_circle, .social_wordpress_circle, .social_instagram_circle, .social_dribbble_circle, .social_vimeo_circle, .social_linkedin_circle, .social_rss_circle, .social_deviantart_circle, .social_share_circle, .social_myspace_circle, .social_skype_circle, .social_youtube_circle, .social_picassa_circle, .social_googledrive_alt2, .social_flickr_circle, .social_blogger_circle, .social_spotify_circle, .social_delicious_circle, .social_facebook_square, .social_twitter_square, .social_pinterest_square, .social_googleplus_square, .social_tumblr_square, .social_stumbleupon_square, .social_wordpress_square, .social_instagram_square, .social_dribbble_square, .social_vimeo_square, .social_linkedin_square, .social_rss_square, .social_deviantart_square, .social_share_square, .social_myspace_square, .social_skype_square, .social_youtube_square, .social_picassa_square, .social_googledrive_square, .social_flickr_square, .social_blogger_square, .social_spotify_square, .social_delicious_square, .icon_printer, .icon_calulator, .icon_building, .icon_floppy, .icon_drive, .icon_search-2, .icon_id, .icon_id-2, .icon_puzzle, .icon_like, .icon_dislike, .icon_mug, .icon_currency, .icon_wallet, .icon_pens, .icon_easel, .icon_flowchart, .icon_datareport, .icon_briefcase, .icon_shield, .icon_percent, .icon_globe, .icon_globe-2, .icon_target, .icon_hourglass, .icon_balance, .icon_rook, .icon_printer-alt, .icon_calculator_alt, .icon_building_alt, .icon_floppy_alt, .icon_drive_alt, .icon_search_alt, .icon_id_alt, .icon_id-2_alt, .icon_puzzle_alt, .icon_like_alt, .icon_dislike_alt, .icon_mug_alt, .icon_currency_alt, .icon_wallet_alt, .icon_pens_alt, .icon_easel_alt, .icon_flowchart_alt, .icon_datareport_alt, .icon_briefcase_alt, .icon_shield_alt, .icon_percent_alt, .icon_globe_alt, .icon_clipboard {
   font-family: 'ElegantIcons';
   speak: none;
@@ -17182,1807 +17186,1807 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 41, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 46, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_up:before {
   content: "\21";
 }
 
-/* line 44, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 49, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_down:before {
   content: "\22";
 }
 
-/* line 47, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 52, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left:before {
   content: "\23";
 }
 
-/* line 50, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 55, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right:before {
   content: "\24";
 }
 
-/* line 53, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 58, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-up:before {
   content: "\25";
 }
 
-/* line 56, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 61, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right-up:before {
   content: "\26";
 }
 
-/* line 59, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 64, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right-down:before {
   content: "\27";
 }
 
-/* line 62, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 67, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-down:before {
   content: "\28";
 }
 
-/* line 65, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 70, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow-up-down:before {
   content: "\29";
 }
 
-/* line 68, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 73, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_up-down_alt:before {
   content: "\2a";
 }
 
-/* line 71, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 76, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-right_alt:before {
   content: "\2b";
 }
 
-/* line 74, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 79, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-right:before {
   content: "\2c";
 }
 
-/* line 77, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 82, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_expand_alt2:before {
   content: "\2d";
 }
 
-/* line 80, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 85, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_expand_alt:before {
   content: "\2e";
 }
 
-/* line 83, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 88, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_condense:before {
   content: "\2f";
 }
 
-/* line 86, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 91, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_expand:before {
   content: "\30";
 }
 
-/* line 89, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 94, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_move:before {
   content: "\31";
 }
 
-/* line 92, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 97, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-up:before {
   content: "\32";
 }
 
-/* line 95, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 100, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-down:before {
   content: "\33";
 }
 
-/* line 98, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 103, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-left:before {
   content: "\34";
 }
 
-/* line 101, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 106, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-right:before {
   content: "\35";
 }
 
-/* line 104, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 109, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2up:before {
   content: "\36";
 }
 
-/* line 107, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 112, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2down:before {
   content: "\37";
 }
 
-/* line 110, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 115, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2left:before {
   content: "\38";
 }
 
-/* line 113, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 118, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2right:before {
   content: "\39";
 }
 
-/* line 116, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 121, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-up_alt2:before {
   content: "\3a";
 }
 
-/* line 119, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 124, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-down_alt2:before {
   content: "\3b";
 }
 
-/* line 122, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 127, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-left_alt2:before {
   content: "\3c";
 }
 
-/* line 125, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 130, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-right_alt2:before {
   content: "\3d";
 }
 
-/* line 128, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 133, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2up_alt2:before {
   content: "\3e";
 }
 
-/* line 131, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 136, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2down_alt2:before {
   content: "\3f";
 }
 
-/* line 134, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 139, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2left_alt2:before {
   content: "\40";
 }
 
-/* line 137, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 142, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2right_alt2:before {
   content: "\41";
 }
 
-/* line 140, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 145, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-up:before {
   content: "\42";
 }
 
-/* line 143, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 148, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-down:before {
   content: "\43";
 }
 
-/* line 146, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 151, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-left:before {
   content: "\44";
 }
 
-/* line 149, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 154, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-right:before {
   content: "\45";
 }
 
-/* line 152, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 157, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-up_alt2:before {
   content: "\46";
 }
 
-/* line 155, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 160, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-down_alt2:before {
   content: "\47";
 }
 
-/* line 158, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 163, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-left_alt2:before {
   content: "\48";
 }
 
-/* line 161, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 166, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-right_alt2:before {
   content: "\49";
 }
 
-/* line 164, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 169, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_back:before {
   content: "\4a";
 }
 
-/* line 167, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 172, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_minus-06:before {
   content: "\4b";
 }
 
-/* line 170, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 175, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_plus:before {
   content: "\4c";
 }
 
-/* line 173, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 178, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_close:before {
   content: "\4d";
 }
 
-/* line 176, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 181, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_check:before {
   content: "\4e";
 }
 
-/* line 179, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 184, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_minus_alt2:before {
   content: "\4f";
 }
 
-/* line 182, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 187, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_plus_alt2:before {
   content: "\50";
 }
 
-/* line 185, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 190, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_close_alt2:before {
   content: "\51";
 }
 
-/* line 188, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 193, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_check_alt2:before {
   content: "\52";
 }
 
-/* line 191, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 196, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_zoom-out_alt:before {
   content: "\53";
 }
 
-/* line 194, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 199, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_zoom-in_alt:before {
   content: "\54";
 }
 
-/* line 197, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 202, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_search:before {
   content: "\55";
 }
 
-/* line 200, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 205, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_box-empty:before {
   content: "\56";
 }
 
-/* line 203, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 208, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_box-selected:before {
   content: "\57";
 }
 
-/* line 206, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 211, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_minus-box:before {
   content: "\58";
 }
 
-/* line 209, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 214, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_plus-box:before {
   content: "\59";
 }
 
-/* line 212, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 217, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_box-checked:before {
   content: "\5a";
 }
 
-/* line 215, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 220, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_circle-empty:before {
   content: "\5b";
 }
 
-/* line 218, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 223, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_circle-slelected:before {
   content: "\5c";
 }
 
-/* line 221, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 226, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_stop_alt2:before {
   content: "\5d";
 }
 
-/* line 224, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 229, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_stop:before {
   content: "\5e";
 }
 
-/* line 227, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 232, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pause_alt2:before {
   content: "\5f";
 }
 
-/* line 230, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 235, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pause:before {
   content: "\60";
 }
 
-/* line 233, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 238, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_menu:before {
   content: "\61";
 }
 
-/* line 236, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 241, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_menu-square_alt2:before {
   content: "\62";
 }
 
-/* line 239, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 244, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_menu-circle_alt2:before {
   content: "\63";
 }
 
-/* line 242, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 247, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_ul:before {
   content: "\64";
 }
 
-/* line 245, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 250, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_ol:before {
   content: "\65";
 }
 
-/* line 248, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 253, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_adjust-horiz:before {
   content: "\66";
 }
 
-/* line 251, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 256, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_adjust-vert:before {
   content: "\67";
 }
 
-/* line 254, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 259, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_document_alt:before {
   content: "\68";
 }
 
-/* line 257, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 262, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_documents_alt:before {
   content: "\69";
 }
 
-/* line 260, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 265, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pencil:before {
   content: "\6a";
 }
 
-/* line 263, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 268, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pencil-edit_alt:before {
   content: "\6b";
 }
 
-/* line 266, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 271, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pencil-edit:before {
   content: "\6c";
 }
 
-/* line 269, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 274, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder-alt:before {
   content: "\6d";
 }
 
-/* line 272, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 277, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder-open_alt:before {
   content: "\6e";
 }
 
-/* line 275, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 280, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder-add_alt:before {
   content: "\6f";
 }
 
-/* line 278, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 283, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_info_alt:before {
   content: "\70";
 }
 
-/* line 281, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 286, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-oct_alt:before {
   content: "\71";
 }
 
-/* line 284, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 289, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-circle_alt:before {
   content: "\72";
 }
 
-/* line 287, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 292, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-triangle_alt:before {
   content: "\73";
 }
 
-/* line 290, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 295, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_question_alt2:before {
   content: "\74";
 }
 
-/* line 293, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 298, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_question:before {
   content: "\75";
 }
 
-/* line 296, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 301, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_comment_alt:before {
   content: "\76";
 }
 
-/* line 299, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 304, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_chat_alt:before {
   content: "\77";
 }
 
-/* line 302, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 307, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_vol-mute_alt:before {
   content: "\78";
 }
 
-/* line 305, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 310, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_volume-low_alt:before {
   content: "\79";
 }
 
-/* line 308, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 313, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_volume-high_alt:before {
   content: "\7a";
 }
 
-/* line 311, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 316, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_quotations:before {
   content: "\7b";
 }
 
-/* line 314, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 319, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_quotations_alt2:before {
   content: "\7c";
 }
 
-/* line 317, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 322, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_clock_alt:before {
   content: "\7d";
 }
 
-/* line 320, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 325, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lock_alt:before {
   content: "\7e";
 }
 
-/* line 323, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 328, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lock-open_alt:before {
   content: "\e000";
 }
 
-/* line 326, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 331, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_key_alt:before {
   content: "\e001";
 }
 
-/* line 329, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 334, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud_alt:before {
   content: "\e002";
 }
 
-/* line 332, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 337, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud-upload_alt:before {
   content: "\e003";
 }
 
-/* line 335, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 340, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud-download_alt:before {
   content: "\e004";
 }
 
-/* line 338, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 343, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_image:before {
   content: "\e005";
 }
 
-/* line 341, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 346, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_images:before {
   content: "\e006";
 }
 
-/* line 344, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 349, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lightbulb_alt:before {
   content: "\e007";
 }
 
-/* line 347, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 352, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_gift_alt:before {
   content: "\e008";
 }
 
-/* line 350, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 355, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_house_alt:before {
   content: "\e009";
 }
 
-/* line 353, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 358, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_genius:before {
   content: "\e00a";
 }
 
-/* line 356, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 361, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mobile:before {
   content: "\e00b";
 }
 
-/* line 359, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 364, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tablet:before {
   content: "\e00c";
 }
 
-/* line 362, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 367, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_laptop:before {
   content: "\e00d";
 }
 
-/* line 365, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 370, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_desktop:before {
   content: "\e00e";
 }
 
-/* line 368, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 373, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_camera_alt:before {
   content: "\e00f";
 }
 
-/* line 371, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 376, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mail_alt:before {
   content: "\e010";
 }
 
-/* line 374, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 379, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cone_alt:before {
   content: "\e011";
 }
 
-/* line 377, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 382, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_ribbon_alt:before {
   content: "\e012";
 }
 
-/* line 380, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 385, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_bag_alt:before {
   content: "\e013";
 }
 
-/* line 383, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 388, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_creditcard:before {
   content: "\e014";
 }
 
-/* line 386, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 391, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cart_alt:before {
   content: "\e015";
 }
 
-/* line 389, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 394, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_paperclip:before {
   content: "\e016";
 }
 
-/* line 392, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 397, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tag_alt:before {
   content: "\e017";
 }
 
-/* line 395, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 400, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tags_alt:before {
   content: "\e018";
 }
 
-/* line 398, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 403, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_trash_alt:before {
   content: "\e019";
 }
 
-/* line 401, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 406, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cursor_alt:before {
   content: "\e01a";
 }
 
-/* line 404, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 409, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mic_alt:before {
   content: "\e01b";
 }
 
-/* line 407, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 412, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_compass_alt:before {
   content: "\e01c";
 }
 
-/* line 410, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 415, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pin_alt:before {
   content: "\e01d";
 }
 
-/* line 413, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 418, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pushpin_alt:before {
   content: "\e01e";
 }
 
-/* line 416, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 421, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_map_alt:before {
   content: "\e01f";
 }
 
-/* line 419, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 424, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_drawer_alt:before {
   content: "\e020";
 }
 
-/* line 422, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 427, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_toolbox_alt:before {
   content: "\e021";
 }
 
-/* line 425, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 430, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_book_alt:before {
   content: "\e022";
 }
 
-/* line 428, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 433, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_calendar:before {
   content: "\e023";
 }
 
-/* line 431, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 436, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_film:before {
   content: "\e024";
 }
 
-/* line 434, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 439, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_table:before {
   content: "\e025";
 }
 
-/* line 437, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 442, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_contacts_alt:before {
   content: "\e026";
 }
 
-/* line 440, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 445, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_headphones:before {
   content: "\e027";
 }
 
-/* line 443, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 448, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lifesaver:before {
   content: "\e028";
 }
 
-/* line 446, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 451, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_piechart:before {
   content: "\e029";
 }
 
-/* line 449, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 454, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_refresh:before {
   content: "\e02a";
 }
 
-/* line 452, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 457, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_link_alt:before {
   content: "\e02b";
 }
 
-/* line 455, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 460, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_link:before {
   content: "\e02c";
 }
 
-/* line 458, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 463, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_loading:before {
   content: "\e02d";
 }
 
-/* line 461, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 466, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_blocked:before {
   content: "\e02e";
 }
 
-/* line 464, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 469, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_archive_alt:before {
   content: "\e02f";
 }
 
-/* line 467, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 472, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_heart_alt:before {
   content: "\e030";
 }
 
-/* line 470, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 475, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_star_alt:before {
   content: "\e031";
 }
 
-/* line 473, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 478, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_star-half_alt:before {
   content: "\e032";
 }
 
-/* line 476, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 481, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_star:before {
   content: "\e033";
 }
 
-/* line 479, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 484, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_star-half:before {
   content: "\e034";
 }
 
-/* line 482, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 487, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tools:before {
   content: "\e035";
 }
 
-/* line 485, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 490, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tool:before {
   content: "\e036";
 }
 
-/* line 488, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 493, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cog:before {
   content: "\e037";
 }
 
-/* line 491, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 496, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cogs:before {
   content: "\e038";
 }
 
-/* line 494, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 499, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_up_alt:before {
   content: "\e039";
 }
 
-/* line 497, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 502, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_down_alt:before {
   content: "\e03a";
 }
 
-/* line 500, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 505, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left_alt:before {
   content: "\e03b";
 }
 
-/* line 503, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 508, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right_alt:before {
   content: "\e03c";
 }
 
-/* line 506, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 511, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-up_alt:before {
   content: "\e03d";
 }
 
-/* line 509, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 514, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right-up_alt:before {
   content: "\e03e";
 }
 
-/* line 512, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 517, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_right-down_alt:before {
   content: "\e03f";
 }
 
-/* line 515, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 520, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_left-down_alt:before {
   content: "\e040";
 }
 
-/* line 518, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 523, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_condense_alt:before {
   content: "\e041";
 }
 
-/* line 521, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 526, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_expand_alt3:before {
   content: "\e042";
 }
 
-/* line 524, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 529, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot_up_alt:before {
   content: "\e043";
 }
 
-/* line 527, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 532, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-down_alt:before {
   content: "\e044";
 }
 
-/* line 530, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 535, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-left_alt:before {
   content: "\e045";
 }
 
-/* line 533, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 538, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-right_alt:before {
   content: "\e046";
 }
 
-/* line 536, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 541, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2up_alt:before {
   content: "\e047";
 }
 
-/* line 539, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 544, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2dwnn_alt:before {
   content: "\e048";
 }
 
-/* line 542, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 547, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2left_alt:before {
   content: "\e049";
 }
 
-/* line 545, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 550, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_carrot-2right_alt:before {
   content: "\e04a";
 }
 
-/* line 548, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 553, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-up_alt:before {
   content: "\e04b";
 }
 
-/* line 551, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 556, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-down_alt:before {
   content: "\e04c";
 }
 
-/* line 554, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 559, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-left_alt:before {
   content: "\e04d";
 }
 
-/* line 557, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 562, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .arrow_triangle-right_alt:before {
   content: "\e04e";
 }
 
-/* line 560, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 565, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_minus_alt:before {
   content: "\e04f";
 }
 
-/* line 563, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 568, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_plus_alt:before {
   content: "\e050";
 }
 
-/* line 566, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 571, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_close_alt:before {
   content: "\e051";
 }
 
-/* line 569, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 574, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_check_alt:before {
   content: "\e052";
 }
 
-/* line 572, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 577, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_zoom-out:before {
   content: "\e053";
 }
 
-/* line 575, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 580, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_zoom-in:before {
   content: "\e054";
 }
 
-/* line 578, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 583, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_stop_alt:before {
   content: "\e055";
 }
 
-/* line 581, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 586, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_menu-square_alt:before {
   content: "\e056";
 }
 
-/* line 584, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 589, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_menu-circle_alt:before {
   content: "\e057";
 }
 
-/* line 587, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 592, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_document:before {
   content: "\e058";
 }
 
-/* line 590, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 595, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_documents:before {
   content: "\e059";
 }
 
-/* line 593, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 598, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pencil_alt:before {
   content: "\e05a";
 }
 
-/* line 596, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 601, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder:before {
   content: "\e05b";
 }
 
-/* line 599, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 604, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder-open:before {
   content: "\e05c";
 }
 
-/* line 602, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 607, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder-add:before {
   content: "\e05d";
 }
 
-/* line 605, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 610, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder_upload:before {
   content: "\e05e";
 }
 
-/* line 608, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 613, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_folder_download:before {
   content: "\e05f";
 }
 
-/* line 611, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 616, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_info:before {
   content: "\e060";
 }
 
-/* line 614, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 619, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-circle:before {
   content: "\e061";
 }
 
-/* line 617, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 622, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-oct:before {
   content: "\e062";
 }
 
-/* line 620, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 625, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_error-triangle:before {
   content: "\e063";
 }
 
-/* line 623, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 628, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_question_alt:before {
   content: "\e064";
 }
 
-/* line 626, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 631, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_comment:before {
   content: "\e065";
 }
 
-/* line 629, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 634, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_chat:before {
   content: "\e066";
 }
 
-/* line 632, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 637, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_vol-mute:before {
   content: "\e067";
 }
 
-/* line 635, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 640, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_volume-low:before {
   content: "\e068";
 }
 
-/* line 638, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 643, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_volume-high:before {
   content: "\e069";
 }
 
-/* line 641, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 646, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_quotations_alt:before {
   content: "\e06a";
 }
 
-/* line 644, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 649, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_clock:before {
   content: "\e06b";
 }
 
-/* line 647, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 652, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lock:before {
   content: "\e06c";
 }
 
-/* line 650, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 655, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lock-open:before {
   content: "\e06d";
 }
 
-/* line 653, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 658, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_key:before {
   content: "\e06e";
 }
 
-/* line 656, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 661, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud:before {
   content: "\e06f";
 }
 
-/* line 659, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 664, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud-upload:before {
   content: "\e070";
 }
 
-/* line 662, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 667, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cloud-download:before {
   content: "\e071";
 }
 
-/* line 665, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 670, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_lightbulb:before {
   content: "\e072";
 }
 
-/* line 668, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 673, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_gift:before {
   content: "\e073";
 }
 
-/* line 671, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 676, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_house:before {
   content: "\e074";
 }
 
-/* line 674, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 679, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_camera:before {
   content: "\e075";
 }
 
-/* line 677, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 682, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mail:before {
   content: "\e076";
 }
 
-/* line 680, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 685, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cone:before {
   content: "\e077";
 }
 
-/* line 683, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 688, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_ribbon:before {
   content: "\e078";
 }
 
-/* line 686, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 691, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_bag:before {
   content: "\e079";
 }
 
-/* line 689, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 694, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cart:before {
   content: "\e07a";
 }
 
-/* line 692, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 697, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tag:before {
   content: "\e07b";
 }
 
-/* line 695, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 700, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_tags:before {
   content: "\e07c";
 }
 
-/* line 698, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 703, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_trash:before {
   content: "\e07d";
 }
 
-/* line 701, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 706, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_cursor:before {
   content: "\e07e";
 }
 
-/* line 704, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 709, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mic:before {
   content: "\e07f";
 }
 
-/* line 707, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 712, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_compass:before {
   content: "\e080";
 }
 
-/* line 710, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 715, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pin:before {
   content: "\e081";
 }
 
-/* line 713, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 718, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pushpin:before {
   content: "\e082";
 }
 
-/* line 716, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 721, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_map:before {
   content: "\e083";
 }
 
-/* line 719, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 724, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_drawer:before {
   content: "\e084";
 }
 
-/* line 722, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 727, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_toolbox:before {
   content: "\e085";
 }
 
-/* line 725, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 730, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_book:before {
   content: "\e086";
 }
 
-/* line 728, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 733, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_contacts:before {
   content: "\e087";
 }
 
-/* line 731, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 736, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_archive:before {
   content: "\e088";
 }
 
-/* line 734, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 739, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_heart:before {
   content: "\e089";
 }
 
-/* line 737, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 742, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_profile:before {
   content: "\e08a";
 }
 
-/* line 740, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 745, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_group:before {
   content: "\e08b";
 }
 
-/* line 743, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 748, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_grid-2x2:before {
   content: "\e08c";
 }
 
-/* line 746, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 751, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_grid-3x3:before {
   content: "\e08d";
 }
 
-/* line 749, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 754, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_music:before {
   content: "\e08e";
 }
 
-/* line 752, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 757, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pause_alt:before {
   content: "\e08f";
 }
 
-/* line 755, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 760, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_phone:before {
   content: "\e090";
 }
 
-/* line 758, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 763, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_upload:before {
   content: "\e091";
 }
 
-/* line 761, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 766, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_download:before {
   content: "\e092";
 }
 
-/* line 764, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 769, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_facebook:before {
   content: "\e093";
 }
 
-/* line 767, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 772, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_twitter:before {
   content: "\e094";
 }
 
-/* line 770, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 775, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_pinterest:before {
   content: "\e095";
 }
 
-/* line 773, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 778, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googleplus:before {
   content: "\e096";
 }
 
-/* line 776, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 781, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_tumblr:before {
   content: "\e097";
 }
 
-/* line 779, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 784, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_tumbleupon:before {
   content: "\e098";
 }
 
-/* line 782, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 787, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_wordpress:before {
   content: "\e099";
 }
 
-/* line 785, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 790, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_instagram:before {
   content: "\e09a";
 }
 
-/* line 788, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 793, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_dribbble:before {
   content: "\e09b";
 }
 
-/* line 791, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 796, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_vimeo:before {
   content: "\e09c";
 }
 
-/* line 794, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 799, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_linkedin:before {
   content: "\e09d";
 }
 
-/* line 797, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 802, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_rss:before {
   content: "\e09e";
 }
 
-/* line 800, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 805, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_deviantart:before {
   content: "\e09f";
 }
 
-/* line 803, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 808, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_share:before {
   content: "\e0a0";
 }
 
-/* line 806, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 811, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_myspace:before {
   content: "\e0a1";
 }
 
-/* line 809, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 814, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_skype:before {
   content: "\e0a2";
 }
 
-/* line 812, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 817, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_youtube:before {
   content: "\e0a3";
 }
 
-/* line 815, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 820, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_picassa:before {
   content: "\e0a4";
 }
 
-/* line 818, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 823, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googledrive:before {
   content: "\e0a5";
 }
 
-/* line 821, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 826, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_flickr:before {
   content: "\e0a6";
 }
 
-/* line 824, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 829, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_blogger:before {
   content: "\e0a7";
 }
 
-/* line 827, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 832, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_spotify:before {
   content: "\e0a8";
 }
 
-/* line 830, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 835, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_delicious:before {
   content: "\e0a9";
 }
 
-/* line 833, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 838, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_facebook_circle:before {
   content: "\e0aa";
 }
 
-/* line 836, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 841, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_twitter_circle:before {
   content: "\e0ab";
 }
 
-/* line 839, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 844, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_pinterest_circle:before {
   content: "\e0ac";
 }
 
-/* line 842, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 847, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googleplus_circle:before {
   content: "\e0ad";
 }
 
-/* line 845, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 850, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_tumblr_circle:before {
   content: "\e0ae";
 }
 
-/* line 848, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 853, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_stumbleupon_circle:before {
   content: "\e0af";
 }
 
-/* line 851, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 856, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_wordpress_circle:before {
   content: "\e0b0";
 }
 
-/* line 854, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 859, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_instagram_circle:before {
   content: "\e0b1";
 }
 
-/* line 857, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 862, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_dribbble_circle:before {
   content: "\e0b2";
 }
 
-/* line 860, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 865, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_vimeo_circle:before {
   content: "\e0b3";
 }
 
-/* line 863, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 868, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_linkedin_circle:before {
   content: "\e0b4";
 }
 
-/* line 866, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 871, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_rss_circle:before {
   content: "\e0b5";
 }
 
-/* line 869, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 874, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_deviantart_circle:before {
   content: "\e0b6";
 }
 
-/* line 872, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 877, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_share_circle:before {
   content: "\e0b7";
 }
 
-/* line 875, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 880, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_myspace_circle:before {
   content: "\e0b8";
 }
 
-/* line 878, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 883, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_skype_circle:before {
   content: "\e0b9";
 }
 
-/* line 881, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 886, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_youtube_circle:before {
   content: "\e0ba";
 }
 
-/* line 884, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 889, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_picassa_circle:before {
   content: "\e0bb";
 }
 
-/* line 887, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 892, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googledrive_alt2:before {
   content: "\e0bc";
 }
 
-/* line 890, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 895, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_flickr_circle:before {
   content: "\e0bd";
 }
 
-/* line 893, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 898, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_blogger_circle:before {
   content: "\e0be";
 }
 
-/* line 896, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 901, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_spotify_circle:before {
   content: "\e0bf";
 }
 
-/* line 899, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 904, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_delicious_circle:before {
   content: "\e0c0";
 }
 
-/* line 902, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 907, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_facebook_square:before {
   content: "\e0c1";
 }
 
-/* line 905, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 910, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_twitter_square:before {
   content: "\e0c2";
 }
 
-/* line 908, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 913, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_pinterest_square:before {
   content: "\e0c3";
 }
 
-/* line 911, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 916, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googleplus_square:before {
   content: "\e0c4";
 }
 
-/* line 914, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 919, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_tumblr_square:before {
   content: "\e0c5";
 }
 
-/* line 917, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 922, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_stumbleupon_square:before {
   content: "\e0c6";
 }
 
-/* line 920, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 925, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_wordpress_square:before {
   content: "\e0c7";
 }
 
-/* line 923, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 928, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_instagram_square:before {
   content: "\e0c8";
 }
 
-/* line 926, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 931, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_dribbble_square:before {
   content: "\e0c9";
 }
 
-/* line 929, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 934, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_vimeo_square:before {
   content: "\e0ca";
 }
 
-/* line 932, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 937, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_linkedin_square:before {
   content: "\e0cb";
 }
 
-/* line 935, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 940, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_rss_square:before {
   content: "\e0cc";
 }
 
-/* line 938, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 943, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_deviantart_square:before {
   content: "\e0cd";
 }
 
-/* line 941, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 946, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_share_square:before {
   content: "\e0ce";
 }
 
-/* line 944, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 949, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_myspace_square:before {
   content: "\e0cf";
 }
 
-/* line 947, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 952, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_skype_square:before {
   content: "\e0d0";
 }
 
-/* line 950, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 955, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_youtube_square:before {
   content: "\e0d1";
 }
 
-/* line 953, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 958, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_picassa_square:before {
   content: "\e0d2";
 }
 
-/* line 956, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 961, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_googledrive_square:before {
   content: "\e0d3";
 }
 
-/* line 959, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 964, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_flickr_square:before {
   content: "\e0d4";
 }
 
-/* line 962, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 967, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_blogger_square:before {
   content: "\e0d5";
 }
 
-/* line 965, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 970, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_spotify_square:before {
   content: "\e0d6";
 }
 
-/* line 968, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 973, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .social_delicious_square:before {
   content: "\e0d7";
 }
 
-/* line 971, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 976, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_printer:before {
   content: "\e103";
 }
 
-/* line 974, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 979, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_calulator:before {
   content: "\e0ee";
 }
 
-/* line 977, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 982, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_building:before {
   content: "\e0ef";
 }
 
-/* line 980, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 985, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_floppy:before {
   content: "\e0e8";
 }
 
-/* line 983, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 988, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_drive:before {
   content: "\e0ea";
 }
 
-/* line 986, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 991, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_search-2:before {
   content: "\e101";
 }
 
-/* line 989, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 994, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_id:before {
   content: "\e107";
 }
 
-/* line 992, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 997, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_id-2:before {
   content: "\e108";
 }
 
-/* line 995, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1000, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_puzzle:before {
   content: "\e102";
 }
 
-/* line 998, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1003, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_like:before {
   content: "\e106";
 }
 
-/* line 1001, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1006, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_dislike:before {
   content: "\e0eb";
 }
 
-/* line 1004, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1009, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mug:before {
   content: "\e105";
 }
 
-/* line 1007, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1012, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_currency:before {
   content: "\e0ed";
 }
 
-/* line 1010, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1015, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_wallet:before {
   content: "\e100";
 }
 
-/* line 1013, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1018, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pens:before {
   content: "\e104";
 }
 
-/* line 1016, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1021, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_easel:before {
   content: "\e0e9";
 }
 
-/* line 1019, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1024, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_flowchart:before {
   content: "\e109";
 }
 
-/* line 1022, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1027, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_datareport:before {
   content: "\e0ec";
 }
 
-/* line 1025, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1030, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_briefcase:before {
   content: "\e0fe";
 }
 
-/* line 1028, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1033, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_shield:before {
   content: "\e0f6";
 }
 
-/* line 1031, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1036, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_percent:before {
   content: "\e0fb";
 }
 
-/* line 1034, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1039, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_globe:before {
   content: "\e0e2";
 }
 
-/* line 1037, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1042, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_globe-2:before {
   content: "\e0e3";
 }
 
-/* line 1040, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1045, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_target:before {
   content: "\e0f5";
 }
 
-/* line 1043, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1048, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_hourglass:before {
   content: "\e0e1";
 }
 
-/* line 1046, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1051, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_balance:before {
   content: "\e0ff";
 }
 
-/* line 1049, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1054, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_rook:before {
   content: "\e0f8";
 }
 
-/* line 1052, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1057, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_printer-alt:before {
   content: "\e0fa";
 }
 
-/* line 1055, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1060, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_calculator_alt:before {
   content: "\e0e7";
 }
 
-/* line 1058, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1063, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_building_alt:before {
   content: "\e0fd";
 }
 
-/* line 1061, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1066, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_floppy_alt:before {
   content: "\e0e4";
 }
 
-/* line 1064, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1069, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_drive_alt:before {
   content: "\e0e5";
 }
 
-/* line 1067, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1072, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_search_alt:before {
   content: "\e0f7";
 }
 
-/* line 1070, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1075, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_id_alt:before {
   content: "\e0e0";
 }
 
-/* line 1073, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1078, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_id-2_alt:before {
   content: "\e0fc";
 }
 
-/* line 1076, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1081, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_puzzle_alt:before {
   content: "\e0f9";
 }
 
-/* line 1079, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1084, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_like_alt:before {
   content: "\e0dd";
 }
 
-/* line 1082, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1087, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_dislike_alt:before {
   content: "\e0f1";
 }
 
-/* line 1085, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1090, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_mug_alt:before {
   content: "\e0dc";
 }
 
-/* line 1088, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1093, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_currency_alt:before {
   content: "\e0f3";
 }
 
-/* line 1091, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1096, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_wallet_alt:before {
   content: "\e0d8";
 }
 
-/* line 1094, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1099, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_pens_alt:before {
   content: "\e0db";
 }
 
-/* line 1097, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1102, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_easel_alt:before {
   content: "\e0f0";
 }
 
-/* line 1100, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1105, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_flowchart_alt:before {
   content: "\e0df";
 }
 
-/* line 1103, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1108, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_datareport_alt:before {
   content: "\e0f2";
 }
 
-/* line 1106, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1111, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_briefcase_alt:before {
   content: "\e0f4";
 }
 
-/* line 1109, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1114, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_shield_alt:before {
   content: "\e0d9";
 }
 
-/* line 1112, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1117, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_percent_alt:before {
   content: "\e0da";
 }
 
-/* line 1115, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1120, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_globe_alt:before {
   content: "\e0de";
 }
 
-/* line 1118, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1123, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .icon_clipboard:before {
   content: "\e0e6";
 }
 
-/* line 1123, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1128, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .glyph {
   float: left;
   text-align: center;
@@ -18992,7 +18996,7 @@ you can use the generic selector below, but it's slower:
   text-shadow: none;
 }
 
-/* line 1131, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1136, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .glyph_big {
   font-size: 128px;
   color: #59c5dc;
@@ -19000,12 +19004,12 @@ you can use the generic selector below, but it's slower:
   margin-right: 20px;
 }
 
-/* line 1138, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1143, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .glyph div {
   padding-bottom: 10px;
 }
 
-/* line 1140, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1145, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .glyph input {
   font-family: consolas, monospace;
   font-size: 12px;
@@ -19018,13 +19022,13 @@ you can use the generic selector below, but it's slower:
   -webkit-border-radius: 5px;
 }
 
-/* line 1151, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1156, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 1155, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
+/* line 1160, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/elegant-icons-style.scss.erb */
 .glyph .fs1 {
   font-size: 2em;
 }
@@ -31672,7 +31676,7 @@ table.sliders tr td {
 }
 
 /*tag input*/
-/* line 8574, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8573, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput {
   border: 1px solid #e3e6ed;
   border-radius: 6px;
@@ -31682,7 +31686,7 @@ table.sliders tr td {
   text-align: left;
 }
 
-/* line 8590, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8589, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput .tag {
   border-radius: 4px;
   background-color: #688a7e;
@@ -31705,7 +31709,7 @@ table.sliders tr td {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 8632, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8631, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput .tag:hover {
   background-color: rgba(0, 122, 255, 0.7);
   color: #ffffff;
@@ -31713,14 +31717,14 @@ table.sliders tr td {
   padding-right: 20px;
 }
 
-/* line 8644, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8643, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput .tag:hover .tagsinput-remove-link {
   color: #ffffff;
   opacity: 1;
   display: block\9;
 }
 
-/* line 8654, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8653, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput input {
   background: transparent;
   border: none;
@@ -31735,7 +31739,7 @@ table.sliders tr td {
   width: 12px;
 }
 
-/* line 8680, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8679, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-remove-link {
   bottom: 0;
   color: #ffffff;
@@ -31753,14 +31757,14 @@ table.sliders tr td {
   display: none\9;
 }
 
-/* line 8712, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8711, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-remove-link:before {
   color: #ffffff;
   content: "\f00d";
   font-family: "FontAwesome";
 }
 
-/* line 8722, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8721, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-add-container {
   vertical-align: middle;
   display: inline-block;
@@ -31768,7 +31772,7 @@ table.sliders tr td {
   *display: inline;
 }
 
-/* line 8734, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8733, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-add {
   background-color: #d6dbdf;
   border-radius: 3px;
@@ -31786,18 +31790,18 @@ table.sliders tr td {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 8766, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8765, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-add:hover {
   background-color: #688a7e;
 }
 
-/* line 8772, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8771, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tagsinput-add:before {
   content: "\f067";
   font-family: "FontAwesome";
 }
 
-/* line 8780, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8779, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tags_clear {
   clear: both;
   width: 100%;
@@ -31805,7 +31809,7 @@ table.sliders tr td {
 }
 
 /*checkbox & radio style*/
-/* line 8800, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8799, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .checkboxes label, .radios label {
   display: block;
   cursor: pointer;
@@ -31814,44 +31818,44 @@ table.sliders tr td {
   font-weight: 300;
 }
 
-/* line 8816, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8815, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .radios {
   padding-top: 18px;
 }
 
-/* line 8824, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8823, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .label_check input,
 .label_radio input {
   margin-right: 5px;
 }
 
-/* line 8834, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8833, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js .label_check,
 .has-js .label_radio {
   padding-left: 34px;
 }
 
-/* line 8844, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8843, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js .label_radio {
   background: url(/images/radio-off.png) no-repeat;
 }
 
-/* line 8852, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8851, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js .label_check {
   background: url(/images/check-off.png) no-repeat;
 }
 
-/* line 8860, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8859, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js label.c_on {
   background: url(/images/check-on.png) no-repeat;
 }
 
-/* line 8868, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8867, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js label.r_on {
   background: url(/images/radio-on.png) no-repeat;
 }
 
-/* line 8876, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8875, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .has-js .label_check input,
 .has-js .label_radio input {
   position: absolute;
@@ -31859,7 +31863,7 @@ table.sliders tr td {
 }
 
 /*date picker*/
-/* line 8894, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8893, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .add-on {
   border: 1px solid #E2E2E4;
   border-radius: 4px;
@@ -31872,26 +31876,26 @@ table.sliders tr td {
   background: #EEEEEE;
 }
 
-/* line 8918, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8917, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .daterangepicker .ranges .range_inputs > div:nth-child(2) {
   margin-bottom: 10px;
   padding-left: 0px;
 }
 
-/* line 8928, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8927, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .daterangepicker .ranges label {
   padding-bottom: 0;
   padding-top: 8px;
 }
 
-/* line 8940, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8939, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .daterangepicker td.active, .daterangepicker td.active:hover,
 .datepicker td.active:hover, .datepicker td.active:hover:hover, .datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active.active:hover, .datepicker td.active.disabled, .datepicker td.active.disabled:hover, .datepicker td.active[disabled], .datepicker td.active[disabled]:hover,
 .datepicker td span.active:hover, .datepicker td span.active:active, .datepicker td span.active.active, .datepicker td span.active.disabled, .datepicker td span.active[disabled] {
   background: #688a7e;
 }
 
-/* line 8952, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8951, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .daterangepicker .calendar th, .daterangepicker .calendar td {
   font-family: Lato sans-serif;
   font-weight: 300;
@@ -31899,24 +31903,24 @@ table.sliders tr td {
   white-space: nowrap;
 }
 
-/* line 8966, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8965, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .daterangepicker td.active, .daterangepicker td.active:hover, .datepicker td.active, .datepicker td.active:hover, .datepicker td span.active {
   text-shadow: none;
 }
 
-/* line 8974, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8973, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .datepicker th.switch {
   width: 125px;
 }
 
-/* line 8982, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8981, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .datepicker td span {
   height: 40px;
   line-height: 40px;
 }
 
 /*ck editor*/
-/* line 8998, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 8997, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .cke_top, .cke_bottom {
   background: #F5F5F5 !important;
   background: -moz-linear-gradient(center top, #F5F5F5, #F5F5F5) repeat scroll 0 0 #F5F5F5 !important;
@@ -31926,12 +31930,12 @@ table.sliders tr td {
   padding: 6px 8px 2px;
 }
 
-/* line 9016, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9015, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .cke_top {
   border-bottom: 1px solid #cccccc !important;
 }
 
-/* line 9024, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9023, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .cke_chrome {
   border: 1px solid #cccccc !important;
   box-shadow: none !important;
@@ -31940,53 +31944,53 @@ table.sliders tr td {
 }
 
 /*form wizard*/
-/* line 9042, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9041, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-tab {
   text-align: center;
 }
 
-/* line 9050, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9049, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-tab ul {
   display: inline-block;
 }
 
-/* line 9058, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9057, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-tab ul li {
   float: left;
 }
 
-/* line 9066, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9065, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .step legend {
   border: none;
 }
 
-/* line 9074, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9073, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .button-back {
   float: left;
 }
 
-/* line 9082, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9081, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .button-next, .finish {
   float: right;
 }
 
-/* line 9090, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9089, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .button-back, .button-next, .finish {
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 9098, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9097, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .step {
   clear: left;
 }
 
-/* line 9104, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9103, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .step label {
   display: block;
 }
 
-/* line 9114, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9113, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-titles li {
   color: #757575;
   cursor: pointer;
@@ -31994,12 +31998,12 @@ table.sliders tr td {
   margin: 10px 15px;
 }
 
-/* line 9128, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9127, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-titles li span {
   display: block;
 }
 
-/* line 9132, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9131, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-titles li.current-step div {
   color: #fff;
   cursor: auto;
@@ -32011,7 +32015,7 @@ table.sliders tr td {
   line-height: 80px;
 }
 
-/* line 9154, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9153, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .stepy-titles li div {
   font-size: 16px;
   font-weight: 300;
@@ -32024,24 +32028,24 @@ table.sliders tr td {
 }
 
 /*widget*/
-/* line 9182, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9181, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .user-heading.alt {
   display: inline-block;
   width: 100%;
   text-align: left;
 }
 
-/* line 9194, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9193, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .alt.green-bg {
   background: #4cd964;
 }
 
-/* line 9202, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9201, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-nav.alt.green-border ul > li > a:hover, .profile-nav.alt.green-border ul > li > a:focus, .profile-nav.alt.green-border ul li.active a {
   border-left: 5px solid #4cd964;
 }
 
-/* line 9210, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9209, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .user-heading.alt a {
   float: left;
   margin-right: 15px;
@@ -32052,7 +32056,7 @@ table.sliders tr td {
   -webkit-border-radius: 50%;
 }
 
-/* line 9228, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9227, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .user-heading.alt a img {
   width: 100px;
   height: 100px;
@@ -32060,7 +32064,7 @@ table.sliders tr td {
   -webkit-border-radius: 50%;
 }
 
-/* line 9242, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9241, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-feed {
   border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
@@ -32070,19 +32074,19 @@ table.sliders tr td {
   text-align: center;
 }
 
-/* line 9260, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9259, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-feed.blue-bg {
   background: #00a0df;
 }
 
-/* line 9268, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9267, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-feed h1 {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
-/* line 9280, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9279, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-feed a {
   border: 8px solid #fff;
   border-radius: 50%;
@@ -32091,7 +32095,7 @@ table.sliders tr td {
   margin-bottom: -55px;
 }
 
-/* line 9296, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9295, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-feed a img {
   height: 112px;
   width: 112px;
@@ -32099,7 +32103,7 @@ table.sliders tr td {
   -webit-border-radius: 50%;
 }
 
-/* line 9310, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9309, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-category {
   display: inline-block;
   margin-bottom: 11px;
@@ -32107,7 +32111,7 @@ table.sliders tr td {
   width: 100%;
 }
 
-/* line 9322, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9321, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-widget-data {
   display: inline-block;
   margin-bottom: 10px;
@@ -32115,101 +32119,101 @@ table.sliders tr td {
   width: 100%;
 }
 
-/* line 9336, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9335, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-category ul li, .profile-widget-data ul li, .profile-nav ul > li {
   color: #89817f;
   font-size: 13px;
   border-bottom: none;
 }
 
-/* line 9348, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9347, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-category h5 {
   font-size: 20px;
   font-weight: 300;
 }
 
-/* line 9358, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9357, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-write .t-text-area {
   border: 1px solid #eeeeee;
   border-radius: 0;
 }
 
-/* line 9368, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9367, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .twt-footer {
   padding: 10px 15px;
 }
 
-/* line 9376, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9375, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .btn-space {
   padding-left: 11.6%;
   padding-right: 11%;
 }
 
-/* line 9386, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9385, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .p-head {
   color: #f77b6f;
   font-weight: 400;
   font-size: 14px;
 }
 
-/* line 9398, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9397, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .cmt-head {
   font-weight: 400;
   font-size: 13px;
 }
 
-/* line 9408, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9407, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .p-thumb img {
   width: 50px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
 }
 
-/* line 9420, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9419, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .tasi-tab .media-body p {
   /*color: #b8bac6;*/
 }
 
 /*Timeline chat*/
-/* line 9434, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9433, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-form {
   margin-top: 25px;
   clear: both;
 }
 
-/* line 9444, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9443, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-form .input-cont {
   margin-bottom: 10px;
 }
 
-/* line 9452, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9451, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-form .input-cont input {
   margin-bottom: 0px;
 }
 
-/* line 9460, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9459, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-form .input-cont input {
   border: 1px solid #d3d3d3 !important;
   margin-top: 0;
   min-height: 45px;
 }
 
-/* line 9472, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9471, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-form .input-cont input {
   background-color: #fff !important;
 }
 
-/* line 9480, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9479, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-features a {
   margin-left: 10px;
 }
 
-/* line 9488, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9487, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .chat-features a i {
   color: #d0d0d0;
 }
 
-/* line 9496, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9495, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity:before {
   background: rgba(0, 0, 0, 0.1);
   bottom: 0;
@@ -32228,17 +32232,17 @@ table.sliders tr td {
     top: -2px;
 
 }*/
-/* line 9520, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9519, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity, .act-time, .profile-activity .act-in, .profile-activity .act-out {
   position: relative;
 }
 
-/* line 9530, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9529, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity .act-in .arrow {
   /*border-right: 8px solid #F4F4F4 !important;*/
 }
 
-/* line 9536, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9535, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity .act-in .arrow {
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
@@ -32250,12 +32254,12 @@ table.sliders tr td {
   width: 0;
 }
 
-/* line 9558, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9557, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity .act-out .arrow {
   /*border-right: 8px solid #34aadc !important;*/
 }
 
-/* line 9564, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9563, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .profile-activity .act-out .arrow {
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
@@ -32267,12 +32271,12 @@ table.sliders tr td {
   width: 0;
 }
 
-/* line 9586, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9585, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time:first-child:before {
   margin-top: 16px;
 }
 
-/* line 9592, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9591, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time:before {
   background: #CCCCCC;
   border: 2px solid #FAFAFA;
@@ -32284,36 +32288,36 @@ table.sliders tr td {
   width: 14px;
 }
 
-/* line 9612, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9611, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time:hover:before {
   background: #34aadc;
 }
 
-/* line 9618, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9617, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time:first-child {
   padding-top: 0;
 }
 
-/* line 9624, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9623, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .activity-img {
   float: left;
   margin-right: 30px;
   overflow: hidden;
 }
 
-/* line 9634, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9633, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .activity-img img {
   display: block;
   height: 44px;
   width: 44px;
 }
 
-/* line 9644, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9643, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .activity-body {
   /*margin-left: 80px;*/
 }
 
-/* line 9650, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9649, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time .act-in .text {
   border: 1px solid #e3e6ed;
   padding: 10px;
@@ -32321,7 +32325,7 @@ table.sliders tr td {
   -webkit-border-radius: 4px;
 }
 
-/* line 9664, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9663, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time .act-out .text {
   border: 1px solid #e3e6ed;
   padding: 10px;
@@ -32329,24 +32333,24 @@ table.sliders tr td {
   -webkit-border-radius: 4px;
 }
 
-/* line 9676, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9675, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time p {
   margin: 0;
 }
 
-/* line 9682, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9681, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time .attribution {
   font-size: 11px;
   margin: 0px 0 5px;
 }
 
-/* line 9690, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9689, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-time {
   overflow: hidden;
   padding: 8px 0;
 }
 
-/* line 9700, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9699, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-in a, .act-in a:hover {
   color: #b64c4c;
   text-decoration: none;
@@ -32357,7 +32361,7 @@ table.sliders tr td {
   font-size: 13px;
 }
 
-/* line 9718, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9717, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .act-out a, .act-out a:hover {
   color: #288f98;
   text-decoration: none;
@@ -32368,12 +32372,12 @@ table.sliders tr td {
   font-size: 13px;
 }
 
-/* line 9738, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9737, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .messages-wrapper {
   position: relative;
 }
 
-/* line 9744, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9743, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message {
   border-radius: 20px 20px 20px 20px;
   margin: 0 15px 10px;
@@ -32381,27 +32385,27 @@ table.sliders tr td {
   position: relative;
 }
 
-/* line 9756, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9755, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message.to {
   background-color: #2095FE;
   color: #fff;
   margin-left: 80px;
 }
 
-/* line 9766, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9765, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message.from {
   background-color: #E5E4E9;
   color: #363636;
   margin-right: 80px;
 }
 
-/* line 9776, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9775, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message.to + .message.to,
 .message.from + .message.from {
   margin-top: -7px;
 }
 
-/* line 9784, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9783, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message:before {
   border-color: #2095FE;
   border-radius: 50% 50% 50% 50%;
@@ -32417,7 +32421,7 @@ table.sliders tr td {
   z-index: -1;
 }
 
-/* line 9812, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9811, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .message.from:before {
   border-color: #E5E4E9;
   left: -50px;
@@ -32427,7 +32431,7 @@ table.sliders tr td {
 }
 
 /*custom select*/
-/* line 9832, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9831, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 span.customSelect {
   font-size: 12px;
   background-color: #ffffff;
@@ -32439,12 +32443,12 @@ span.customSelect {
   color: #A4AABA;
 }
 
-/* line 9852, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9851, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 span.customSelect.changed {
   background-color: #fff;
 }
 
-/* line 9858, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
+/* line 9857, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/vendor/assets/stylesheets/style-2.css */
 .customSelectInner {
   background: url(/assets/customSelect-arrow-ddffd16b5f54d3c762af45f8565b3ff0ac305db83ca7a716d076377a5c59fb7d.gif) no-repeat center right;
 }
@@ -32859,172 +32863,281 @@ footer {
     margin-top: 0px;
   }
 }
+/* Navigation */
+/* line 7, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+#task_notificatoin_bar {
+  display: none;
+}
+
+/* line 11, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+#alert_notificatoin_bar {
+  display: none;
+}
+
+/* line 15, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.badge.bg-important {
+  display: none;
+}
+
 /* GET Registration/new */
-/* line 8, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 21, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .links {
   margin-top: 15px;
   font-weight: 700;
 }
 
-/* line 13, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 26, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 td {
   box-sizing: border-box;
 }
 
-/* line 17, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 30, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .small-image {
   height: 34px;
 }
 
-/* line 21, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 34, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .index-image {
   height: 62px;
 }
 
-/* line 25, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 38, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .navigationName {
   padding-left: 7px;
 }
 
-/* line 29, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 42, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .developerTitle {
   padding-top: 10px;
 }
 
 /* GET sessions#new */
-/* line 36, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 49, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .checkbox input[type="checkbox"] {
   margin-left: 0px;
   float: none;
 }
 
 /* GET hosts#index */
-/* line 44, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 57, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .hostcheckbox {
   width: 8.333333333333332%;
 }
 
-/* line 48, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 61, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .checkbox {
   padding-left: 1px;
   padding-bottom: 5px;
 }
 
-/* line 53, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 66, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table td {
   border: solid 1px #dddddd;
 }
 
-/* line 57, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 70, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table .Fieldnumber {
   text-align: right;
   /*	width: 10%;*/
 }
 
-/* line 62, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 75, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table .Checkbox {
   text-align: center;
   /*	width: 10%;*/
 }
 
-/* line 67, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 80, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .login-form a {
   color: white;
 }
 
-/* line 71, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 84, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .btn-info {
   background-color: #007aff;
 }
 
-/* line 75, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 88, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .wideButton {
   padding: 10px 50px;
 }
 
-/* line 79, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 92, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .login-form {
   margin-top: 50px;
 }
 
-/* line 83, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 96, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 #lostPw {
   color: #797979;
 }
 
-/* line 87, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 100, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .remember_me_Label {
   padding-left: 0px;
   color: #797979;
 }
 
-/* line 92, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 105, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table .btn {
   border-radius: 10%;
   padding: 0px 6px;
 }
 
-/* line 97, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 110, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table .fa-info {
   padding: 0px 2px;
 }
 
-/* line 101, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 114, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .options {
   text-align: center;
 }
 
 /* GET locations#new */
-/* line 107, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 120, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .imagesUpload {
   padding-top: 0px;
   text-align: right;
 }
 
-/* line 112, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 125, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .uploadButton {
   margin-top: 7px;
 }
 
 /* GET locations#show */
-/* line 118, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 131, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .houseimage {
   width: 90%;
   margin-bottom: 10px;
 }
 
-/* line 123, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 136, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 #colPictures {
   text-align: center;
 }
 
-/* line 127, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 140, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .imageEdit {
   padding: 2px 15px;
   font-size: 10px;
 }
 
 /* GET locations#delete */
-/* line 134, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 147, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .alert-warning {
   color: black;
 }
 
 /* GET location_image#show */
-/* line 141, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 154, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .buttonLeft {
   float: left;
 }
 
-/* line 145, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 158, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .buttonRight {
   float: right;
 }
 
 /* GET tasks#new */
-/* line 151, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/* line 164, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 #completedCheckbox {
   text-align: left;
+}
+
+/* GET conversation/:id/messages/index */
+/*
+#messageHeader {
+	border-bottom: none;
+}
+
+#messageSender {
+	font-weight: bold;
+}
+
+#messageBody {
+	border-top: none;
+}
+
+#message_body {
+	height: 200px;
+}
+
+#messages .btn-primary {
+	margin-top: 10px;
+}
+*/
+/* Changing the placeholder color for the forms*/
+/* line 195, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.form-control::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #666;
+  opacity: 1;
+}
+
+/* line 201, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.form-control::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #666;
+  opacity: 1;
+}
+
+/* GET developers/index */
+/* line 208, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.searchDescription {
+  padding-left: 12px;
+}
+
+/* line 212, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+#skillLabel {
+  float: left;
+  margin-top: 4px;
+}
+
+/* line 217, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.specialHeight {
+  height: 34px !important;
+  border: 1px solid #c7c7cc;
+  border-radius: 4px;
+}
+
+/* line 223, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.specialHeight .tagsinput-add {
+  padding: 0px 4px;
+}
+
+/* GET developers#index */
+/* making all div width 100% it looks better in the wide and md version, the description is over the input field */
+/* line 229, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.form-inline .form-group.responsiveInlineFormGroup {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* line 233, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.form-inline .form-group .responsiveInlineForm {
+  width: 100%;
+}
+
+/* button div same height as the other divs, then making the button stick to the bottom of his div */
+/* line 238, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.inlineFormButtonGroup {
+  height: 56px;
+}
+
+/* line 242, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.inlineFormButton {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+  height: 42px;
+}
+
+/* line 249, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.advancedSearch {
+  margin-left: 6px;
 }
 
 /* Specific Mozilla */
@@ -33038,12 +33151,12 @@ td {
        ".mozilla.org"
    */
   /* make the above-mentioned pages really ugly */
-  /* line 169, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 267, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   .table {
     border-collapse: separate;
   }
 
-  /* line 172, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 270, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   .table td {
     border: solid 0px #dddddd;
   }
@@ -33051,19 +33164,19 @@ td {
 /* Media Queries */
 /* GET locations#show */
 @media (min-width: 766px) {
-  /* line 183, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 281, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   #colPictures {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 766px) {
-  /* line 189, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 287, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   #colPictures {
     margin-bottom: 10px;
   }
 }
 @media (max-width: 360px) {
-  /* line 195, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 293, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   .imageEdit {
     padding: 4px 10px;
     font-size: 7px;
@@ -33071,9 +33184,38 @@ td {
 }
 /* Others */
 @media (max-width: 800px) {
-  /* line 204, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #navProfile {
+  /*#navProfile {
+  	display: none;
+  }*/
+  /* line 305, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #task_notificatoin_bar {
     display: none;
+  }
+
+  /* line 308, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #mail_notificatoin_bar {
+    display: none;
+  }
+
+  /* line 311, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #alert_notificatoin_bar {
+    display: none;
+  }
+
+  /* line 314, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #searchBar {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  /* line 320, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #logoTitle {
+    display: none;
+  }
+
+  /* line 324, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  .notification-row {
+    display: block;
   }
 }
 /* line 1, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
