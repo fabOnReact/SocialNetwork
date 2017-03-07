@@ -10,7 +10,7 @@
 
 role = Role.create(:role => "Developer")
 role = Role.create(:role => "Host")
-
+=end
 # Creation of Host sample Profile
 
 user = User.create(:email => "ezio@email.com", :firstname => "Ezio", :lastname => "Bertoglio", :country => "IT", :location => "Turin", :roles_id => 2, :password => "fabrizio")
@@ -82,8 +82,6 @@ user.save
 
 developer = Developer.new(:experience => 1, :interest_list => "snowboarding, surfing, travelling", :skill_list => "HTML, CSS,", :jobtitle => "Full-Stack WebDeveloper")
 user.developer = developer
-
-=end
 
 # Creation of Host sample Profile
 
