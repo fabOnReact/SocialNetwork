@@ -13,7 +13,7 @@ role = Role.create(:role => "Host")
 =end
 # Creation of Host sample Profile
 
-user = User.create(:email => "ezio@email.com", :firstname => "Ezio", :lastname => "Bertoglio", :country => "IT", :location => "Turin", :roles_id => 2, :password => "fabrizio")
+user = User.new(:email => "ezio@email.com", :firstname => "Ezio", :lastname => "Bertoglio", :country => "IT", :location => "Turin", :roles_id => 2, :password => "fabrizio")
 
 
 # To be edited when database is resetted, you should fix the Host object
