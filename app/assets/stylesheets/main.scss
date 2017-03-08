@@ -22,14 +22,25 @@
 /* Main Css */ 
 
 
-
-
-
-
 /* Media Queries */
 
 @media (min-width: 1550px) {
  	.intro {
  		height: 900px;
+ 	}
+}
+
+@media (max-width: 360px) {
+ 	.intro .slogan h2 {
+ 		font-size: 34px;
+ 		margin-bottom: 5px;
+ 	}
+ 	.intro .slogan h4 {
+ 		font-size: 13px;
+ 		margin-top: 0px;
+ 	} 	
+
+ 	#buttonSignUp {
+ 		margin-bottom: 17px;
  	}
 }
