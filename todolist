@@ -118,6 +118,7 @@ psql -d SocialNetwork_development per accedere al db
 \dt per mostrare tutte le tabelle
 rake assets:precompile
 rm -rf public/assets
+RAILS_ENV=production bundle exec rake assets:precompile
 
 SEO 
 1. Nome --> Working4Accomodation
