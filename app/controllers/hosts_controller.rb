@@ -1,4 +1,5 @@
 class HostsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @locations = current_user.host.locations
     @projects = current_user.host.projects

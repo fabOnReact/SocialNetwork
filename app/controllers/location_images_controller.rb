@@ -1,4 +1,5 @@
 class LocationImagesController < ApplicationController
+  before_action :authenticate_user!  
   before_action :set_location_image, only: [:show, :edit, :update, :destroy]
 
   # GET /location_images
