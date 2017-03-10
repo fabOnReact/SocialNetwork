@@ -31,9 +31,11 @@ class LocationsController < ApplicationController
   def update
     @location = Location.find(params[:id])
   	if @location.update_attributes(input_params) && current_user.host.locations.find(@location.id).update_attributes(input_params)
-      params[:location_images]['houseimages'].each do |a|
-          @location_images = @location.location_images.create!(:houseimages => a)
-      end    
+      if params[:location_image].present?
+        params[:location_images]['houseimages'].each do |a|
+            @location_images = @location.location_images.create!(:houseimages => a)
+        end    
+      end
       flash[:notice] = "Location sucessfully Updated"
       redirect_to controller: "hosts", action: "index"
     else

@@ -22,6 +22,27 @@ class DevelopersController < ApplicationController
 		@project.ads.build
 	end
 
+	def index_update
+		@location = Location.new
+		@location.ads.build
+		variables = [:country, :remote]
+		location_attributes = location_params.select { |_, v| v.present? if v != "0" }
+		#ad_attributes = ad_params.select { |_, v| v.present? if v != "0" }
+		
+		@locations = Location.joins(:ads).where(locations: {location_attributes['country'], location_attributes['location']}, ads: {remote: location_attributes['remote']})
+		
+		#@locations = Location.joins(:ads).where(locations: {country: location_attributes['country'].present?, location: location_attributes['location'], }, ads: {remote: location_attributes['remote']})
+
+		binding.pry
+
+		#@locations = @locations.where(ad_attributes)	
+		@locations = Location.where(location_attributes)	
+		@project = Project.new
+		@project.tasks.build
+		@project.ads.build			
+		#params.require(:ad).permit(:skill_list, :remote, :days)
+	end
+
 	def new
 		if current_user.developer == nil 			
 			@developer = Developer.new
@@ -68,4 +89,13 @@ class DevelopersController < ApplicationController
 		params.require(:developer).permit(:experience, :interests, :jobtitle, :website_url, :tag_list, :skill_list, :interest_list)
 	end
 
+	def location_params
+		params.require(:location).permit(:country, :location, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :singleroom, {:ads_attributes => [:remote, :days]})
+	end
+
+	def ad_params
+		params.require(:location).permit(:ads [:remote, :days])
+	end	
+
+	#other params params.require(:ad).permit(:skill_list)
 end

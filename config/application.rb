@@ -16,5 +16,8 @@ module SocialNetwork
     #config.assets.paths << Rails.root.join("app","assets", "javascripts")
     config.assets.paths << Rails.root.join("vendor","assets", "fonts")
     config.assets.paths << Rails.root.join("vendor","assets", "img")
+    config.to_prepare do
+        Devise::SessionsController.layout proc{ |controller| action_name == 'new' ? "login"   : "user" }
+    end
   end
 end

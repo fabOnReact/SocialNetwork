@@ -1,6 +1,6 @@
 class Location < ApplicationRecord
-	has_many :ads
-	has_many :location_images
+	has_many :ads, :dependent => :destroy
+	has_many :location_images, :dependent => :destroy
 	accepts_nested_attributes_for :location_images
 	accepts_nested_attributes_for :ads
 

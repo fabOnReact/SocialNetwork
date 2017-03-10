@@ -88,11 +88,11 @@ td {
  .wideButton {
  	padding: 10px 50px;
  }
-
+/*
  .login-form {
  	margin-top: 50px;
  }
-
+*/
 #lostPw {
 color: #797979;
  }
@@ -113,6 +113,10 @@ color: #797979;
 
 .options {
 	text-align: center;
+}
+
+#main-content {
+	min-height: 100%;
 }
 
 /* GET locations#new */ 
@@ -224,6 +228,10 @@ color: #797979;
 	padding: 0px 4px;
 }
 
+#advancedSearch {
+	display: none;
+}
+
 /* GET developers#index */
 /* making all div width 100% it looks better in the wide and md version, the description is over the input field */
 .form-inline .form-group.responsiveInlineFormGroup {
@@ -273,6 +281,26 @@ color: #797979;
 
 }
 
+/* All Pages */
+
+.credits a {
+	color: #0055b3;
+}
+
+/* user navigation */
+
+.footerPosition {
+	/*position: absolute;
+	top: 100%;
+	right: 0;*/
+	font-weight: 500;
+	margin-right: 5px;
+}
+
+.creditsColor {
+	color: #797979;
+}
+
 /* Media Queries */
 
 /* GET locations#show */
@@ -293,6 +321,10 @@ color: #797979;
  	.imageEdit {
  		padding: 4px 10px;
  		font-size: 7px;
+ 	}
+
+ 	.login-form {
+ 	margin-top: 75px;
  	}
 }
 
