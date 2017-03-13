@@ -54,10 +54,16 @@ Fatto --> Finire l'advanced research form ed il form inline. controllare su mobi
 Da Fare --> Fare la parte di controller e di query
             devi mettere a posto la query, non sei in grado di farla funzionare quando i parametri sono nulli. Diversamente la query funziona. se non inerisci il parametro va bene, il problem è quando lo inserisci. la soluzione può essere capire se si può fare una condition, risolvere tramite un loop all'interno della query o una consizione che usi il parametro solo se non è nil, leggere online manuali
 
+Sintesi --> Sto cercando di chiamare il metodo detele_blank, ma devo fare una modifica alla classe hash per includere questo metodo. Ho fatto un post, cmq il metodo funziona solo con i campi blank ed è da modificare
+
 			Update della tabella
 			Advanced search deve essere hidden
 			rimuovere il footer addizionale da tutte le pagine
                la ricerca per standard deve cercare tutti quelli non completed
+
+Answer stackoverflow
+DEPRECATION WARNING: Method delete_blank is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from <main> at (pry):40)
+
 
 SUCCESSIVE
 3. Cancellare da AWS le immagini non utilizzate
@@ -71,6 +77,7 @@ SUCCESSIVE
 13  dopo il sign in inviare alla dashboard per l host o developer
 14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
+16 form deve fare get request anziche put request
 
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
@@ -78,6 +85,7 @@ IMPORTANTI - SICUREZZA
 3. Mettere un limite alle immagini
 
 SECONDARIE
+1   mettere a posto il remote checkbox in index update
 1.  informarsi e guardare i video sul Testing
 6.  home e link di sinistra
 10. notifiche - riattivare i due div nascosti task alert e i numeri per mail
@@ -117,6 +125,10 @@ psql -d SocialNetwork_development per accedere al db
 rake assets:precompile
 rm -rf public/assets
 RAILS_ENV=production bundle exec rake assets:precompile
+lsof -wni tcp:3000
+kill -9 59780
+foreman configuration procfile web: bundle exec rails s
+
 
 SEO 
 1. Nome --> Working4Accomodation

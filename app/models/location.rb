@@ -8,4 +8,5 @@ class Location < ApplicationRecord
 		country = self.country
 		ISO3166::Country[country]
 	end	
+
 end
