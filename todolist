@@ -57,6 +57,7 @@ Fatto --> metodo detele_blank,
 
 
 SUCCESSIVE
+1. ricerca per skill_list
 2. Dashboard Host
 3. Eliminare link sulla base del ruolo
 3. Cancellare da AWS le immagini non utilizzate
