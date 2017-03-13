@@ -28,8 +28,20 @@ class DevelopersController < ApplicationController
 		@location.ads.build
 		new_params = param_clean(location_params).to_h
 		ads_params = new_params.delete(:ads_attributes).to_h
+		ads_params.each do |index, value|
+			#binding.pry
+            if value == "1"
+            	ads_params[index] = 1 #ActiveRecord::Type::Bolean.new.deserialize(value)
+            end
+		end
 		#binding.pry
-		@locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
+		if new_params.empty?
+			@locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)
+		elsif
+			@locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
+		else
+			@locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
+		end
 		binding.pry
 		#@locations = Location.joins(:ads).where(locations: {location_attributes}, ads: {remote: location_attributes['remote']})
 
@@ -86,15 +98,9 @@ class DevelopersController < ApplicationController
 
 	def location_params
 		params.require(:location).permit(:country, :location, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :singleroom, {:ads_attributes => [:remote, :days]})
-		binding.pry
-	end
-
-	def ads_params
-		params.require(:location).permit()
 	end
 
 	def param_clean(_params)
-	#	binding.pry
 	  _params.delete_if do |k, v|
 	    if v.instance_of?(ActionController::Parameters)
 	      param_clean(v)
@@ -103,9 +109,9 @@ class DevelopersController < ApplicationController
 	  end
 	end	
 
-	def ad_params
-		params.require(:location).permit(:ads [:remote, :days])
-	end	
+	#def ad_params
+	#	params.require(:location).permit(:ads [:remote, :days])
+	#end	
 end
 
 
