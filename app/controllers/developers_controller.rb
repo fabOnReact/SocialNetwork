@@ -37,12 +37,14 @@ class DevelopersController < ApplicationController
 		#binding.pry
 		if new_params.empty?
 			@locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)
-		elsif
+		elsif ads_params.empty?
 			@locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
+		elsif new_params.empty? && ads_params.empty?
+			redirect_to action: "index"
 		else
 			@locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
 		end
-		binding.pry
+		#binding.pry
 		#@locations = Location.joins(:ads).where(locations: {location_attributes}, ads: {remote: location_attributes['remote']})
 
 		@project = Project.new

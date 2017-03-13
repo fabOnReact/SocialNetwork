@@ -6,7 +6,7 @@
                 Modify Search Criteria
             </header>
             <div class="panel-body">
-                <%= form_for(@location, :url => { :action => :index_update}, html: {class: "form-inline" }) do |f| %>
+                <%= form_for(@location, :url => { :action => :index_update}, html: {method: :get, class: "form-inline" }) do |f| %>
                   <div class="row">
                       <div class="form-group col-lg-3 responsiveInlineFormGroup">
                           <%= f.label :country, "Country", :class => "control-label responsiveInlineForm" %>
