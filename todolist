@@ -51,21 +51,14 @@ Fatto --> Sistemato la ricerca inline dal punto di vista estetico, ora voglio cr
 Fatto --> fare il toggle on Jquery
 Fatto --> Non viene mostrata la pagina iniziale
 Fatto --> Finire l'advanced research form ed il form inline. controllare su mobile 
-Da Fare --> Fare la parte di controller e di query
-            devi mettere a posto la query, non sei in grado di farla funzionare quando i parametri sono nulli. Diversamente la query funziona. se non inerisci il parametro va bene, il problem è quando lo inserisci. la soluzione può essere capire se si può fare una condition, risolvere tramite un loop all'interno della query o una consizione che usi il parametro solo se non è nil, leggere online manuali
+Fatto --> Fare la parte di controller e di query
+Fatto --> metodo detele_blank,
 
-Sintesi --> Sto cercando di chiamare il metodo detele_blank, ma devo fare una modifica alla classe hash per includere questo metodo. Ho fatto un post, cmq il metodo funziona solo con i campi blank ed è da modificare
-
-			Update della tabella
-			Advanced search deve essere hidden
-			rimuovere il footer addizionale da tutte le pagine
-               la ricerca per standard deve cercare tutti quelli non completed
-
-Answer stackoverflow
-DEPRECATION WARNING: Method delete_blank is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from <main> at (pry):40)
 
 
 SUCCESSIVE
+2. Dashboard Host
+3. Eliminare link sulla base del ruolo
 3. Cancellare da AWS le immagini non utilizzate
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
