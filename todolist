@@ -53,11 +53,12 @@ Fatto --> Non viene mostrata la pagina iniziale
 Fatto --> Finire l'advanced research form ed il form inline. controllare su mobile 
 Fatto --> Fare la parte di controller e di query
 Fatto --> metodo detele_blank,
-
+Fatto --> ricerca per skill_list
+Da Fare --> Dashboard Host
 
 
 SUCCESSIVE
-1. ricerca per skill_list
+
 2. Dashboard Host
 3. Eliminare link sulla base del ruolo
 3. Cancellare da AWS le immagini non utilizzate

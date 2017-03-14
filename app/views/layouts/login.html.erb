@@ -43,7 +43,7 @@
             </div>
             <% if devise_mapping.rememberable? -%>
             <label class="checkbox">
-                <%= f.check_box :remember_me %>  Remember me
+                <%= f.check_box :remember_me %><span class="rememberMe">Remember me</span>
                 <!--<input type="checkbox" value="remember-me"> Remember me-->
                 <%#= f.label :remember_me, :class => "remember_me_Label" %>
                 <span class="pull-right"> <%= link_to "Forgot Password?", {}, :id => "lostPw" %></span>

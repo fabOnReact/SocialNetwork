@@ -28,25 +28,42 @@ class DevelopersController < ApplicationController
 		@location.ads.build
 		new_params = param_clean(location_params).to_h
 		ads_params = new_params.delete(:ads_attributes).to_h
+		
+		# Change in the ads parameters "1" into 1
 		ads_params.each do |index, value|
-			#binding.pry
             if value == "1"
-            	ads_params[index] = 1 #ActiveRecord::Type::Bolean.new.deserialize(value)
+            	ads_params[index] = 1 
             end
 		end
-		#binding.pry
-		if new_params.empty?
-			@locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)
+		
+		# Make the queries if those parameters are filled
+		if new_params.empty? && ads_params.empty? && skill_params[:ads_attributes][:skill_list].empty?
+			redirect_to action: "index"
+		elsif new_params.empty? && ads_params.empty?
+			binding.pry
+			@locations = Location.all	
 		elsif ads_params.empty?
 			@locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
-		elsif new_params.empty? && ads_params.empty?
-			redirect_to action: "index"
-		else
+		elsif new_params.empty?
+			@locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)			
+		else # All parameter are present
 			@locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
 		end
-		#binding.pry
-		#@locations = Location.joins(:ads).where(locations: {location_attributes}, ads: {remote: location_attributes['remote']})
-
+		# Now if skills parameters are present, filter by skill
+		if skill_params[:ads_attributes][:skill_list].present?
+			@ads_with_tags = Ad.tagged_with(skill_params[:ads_attributes][:skill_list]) #ads
+			locations_id = []
+			ads_id = []
+			old_location_id = "starting"
+			@ads_with_tags.each do |ad|
+				ads_id << ad.id
+				if ad.location_id != old_location_id
+				locations_id << ad.location_id
+				end
+				old_location_id = ad.location_id
+			end
+		    @locations = @locations.joins(:ads).where(ads: {id: ads_id}).includes(:ads)
+		end
 		@project = Project.new
 		@project.tasks.build
 		@project.ads.build			
@@ -110,77 +127,7 @@ class DevelopersController < ApplicationController
 	    v.empty? || v == "0" || v == 0
 	  end
 	end	
-
-	#def ad_params
-	#	params.require(:location).permit(:ads [:remote, :days])
-	#end	
+	def skill_params
+		params.require(:location).permit({:ads_attributes => [:skill_list]})
+	end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=begin		
-		location_attributes = location_params.select { |_, v| 
-		if v.class != ActionController::Parameters
-			v.present? if  v != 0 
-		else
-			binding.pry 
-			v[:remote].present? if v[:remote] != 0
-			v[:days].present? if v[:days] !=0
-		end
-		} 
-=end		
-		#@locations = Location.joins(:ads).where(locations: {location_attributes}, ads: {remote: location_attributes['remote']})
-		#location_attributes[:ads_attributes]["0"][:remote]
-
-#params.require(:ad).permit(:skill_list, :remote, :days)
-#other params params.require(:ad).permit(:skill_list)
-
-
-=begin		
-		@locations = Location.where(new_params)
-		@ads = Ad.where(ads_params)
-		@ads = @ads.where(location_id: @locations.id)
-		@ads.each do |ad|	
-
-		@ads = []
-		@locations.each do |location|
-		   location.ads.each do |ad|
-		   	 #binding.pry
-		     if 
-		       @ads << ad 
-		     end  
-		   end  
-		end  
-=end		
-		#puts @ads
-		#@locations = @locations.joins(:ads).where(ads: ads_params)
-		#@locations = Location.joins(:ads).where(locations: new_params, ads: ads_params)
-		#@locations = Location.joins(:ads).where(locations: {location_params}, ads: {location_attributes['remote']})
-		#@locations = Location.joins(:ads).where(new_params)
-		#@locations = Location.joins(:ads).where(locations: new_params, ads: new_params[:ads_attributes])
-		#binding.pry
-
-
-
-# ads_params = @ads_params.require(:ads).permit(:id).to_h
-# location_params = @location_params.require(:location).permit(:id).to_h
