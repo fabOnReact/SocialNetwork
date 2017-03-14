@@ -1,60 +1,10 @@
-Fatto --> Creare una tabella per le locations, host has_many locations , location belongs_to host 
-Fatto --> Creazione routes, Controller, Views
-Fatto --> Creazione Links in navigationuser fatto
-Fatto --> Creazione singole azioni fatto
-Fatto --> completare le edit delle singole location e la delete
-Fatto --> mettere a posto il index della hosts
-Fatto --> mettere a post update user cambiare la path della edit.html.erb
-Fatto --> Creazione Views
-Fatto --> In corso Creazione Ads and Task
-          Corrente ho appena finito la creazione di stask ora riindirizza alla hosts#index
-Fatto --> visualizzare task nella index, visualizzare progetti con all'interno le task 
-Fatto --> visualizzare locations con all'interno le foto, caricamento foto con carrierwave
-Fatto --> Seguire le istruzioni per configurare l'upload multiple, ultimo passo fatto installazione gem con github
-Fatto --> mettere a posto il padding bottom del col-md per 360X640 , con una media query in modo che ci sia padding bottom
-Fatto --> creare ads
-Fatto --> Migrate Down database Produzione su Heroku
-Fatto --> Corretto la migrazione per aggiungere AddHouseimages to Location
-testare le houseimages in development e poi provare a migrare il db produzione in heroku
-Fatto --> envornment variable per tutte le password
-Fatto --> Creazione e customizzazione Azioni/View Show, Edit e Delete per Tasks
-Fatto --> gestire l'upload della foto con carrierwave
-Fatto --> Locations - Pictures - Upload di Immagini Molteplici
-Fatto --> carrierwave :thumb image not working
-Fatto --> ho fatto la migrazione in produzione e cambiato il database a postgresql, dal log di heroku sembra che ci sia un 	          problema con la configurazione di carrierwave fog, devo quindi configurare aws come da manuale in modo che le 
-          immagini vengano uploadate li 
-Fatto --> Problema con Devise Secret, Risolvere il problema trovati nel heroku log.
-Fatto --> Ho inserito line-icon.scss.erb direttamente in application.scss ed ora viene caricato nell'application.scss file 
-          controllare successivamente se il problema è risolto
-Fatto --> Risolvere i problemi collegati alle alle altre icone ElegantIcons
-Fatto --> Campo interest di Developer Edit e create deve essere come skill list, act_as_taggable_on
-Fatto --> Hai aggiornato i dati smtp all'interno di development.rb e production.rb, ora devi testare in produzione e 
-          risolvere l'attuale errore.
-Fatto --> Per il link controllare che sia corretto
-Fatto --> Modificare il link di rindirizzo di facebook, verificare l errore nel log e i dettagli
-          Ho approfondito, ho cambiato in devise.rb come spiegato nella discussione di stackoverflow il callback in dinamico ed ho anche aggiunto ssl
-Fatto --> Errore quando viene creata una location senza immagini
-Fatto --> Modificare la prima pagina Host
-Fatto --> Creare Messaggistica Mailboxer o chat con ActionCable --> Fatto in modo semplice
-Fatto --> dashboard
-          Nel developer controller ho creato l azione index che indirizza alla dashboard. Qui faccio una selezione degli
-		  ads sulla base delle skills del developer. Poi voglio mostrare delle tabelle con i dati dei progetti, ho gia fatto 
-		  alcune query e sono presenti nel controller e nella index.html.erb, ma ho scoperto che dei progetti sono restati senza host e sto indagando sulla join fra host e projects che dovrebbe essere hosts_projects.
-          The problem is that you have deleted some users and hosts, while respective host and projects has been not deleted. You need to find you a way to keep this foreign keys syncronized --> risolto :dependent => :destroy
-Fatto --> Creato il loop ora bisogna inserire le variabili nei campi, il problema è che per il nome e cognome 				          bisogna recuperare il modello user
-Fatto --> nella developers index a riga 53 bisogna fare un check che le immagini visualizzate sulla pagina non siano già   
-          state fatte vedere. Ho provato usando una variabile old_location, il problema è che alcuni ad non erano in ordine per location, quindi nel loop non erano adiacenti. L'opzione è controllare che non facciano parte dell'array old_locations oppure dal controller estrapolare dagli ad tutte le locations ed inserirle in una array...
-Fatto --> Sistemato la ricerca inline dal punto di vista estetico, ora voglio creare in js l evento toggle con jquery per 
-          mostrare e nascondere le opzioni avanzate, ma asset precompile non funziona quindi bisogna capire come funziona la asset 
-          pipeline perche ho controllato il fingerprinted file e alla fine non contiene js di user.js
-          probabile che bisogni aggiornare le path e seguire tutti i settings
-Fatto --> fare il toggle on Jquery
-Fatto --> Non viene mostrata la pagina iniziale
 Fatto --> Finire l'advanced research form ed il form inline. controllare su mobile 
 Fatto --> Fare la parte di controller e di query
 Fatto --> metodo detele_blank,
 Fatto --> ricerca per skill_list
 Da Fare --> Dashboard Host
+            completare azione host index e view
+            l azione host index funziona ora devo finire la view, mettere le classi su header e rows
 
 
 SUCCESSIVE
@@ -91,6 +41,8 @@ SECONDARIE
 17. Icone freccie su mobile non funzionano
 18  I progetti completed segnaranno tutte le task come completed 
 19. Fare l'upload tramite link
+20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
+
 
 TESTING
 1. testare che  :dependent => :destroy funzioni

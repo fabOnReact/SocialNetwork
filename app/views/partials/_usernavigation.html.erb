@@ -279,14 +279,17 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
                   <li class="">
-                    <%# if current_user.host == nil %>
+                    <% if current_user.roles_id == 1 %>
                         <%= link_to developers_path do %>
-                  <!--<a class="" href="index.html">-->
                       <i class="icon_house_alt"></i>
                       <span>Dashboard</span>
                         <% end %>
-                    <%# end %>
-                      <!--</a>-->
+                    <% elsif current_user.roles_id == 2 %>
+                        <%= link_to hosts_path do %>
+                      <i class="icon_house_alt"></i>
+                      <span>Dashboard</span>
+                        <% end %>
+                    <% end %>
                   </li>
                   <li class="sub-menu">
 
@@ -347,7 +350,7 @@
                             <% if current_user != nil %>
                                 <% if current_user.host != nil %>                       
                                     <% if current_user.host.projects != nil %>
-                                        <%= link_to "Locations and Projects", hosts_path(current_user)%>
+                                        <%= link_to "Locations and Projects", locations_path(current_user)%>
                                     <% end %>
                         </li>                                                  
                         <li>
