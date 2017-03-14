@@ -3,43 +3,9 @@ class HostsController < ApplicationController
 
   def index 
    #controllare che l'host abbia degli ads con delle skill
-    locations_skills = [] #ActsAsTaggableOn::Tag::ActiveRecord_Relation
-    locations_skills_id = [] 
-    current_user.host.locations.each do |location|
-      skills = location.ads.tag_counts_on(:skills)    
-      skills.each do |skill|
-        if locations_skills.find_by_name(skill[:name])
-          #locations_skills.find_by_name(skill[:name])[:taggings_count] += skill[:taggings_count]
-        else
-        end
-
-        locations_skills << skill[:name]
-        locations_skills_id << skill[:id]
-
-      end
-    end
-    @developers = Developer.tagged_with(locations_skills, :any => :true)
-
-
-    if current_user.host != nil
-      i = 0
-      old_ad = "firstloop"
-      @projects = []
-      @ads = Ad.tagged_with(current_user.developer.skills, :any => true)
-      @ads = @ads.order(location_id: :desc)
-      @ads.each do |ad|
-        if i > 0 && old_project_id == ad.project_id
-          @projects << ad.project_id 
-          i+=1
-          old_project_id = ad.project_id
-        end
-      end
-    end
-    @location = Location.new
-    @location.ads.build
-    @project = Project.new
-    @project.tasks.build
-    @project.ads.build
+    host_skills = current_user.host.skills.pluck(:name) 
+    @developers = Developer.tagged_with(host_skills, any: :true)
+    @developer = Developer.new
   end
 
   def index_update

@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/location_image/:id/delete' => 'location_images#delete', :as => :delete_location_images
   #post '/developers/index' => 'developers#index_update'
   get '/developers/index' => 'developers#index_update'
+  get '/hosts/index' => 'hosts#index_update'
 
   resources :developers, :hosts, :projects, :locations, :ads, :tasks, :location_images
   resources :conversations do

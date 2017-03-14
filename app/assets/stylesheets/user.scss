@@ -235,7 +235,12 @@ color: #797979;
 	display: none;
 }
 
-/* GET developers#index */
+/* GET developers#index the new one*/
+
+.table tbody > tr > td {
+	line-height: 2.429;
+}
+
 /* making all div width 100% it looks better in the wide and md version, the description is over the input field */
 .form-inline .form-group.responsiveInlineFormGroup {
 	display: block;

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170303141409) do
+ActiveRecord::Schema.define(version: 20170314170811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20170303141409) do
     t.integer  "task_id"
     t.boolean  "remote"
     t.string   "skill_list"
+    t.integer  "host_id"
+    t.index ["host_id"], name: "index_ads_on_host_id", using: :btree
     t.index ["location_id"], name: "index_ads_on_location_id", using: :btree
     t.index ["project_id"], name: "index_ads_on_project_id", using: :btree
     t.index ["task_id"], name: "index_ads_on_task_id", using: :btree

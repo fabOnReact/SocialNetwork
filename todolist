@@ -75,7 +75,7 @@ RAILS_ENV=production bundle exec rake assets:precompile
 lsof -wni tcp:3000
 kill -9 59780
 foreman configuration procfile web: bundle exec rails s
-
+git rm -r vendor/plugins #delete files from git then commit and push
 
 SEO 
 1. Nome --> Working4Accomodation
@@ -88,3 +88,9 @@ Fatto -->
 Da Fare --> 
 Da Fare --> 
 Da Fare --> 
+
+This was a very good answer and I accepting it. Still I have so many doubts about this Skills object and If you had just a minute to explain it to me. How did you know `Ad.first.skills` existed so that with this association I could retrieve `Host.first.skills`, because I do not have a `skill` module and i do not have a `skills` table. The gem act-as-taggable-on create a `tags` table and `taggings` table. I just include this `acts_as_taggable_on` my Model, then it allways uses this ActsAsTaggableOn::Tag as object to creating and retrieving tag, if you could help me understand thanks.
+
+I have a field called skill_list for my Ad and it is a string, but it has not value is somehow an array, while skills is an object based on ActsAsTaggableOn::Tag:0x007fdcd8e957e8
+
+should i include in the title act_as_taggable
