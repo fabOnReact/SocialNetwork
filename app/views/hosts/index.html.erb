@@ -13,8 +13,8 @@
                           <%#= f.text_field :country, :class => "form-control responsiveInlineForm" %>
                       </div>-->
                       <div class="form-group col-lg-3 responsiveInlineFormGroup">
-                          <%= f.label :jobtitle, "Jobtitle", :class => "control-label responsiveInlineForm" %>
-                          <%= f.text_field :jobtitle, :class => "form-control responsiveInlineForm" %>
+                          <%= f.label :jobtitle_id, "Job Title", :class => "control-label responsiveInlineForm" %>
+                          <%= f.select(:jobtitle_id, Jobtitle.all.collect {|p| [ p.name, p.id ]}, {prompt: 'Select a Job Title'}, {:class => "form-control responsiveInlineForm"}) %>                          
                       </div> 
                       <div class="form-group col-lg-3 responsiveInlineFormGroup">
                         <%= f.label :skill_list, "Skills", :class => "control-label responsiveInlineForm" %>
@@ -91,18 +91,19 @@
               <tbody>
               <% @developers.each do |developer| %>
                 <% user = User.find(developer.user_id) %>
+                <% jobtitle = Jobtitle.find(developer.jobtitle_id) %>
                 <tr class="row">
                     <td><span class="profile-ava"><%= image_tag user.avatar.url(:thumb).to_s if user && user.avatar.url != nil %><%= image_tag user.image, :class => "small-image" if user && user.image != nil && user.avatar.url == nil %></span></td>
                     <td class=""><%= user.firstname %></td>
                     <td class="hidden-xs hidden-sm"><%= user.lastname %></td>
-                    <td class="hidden-sm hidden-xs"><%= user.country %></td>                  
+                    <td class="hidden-sm hidden-xs"><%= user.country_name %></td>                  
                     <td class="hidden-sm hidden-xs"><%= user.location %></td>                  
                     <td class="hidden-sm hidden-xs"><%= user.gender %></td>                  
                     <td class="hidden-sm hidden-xs"><%= user.last_sign_in_at %></td>                             
                     <td class="hidden-sm hidden-xs Fieldnumber"><%= developer.experience %></td>
                     <td class="hidden-xs"><%= developer.interest_list %></td>
                     <td class=""><%= developer.skill_list %></td>                  
-                    <td class="hidden-xs"><%= developer.jobtitle %></td>                  
+                    <td class="hidden-xs"><%= jobtitle.name %></td>                  
                     <td class="hidden-sm hidden-xs Checkbox">
                         <% if developer.website_url %>
                           <%= link_to developer.website_url do %>

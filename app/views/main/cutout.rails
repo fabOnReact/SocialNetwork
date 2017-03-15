@@ -1,3 +1,12 @@
-web: bundle exec puma -C config/puma.rb
-.env 
-Procfile
+
+
+
+
+                                            <a href="javascript:;" class="">
+                              <i class="fa fa-briefcase"></i>
+                                    <%= link_to developers_path do %>
+                                    <i class="icon_house_alt"></i>
+                                    <span>Developer</span>
+                                    <% end %>
+                              <span class="menu-arrow arrow_carrot-right"></span>
+                          </a>

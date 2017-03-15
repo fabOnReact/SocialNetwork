@@ -70,11 +70,11 @@ class HostsController < ApplicationController
   private
 
   def input_params
-  	params.require(:host).permit(:description, :location, :singleroom, :sharedroom, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :interest_list, :skill_list)
+  	params.require(:host).permit(:description, :location, :singleroom, :sharedroom, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :interest_list, :skill_list, :jobtitle_id)
   end
 
   def search_params
-    params.require(:developer).permit(:jobtitle, :experience)
+    params.require(:developer).permit(:jobtitle_id, :experience)
   end
   
   def developer_skills

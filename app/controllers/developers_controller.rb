@@ -96,7 +96,8 @@ class DevelopersController < ApplicationController
 		@developer = Developer.find(params[:id])
 		if @developer.update_attributes(input_params) 
 			flash[:notice] = "Profile sucessfully Saved"
-			redirect_to action: "show", id: @developer.id
+		#	redirect_to action: "show", id: @developer.id
+			redirect_to action: "edit", id: @developer.id
 		else
 			flash[:alert] = "An error has occurred during the saving"
 			render "new"
@@ -106,13 +107,14 @@ class DevelopersController < ApplicationController
 
 	def show 
 		@developer = Developer.find(params[:id])
-		@user = User.find(@developer.user_id)		
+		@user = User.find(@developer.user_id)
+		@jobtitle = Jobtitle.find(@developer.jobtitle_id)		
 	end
 
 	private
 
 	def input_params
-		params.require(:developer).permit(:experience, :interests, :jobtitle, :website_url, :tag_list, :skill_list, :interest_list, :description)
+		params.require(:developer).permit(:experience, :interests, :jobtitle_id, :website_url, :tag_list, :skill_list, :interest_list, :description)
 	end
 
 	def location_params

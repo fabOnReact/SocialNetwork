@@ -13,7 +13,7 @@
                                   <!--<img src="img/profile-widget-avatar.jpg" alt="">-->
                               </div>
                               <div class="developerTitle">
-                                <h6><%= @developer.jobtitle %></h6>
+                                <h6><%= @jobtitle.name if @jobtitle != nil %></h6>
                               </div>
                             </div>
                             <div class="col-lg-4 col-sm-8 follow-info">
@@ -174,7 +174,7 @@
                                                   <p><span>Country:</span> <%= @user.location %></p>
                                               </div>
                                               <div class="bio-row">
-                                                  <p><span>Occupation:</span> <%= @user.developer.jobtitle if @user.developer != nil && @user.developer.jobtitle != nil %></p>
+                                                  <p><span>Occupation:</span> <%= @jobtitle.name if @user.developer != nil && @jobtitle != nil %></p>
                                               </div>
                                               <div class="bio-row">
                                                   <p><span>Skills:</span> <%= @user.developer.skill_list if @user.developer != nil && @user.developer.skill_list != nil %></p>

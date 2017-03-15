@@ -248,21 +248,9 @@
                                 <%= link_to conversations_path, method: :get do %><i class="icon_mail_alt"></i> My Inbox<% end %>
                             </li>
                             <li>
-                                <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                            </li>
-                            <li>
                                 <%= link_to destroy_user_session_path, method: :delete do %>
                                     <i class="icon_key_alt" aria-hidden="true"></i>Log out
                                 <% end %>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
-                            </li>
-                            <li>
-                                <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                             </li>
                         </ul>
                     </li>
@@ -272,7 +260,6 @@
             </div>
       </header>      
       <!--header end-->
-
       <!--sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
@@ -291,12 +278,14 @@
                         <% end %>
                     <% end %>
                   </li>
+                  <% if current_user.roles_id == 1 %> <!-- if the user is a developer -->
                   <li class="sub-menu">
-
                       <a href="javascript:;" class="">
-                          <i class="fa fa-briefcase"></i>
-                          <span>Developer</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
+                        <%#= link_to developers_path do %>
+                            <i class="fa fa-briefcase"></i>
+                            <span>Developer</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        <%# end %>
                       </a>
                       <ul class="sub">
                         <li>
@@ -318,7 +307,20 @@
                             <% end %>
                         </li>                        
                       </ul>
-                  </li>                      
+                  </li>  
+                  <% end %>   <!-- end of the developer menu -->
+
+                  <% if current_user.roles_id == 2 %>  <!-- starting of the host menu-->               
+                      <% if current_user.host != nil && current_user.host.locations || current_user.host.projects != nil %>
+                          <li>                     
+                              <!--<a class="" href="chart-chartjs.html">-->
+                                  <%= link_to locations_path(current_user) do %>
+                                  <i class="fa fa-list" aria-hidden="true"></i>
+                                  <span>Your Items</span>
+                                  <% end %>    
+                              <!--</a>-->
+                          </li> 
+                      <% end %>
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="fa fa-building"></i>
@@ -355,8 +357,21 @@
                         </li>                                                  
                         <li>
                                     <%= link_to "Create Location", new_location_path(current_user.host) %>
-                        </li> 
+                        </li>                                         
+                                <% end %>
+                            <% end %>                         
+                  </ul>
+                  </li>   
+                <% end %>   <!-- End of the Host Navigation Bar -->                                        
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="fa fa-rocket" aria-hidden="true"></i>
+                          <span>Projects</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
                         <li>
+                                <% if current_user.host != nil %>
                                     <%= link_to "Create Project", new_project_path(current_user.host) %>  
                         </li>
                         <li>
@@ -366,46 +381,24 @@
                         </li>
                         <li>
                                         <%= link_to "Create Ad", new_ad_path(current_user.host) %> 
-                                    <% end %>                                         
+                                    <% end %> 
                                 <% end %>
-                            <% end %>   
-                        </li>                       
-                  </ul>
-                  </li>
-                  <li>                     
-                      <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>Charts</span>
-                          
-                      </a>
-                                         
-                  </li>
-                             
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>Tables</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="basic_table.html">Basic Table</a></li>
+                        </li>
                       </ul>
                   </li>
                   
                   <li class="sub-menu ">
                       <a href="javascript:;" class="">
-                          <i class="icon_documents_alt"></i>
-                          <span>Pages</span>
+                          <i class="fa fa-user" aria-hidden="true"></i>
+                          <span>Profile</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-                      <ul class="sub">                          
-                          <li><a class="" href="profile.html">Profile</a></li>
-                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                          <li><a class="active" href="blank.html">Blank Page</a></li>
-                          <li><a class="" href="404.html">404 Error</a></li>
+                      <ul class="sub">      
+                          <li><%= link_to "Profile Settings", edit_user_registration_path %></li>
+                          <li><%= link_to "Your Inbox", conversations_path%></li>
+                          <li><%= link_to "Logout", destroy_user_session_path %></li>
                       </ul>
-                  </li>
-                  
+                  </li>                
               </ul>
               <!-- sidebar menu end-->
           </div>
