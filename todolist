@@ -8,11 +8,12 @@ Fatto --> Dashboard Host
 Fatto --> Index Update per poter aggiornare la index con una lista di sviluppatori in base ai criteri di ricerca
 Fatto --> Cambiare il link in modo che indirizzi al profilo del developer
 Fatto --> Tramite shortcut hai aggiunto il campo foreign key alla tabella developer per la tabella jobtitle, ma l hai chiamato developer mentre devi 
-Fatto --> Job titles. Creare una tabella con tutti i jobtitle e poi trasformare quel campo in una select. 2 Ruoli. Front End Developer, Back End Developer, Full 	  Stack Developer
+Fatto --> Job titles. Creare una tabella con tutti i jobtitle e poi trasformare quel campo in una select. 2 
 Fatto --> Dashboard Host
+Fatto --> Eliminare link sulla base del ruolo
 
-3. Eliminare link sulla base del ruolo
-3. Cancellare da AWS le immagini non utilizzate
+
+3. Mettere un limite alle immagini
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
 7. decidere come gestire le funzionalità investor host e developer
@@ -24,11 +25,11 @@ Fatto --> Dashboard Host
 14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
 16 form deve fare get request anziche put request
+3. Cancellare da AWS le immagini non utilizzate
 
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
 2. Cambiare il colore dei link in footer
-3. Mettere un limite alle immagini
 
 SECONDARIE
 1   mettere a posto il remote checkbox in index update
@@ -89,9 +90,3 @@ Fatto -->
 Da Fare --> 
 Da Fare --> 
 Da Fare --> 
-
-This was a very good answer and I accepting it. Still I have so many doubts about this Skills object and If you had just a minute to explain it to me. How did you know `Ad.first.skills` existed so that with this association I could retrieve `Host.first.skills`, because I do not have a `skill` module and i do not have a `skills` table. The gem act-as-taggable-on create a `tags` table and `taggings` table. I just include this `acts_as_taggable_on` my Model, then it allways uses this ActsAsTaggableOn::Tag as object to creating and retrieving tag, if you could help me understand thanks.
-
-I have a field called skill_list for my Ad and it is a string, but it has not value is somehow an array, while skills is an object based on ActsAsTaggableOn::Tag:0x007fdcd8e957e8
-
-should i include in the title act_as_taggable
