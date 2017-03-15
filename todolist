@@ -11,13 +11,11 @@ Fatto --> Tramite shortcut hai aggiunto il campo foreign key alla tabella develo
 Fatto --> Job titles. Creare una tabella con tutti i jobtitle e poi trasformare quel campo in una select. 2 
 Fatto --> Dashboard Host
 Fatto --> Eliminare link sulla base del ruolo
+Fatto --> Mettere un limite alle immagini + AWS Elimina le immagini
 
-
-3. Mettere un limite alle immagini
 5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
-7. decidere come gestire le funzionalità investor host e developer
-8. Rendere la pagina iniziale responsive, finire inserendo nuove immagini (1. mare e monti, per ricordare le vacanze, 2. immagini dell'applicazione)
+8. Finire la pagina iniziale
 10. dopo il signup bisogna mandare l'utente alla pagina iniziale e mostragli il messaggio di confermare l'email
 11. caricare le immagini nel giusta direzione
 12. l email inviata da una persona viene visualizzata nella inbox
@@ -25,7 +23,7 @@ Fatto --> Eliminare link sulla base del ruolo
 14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
 16 form deve fare get request anziche put request
-3. Cancellare da AWS le immagini non utilizzate
+
 
 IMPORTANTI - SICUREZZA
 1. Creare ENV Variable per la devise key in devise.rb
@@ -45,6 +43,8 @@ SECONDARIE
 19. Fare l'upload tramite link
 20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
 21. Advanced Search è sempre toggled on
+22. Fare il push su heroku di tutte le modifiche fatte agli assets
+23. dopo login riinviare alla dashboard
 
 TESTING
 1. testare che  :dependent => :destroy funzioni
@@ -54,7 +54,7 @@ PRODUZIONE
 2. Migrazione per tag fields
 #
 ALTRE COSE DA FARE
-1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations
+s1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations
 2. search
 
 OPZIONALI

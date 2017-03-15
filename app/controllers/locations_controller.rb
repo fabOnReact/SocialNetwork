@@ -12,17 +12,24 @@ class LocationsController < ApplicationController
 
   def create
   	@location = Location.new(input_params)
-    	if @location.save && current_user.host.locations << @location
-        if params[:location_images] != nil
-          params[:location_images]['houseimages'].each do |a|
-            @location_images = @location.location_images.create!(:houseimages => a)
-          end      
-        end
-      flash[:notice] = "Location sucessfully Updated"
-      redirect_to controller: "hosts", action: "index"
+      #binding.pry
+      if params[:location_images][:houseimages].to_a.size < 11
+      	if params[:location_images] != nil && @location.save && current_user.host.locations << @location
+               if 
+                params[:location_images]['houseimages'].each do |a|
+                  @location_images = @location.location_images.create!(:houseimages => a)
+                end      
+              end
+            flash[:notice] = "Location sucessfully Updated"
+            redirect_to action: "index"
+        else
+          format.html { render action: 'new', notice: "An error has occurred during the saving" }
+          redirect_to action: "index"
+      	end  		
       else
-        format.html { render action: 'new', notice: "An error has occurred during the saving" }
-    	end  		
+        flash[:alert] = "You can not upload more than 10 Images per location, the location was not saved!"
+        redirect_to action: "index"
+      end
   end
 
   def edit
@@ -39,10 +46,10 @@ class LocationsController < ApplicationController
         end    
       end
       flash[:notice] = "Location sucessfully Updated"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to action: "index"
     else
       flash[:alert] = "An error has occurred during the update"
-      render "new"
+      render "update"
     end      
   end
 
@@ -59,7 +66,7 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
     if @location.destroy
       flash[:notice] = "Location deleted successfully"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to action: "index"
     else 
       flash[:alert] = "Location was not deleted, please try again"
       render("delete")
