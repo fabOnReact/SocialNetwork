@@ -8,50 +8,25 @@ class HostsController < ApplicationController
     @developer = Developer.new
   end
 
-  def index_update
-    @location = Location.new
-    @location.ads.build
-    new_params = param_clean(location_params).to_h
-    ads_params = new_params.delete(:ads_attributes).to_h
-    
-    # Change in the ads parameters "1" into 1
-    ads_params.each do |index, value|
-            if value == "1"
-              ads_params[index] = 1 
-            end
+  def index_update    
+    dev_skills = param_clean(developer_skills)
+    dev_interests = param_clean(developer_interests)
+    if (dev_skills.empty? == false) && (dev_interests.empty? == false) 
+      @developers = Developer.tagged_with(dev_interests[:interest_list], any: :true)    
+      @developers = @developers.tagged_with(dev_skills[:skill_list], any: :true) 
+      @developers = @developers.where(param_clean(search_params))   
+    elsif dev_skills.empty? == false
+      #binding.pry
+      @developers = Developer.tagged_with(dev_skills[:skill_list], any: :true)
+      @developers = @developers.where(param_clean(search_params))   
+    elsif dev_interests.empty? == false
+      @developers = Developer.tagged_with(dev_interests[:interest_list], any: :true)    
+      @developers = @developers.where(param_clean(search_params))   
+    else
+      @developers = Developer.where(param_clean(search_params))
     end
-    
-    # Make the queries if those parameters are filled
-    if new_params.empty? && ads_params.empty? && skill_params[:ads_attributes][:skill_list].empty?
-      redirect_to action: "index"
-    elsif new_params.empty? && ads_params.empty?
-      binding.pry
-      @locations = Location.all 
-    elsif ads_params.empty?
-      @locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
-    elsif new_params.empty?
-      @locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)     
-    else # All parameter are present
-      @locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
-    end
-    # Now if skills parameters are present, filter by skill
-    if skill_params[:ads_attributes][:skill_list].present?
-      @ads_with_tags = Ad.tagged_with(skill_params[:ads_attributes][:skill_list]) #ads
-      locations_id = []
-      ads_id = []
-      old_location_id = "starting"
-      @ads_with_tags.each do |ad|
-        ads_id << ad.id
-        if ad.location_id != old_location_id
-        locations_id << ad.location_id
-        end
-        old_location_id = ad.location_id
-      end
-        @locations = @locations.joins(:ads).where(ads: {id: ads_id}).includes(:ads)
-    end
-    @project = Project.new
-    @project.tasks.build
-    @project.ads.build      
+    #binding.pry  
+    @developer = Developer.new    
   end
 
   def new
@@ -97,4 +72,39 @@ class HostsController < ApplicationController
   def input_params
   	params.require(:host).permit(:description, :location, :singleroom, :sharedroom, :surfspot, :barbecue, :villa, :swimmingpool, :skiresort, :interest_list, :skill_list)
   end
+
+  def search_params
+    params.require(:developer).permit(:jobtitle, :experience)
+  end
+  
+  def developer_skills
+    params.require(:developer).permit(:skill_list)
+  end
+
+  def developer_interests
+    params.require(:developer).permit(:interest_list)
+  end
+
+  def param_clean(_params)
+    _params.delete_if do |k, v|
+      v.empty? || v == "0" || v == 0
+    end
+  end 
 end
+
+
+    # Make the queries if those parameters are filled
+=begin    
+    if new_params.empty? && ads_params.empty? && skill_params[:ads_attributes][:skill_list].empty?
+      redirect_to action: "index"
+    elsif new_params.empty? && ads_params.empty?
+      binding.pry
+      @locations = Location.all 
+    elsif ads_params.empty?
+      @locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
+    elsif new_params.empty?
+      @locations = Location.joins(:ads).where(ads: ads_params).includes(:ads)     
+    else # All parameter are present
+      @locations = Location.joins(:ads).where(locations: new_params, ads: ads_params).includes(:ads)
+    end
+=end    

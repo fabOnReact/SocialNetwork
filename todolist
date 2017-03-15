@@ -2,13 +2,14 @@ Fatto --> Finire l'advanced research form ed il form inline. controllare su mobi
 Fatto --> Fare la parte di controller e di query
 Fatto --> metodo detele_blank,
 Fatto --> ricerca per skill_list
-Da Fare --> Dashboard Host
+Fatto --> Dashboard Host
             completare azione host index e view
             l azione host index funziona ora devo finire la view, mettere le classi su header e rows
-
+Fatto --> Index Update per poter aggiornare la index con una lista di sviluppatori in base ai criteri di ricerca
 
 SUCCESSIVE
-
+1. Cambiare il link in modo che indirizzi al profilo del developer
+1a. Job titles. Creare una tabella con tutti i jobtitle e poi trasformare quel campo in una select. 2 Ruoli. Front End Developer, Back End Developer, Full 	  Stack Developer
 2. Dashboard Host
 3. Eliminare link sulla base del ruolo
 3. Cancellare da AWS le immagini non utilizzate
@@ -42,7 +43,7 @@ SECONDARIE
 18  I progetti completed segnaranno tutte le task come completed 
 19. Fare l'upload tramite link
 20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
-
+21. Advanced Search è sempre toggled on
 
 TESTING
 1. testare che  :dependent => :destroy funzioni
