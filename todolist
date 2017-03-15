@@ -6,9 +6,11 @@ Fatto --> Dashboard Host
             completare azione host index e view
             l azione host index funziona ora devo finire la view, mettere le classi su header e rows
 Fatto --> Index Update per poter aggiornare la index con una lista di sviluppatori in base ai criteri di ricerca
-
+Fatto --> Cambiare il link in modo che indirizzi al profilo del developer
 SUCCESSIVE
-1. Cambiare il link in modo che indirizzi al profilo del developer
+
+Da Fare --> Tramite shortcut hai aggiunto il campo foreign key alla tabella developer per la tabella jobtitle, ma l hai chiamato developer mentre devi chiamarlo jobtitle_id o jobtitle. Il problema è che dopo aver cancellato quel campo ora non poui riusare lo shortcut. Quindi ho cancelli la migrazione ma probabilmente meglio creane una manuale e aggiungi il campo manualmente. inoltre hai anche cancellato il campo jobtitle:string da developer
+
 1a. Job titles. Creare una tabella con tutti i jobtitle e poi trasformare quel campo in una select. 2 Ruoli. Front End Developer, Back End Developer, Full 	  Stack Developer
 2. Dashboard Host
 3. Eliminare link sulla base del ruolo

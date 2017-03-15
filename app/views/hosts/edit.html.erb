@@ -13,7 +13,7 @@
                   <div class="form-group ">
                       <%= f.label :description, "Description", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :description, :class => "form-control" %>
+                      <%= f.text_area :description, :rows => 8, :class => "form-control" %>
                     </div>
                   </div>                                                                                                
                   <div class="form-group ">
@@ -22,12 +22,13 @@
                       <%= f.text_field :interest_list,  :class => "tagsinput form-control", :id => "tagsinput", value: f.object.interest_list.map { |t| t}.join(', ') %>
                     </div>
                   </div> 
-                  <div class="form-group ">
-                      <%= f.label :skill_list, "Skills", :class => "control-label col-lg-2" %>
+                  <!-- Skill List removed from Host -->
+                  <!--<div class="form-group ">
+                      <%#= f.label :skill_list, "Skills", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :skill_list, :class => "tagsinput form-control", :id => "tagsinput", value: f.object.skill_list.map { |t| t}.join(', ') %>
+                      <%#= f.text_field :skill_list, :class => "tagsinput form-control", :id => "tagsinput", value: f.object.skill_list.map { |t| t}.join(', ') %>
                     </div>
-                  </div>                     
+                  </div>-->                     
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>

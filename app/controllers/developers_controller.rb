@@ -112,7 +112,7 @@ class DevelopersController < ApplicationController
 	private
 
 	def input_params
-		params.require(:developer).permit(:experience, :interests, :jobtitle, :website_url, :tag_list, :skill_list, :interest_list)
+		params.require(:developer).permit(:experience, :interests, :jobtitle, :website_url, :tag_list, :skill_list, :interest_list, :description)
 	end
 
 	def location_params

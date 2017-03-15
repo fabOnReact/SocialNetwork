@@ -35,6 +35,10 @@
      process :resize_to_fill => [34, 34]
    end
 
+   version :profile do
+     process :resize_to_fill => [62, 62]
+   end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
    def extension_whitelist
