@@ -39,7 +39,7 @@
                   <div class="form-group ">
                       <%= f.label :role, "Role", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.select(:roles_id, Role.all.collect {|p| [ p.role, p.id ]}, {:selected => resource.roles_id}, {:class => "form-control"}) %>
+                      <%= f.select(:roles_id, Role.all.collect {|p| [ p.role, p.id ]}, {include_blank: "Select a role", :selected => resource.roles_id, prompt: 'Select a Role'}, {:class => "form-control"}) %>
                     </div>
                   </div>
                   <div class="form-group ">

@@ -266,17 +266,18 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
                   <li class="">
-                    <% if current_user.roles_id == 1 %>
-                        <%= link_to developers_path do %>
-                      <i class="icon_house_alt"></i>
-                      <span>Dashboard</span>
+                    <% if current_user != nil %>
+                        <% if current_user.roles_id == 1 %>
+                            <%= link_to developers_path do %>
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                            <% end %>
+                        <% elsif current_user.roles_id == 2 %>
+                            <%= link_to hosts_path do %>
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                            <% end %>
                         <% end %>
-                    <% elsif current_user.roles_id == 2 %>
-                        <%= link_to hosts_path do %>
-                      <i class="icon_house_alt"></i>
-                      <span>Dashboard</span>
-                        <% end %>
-                    <% end %>
                   </li>
                   <% if current_user.roles_id == 1 %> <!-- if the user is a developer -->
                   <li class="sub-menu">
@@ -385,7 +386,8 @@
                         </li>
                       </ul>
                   </li>
-                  <% end %>   <!-- End of the Host Navigation Bar -->                                                          
+                  <% end %>   <!-- End of the Host Navigation Bar -->   
+                  <% end %>   <!-- If the current_user != nil -->                                                  
                   <li class="sub-menu ">
                       <a href="javascript:;" class="">
                           <i class="fa fa-user" aria-hidden="true"></i>

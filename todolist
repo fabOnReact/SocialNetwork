@@ -13,61 +13,44 @@ Fatto --> Dashboard Host
 Fatto --> Eliminare link sulla base del ruolo
 Fatto --> Mettere un limite alle immagini + AWS Elimina le immagini
 
-5. mappatura locations
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
-8. Finire la pagina iniziale
-10. dopo il signup bisogna mandare l'utente alla pagina iniziale e mostragli il messaggio di confermare l'email
-11. caricare le immagini nel giusta direzione
-12. l email inviata da una persona viene visualizzata nella inbox
-13  dopo il sign in inviare alla dashboard per l host o developer
-14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
-15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
-16 form deve fare get request anziche put request
-
-
-IMPORTANTI - SICUREZZA
-1. Creare ENV Variable per la devise key in devise.rb
-2. Cambiare il colore dei link in footer
 
 SECONDARIE
-1   mettere a posto il remote checkbox in index update
-1.  informarsi e guardare i video sul Testing
-6.  home e link di sinistra
-10. notifiche - riattivare i due div nascosti task alert e i numeri per mail
-13. Campi text, da rappresentare in con un blocco di testo
-14. Inserire eventi per usare l app dal cellulare
-15. in Task skills_list dovrebbe essere corretto in skill_list, bisogna fare una ricerca nelle view e controller per correggere
-16. Navigation Mobile , migliorarla renderla full screen e con link grossi simili a bottoni
-17. Icone freccie su mobile non funzionano
+8. Finire la pagina iniziale
+14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 18  I progetti completed segnaranno tutte le task come completed 
 19. Fare l'upload tramite link
 20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
 21. Advanced Search è sempre toggled on
-22. Fare il push su heroku di tutte le modifiche fatte agli assets
-23. dopo login riinviare alla dashboard
+13  dopo il sign in inviare alla dashboard per l host o developer
+17. Icone freccie su mobile non funzionano
+18. Cambiare il sign up in sign up with facebook, fare un pulsante grosso blue. 
+19. Mettere un messaggio in cui viene autorizzato l utilizzo dei dati con facebook e l utilizzo dei dati cookie
+20. Utilizzare sulla prima pagina il carousel
+21. Campo skills rimuovere sugli schermi mobile le tag se non riesci a risolvere il problema.
+22. Dopo sign in con facebook riindirizare alla dashboard
 
-TESTING
-1. testare che  :dependent => :destroy funzioni
-
-PRODUZIONE 
-1. gestire e salvare i dati da fecebook inclusa la foto
-2. Migrazione per tag fields
-#
-ALTRE COSE DA FARE
-s1. Controllare che nella update vengano cambiati anche i dati in current_user.host.tasks.find(@task.id).update, ads, projects e locations
-2. search
+PRIMA DEL LIVE
+1. Creare ENV Variable per la devise key in devise.rb
+2. Cambiare il colore dei link in footer
 
 OPZIONALI
+1. informarsi e guardare i video sul Testing
+5. mappatura locations
 1. Fare un sistema di messaggistica e chat decente
 2. Ruolo Educator
-4. Possibilità di ingrandire i campi di testo
 3. Moneta/Crediti
 5. Nella locations#show aggiungere un pulsante per location_images#new che permetta di aggiungere una singola immagine. Hai provato ma non riesci a passare nella azione location_images#show l'id di location.id
 6. Nella edit del profile il campo Password viene automaticamente compilato nel caso la password venga salvata
-7. usare avatar nel caso non venga inclusa una immagine del profilo
+7. Usare avatar nel caso non venga inclusa una immagine del profilo
 8. Creare il session controller per facebook login
+10. notifiche - riattivare i due div nascosti task alert e i numeri per mail
+16. Navigation Mobile , migliorarla renderla full screen e con link grossi simili a bottoni
+15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
+16  Includere l'immagine dell host nella dashboard del developer
 
 SHORTCUTS
+heroku run rails console
 heroku pg:psql per accedere al database produzione
 psql -d SocialNetwork_development per accedere al db
 \dt per mostrare tutte le tabelle
@@ -79,10 +62,12 @@ kill -9 59780
 foreman configuration procfile web: bundle exec rails s
 git rm -r vendor/plugins #delete files from git then commit and push
 
+AMMINISTRAZIONE
+1. Richiedere dati aggiuntivi a Facebook
+
 SEO 
 1. Nome --> Working4Accomodation
 2. Chiedere consigli SEO
-
 
 Fatto --> 
 Fatto --> 
