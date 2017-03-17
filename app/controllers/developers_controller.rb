@@ -40,7 +40,6 @@ class DevelopersController < ApplicationController
 		if new_params.empty? && ads_params.empty? && skill_params[:ads_attributes][:skill_list].empty?
 			redirect_to action: "index"
 		elsif new_params.empty? && ads_params.empty?
-			binding.pry
 			@locations = Location.all	
 		elsif ads_params.empty?
 			@locations = Location.joins(:ads).where(locations: new_params).includes(:ads)
