@@ -2,8 +2,10 @@
   include Devise::Controllers::Rememberable
   
   def facebook
+    #binding.pry
     # You need to implement the method below in your model (e.g. app/models/user.rb)
-    @user = User.from_omniauth(request.env["omniauth.auth"])
+    @user = User.from_omniauth(request.env["omniauth.auth"], request.env["omniauth.params"])
+    #binding.pry
 
     if @user.persisted?
       remember_me(@user)     

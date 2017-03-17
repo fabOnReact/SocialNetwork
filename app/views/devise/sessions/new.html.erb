@@ -10,7 +10,7 @@
     </div>
     <div class="input-group">
         <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-        <%#= f.label :password %>
+        <%#= f.label :passworud %>
         <%= f.password_field :password, autocomplete: "off", :class => "form-control", :placeholder => "Password" %>
     </div>
     <% if devise_mapping.rememberable? -%>
@@ -19,10 +19,9 @@
         <%= f.label :remember_me, :class => "remember_me_Label" %>
         <span class="pull-right"> <%= link_to "Forgot Password?", {}, :id => "lostPw" %></span>
     </label>
-    <% end -%>      
+    <% end %>      
     <%= f.submit "Login", :class => "btn btn-primary btn-lg btn-block" %>
     <%= link_to "Signup", new_registration_path(resource), :method => :get, class: "btn btn-info btn-lg btn-block signuptext" %>
-    
     <div class="links ">
     <%= render "devise/shared/links2" %>
     </div>

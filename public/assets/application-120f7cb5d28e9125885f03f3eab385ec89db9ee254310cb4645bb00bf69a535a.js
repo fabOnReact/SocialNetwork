@@ -34883,10 +34883,19 @@ $(function () {
   }
 
 })( jQuery );
-(function() {
+$(document).on('ready page:load', function() {
+    $('#buttonSearch').click(function (event) {
+        event.preventDefault()
+        $('#advancedSearch').slideToggle("slow");
+    });
 
-
-}).call(this);
+});
+$(document).on('ready page:load', function() {
+	$('#signupFacebookButton').click(function(){
+		$(this).effect("bounce", "slow");
+		console.log("It was called");
+	});
+});
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -34898,6 +34907,7 @@ $(function () {
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+
 
 
 

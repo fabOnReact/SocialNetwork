@@ -54,12 +54,17 @@
 	<% end %>   
 		<h2>BARTERING <span class="text_color">APPS</span> </h2>
 		<h4>Developers working in exchange of Accomodation</h4>
-		<%= link_to "Sign Up", new_user_registration_path, id: "buttonSignUp", class: "btn btn-default btn-lg signup" %>
-		<div class="page-scroll">
+		<%#= link_to "Signup with Facebook", omniauth_authorize_path(resource_name, :facebook, role: 1), class: "btn btn-default btn-lg signup" %>
+		
+		<a href="#" class="btn btn-default btn-lg signup" id="signupFacebookButton"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i><span class="signInButton">Sign up with Facebook<span></a>
+		
+
+		<%#= link_to "Sign Up", new_user_registration_path, id: "buttonSignUp", class: "btn btn-default btn-lg signup" %>
+		<!--<div class="page-scroll">
 			<a href="#service" class="btn btn-circle">
 				<i class="fa fa-angle-double-down animated"></i>
 			</a>
-		</div>
+		</div>-->
 	</div>
                           
 </section>

@@ -1,1 +1,0 @@
-$(document).on("ready page:load",function(){$("#buttonSearch").click(function(e){e.preventDefault(),$("#advancedSearch").slideToggle("slow")})});

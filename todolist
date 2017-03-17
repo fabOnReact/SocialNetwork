@@ -13,7 +13,15 @@ Fatto --> Dashboard Host
 Fatto --> Eliminare link sulla base del ruolo
 Fatto --> Mettere un limite alle immagini + AWS Elimina le immagini
 
+In corso --> Stai provando ad aggiungere l'effetto di jquery ui bounce, ma non funziona perchè jquery ui è vuoto. Ti sei reso conto di avere 2 jquery files. Jquery ujs e jquery. Hai controllato, conviene averli tutti e due
+Nell application richiedi jquery-ui ed hai la gem, pero non carica niente quindi devi controllare possibili conflitti con jquery gem e risolvere il problema
+la funziona funziona su normale html
+
+
+17  Fare due link per il sign up con facebook, come host o come developer --> domanda su stackoverflow
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
+7. Validazione importanti : campo developer o host
+
 
 SECONDARIE
 8. Finire la pagina iniziale
@@ -48,6 +56,7 @@ OPZIONALI
 16. Navigation Mobile , migliorarla renderla full screen e con link grossi simili a bottoni
 15  Autorizzazioni cercare di mettere una forma di controllo su chi può chiamare certi controller, per esempio location#edit
 16  Includere l'immagine dell host nella dashboard del developer
+
 
 SHORTCUTS
 heroku run rails console

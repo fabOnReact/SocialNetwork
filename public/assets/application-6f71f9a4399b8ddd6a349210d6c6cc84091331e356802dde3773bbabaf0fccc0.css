@@ -32935,11 +32935,11 @@ td {
   padding-bottom: 5px;
 }
 
-/* line 69, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+/*
 .table td {
-  border: solid 1px #dddddd;
+	border: solid 1px #dddddd;
 }
-
+*/
 /* line 73, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
 .table .Fieldnumber {
   text-align: right;
@@ -33161,6 +33161,89 @@ td {
   padding-left: 40px;
 }
 
+/* All Pages */
+/* line 273, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.credits a {
+  color: #0055b3;
+}
+
+/* user navigation */
+/* line 279, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.footerPosition {
+  /*position: absolute;
+  top: 100%;
+  right: 0;*/
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* line 287, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+.creditsColor {
+  color: #797979;
+}
+
+/* Media Queries */
+/* GET locations#show */
+@media (min-width: 766px) {
+  /* line 296, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #colPictures {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 766px) {
+  /* line 302, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #colPictures {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 360px) {
+  /* line 308, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  .imageEdit {
+    padding: 4px 10px;
+    font-size: 7px;
+  }
+
+  /* line 313, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  .login-form {
+    margin-top: 75px;
+  }
+}
+/* Others */
+@media (max-width: 800px) {
+  /*#navProfile {
+  	display: none;
+  }*/
+  /* line 324, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #task_notificatoin_bar {
+    display: none;
+  }
+
+  /* line 327, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #mail_notificatoin_bar {
+    display: none;
+  }
+
+  /* line 330, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #alert_notificatoin_bar {
+    display: none;
+  }
+
+  /* line 333, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #searchBar {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  /* line 339, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  #logoTitle {
+    display: none;
+  }
+
+  /* line 343, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  .notification-row {
+    display: block;
+  }
+}
 /* Specific Mozilla */
 @-moz-document url(http://localhost:3000/),
 	   url-prefix(http://localhost:3000/),
@@ -33172,114 +33255,23 @@ td {
        ".mozilla.org"
    */
   /* make the above-mentioned pages really ugly */
-  /* line 285, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 363, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   .table {
     border-collapse: separate;
   }
 
-  /* line 288, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
+  /* line 366, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
   .table td {
     border: solid 0px #dddddd;
   }
 }
-/* All Pages */
-/* line 296, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-.credits a {
-  color: #0055b3;
-}
-
-/* user navigation */
-/* line 302, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-.footerPosition {
-  /*position: absolute;
-  top: 100%;
-  right: 0;*/
-  font-weight: 500;
-  margin-right: 5px;
-}
-
-/* line 310, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-.creditsColor {
-  color: #797979;
-}
-
-/* Media Queries */
-/* GET locations#show */
-@media (min-width: 766px) {
-  /* line 319, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #colPictures {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 766px) {
-  /* line 325, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #colPictures {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 360px) {
-  /* line 331, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  .imageEdit {
-    padding: 4px 10px;
-    font-size: 7px;
-  }
-
-  /* line 336, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  .login-form {
-    margin-top: 75px;
-  }
-}
-/* Others */
-@media (max-width: 800px) {
-  /*#navProfile {
-  	display: none;
-  }*/
-  /* line 347, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #task_notificatoin_bar {
-    display: none;
-  }
-
-  /* line 350, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #mail_notificatoin_bar {
-    display: none;
-  }
-
-  /* line 353, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #alert_notificatoin_bar {
-    display: none;
-  }
-
-  /* line 356, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #searchBar {
-    display: none;
-  }
-}
-@media (max-width: 510px) {
-  /* line 362, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  #logoTitle {
-    display: none;
-  }
-
-  /* line 366, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/user.scss */
-  .notification-row {
-    display: block;
-  }
-}
-/* line 1, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
-.signup {
-  background: transparent;
-  padding: 10px 30px;
-  border: solid white 5px;
-  color: white;
-}
-
-/* line 8, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+/* line 3, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
 #intro.intro {
   height: 600px;
   padding: 0 0 !important;
 }
 
-/* line 13, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+/* line 8, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
 .slogan {
   display: flex;
   float: none;
@@ -33289,29 +33281,135 @@ td {
   justify-content: center;
 }
 
+/* Sign In with Facebook */
+/* line 19, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+.signup {
+  background-color: #00ccff;
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  padding-left: 24px;
+  padding-right: 21px;
+  border-radius: 100px;
+}
+
+/* line 29, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+.fa-2x {
+  position: relative;
+  bottom: -7%;
+  left: 2%;
+}
+
+/* line 35, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+.signup span {
+  position: relative;
+  bottom: 3px;
+  /*11%;*/
+  padding-left: 21px;
+  font-size: 23px;
+}
+
+/* line 42, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+.btn-default:hover {
+  border: none;
+  outline: none;
+}
+
+/* Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
+/*@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+  .signup span {
+  position: relative;
+  bottom: 10%;
+  } 
+}*/
 /* Main Css */
 /* Media Queries */
 @media (min-width: 1550px) {
-  /* line 28, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  /* line 62, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
   .intro {
     height: 900px;
   }
 }
+@media (max-width: 412px) {
+  /* line 68, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  #intro.intro {
+    height: 732px;
+  }
+
+  /* line 72, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .signup {
+    background-color: #00ccff;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+}
 @media (max-width: 360px) {
-  /* line 34, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  /* line 84, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  #intro.intro {
+    height: 640px;
+  }
+
+  /* line 88, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
   .intro .slogan h2 {
     font-size: 34px;
     margin-bottom: 5px;
   }
 
-  /* line 38, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  /* line 92, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
   .intro .slogan h4 {
     font-size: 13px;
     margin-top: 0px;
   }
 
-  /* line 43, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  /* line 97, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
   #buttonSignUp {
     margin-bottom: 17px;
+  }
+
+  /* line 101, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .signup {
+    background-color: #00ccff;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 8px;
+  }
+
+  /* line 110, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .signup .fa-2x {
+    font-size: 1.2em;
+    position: relative;
+    bottom: -7%;
+    left: 2%;
+  }
+
+  /* line 117, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .signup span {
+    position: relative;
+    bottom: 1px;
+    /*9%;*/
+    padding-left: 13px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  /* line 127, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  #intro.intro {
+    height: 568px;
+  }
+
+  /* line 131, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .intro .slogan h2 {
+    font-size: 27px;
+  }
+
+  /* line 134, /home/fabrizio/Documents/Sublime/Rails/SocialNetwork/app/assets/stylesheets/main.scss */
+  .intro .slogan h4 {
+    font-size: 11px;
   }
 }

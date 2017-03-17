@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //= require jquery
+//= require jquery_ujs
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require jquery.scrollTo
@@ -20,5 +21,5 @@
 //= require scripts
 //= require bootstrap-switch
 //= require wow.min
-//= require jquery_ujs
 //= require user
+//= require main

@@ -8,7 +8,7 @@
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
 
-	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
   <%= javascript_include_tag "application", 'data-turbolinks-track': 'reload'%>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
@@ -56,6 +56,7 @@
             <!--<button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>-->
             <div class="links ">
             <%= render "devise/shared/links2" %>
+            <%#= link_to "Signup with Facebook as Developer", omniauth_authorize_path(resource_name, :facebook, role: 1) %>
             </div>            
         </div>
       <% end %>

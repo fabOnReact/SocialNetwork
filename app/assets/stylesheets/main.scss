@@ -1,9 +1,4 @@
-.signup {
- 	background: transparent;
- 	padding: 10px 30px;
- 	border: solid white 5px;
- 	color: white;
- }
+
 
 #intro.intro {
  	height: 600px;
@@ -19,6 +14,45 @@
 	justify-content: center;
 }
 
+/* Sign In with Facebook */
+
+.signup {
+ 	background-color: #00ccff;
+ 	padding: 10px 30px;
+ 	border: none;
+ 	color: white;
+ 	padding-left: 24px;
+ 	padding-right: 21px;
+ 	border-radius: 100px;
+ }
+
+.fa-2x {
+	position: relative;
+	bottom: -7%;
+	left: 2%;
+}
+
+.signup span {
+	position: relative;
+	bottom: 3px;  /*11%;*/
+	padding-left: 21px;
+	font-size: 23px;
+}
+
+.btn-default:hover {
+	border: none;
+	outline: none;
+}
+
+/* Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
+/*@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+  .signup span {
+  position: relative;
+  bottom: 10%;
+  } 
+}*/
+
 /* Main Css */ 
 
 
@@ -30,7 +64,27 @@
  	}
 }
 
+@media (max-width: 412px) {
+	#intro.intro {
+		height: 732px;
+	}
+
+	.signup {
+	 	background-color: #00ccff;
+	 	padding: 10px 30px;
+	 	border: none;
+	 	color: white;
+	 	padding-left: 15px;
+	 	padding-right: 0px;
+	 }
+
+}
+
 @media (max-width: 360px) {
+	#intro.intro {
+		height: 640px;
+	}
+
  	.intro .slogan h2 {
  		font-size: 34px;
  		margin-bottom: 5px;
@@ -43,4 +97,42 @@
  	#buttonSignUp {
  		margin-bottom: 17px;
  	}
+
+	.signup {
+	 	background-color: #00ccff;
+	 	padding: 10px 30px;
+	 	border: none;
+	 	color: white;
+	 	padding-left: 15px;
+	 	padding-right: 8px;
+	 }
+
+	 .signup .fa-2x {
+	 	font-size: 1.2em;
+		position: relative;
+		bottom: -7%;
+		left: 2%;	 	
+	 }
+
+	.signup span {
+		position: relative;
+		bottom: 1px; /*9%;*/
+		padding-left: 13px;
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 320px) {
+	#intro.intro {
+		height: 568px;
+	}
+
+ 	.intro .slogan h2 {
+ 		font-size: 27px;
+ 	}
+ 	.intro .slogan h4 {
+ 		font-size: 11px;
+ 	} 	
+
 }
