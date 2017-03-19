@@ -46,12 +46,14 @@ p.lead {
 	font-weight: 600;
 }
 
+/*
 a {
     color: #28c3ab;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
+*/
 
 a:hover,
 a:focus {
@@ -253,13 +255,17 @@ hr {
 }
 
 /* margins */
+/*
+
+COMMENT IMPORTANT
+
 .marginbot-0{margin-bottom:0 !important;}
 .marginbot-10{margin-bottom:10px !important;}
 .marginbot-20{margin-bottom:20px !important;}
 .marginbot-30{margin-bottom:30px !important;}
 .marginbot-40{margin-bottom:40px !important;}
 .marginbot-50{margin-bottom:50px !important;}
-
+*/
 /* ===========================
 --- General sections
 ============================ */
@@ -394,7 +400,8 @@ hr {
 
 .team-social li{
     display: inline-block;
-	margin:0 !important;
+    /* COMMENT IMPORTANT */
+	/*margin:0 !important;*/
 	padding:0;
 }
 
@@ -446,7 +453,8 @@ hr {
 ============================ */
 
 form#contact-form .form-group label {
-	text-align: left !important;
+	/* comment important 
+    text-align: left !important; */
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -517,7 +525,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 .company-social li{
     display: inline-block;
-	margin:0 !important;
+    /* COMMENT IMPORTANT 
+	margin:0 !important; */
 	padding:0;
 }
 
@@ -615,7 +624,7 @@ Parallax
 /* ===========================
 --- Elements
 ============================ */
-
+/*
 .btn {
 	border-radius: 0;
     text-transform: uppercase;
@@ -624,7 +633,7 @@ Parallax
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-}
+}*/
 
 
 .btn-circle {
@@ -739,7 +748,7 @@ Parallax
   border-color: #666;
 }
 
-
+/*
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #28c3ab;
@@ -747,7 +756,7 @@ Parallax
     color: #000;
     background-color: #28c3ab;
 }
-
+*/
 .btn-huge {
     padding: 25px;
     font-size: 26px;

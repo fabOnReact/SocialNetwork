@@ -9,13 +9,13 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require jquery2
+//= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require jquery.scrollTo
 //= require jquery.nicescroll
-//= require jquery-ui
 //= require jquery.tagsinput
 //= require form-component
 //= require scripts

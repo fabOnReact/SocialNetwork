@@ -12,6 +12,7 @@ Rails.application.config.assets.precompile += %w( avatar-mini3.jpg )
 Rails.application.config.assets.precompile += %w( avatar-mini4.jpg )
 Rails.application.config.assets.precompile += %w( avatar1_small.jpg )
 Rails.application.config.assets.precompile += %w( layout.js )
+Rails.application.config.assets.precompile += %w( layout.scss )
 Rails.application.config.assets.precompile += %w( testing.js )
 Rails.application.config.assets.precompile += %w( testing.scss )
   
