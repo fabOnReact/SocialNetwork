@@ -25,5 +25,7 @@ Rails.application.routes.draw do
 
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
   
+  get 'testing/welcome' => 'testing#welcome'
+
   root :to => 'main#welcome'
 end

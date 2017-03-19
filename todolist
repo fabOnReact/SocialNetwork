@@ -17,6 +17,14 @@ In corso --> Stai provando ad aggiungere l'effetto di jquery ui bounce, ma non f
 Nell application richiedi jquery-ui ed hai la gem, pero non carica niente quindi devi controllare possibili conflitti con jquery gem e risolvere il problema
 la funziona funziona su normale html
 
+Fatto --> ok devi rifare il layout css e js file della prima pagina ed anche delle altre. Ricordati di mettere in precompilation il file layout.css e poi inserisci man mano solo i file necessari. metti a posto i file jquery e jquery-ui sia js che css, piuttosto fai una git e provi a scaricarli di nuovo
+
+Riassunto --> nella view testing sei riuscito a configurare jquery tramite file, tutto funziona hai anche aggiunto gli altri js ora devi riavviare il server e testare magari anche con css
+commentare le gem jquery e fare bundle install
+se funziona cerca di portare questi cambiamenti dopo aver fatto una git sulla main.html.erb, qui devi fare un nuovo layout che sia diverso da quello di user.html.erb poi testare
+dopo di cui devi completare il bottone
+
+devi fare un layout con solo 2 file jquery jquery-ui e poi testare quella pagina, devi generare un nuovo controller
 
 17  Fare due link per il sign up con facebook, come host o come developer --> domanda su stackoverflow
 6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione

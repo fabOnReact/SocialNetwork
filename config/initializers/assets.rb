@@ -11,9 +11,9 @@ Rails.application.config.assets.precompile += %w( avatar-mini2.jpg )
 Rails.application.config.assets.precompile += %w( avatar-mini3.jpg )
 Rails.application.config.assets.precompile += %w( avatar-mini4.jpg )
 Rails.application.config.assets.precompile += %w( avatar1_small.jpg )
-Rails.application.config.assets.precompile += %w( user.js )
-
-#Rails.application.config.assets.precompile += %w( avatar-mini.jpg )
+Rails.application.config.assets.precompile += %w( layout.js )
+Rails.application.config.assets.precompile += %w( testing.js )
+Rails.application.config.assets.precompile += %w( testing.scss )
   
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
