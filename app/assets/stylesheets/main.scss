@@ -122,38 +122,6 @@ a:focus {
 	color: white;
 }
 
-/* Video Header */
-
-.header {
-  width: 100%;
-  height: 650px;
-/*  position: relative;
-  display: inline-block;*/
-}
-
-
-/*.header-video {
-  position: relative;
-}*/
-/* Header Welcome */
-
-#video-container {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-	video {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  margin-top: -100px;
-}
 
 /* Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
 /*@media screen and (-webkit-min-device-pixel-ratio:0)
@@ -267,6 +235,13 @@ a:focus {
 	.sideSignup {
 		width: 275px;
 	}		
+
+	/* Have fun section */
+
+	.middlesection h5 {
+		font-size: 34px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
 
 }
 

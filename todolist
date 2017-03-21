@@ -18,13 +18,12 @@ Fatto --> nella view testing sei riuscito a configurare jquery tramite file, tut
 Fatto --> effetto jquery e cambiare hover o selected color #28c3ab
 Fatto --> Fare due link per il sign up con facebook, come host o come developer --> domanda su stackoverflow
 Fatto --> Validazioni dei campi, evitare di avere troppi errori nella Applicazione
-
-8. Finire la pagina iniziale
-
+Fatto --> Finire la pagina iniziale
+Fatto --> collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 
 SECONDARIE
 
-14  collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
+
 18  I progetti completed segnaranno tutte le task come completed 
 19. Fare l'upload tramite link
 20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
