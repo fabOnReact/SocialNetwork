@@ -5,12 +5,28 @@ $(document).on('ready page:load', function() {
 	$("#rightSignup").hide();
 	$("#rightDescription").hide();
 
-	$("#signupFacebookButton").click(function() {
-		$(this).stop(true, true).hide("scale", 600, function() {
-				$("#leftDescription").show("fold", 600);
-				$("#rightDescription").show("fold", 600);
-		});
+	$('#signupFacebookButton').mouseover(function(){
+		var $this = $(this);
+		if (!$this.is(":animated"))
+			$(this).effect("bounce", { times: 5 }, 2000);
 	});
+
+	if ($(window).width() < 425) {
+		$("#signupFacebookButton").click(function() {
+			$(this).stop(true, true).hide("scale", 600, function() {
+					$("#leftDescription").show(); 
+					$("#rightDescription").show();
+			});
+		});
+	}
+	else {
+		$("#signupFacebookButton").click(function() {
+			$(this).stop(true, true).hide("scale", 600, function() {
+					$("#leftDescription").show("bounce", {times: 5 }, 2000); 
+					$("#rightDescription").show("bounce", {times: 5 }, 2000);
+			});
+		});
+	}
 
 	$(function() {
 		$("#leftDescription").hover(function(){

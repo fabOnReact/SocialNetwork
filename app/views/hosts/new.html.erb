@@ -19,15 +19,15 @@
                   <div class="form-group ">
                       <%= f.label :interest_list, "Interests", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :interest_list, :class => "tagsinput form-control", :id => "tagsinput" %>
+                      <%= f.text_field :interest_list, :class => "tagsinput form-control", :id => "tagsinput", value: f.object.interest_list.map { |t| t}.join(', ') %>
                     </div>
                   </div> 
-                  <div class="form-group ">
-                      <%= f.label :skill_list, "Skills", :class => "control-label col-lg-2" %>
+                  <!--<div class="form-group ">
+                      <%#= f.label :skill_list, "Skills", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
-                      <%= f.text_field :skill_list, :class => "tagsinput form-control", :id => "tagsinput" %>
+                      <%#= f.text_field :skill_list, {:class => "tagsinput form-control", :id => "tagsinput", :placeholder => "for ex. css, html, javascript, separated by comma ,"} %>
                     </div>
-                  </div>                     
+                  </div> -->                    
                   <div class="form-group ">
                       <div class="col-lg-10-lg-offset-2 col-lg-10">
                           <%= f.submit "Update", :class => "btn btn-primary wideButton"%>

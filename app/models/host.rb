@@ -5,4 +5,6 @@ class Host < ApplicationRecord
 	has_many :skills, through: :ads
 
 	acts_as_taggable_on :interests #:skills 
+
+	validates :description, :interest_list, presence: true
 end
