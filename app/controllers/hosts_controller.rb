@@ -3,8 +3,12 @@ class HostsController < ApplicationController
 
   def index 
    #controllare che l'host abbia degli ads con delle skill
-    host_skills = current_user.host.skills.pluck(:name) 
-    @developers = Developer.tagged_with(host_skills, any: :true)
+    if current_user.host != nil && current_user.host.skills != nil
+      host_skills = current_user.host.skills.pluck(:name) 
+      @developers = Developer.tagged_with(host_skills, any: :true)
+    else
+      @developers = Developer.all
+    end
     @developer = Developer.new
   end
 

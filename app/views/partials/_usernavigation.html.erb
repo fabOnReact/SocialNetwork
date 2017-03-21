@@ -312,7 +312,8 @@
                   <% end %>   <!-- end of the developer menu -->
 
                   <% if current_user.roles_id == 2 %>  <!-- starting of the host menu-->               
-                      <% if current_user.host != nil && current_user.host.locations || current_user.host.projects != nil %>
+                      <% if current_user.host != nil %>
+                        <% if current_user.host.locations != nil || current_user.host.projects != nil %>
                           <li>                     
                               <!--<a class="" href="chart-chartjs.html">-->
                                   <%= link_to locations_path(current_user) do %>
@@ -321,6 +322,7 @@
                                   <% end %>    
                               <!--</a>-->
                           </li> 
+                        <% end %>
                       <% end %>
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
@@ -342,6 +344,10 @@
                         </li>                                                                         
                       </ul>
                   </li>
+
+                <% if current_user != nil %>
+                    <% if current_user.host != nil %>                       
+            
                   <li class="sub-menu">
                       <a class="" href="javascript:;">
                           <i class="fa fa-globe"></i>
@@ -349,20 +355,21 @@
                           <span class="menu-arrow arrow_carrot-right"></span>                        
                       </a>
                       <ul class="sub">
-                        <li>
-                            <% if current_user != nil %>
-                                <% if current_user.host != nil %>                       
-                                    <% if current_user.host.projects != nil %>
-                                        <%= link_to "Locations and Projects", locations_path(current_user)%>
-                                    <% end %>
+                        <li>    
+                            <% if current_user.host.projects != nil %>      
+                                <%= link_to "Locations and Projects", locations_path(current_user)%>
+                            <% end %>
                         </li>                                                  
                         <li>
                                     <%= link_to "Create Location", new_location_path(current_user.host) %>
                         </li>                                         
-                                <% end %>
-                            <% end %>                         
+                     
                   </ul>
                   </li>   
+
+                    <% end %>
+                <% end %>                              
+                <% if current_user.host != nil %>
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="fa fa-rocket" aria-hidden="true"></i>
@@ -371,7 +378,7 @@
                       </a>
                       <ul class="sub">
                         <li>
-                                <% if current_user.host != nil %>
+
                                     <%= link_to "Create Project", new_project_path(current_user.host) %>  
                         </li>
                         <li>
@@ -382,10 +389,11 @@
                         <li>
                                         <%= link_to "Create Ad", new_ad_path(current_user.host) %> 
                                     <% end %> 
-                                <% end %>
+
                         </li>
                       </ul>
                   </li>
+                  <% end %>   <!-- current_user.host != nil -->   
                   <% end %>   <!-- End of the Host Navigation Bar -->   
                   <% end %>   <!-- If the current_user != nil -->                                                  
                   <li class="sub-menu ">

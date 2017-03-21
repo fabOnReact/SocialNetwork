@@ -26,6 +26,13 @@
  	border-radius: 100px;
  }
 
+ .signupPosition {
+ 	/*position: absolute;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	margin-left: -250px;*/
+ }
+
 .fa-2x {
 	position: relative;
 	bottom: -7%;
@@ -42,6 +49,67 @@
 .btn-default:hover {
 	border: none;
 	outline: none;
+}
+
+/* Two additional buttons */
+
+.buttonsWrapper a {
+	color: white;
+	background-color: #00ccff;
+}
+
+a:hover,
+a:focus {
+    color: black;
+    color: #176e61;
+}
+
+.buttonsWrapper {
+	display: block;
+	/*width: 80%;*/
+}
+
+.buttonsWrapper .btn {
+	white-space: initial;
+}
+
+.sideSignup {
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	border: none;	
+}
+
+.leftSignup {
+ 	float: left;
+}
+
+.leftDescription {
+ 	border-radius: 27px;
+ 	float: left;
+}
+
+.leftDescription .signInButton {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.buttonsWrapper .desc {
+	display: none;
+}
+
+.rightSignup {
+ 	float: right;
+}
+
+.rightDescription {
+ 	border-radius: 27px;
+ 	float: right;
+}
+
+.rightDescription .signInButton {
+	font-size: 25px;
+	font-weight: bold;
 }
 
 /* Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
@@ -64,6 +132,21 @@
  	}
 }
 
+
+@media (max-width: 539px) {
+	.buttonsWrapper {
+		width: 80%;
+		margin: none;
+	}
+
+	.sideSignup {
+		width: 325px;
+		float: initial;
+		margin: auto;
+		margin-bottom: 20px;
+	}	
+}
+
 @media (max-width: 412px) {
 	#intro.intro {
 		height: 732px;
@@ -76,6 +159,11 @@
 	 	color: white;
 	 	padding-left: 15px;
 	 	padding-right: 0px;
+	 }
+
+	 .buttonsWrapper {
+	 	width: 90%;
+	 	margin: 0 0;
 	 }
 
 }
@@ -105,6 +193,7 @@
 	 	color: white;
 	 	padding-left: 15px;
 	 	padding-right: 8px;
+	 	width: 275px;
 	 }
 
 	 .signup .fa-2x {
@@ -120,6 +209,10 @@
 		padding-left: 13px;
 		font-size: 16px;
 	}
+
+	.sideSignup {
+		width: 275px;
+	}		
 
 }
 

@@ -2,7 +2,7 @@ class DevelopersController < ApplicationController
 	before_action :authenticate_user!
 
 	def index	
-		if current_user.developer.skills != nil
+		if current_user.developer != nil && current_user.developer.skills != nil
 			i = 0
 			old_ad = "firstloop"
 			@projects = []
@@ -15,6 +15,8 @@ class DevelopersController < ApplicationController
 					old_project_id = ad.project_id
 				end
 			end
+		else
+			@ads = Ad.all
 		end
 		@location = Location.new
 		@location.ads.build

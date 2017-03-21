@@ -21,6 +21,9 @@ class User < ApplicationRecord
 	# carrierwave
 	mount_uploader :avatar, AvatarUploader
 
+	# validations
+	validates :firstname, :lastname, :roles_id, :email, presence: true
+
 	def self.from_omniauth(auth, omniauthparams)
 		#binding.pry
 		where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -30,6 +33,7 @@ class User < ApplicationRecord
 			user.firstname = name[0]
 			user.lastname = name[1]
 			user.image = auth.info.image 
+			user.roles_id = omniauthparams["role"]
 			#user.verified = auth.info.verified 
 			#user.description = auth.info.description 
 			#user.location = auth.extra.raw_info.location[name]

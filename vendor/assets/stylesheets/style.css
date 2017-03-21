@@ -46,14 +46,11 @@ p.lead {
 	font-weight: 600;
 }
 
-/*
+
 a {
     color: #28c3ab;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
 }
-*/
+
 
 a:hover,
 a:focus {
@@ -748,7 +745,7 @@ Parallax
   border-color: #666;
 }
 
-/*
+
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #28c3ab;
@@ -756,7 +753,7 @@ Parallax
     color: #000;
     background-color: #28c3ab;
 }
-*/
+ 
 .btn-huge {
     padding: 25px;
     font-size: 26px;

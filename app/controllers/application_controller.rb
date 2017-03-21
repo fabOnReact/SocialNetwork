@@ -9,7 +9,11 @@ class ApplicationController < ActionController::Base
   	protected 
 
   	def after_sign_in_path_for(resource)
-      edit_user_registration_path
+      if current_user.roles_id == 1
+        developers_path
+      else
+        hosts_path
+      end
 	  end
 
     def after_sign_out_path_for(resource)
