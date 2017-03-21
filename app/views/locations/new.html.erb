@@ -9,6 +9,7 @@
               <div class="form">
                 <%= form_for(@location, html: {class: "form-validate form-horizontal" }) do |f| %>
                   <%= render 'partials/error_messages', object: @location %>                
+                  <% @location_images = @location.location_images.build %>
                   <div class="form-group ">
                       <%= f.label :country, "Country/Nation", :class => "control-label col-lg-2" %>
                     <div class="col-lg-10">
@@ -56,14 +57,14 @@
                           </label>                                          
                       </div>
                   </div>    
-                  <%# if f.location_images > 0 %>
                     <%= f.fields_for :location_images do |p| %>
                       <div class="form-group ">
-                          <div class="col-lg-2 col-md-2 imagesUpload">
-                            <%= p.label :houseimages, "Upload house Images"%> </br>
-                            <div>Select multiple images using CTRL</div>
+                          <div class="col-lg-2 col-md-2 imagesUpload pull-left">
+                            <%= p.label :houseimages, "Upload house Images", :class => "control-label"%> </br>
+                            <div class="">Select multiple images using CTRL</div>
                           </div>
                         <div class="col-lg-10 col-md-10">
+                          <%# binding.pry %>
                           <%= p.file_field :houseimages, :multiple => true, name: "location_images[houseimages][]", :class => "uploadButton" %>
                         </div>
                       </div>  

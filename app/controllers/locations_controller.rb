@@ -6,30 +6,31 @@ class LocationsController < ApplicationController
   end
 
   def new
+    #binding.pry
   	@location = Location.new
-    @location_images = @location.location_images.build
+    #@location_images = @location.location_images.build
   end
 
   def create
   	@location = Location.new(input_params)
-      #binding.pry
-      if params[:location_images][:houseimages].to_a.size < 11
-      	if params[:location_images] != nil && @location.save && current_user.host.locations << @location
-               if 
-                params[:location_images]['houseimages'].each do |a|
-                  @location_images = @location.location_images.create!(:houseimages => a)
-                end      
-              end
-            flash[:notice] = "Location sucessfully Updated"
-            redirect_to action: "index"
+    #binding.pry
+  	if @location.save && current_user.host.locations << @location
+        if params[:location_images] != nil && params[:location_images][:houseimages].to_a.size < 11
+          params[:location_images]['houseimages'].each do |a|
+            @location_images = @location.location_images.create!(:houseimages => a)
+          end      
         else
-          format.html { render action: 'new', notice: "An error has occurred during the saving" }
-          redirect_to action: "index"
-      	end  		
-      else
-        flash[:alert] = "You can not upload more than 10 Images per location, the location was not saved!"
-        redirect_to action: "index"
-      end
+          if params[:location_images] != nil && params[:location_images][:houseimages].to_a.size > 10
+            flash[:alert] = "An error has occurred, do not upload more then 10 Images per Location"
+            redirect_to action: "index"
+          end
+    	  end  		
+      flash[:notice] = "Location sucessfully Updated"
+      redirect_to action: "index"
+    else
+      flash[:alert] = "An error has occurred during the saving"
+      render "new"
+    end     
   end
 
   def edit

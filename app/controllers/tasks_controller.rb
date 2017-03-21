@@ -7,11 +7,14 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
+    if project_params["format"] != nil
+      @project = Project.find(project_params["format"].to_i)
+    end
   end
 
   def create 
     @task = Task.new(input_params)
-    @project = Project.find(@task.project_id)
+    @project = Project.find(@task.project_id) if @task.project_id != nil
     if @task.save && @project.tasks << @task
       flash[:notice] = "Task sucessfully Saved"
       redirect_to controller: "projects", action: "show", id: @task.project_id
@@ -23,6 +26,7 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find(params[:id])
+    @project = Project.find(@task.project_id)
   end
 
   def update
@@ -61,4 +65,7 @@ class TasksController < ApplicationController
     params.require(:task).permit(:name, :project_id, :description, :completed, :skill_list, :days)
   end
 
+  def project_params
+    params.permit(:format)
+  end
 end

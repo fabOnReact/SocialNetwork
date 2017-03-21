@@ -19,7 +19,11 @@ Fatto --> effetto jquery e cambiare hover o selected color #28c3ab
 Fatto --> Fare due link per il sign up con facebook, come host o come developer --> domanda su stackoverflow
 
 
-6. Validazioni dei campi, evitare di avere troppi errori nella Applicazione
+In corso --> Validazioni dei campi, evitare di avere troppi errori nella Applicazione
+			 Problema, in locations triggeri un errore se il campo params[:location_images] e una validazione in location.rb. Le due insieme non funzionano perfettamente e devi metterle a posto
+
+			 testare la creazione location che la new venga resa correttamente ma non ce bisogno di errori se lutente non carica immagini
+
 7. Validazione importanti : campo developer o host
 9. Mettere a post user.html.erb application.js e css con soli file necessari
 10. includere in main.html.erb gli effetti per i messaggi

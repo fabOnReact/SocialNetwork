@@ -9,6 +9,7 @@ class HostsController < ApplicationController
     else
       @developers = Developer.all
     end
+    @developers = Developer.all
     @developer = Developer.new
   end
 

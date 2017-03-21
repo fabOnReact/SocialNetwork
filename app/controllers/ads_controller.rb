@@ -5,13 +5,17 @@ class AdsController < ApplicationController
 
   def new
     @ad = Ad.new
+    #binding.pry
+    if project_params["format"] != nil
+      @project = Project.find(project_params["format"].to_i)
+    end
   end
 
   def create
     @ad = Ad.new(input_params)
-    @location = Location.find(@ad.location_id)
-    @project = Project.find(@ad.project_id)
-    @task = Task.find(@ad.task_id)
+    @location = Location.find(@ad.location_id) if @ad.location_id
+    @project = Project.find(@ad.project_id) if @ad.project_id
+    @task = Task.find(@ad.task_id) if @ad.task_id
     if @ad.save && @location.ads << @ad && @project.ads << @ad && @task.ad = @ad
       flash[:notice] = "Ad sucessfully Saved"
       redirect_to controller: "projects", action: "show", id: @ad.project_id
@@ -20,8 +24,9 @@ class AdsController < ApplicationController
       render "new"
     end     
   end
- def edit
+  def edit
     @ad = Ad.find(params[:id])
+    @project = Project.find(@ad.project_id)
   end
 
   def update
@@ -59,4 +64,8 @@ class AdsController < ApplicationController
   def input_params
     params.require(:ad).permit(:project_id, :location_id, :task_id, :title, :description, :budget, :days, :remote, :skill_list)
   end
+
+  def project_params
+    params.permit(:format)
+  end  
 end

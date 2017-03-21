@@ -13,4 +13,14 @@ protected
     end
   end
 
+
+  def after_update_path_for(resource)
+      flash[:notice] = "Account sucessfully updated"
+      if current_user.roles_id == 1
+        developers_path
+      else
+        hosts_path
+      end
+  end  
+
 end

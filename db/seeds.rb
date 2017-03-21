@@ -11,6 +11,9 @@
 role = Role.create(:role => "Developer")
 role = Role.create(:role => "Host")
 
+jobtitle = Jobtitle.create(:name => "Front-End Developer")
+jobtitle = Jobtitle.create(:name => "Full-Stack Developer")
+
 # Creation of Host sample Profile
 
 user = User.new(:email => "ezio@email.com", :firstname => "Ezio", :lastname => "Bertoglio", :country => "IT", :location => "Turin", :roles_id => 2, :password => "fabrizio")

@@ -1,1 +1,2 @@
-@import "style";
+                      <label class="control-label col-lg-2 col-md-2 col-sm-2 col-xs-2" id="" for="inputSuccess">Completed</label>
+                      <label class="control-label col-lg-2 col-md-2 col-sm-2 col-xs-2" id="completedCheckbox" for="inputSuccess">Completed</label>

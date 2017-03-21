@@ -9,7 +9,7 @@ class ProjectsController < ApplicationController
   	@project = Project.new(input_params)
   	if @project.save && current_user.host.projects << @project
 		flash[:notice] = "Project sucessfully Saved"
-		redirect_to controller: "hosts", action: "index"
+		redirect_to action: "index"
 	else
 		flash[:alert] = "An error has occurred during the saving"
 		render "new"
@@ -24,7 +24,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     if @project.update_attributes(input_params) #&& current_user.host.projects.find(@project.id).update
       flash[:notice] = "Profile sucessfully Updated"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to action: "index"
     else
       flash[:alert] = "An error has occurred during the saving"
       render "edit"
@@ -45,7 +45,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     if @project.destroy
       flash[:notice] = "Profile sucessfully Deleted"
-      redirect_to controller: "hosts", action: "index"
+      redirect_to action: "index"
     else
       flash[:alert] = "An error has occurred during the Deletion"
       render "delete"
