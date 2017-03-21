@@ -22,7 +22,7 @@ $(document).on('ready page:load', function() {
 	else {
 		$("#signupFacebookButton").click(function() {
 			$(this).stop(true, true).hide("scale", 600, function() {
-					$("#leftDescription").show("bounce", {times: 5 }, 2000); 
+					$("#leftDescription").show("bounce", {times: 5 }, 2000);
 					$("#rightDescription").show("bounce", {times: 5 }, 2000);
 			});
 		});

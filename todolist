@@ -21,9 +21,11 @@ Fatto --> Validazioni dei campi, evitare di avere troppi errori nella Applicazio
 Fatto --> Finire la pagina iniziale
 Fatto --> collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 
+Creare un link nella hosts_path e nella developers_path per inviare un messaggio 
+
 SECONDARIE
 
-
+17. Animazione in prima pagina, il show "blind" mostra il testo prima del div
 18  I progetti completed segnaranno tutte le task come completed 
 19. Fare l'upload tramite link
 20. Correggere l'errore per i developer che non hanno skills, mostrare tutto di default
