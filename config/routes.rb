@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   } 
 
   get '/main/home' => 'main#welcome'
+  get '/main/privacy' => 'main#privacy', :as => :privacy
   get '/users/welcome' => 'user#welcome'
   get '/locations/:id/delete' => 'locations#delete', :as => :delete_location
   get '/projects/:id/delete' => 'projects#delete', :as => :delete_project
@@ -17,6 +18,7 @@ Rails.application.routes.draw do
   #post '/developers/index' => 'developers#index_update'
   get '/developers/index' => 'developers#index_update'
   get '/hosts/index' => 'hosts#index_update'
+  get 'testing/welcome' => 'testing#welcome'
 
   resources :developers, :hosts, :projects, :locations, :ads, :tasks, :location_images
   resources :conversations do
@@ -24,8 +26,7 @@ Rails.application.routes.draw do
   end
 
   match 'user_root' => 'user#welcome', as: :user_root, :via => :get
-  
-  get 'testing/welcome' => 'testing#welcome'
+
 
   root :to => 'main#welcome'
 end

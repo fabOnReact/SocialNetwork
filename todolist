@@ -21,8 +21,11 @@ Fatto --> Validazioni dei campi, evitare di avere troppi errori nella Applicazio
 Fatto --> Finire la pagina iniziale
 Fatto --> collegare tutte le views in modo che il developer possa vedere le locations ed i progetti task ads singolarmente ma senza modificarli
 Fatto --> cookies
+Fatto --> privacy policy
 
-Da Fare --> pop up per autorizzare all'utilizzo dei dati facebook
+PROSSIME ATTIVITA'
+
+Da Fare --> pop up per autorizzare all'utilizzo dei dati facebook, mettere un link nell div as Developer e as Host. In quel link puoi dare un ulteriore link alla privacy
 Da Fare --> link a pagina che include tutti le pagine utilizzate
 Da Fare --> Creare un link nella hosts_path e nella developers_path per inviare un messaggio 
 

@@ -9,4 +9,7 @@ class MainController < ApplicationController
 			render 'welcome'
     	end     
 	end
+
+	def privacy
+	end
 end
