@@ -6,4 +6,5 @@
 //= require jquery.scrollTo
 //= require wow.min
 //= require custom
+//= require cookieconsent
 //= require main
