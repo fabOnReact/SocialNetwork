@@ -25,15 +25,28 @@
 	connect people anonymsly that want to rank up, give them post to upvote and then keep them anonymous
 
 4 wifi sharing 
+	open source software
+	openwisp
 
-OPEN SOURCE SOFTWARE
-openwisp
-
-IDEE
-amici su facebook si scambiano il wifi in cambio di credito convertibile in moneta
+	idee
+	amici su facebook si scambiano il wifi in cambio di credito convertibile in moneta
 
 5 Automated Fiscal/Legal assistance with outsourcing to cheap experts
 
 6 long term room rental
 
 7 mappatura dei murales
+
+SHORTCUTS
+heroku run rails console
+heroku pg:psql per accedere al database produzione
+psql -d SocialNetwork_development per accedere al db
+\dt per mostrare tutte le tabelle
+rake assets:precompile
+rm -rf public/assets
+RAILS_ENV=production bundle exec rake assets:precompile
+lsof -wni tcp:3000
+kill -9 59780
+foreman configuration procfile web: bundle exec rails s
+git rm -r vendor/plugins #delete files from git then commit and push
+git clone https://github.com/discourse/discourse.git ~/discourse
