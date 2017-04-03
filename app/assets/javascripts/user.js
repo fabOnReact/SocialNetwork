@@ -3,5 +3,4 @@ $(document).on('ready page:load', function() {
         event.preventDefault()
         $('#advancedSearch').slideToggle("slow");
     });
-
 });

@@ -15,9 +15,9 @@ https://bootstrapmade.com/license/
 
 You are NOT allowed to
 
-    You are NOT allowed to remove the back links to BootstrapMade in templates unless you purchased a license
-    You are NOT allowed to claim credit or ownership for any of the files found on BootstrapMade.com
-    You cannot resell, redistribute, license, or sub-license any of the files found on BootstrapMade.com without direct permission from BootstrapMade.com
+You are NOT allowed to remove the back links to BootstrapMade in templates unless you purchased a license
+You are NOT allowed to claim credit or ownership for any of the files found on BootstrapMade.com
+You cannot resell, redistribute, license, or sub-license any of the files found on BootstrapMade.com without direct permission from BootstrapMade.com
 
 ----------------------------------------------------------------------------------------------------------------------
 
