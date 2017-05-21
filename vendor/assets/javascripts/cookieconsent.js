@@ -270,7 +270,7 @@
       //  - floating positions: top-left, top-right, bottom-left, bottom-right
       //
       // adds a class `cc-floating` or `cc-banner` which helps when styling
-      position: 'bottom', // default position is 'bottom'
+      position: 'top', // default position is 'bottom'
 
       // Available styles
       //    -block (default, no extra classes)
