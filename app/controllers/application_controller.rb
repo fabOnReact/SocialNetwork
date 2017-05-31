@@ -9,10 +9,14 @@ class ApplicationController < ActionController::Base
   	protected 
 
   	def after_sign_in_path_for(resource)
-      if current_user.roles_id == 1
+      if current_user.roles_id == 1 && current_user.developer.present?
         developers_path
-      else
+      elsif current_user.roles_id == 1 && current_user.developer.nil?
+        new_developer_path
+      elsif current_user.roles_id == 2 && current_user.host.present?        
         hosts_path
+      else 
+        new_host_path
       end
 	  end
 
