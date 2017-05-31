@@ -46,7 +46,7 @@ class HostsController < ApplicationController
   	@host = Host.new(input_params)
   	if @host.save && current_user.host = @host
   		flash[:notice] = "Profile sucessfully Saved"
-  		redirect_to action: "index", id: @host.id
+  		redirect_to action: "index"#, id: @host.id
   	else
   		flash[:alert] = "An error has occurred during the saving"
   		render "new"
@@ -61,7 +61,7 @@ class HostsController < ApplicationController
     @host = Host.find(params[:id])
     if @host.update_attributes(input_params)
     	flash[:notice] = "Profile sucessfully Edited"
-    	redirect_to action: "edit"
+    	redirect_to action: "index"
     else
     	flash[:alert] = "An error has occurred during the saving"
     	render "edit"
