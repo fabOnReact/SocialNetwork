@@ -248,7 +248,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], callback_url: "https://barteringapps.herokuapp.com/users/auth/facebook/callback/", scope: 'public_profile, email', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}, image_size: 'large', provider_ignores_state: true 
+  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], callback_url: "https://barteringapps.xyz/users/auth/facebook/callback/", scope: 'public_profile, email', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}, image_size: 'large', provider_ignores_state: true 
   #config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], callback_url: "http://127.0.0.1:3000/users/auth/facebook/callback", scope: 'public_profile, email', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}, image_size: 'large', provider_ignores_state: true 
   
   # OmniAuth.config.full_host = "http://127.0.0.1:3000" # Or have an environment specific URL.

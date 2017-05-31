@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   	#attr_accessor :current_password
     devise :database_authenticatable, :registerable,
-           :recoverable, :rememberable, :trackable, :validatable, :confirmable
+           :recoverable, :rememberable, :trackable, :validatable #, :confirmable
     devise :omniauthable, :omniauth_providers => [:facebook]
 
 	#validates :email, confirmation: true
