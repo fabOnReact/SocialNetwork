@@ -88,7 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: 'barteringapps.xyz' }
+  config.action_mailer.default_url_options = { host: ENV['HOST'] }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -98,7 +98,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'barteringapps.xyz',
+    :domain => ENV['DOMAIN'],
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
