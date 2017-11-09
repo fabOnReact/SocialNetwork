@@ -21,25 +21,10 @@ You cannot resell, redistribute, license, or sub-license any of the files found 
 
 ----------------------------------------------------------------------------------------------------------------------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bartering Apps was my first Web Application developed with Ruby on Rails. I am a Developer since 2012, but before I was working with SAP and ABAP Backend Development. I developed the app inspired from the story of Lukas Sommer who traveled the world exchanging his skills for Accomodation and Meals, so check out his webpage goodthingseverywhere and his story. BarteringApps is a social networking app connected with Facebook, authentication is performed with Devise GEM and Facebook omniauth, the app is hosted on Heroku, pictures are uploaded to Amazon S3 with carrierwave. The app includes tags that are used in the jobs/freelancers search criterias done with the act-as-taggable-on GEM. The app is available for Mobile, Tablet and Desktop and is built with Bootstrap. Users that log in will be able to add some info and search either for a Developer to host and build their apps or for a Location... Queries can be performed based on different criterias and users can see some pictures of the locations where they will live..
 
-Things you may want to cover:
+BarteringApps provides also startups some basic functionalities for managing their projects, so they can track their projects, task, ads, employees with the SASS Application, give and receive feedback...
 
-* Ruby version
+DB initially mysql2, then I switched to postgresql, deployment to Heroku
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Available for Desktop, Mobile and Tablet, possible launch to the App Stores in the future
