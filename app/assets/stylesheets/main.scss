@@ -258,11 +258,11 @@ a:focus {
 }
 
 @media (max-width: 342px) {
-	section, #intro, footer {
+	section#intro, section#service, section#about, footer {
 		width: 107%;
 	}
 
-	section, #intro {
+	section#intro {
 		height: 583px;
 	}
 }
