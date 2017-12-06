@@ -1,5 +1,6 @@
+/*$(document).on('ready page:load', function() {*/
 $(document).on('ready page:load', function() {
-
+	console.log('ready page:load loading in main.js..');
 	$("#leftSignup").hide();
 	$("#leftDescription").hide();
 	$("#rightSignup").hide();
@@ -43,35 +44,24 @@ $(document).on('ready page:load', function() {
 			$('#rightDesc').dequeue().stop(false, true).hide("blind", "slow");
 			});
 	});	 	
-	window.cookieconsent.initialise({
-	container: document.getElementById("page-top"),
-	palette:{
-	  popup: {background: "#fff"},
-	  button: {background: "#aa0000"},
-	},
-	revokable:true,
-	onStatusChange: function(status) {
-	  console.log(this.hasConsented() ?
-	    'enable cookies' : 'disable cookies');
-	},
-	law: {
-	  regionalLaw: false,
-	},
-	location: true,
-	});
-});
 
-/*window.addEventListener("load", function(){
+	console.log('executing call to cookieconsent');
+  	/*window.cookieconsent.initialise({
+	    palette:{
+      		popup: {background: "#fff"},
+      		button: {background: "#aa0000"},
+        }
+    });*/
+
 	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#000"
-	    },
-	    "button": {
-	      "background": "#f1d600"
-	    }
-	  }
-})});*/
+		palette:{
+		  popup: {background: "black"},
+		  button: {background: "#aa0000"},
+		},
+		position: 'top'
+	});    
+
+});
 
 $(document).on('ready page:load', function(){console.log('ready page:load')});
 

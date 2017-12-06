@@ -21,5 +21,6 @@
 //= require scripts
 //= require bootstrap-switch
 //= require wow.min
+//= require cookieconsent
 //= require user
 //= require main
