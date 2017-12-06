@@ -1,4 +1,3 @@
-/*$(document).on('ready page:load', function() {*/
 $(document).on('ready page:load', function() {
 	console.log('ready page:load loading in main.js..');
 	$("#leftSignup").hide();
@@ -62,9 +61,3 @@ $(document).on('ready page:load', function() {
 	});    
 
 });
-
-$(document).on('ready page:load', function(){console.log('ready page:load')});
-
-window.addEventListener('load', function(){console.log('load')});
-
-(function(){console.log('self executing function')}());
