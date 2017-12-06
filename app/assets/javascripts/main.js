@@ -43,16 +43,38 @@ $(document).on('ready page:load', function() {
 			$('#rightDesc').dequeue().stop(false, true).hide("blind", "slow");
 			});
 	});	 	
+	window.cookieconsent.initialise({
+	container: document.getElementById("page-top"),
+	palette:{
+	  popup: {background: "#fff"},
+	  button: {background: "#aa0000"},
+	},
+	revokable:true,
+	onStatusChange: function(status) {
+	  console.log(this.hasConsented() ?
+	    'enable cookies' : 'disable cookies');
+	},
+	law: {
+	  regionalLaw: false,
+	},
+	location: true,
+	});
 });
 
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000"
-    },
-    "button": {
-      "background": "#f1d600"
-    }
-  }
-})});
+/*window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#000"
+	    },
+	    "button": {
+	      "background": "#f1d600"
+	    }
+	  }
+})});*/
+
+$(document).on('ready page:load', function(){console.log('ready page:load')});
+
+window.addEventListener('load', function(){console.log('load')});
+
+(function(){console.log('self executing function')}());

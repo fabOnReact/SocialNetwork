@@ -1,4 +1,5 @@
 (function(cc) {
+  console.log('cookieconsent file');
   // stop from running again, if accidently included more than once.
   if (cc.hasInitialised) return;
 
